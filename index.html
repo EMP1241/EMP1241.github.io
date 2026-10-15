@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Brandon Santor's portfolio of GIS research, spatial databases, and research software, featuring the NWSW Spatial Evidence Workbench.">
+<title>Brandon Santor · Geospatial Research &amp; Software</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23500000'/%3E%3Ccircle cx='16' cy='16' r='6' fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <nav class="site-nav wrap" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="Brandon Santor, home">
+      <img class="university-logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDgwIDEwODAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNiMWIzYjY7CiAgICAgIH0KCiAgICAgIC5jbHMtMSwgLmNscy0yIHsKICAgICAgICBzdHJva2Utd2lkdGg6IDBweDsKICAgICAgfQoKICAgICAgLmNscy0yIHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iOTIwIDQzMC43NCA4NDMuMTMgNDMwLjc0IDgzOC42NiA0MzAuNzQgODM2LjcyIDQzNC43NiA3ODAuOTQgNTUwLjggNzI1LjAyIDQzNC43NiA3MjMuMTMgNDMwLjc0IDcxOC42NSA0MzAuNzQgNjQ0LjQxIDQzMC43NCA2MzcuMzEgNDMwLjc0IDYzNy4zMSA0MzcuOCA2MzcuMzEgNDc3LjM5IDYzNy4zMSA0ODQuNDUgNjQ0LjQxIDQ4NC40NSA2NTcuMSA0ODQuNDUgNjU3LjEgNjUwLjYgNjQzLjM1IDY1MC42IDYzNi4yNSA2NTAuNiA2MzYuMjUgNjU3LjcgNjM2LjI1IDY5Ny4yNCA2MzYuMjUgNzA0LjM1IDY0My4zNSA3MDQuMzUgNzI2Ljc3IDcwNC4zNSA3MzMuODggNzA0LjM1IDczMy44OCA2OTcuMjQgNzMzLjg4IDY1Ny43IDczMy44OCA2NTAuNiA3MjYuNzcgNjUwLjYgNzEyLjMzIDY1MC42IDcxMi4zMyA1MzIuNzEgNzc0LjY2IDY2MS4yNSA3ODAuOTggNjc0LjM2IDc4Ny40IDY2MS4yNSA4NTAuMzggNTMyLjQzIDg1MC4zOCA2NTAuNiA4MzYuNTggNjUwLjYgODI5LjQ4IDY1MC42IDgyOS40OCA2NTcuNyA4MjkuNDggNjk3LjI0IDgyOS40OCA3MDQuMzUgODM2LjU4IDcwNC4zNSA5MjAgNzA0LjM1IDkyNy4xMSA3MDQuMzUgOTI3LjExIDY5Ny4yNCA5MjcuMTEgNjU3LjcgOTI3LjExIDY1MC42IDkyMCA2NTAuNiA5MDUuNjUgNjUwLjYgOTA1LjY1IDQ4NC40NSA5MjAgNDg0LjQ1IDkyNy4xMSA0ODQuNDUgOTI3LjExIDQ3Ny4zOSA5MjcuMTEgNDM3LjggOTI3LjExIDQzMC43NCA5MjAgNDMwLjc0Ii8+CiAgPHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDQyLjY1LDY1MC40NnY1My43MWgtMTA1LjI5di01My43MWgxNi4xOWwtMTItMjcuNjhoLTg2Ljc5bC0xMiwyNy42OGgxNS4zNnY1My43MWgtMTA1LjI0di01My43MWgyOS45OWw3Mi4xNi0xNjYuODhoLTE1Ljk2di01My44aDExNi4wOXY1My44aC0xMy44NGw3Mi4yMSwxNjYuOTNoMjkuMTF2LS4wNVpNMjk4LjE0LDUyMi4yOGwtMjAuMTYsNDYuNjVoNDAuNTZsLTIwLjM5LTQ2LjY1WiIvPgogIDxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSI4MzEuNzQgMjIyLjE1IDI0Ni4zNyAyMjIuMTUgMjM4LjI1IDIyMi4xNSAyMzguMjUgMjMwLjIyIDIzOC4yNSAzODYuNTkgMjM4LjI1IDM5NC43MSAyNDYuMzcgMzk0LjcxIDM0Ny40NiAzOTQuNzEgMzU1LjQ5IDM5NC43MSAzNTUuNDkgMzg2LjU5IDM1NS40OSAzMjguNSA0ODAuMzkgMzI4LjUgNDgwLjM5IDc0MC42NiA0MjIuMyA3NDAuNjYgNDE0LjIzIDc0MC42NiA0MTQuMjMgNzQ4LjczIDQxNC4yMyA4NDkuNzggNDE0LjIzIDg1Ny44NSA0MjIuMyA4NTcuODUgNjU1LjcyIDg1Ny44NSA2NjMuODggODU3Ljg1IDY2My44OCA4NDkuNzggNjYzLjg4IDc0OC43MyA2NjMuODggNzQwLjY2IDY1NS43MiA3NDAuNjYgNTk3LjcyIDc0MC42NiA1OTcuNzIgMzI4LjUgNzIxLjgzIDMyOC41IDcyMS44MyAzODUuODUgNzIxLjgzIDM5My45NyA3MjkuOTUgMzkzLjk3IDgzMS43NCAzOTMuOTcgODM5LjgxIDM5My45NyA4MzkuODEgMzg1Ljg1IDgzOS44MSAyMzAuMjIgODM5LjgxIDIyMi4xNSA4MzEuNzQgMjIyLjE1Ii8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjYxNC41MSA3ODkuMiA2MzkuMjQgNzYzLjc3IDYzOS4yNCA4MzMuNjcgNjE0LjUxIDgwOS45NiA2MTQuNTEgNzg5LjIiLz4KICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iNTczLjIyIDc2NS42MiA1NDguNDkgNzg5Ljk4IDU0OC40OSAyNzkuOTEgNTczLjIyIDMwNC42IDU3My4yMiA3NjUuNjIiLz4KICA8cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMjg2Ljk3IDI3MC45MiAyNjEuNDYgMjQ2LjE0IDgwMy4wNCAyNDYuMTQgNzcxLjAyIDI3MC45MiAyODYuOTcgMjcwLjkyIi8+CiAgPHBvbHlnb24gY2xhc3M9ImNscy0xIiBwb2ludHM9IjgxNi4xNCAzNzEuNDEgNzkxLjQxIDM0Ny43OCA3OTEuNDEgMjg0LjgxIDgxNi4xNCAyNTkuMjkgODE2LjE0IDM3MS40MSIvPgogIDxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTY5MS4yLDgzMy41NGMwLTEzLjI1LDEwLjc0LTIzLjI2LDIzLjk5LTIzLjI2czIzLjk5LDEwLjAxLDIzLjk5LDIzLjI2LTEwLjc0LDIzLjk5LTIzLjk5LDIzLjk5aDBjLTEzLjI0LS4wMy0yMy45Ny0xMC43NS0yMy45OS0yMy45OVpNNzMzLjM3LDgzMy41NGMtLjY0LTEwLjAyLTkuMjgtMTguMzYtMTkuMy0xNy43Mi0xMC4wMi42NC0xNy42MywxMC4wMS0xNi45OSwyMC4wMy42MSw5LjU2LDguNTMsMTcuMDEsMTguMTEsMTcuMDMsMTAuMTktLjE0LDE4LjM0LTguNTIsMTguMi0xOC43MSwwLS4yMSwwLS40Mi0uMDItLjYyWk03MDUuOTYsODE5LjY5aDEwLjFjNi41MSwwLDEwLjAxLDIuMzEsMTAuMDEsNy45OC40NiwzLjcyLTIuMTcsNy4xMS01Ljg5LDcuNTctLjM5LjA1LS43OC4wNi0xLjE3LjA0bDcuMzQsMTEuOWgtNS4xN2wtNy4xMS0xMS45aC0zLjA1djExLjcyaC00Ljk0bC0uMTQtMjcuMzFaTTcxMS4wNCw4MzEuMzJoNC42MWMzLDAsNS41OC0uMzcsNS41OC00LjAxcy0yLjkxLTMuNzQtNS40OS0zLjc0aC00LjYxbC0uMDksNy43NVoiLz4KPC9zdmc+" width="76" height="76" alt="Texas A&amp;M University">
+      <span><span class="brand-name">Brandon Santor</span><span class="brand-meta">Geospatial research &amp; software</span></span>
+    </a>
+    <div class="navlinks"><a href="#top">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#resume">Resume</a></div>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="page-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">GIST researcher · Software developer</span>
+        <h1 id="page-title">Geospatial research.<br>Traceable evidence.</h1>
+        <p class="lead">I build research software that connects spatial data, original sources, and reproducible analysis.</p>
+        <div class="actions"><a class="button" href="#nwsw">Explore NWSW</a><a class="button button--secondary" href="#projects">View all projects</a></div>
+      </div>
+      <aside class="hero-aside" aria-label="Featured project">
+        <span class="eyebrow">Featured project</span>
+        <h2>NWSW Spatial Evidence Workbench</h2>
+        <p>Project lead and application owner. Source preservation, structured review, mapped investigations, and reproducible exports.</p>
+        <p class="hero-note">Texas A&amp;M GIS Practicum</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section wrap split" id="about" aria-labelledby="about-title">
+    <div><span class="eyebrow">About</span><h2 id="about-title">Research questions.<br>Working software.</h2></div>
+    <div class="prose">
+      <p class="lead">I am a Geographic Information Science &amp; Technology undergraduate at Texas A&amp;M University, a U.S. Marine Corps veteran, and a geospatial software developer.</p>
+      <p>My work spans spatial evidence systems, offline and online WebGIS, scientific data workflows, and GNSS field analysis. I create tools that help researchers inspect their data, preserve its context, and carry it into reproducible analysis.</p>
+      <p>I am a paid research assistant in Torbenson Lab and lead the NWSW GIS Practicum application. My longer-term interests include spatial decision support for site characterization and surface operations, including planetary settings.</p>
+    </div>
+  </section>
+
+  <section class="section wrap" id="projects" aria-labelledby="projects-title">
+    <div class="section-head"><div><span class="eyebrow">Selected work</span><h2 id="projects-title">GIS research, built into tools.</h2></div><p>Research software, spatial databases, and field methods.</p></div>
+    <article class="featured-project" aria-labelledby="featured-title">
+      <div class="featured-copy">
+        <span class="eyebrow">Featured · Project lead &amp; application owner</span>
+        <h2 id="featured-title">NWSW Spatial Evidence Workbench</h2>
+        <p>I developed a local workbench for our New World Screwworm research project, bringing source documents, spatial records, maps, and contributor handoffs into one traceable workflow.</p>
+        <ul class="tags" aria-label="NWSW technologies"><li class="tag">Python / FastAPI</li><li class="tag">PostgreSQL / PostGIS</li><li class="tag">TypeScript</li><li class="tag">Leaflet</li></ul>
+        <div class="actions"><a class="button" href="#nwsw">Read the NWSW case study</a></div>
+      </div>
+      <div class="featured-visual">
+        <figure>
+          <svg viewBox="0 0 580 280" role="img" aria-labelledby="workflow-title workflow-desc">
+            <title id="workflow-title">NWSW evidence workflow</title>
+            <desc id="workflow-desc">Original sources are preserved as versions, reviewed, and included in reproducible investigations and exports. This is a software workflow diagram, not research observations.</desc>
+            <path class="flow-path" d="M100 80H480V200H100" fill="none" stroke="#500000" stroke-width="3"/>
+            <g fill="white" stroke="#500000" stroke-width="2"><rect x="5" y="35" width="230" height="90" rx="8"/><rect x="345" y="35" width="230" height="90" rx="8"/><rect x="345" y="155" width="230" height="90" rx="8"/><rect x="5" y="155" width="230" height="90" rx="8"/></g>
+            <g fill="#500000" font-family="system-ui,sans-serif" font-size="20" text-anchor="middle"><text x="120" y="85">Original sources</text><text x="460" y="85">Preserved versions</text><text x="460" y="205">Checks &amp; review</text><text x="120" y="205">Investigations &amp; exports</text></g>
+          </svg>
+          <figcaption>Illustrative application workflow. Research evidence retains its original source and contributor attribution.</figcaption>
+        </figure>
+      </div>
+    </article>
+    <div class="project-grid" style="margin-top:24px">
+      <a class="project-card" href="#trae"><span class="eyebrow">Research software · Creator &amp; developer</span><h3>Tree-Ring Atlas Explorer</h3><p>Tree-ring records, climate context, reviewed imports, and reproducible analysis exports for Torbenson Lab.</p><span class="card-link">Explore TRAE</span></a>
+      <a class="project-card" href="#tvae"><span class="eyebrow">Research WebGIS · Creator &amp; developer</span><h3>Thermal Vent Atlas Explorer</h3><p>Online and offline hydrothermal-vent exploration developed from Sylvan Lab requirements.</p><span class="card-link">Explore TVAE</span></a>
+      <a class="project-card" href="#gnss"><span class="eyebrow">Field research · GNSS</span><h3>Smartphone GNSS Error</h3><p>Actual positioning error versus device-reported uncertainty across pedestrian crowd categories.</p><span class="card-link">Explore the study</span></a>
+    </div>
+  </section>
+
+  <section class="section wrap" id="nwsw" aria-labelledby="nwsw-title">
+    <div class="section-head"><div><span class="eyebrow">Featured case study</span><h2 id="nwsw-title">NWSW Spatial Evidence Workbench</h2></div></div>
+    <div class="case-layout">
+      <div class="case-body prose">
+        <div class="case-section"><h3>The problem</h3><p>Research teams need to connect mapped records and conclusions to the exact sources, revisions, and review decisions behind them. Integrating documents, tables, GIS files, and contributor packages requires preserving that context through intake, review, and analysis.</p></div>
+        <div class="case-section"><h3>My role</h3><p>As project lead and application owner, I coordinate research contributions and own the development, integration, operation, and maintenance of the workbench. The research is team work; original contributors and sources retain attribution.</p></div>
+        <div class="case-section"><h3>Data and method</h3><p>The application preserves original files and source identities, validates incoming contributor packages, stores spatial records in PostgreSQL/PostGIS, and records explicit review states. Saved investigations and exports retain their source versions, filter scope, methods, and review history.</p><p>The interface uses TypeScript and Leaflet, supported by a Python/FastAPI backend. Bundled terrain supports offline map access.</p></div>
+        <div class="case-section"><h3>What I found</h3><p>The implemented workflow keeps file acceptance, automated checks, and human research review separate. Original sources and review history remain traceable through mapped investigations and reproducible exports.</p><p class="status-note">The application is implemented. The broader team assessment remains ongoing; this portfolio does not present a completed intelligence estimate or a released prediction model.</p></div>
+        <div class="case-section"><h3>What I would do differently</h3><p>[ADD]</p></div>
+      </div>
+      <aside class="case-sidebar" aria-label="NWSW project facts"><dl class="facts"><dt>My role</dt><dd>Project lead<br>Application owner &amp; maintainer</dd><dt>Context</dt><dd>Texas A&amp;M<br>GEOG 476 GIS Practicum</dd><dt>Core stack</dt><dd>Python / FastAPI<br>PostgreSQL / PostGIS<br>TypeScript / Vite<br>Leaflet</dd><dt>Status</dt><dd>Ongoing research</dd></dl></aside>
+    </div>
+  </section>
+
+  <section class="section wrap split" id="trae" aria-labelledby="trae-title">
+    <div><span class="eyebrow">Research software</span><h2 id="trae-title">Tree-Ring Atlas Explorer</h2></div>
+    <div class="prose"><h3>The problem</h3><p>Tree-ring measurements, site metadata, and climate records were scattered across collections, making consistent discovery and comparison difficult.</p><h3>What I did</h3><p>I created an offline-first research application for locating, screening, comparing, and organizing tree-ring records with climate context. I implemented reviewed imports, site-to-climate matching, provenance tracking, and reproducible exports for downstream analysis.</p><h3>What I found</h3><p>The prototype led to a paid research assistant appointment in Torbenson Lab. I used TRAE to derive, clean, organize, and export data for a co-authored manuscript in preparation. Climate comparisons are exploratory screening, not validated climate reconstructions.</p><h3>What I would do differently</h3><p>[ADD]</p></div>
+  </section>
+
+  <section class="section wrap split" id="tvae" aria-labelledby="tvae-title">
+    <div><span class="eyebrow">Research WebGIS</span><h2 id="tvae-title">Thermal Vent Atlas Explorer</h2></div>
+    <div class="prose"><h3>The problem</h3><p>Hydrothermal-vent research needed an interactive way to review records while retaining map access during cruises and remote fieldwork without internet.</p><h3>What I did</h3><p>I independently developed the WebGIS from Sylvan Lab requirements. I built online and offline map modes, spreadsheet/CSV and GeoJSON imports, filtering, measurement, saved analytical state, and exports that preserve provenance.</p><h3>What I found</h3><p>I delivered TVAE to Sylvan Lab. Dr. Jason B. Sylvan uses it for education and lab research in field and classroom settings.</p><h3>What I would do differently</h3><p>[ADD]</p></div>
+  </section>
+
+  <section class="section wrap split" id="gnss" aria-labelledby="gnss-title">
+    <div><span class="eyebrow">Field research</span><h2 id="gnss-title">Smartphone GNSS Error</h2></div>
+    <div class="prose"><h3>The problem</h3><p>How does pedestrian crowding relate to actual smartphone positioning error, and does device-reported uncertainty reflect that error?</p><h3>What I did</h3><p>I collected 781 retained readings from three smartphones across five crowd categories using ArcGIS Field Maps and a published NGS reference. I analyzed actual versus reported horizontal error in Python using Welch's ANOVA and adjusted regression models.</p><h3>What I found</h3><p>Within this study, at 41+ people the iPhone 13 averaged 109.4 ft of actual error versus 16.7 ft of reported uncertainty. Reported uncertainty understated observed positional error.</p><p class="small">This was a single-site observational study. Repeated readings and reference uncertainty limit inference; the study does not isolate the contribution of any individual receiver frequency or test E911-delivered locations.</p><h3>What I would do differently</h3><p>[ADD]</p></div>
+  </section>
+
+  <section class="section wrap" id="resume" aria-labelledby="resume-title">
+    <div class="section-head"><div><span class="eyebrow">Background</span><h2 id="resume-title">Experience &amp; qualifications</h2></div></div>
+    <div class="resume-grid">
+      <div>
+        <div class="resume-section"><h3>Research &amp; software</h3><div class="resume-item"><h4>Research Assistant &amp; Software Developer · Torbenson Lab</h4><p class="meta">March 2026–present · Paid appointment since June 2026</p><p>Created TRAE and developed scientific data-validation, provenance, and export workflows.</p></div><div class="resume-item"><h4>Project Lead · NWSW Spatial Evidence Workbench</h4><p class="meta">Fall 2026–present</p><p>Application ownership, spatial database integration, evidence intake, and research-team coordination.</p></div></div>
+        <div class="resume-section"><h3>Technical consulting</h3><div class="resume-item"><h4>Independent Esri GIS Technical Consultant &amp; Instructor</h4><p class="meta">February–May 2026</p><p>Audited seven graduate GIS modules and rebuilt six workflows into 189 pages of illustrated manuals, enabling independent execution of corrected analyses.</p></div></div>
+        <div class="resume-section"><h3>Military experience</h3><div class="resume-item"><h4>United States Marine Corps · Infantryman &amp; Logistics NCO</h4><p class="meta">2011–2013</p><p>Personnel coordination, accountability, inventory, and logistical support.</p></div></div>
+      </div>
+      <div>
+        <div class="resume-section"><h3>Education</h3><div class="resume-item"><h4>Texas A&amp;M University</h4><p>B.S. Geographic Information Science &amp; Technology</p><p class="meta">Expected May 2027</p></div></div>
+        <div class="resume-section"><h3>Technical skills</h3><ul class="skills-list"><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>PostgreSQL / PostGIS</li><li>ArcGIS Pro</li><li>QGIS</li><li>GDAL</li><li>Leaflet</li><li>HTML / CSS</li></ul></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="wrap footer-row"><div>Brandon Santor<p class="small">Personal portfolio · Geospatial research &amp; software</p></div><a href="#top">Back to top</a></div></footer>
+</body>
+</html>
