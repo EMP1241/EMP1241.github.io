@@ -125,7 +125,7 @@ a[aria-disabled="true"] { color: var(--muted); text-decoration: none; cursor: de
 .featured-copy > p { margin-top: 1.2rem; }
 .featured-visual { min-width: 0; padding: clamp(1.5rem, 3vw, 2.5rem); background-color: #eaeaea; background-image: linear-gradient(rgb(80 0 0 / 4%) 1px, transparent 1px), linear-gradient(90deg, rgb(80 0 0 / 4%) 1px, transparent 1px); background-size: 32px 32px; border-left: 1px solid var(--line); border-radius: 0 var(--radius) var(--radius) 0; }
 .featured-visual figure { height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 1rem; }
-.project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .project-card { display: flex; flex-direction: column; min-width: 0; padding: 1.65rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); color: var(--ink); text-decoration: none; transition: border-color 180ms ease, transform 220ms var(--ease-out), box-shadow 220ms ease; }
 a.project-card:hover { border-color: var(--maroon); text-decoration: none; }
 .project-card .eyebrow { margin-bottom: 1.2rem; }
@@ -414,6 +414,9 @@ a { color: var(--accent); }
 .card-art > span { position: absolute; left: 1.5rem; bottom: 1rem; font: .65rem ui-monospace, monospace; color: var(--muted); letter-spacing: .13em; }
 .card-art--tree { background-image: repeating-radial-gradient(ellipse at 78% 105%, transparent 0 12px, rgb(180 162 117 / 36%) 13px 14px, transparent 15px 25px); }
 .card-art--vent { background-image: repeating-radial-gradient(ellipse at 65% -120%, transparent 0 24px, rgb(121 172 180 / 40%) 25px 26px, transparent 27px 43px); }
+.card-art--architect { background-image: linear-gradient(125deg, transparent 20%, rgb(159 109 195 / 13%) 55%, transparent 85%); }
+.card-art .app-icon { position: absolute; top: 16px; right: 1.5rem; width: 96px; height: 96px; object-fit: contain; filter: drop-shadow(0 5px 12px rgb(0 0 0 / 20%)); }
+.case-app-icon { width: 96px; height: 96px; object-fit: contain; margin-bottom: 1.4rem; }
 .card-art--gnss { background-image: linear-gradient(90deg, transparent calc(72% - 1px), rgb(192 149 164 / 45%) 72%, transparent calc(72% + 1px)), linear-gradient(transparent calc(45% - 1px), rgb(192 149 164 / 45%) 45%, transparent calc(45% + 1px)), radial-gradient(circle at 72% 45%, transparent 0 22px, rgb(192 149 164 / 50%) 23px 24px, transparent 25px 42px, rgb(192 149 164 / 25%) 43px 44px, transparent 45px); }
 .project-card .eyebrow { font-size: .65rem; }
 a.project-card:hover { border-color: var(--accent); }
