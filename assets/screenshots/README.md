@@ -29,3 +29,8 @@ TVAE atlas and record captures were replaced with wider Indian Ocean views from 
 The NWSW application captures now belong to the separate Spatial Evidence Workbench case. The research case uses three original SVG workflow/architecture diagrams. These communicate the research system and contain no private research records or measured map data. Decorative project motifs are conceptual graphics.
 
 Research Architect’s icon is author-supplied artwork, optimized as a 512-pixel WebP. PhalAInx is the independent software studio; Research Architect and the desktop collaboration workspace are separate products.
+
+
+## High Command · October 16, 2026
+
+The author supplied the HC icon, v0.5.6 Command Deck and Settings previews, and a separate command-center visual concept. WebP derivatives preserve the supplied framing and text. The two interface previews are presented as supplied design/interface material; their example conversations and numbers are not scientific findings. The command-center artwork is explicitly captioned as a visual concept. High Command is a separate PhalAInx product in active testing, as stated by its creator. No private source documents or credentials are published.

@@ -1,12 +1,12 @@
 # Brandon Santor · Geospatial Research & Software
 
-Static personal portfolio with eight case studies: NWSW research, the independent Spatial Evidence Workbench, Mars Explorer, COLE, Tree-Ring Atlas Explorer, Thermal Vent Atlas Explorer, PhalAInx, and smartphone GNSS research. PhalAInx is Brandon's independent software studio. Research Architect and the multi-LLM collaboration application are separate products; multi-provider execution remains in development.
+Static personal portfolio with nine case studies: NWSW research, the independent Spatial Evidence Workbench, Mars Explorer, COLE, Tree-Ring Atlas Explorer, Thermal Vent Atlas Explorer, PhalAInx, smartphone GNSS research, and High Command. PhalAInx is Brandon's independent software studio. Research Architect and High Command are separate products. High Command is in active testing.
 
 Open `index.html` in a modern browser or serve the repository root with a static HTTP server. No build or package installation is required.
 
 - `index.html` features NWSW's broader research, GIS, and evidence-integration work.
 - `about.html`, `projects.html`, and `resume.html` provide the main sections.
-- Eight `project-*.html` files provide detailed case studies and galleries, each with three images. The NWSW research page uses architecture diagrams; the workbench page shows real QA application captures. The established `project-research-architect.html` URL presents the PhalAInx studio and its products.
+- Nine `project-*.html` files provide detailed case studies and galleries, each with three images. The NWSW research page uses architecture diagrams; the workbench page shows real QA application captures. The established `project-research-architect.html` URL presents the PhalAInx studio and its products.
 - `resume.pdf` is a sanitized public résumé created from reviewed portfolio facts.
 - `site.js` provides the saved theme preference, legacy fragment redirects, and résumé print control.
 - `gallery.js` provides manual carousels and a keyboard-accessible native-dialog image viewer with fit/full-resolution controls, loading/error feedback, and focus restoration.
@@ -29,3 +29,5 @@ GNSS figures distinguish the measured campus study from an illustrative present-
 Before publishing, run `python tools/check_site.py`, `node --check site.js`, `node --check gallery.js`, `node --check project-intro.js`, `node --check workflow.js`, `node --check motion.js`, and `git diff --check`. The validator checks the exact gallery count and thumbnail indices. Browser checks should cover desktop/mobile layout, gallery wrapping and thumbnails, repeated lightbox open/close, keyboard/focus behavior, zoom, failed-image recovery, theme persistence, project-entry video, skip/replay/end cleanup, and navigation.
 
 GitHub Pages serves the repository root from `main`. Push using an account with write access.
+
+High Command has its own `project-high-command.html` case study, a four-stage command workflow, and three author-supplied interface/design previews. The Command Deck and settings visuals carry v0.5.6 labels; the command-center image is labeled as a visual concept. Preview conversations illustrate the interface and are not portfolio research results. Product descriptions are based on the supplied executive summary; the owner’s current status, Active testing, supersedes its older Proposed / In Development label.

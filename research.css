@@ -118,3 +118,8 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
   .resume-project-list { display: block; }
   .resume-project-list .resume-item { border: 0; padding: 0; margin-bottom: 1rem; }
 }
+
+/* High Command is a distinct product under the PhalAInx studio. */
+body[data-project="high-command"] { --project-color: 93 171 224; --project-pattern: url('assets/motifs/architecture.svg'); }
+.status-pill { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.2rem; padding: .3rem .7rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: rgb(var(--project-color) / .12); font: 650 .75rem/1.6 var(--sans); }
+.status-pill::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: #5bbbd3; }
