@@ -20,3 +20,12 @@ All application images are genuine captures. Figures come from the author-select
 - `gnss-scenario.webp`: author-supplied **Layout.pdf**, a hypothetical present-day New Orleans scenario rather than historical Katrina calls. The visible email header is replaced with the author's name; original QR artwork is preserved. The layout uses 30 synthetic reported positions and 171-foot modeled buffers to illustrate an approximately 50-acre combined area. The imagery/map credits remain in the figure.
 
 GNSS QR destinations are the author's existing publicly shared research PDFs (poster and scenario). The public website derivatives omit visible email; the linked original PDFs retain their source content. No private GIS databases or editable project files are published here.
+
+
+## October 15 portfolio revision
+
+TVAE atlas and record captures were replaced with wider Indian Ocean views from the working application, with the tectonic plate layer enabled. GEBCO, InterRidge, scale, legend, and attribution remain visible; no imported user rows are loaded. The atlas image is zoom 3 and the selected-record view is zoom 4.
+
+The NWSW application captures now belong to the separate Spatial Evidence Workbench case. The research case uses three original SVG workflow/architecture diagrams. These communicate the research system and contain no private research records or measured map data. Decorative project motifs are conceptual graphics.
+
+Research Architect’s icon is author-supplied artwork, optimized as a 512-pixel WebP. PhalAInx is the independent software studio; Research Architect and the desktop collaboration workspace are separate products.

@@ -1,83 +1,145 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
+
 <head>
+
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="description" content="Seven geospatial research and software projects by Brandon Santor, including NWSW, Mars Explorer, and COLE.">
+
   <meta name="color-scheme" content="dark light">
+
   <meta name="theme-color" content="#500000">
+
   <title>Projects · Brandon Santor</title>
-  <script>try { const t = localStorage.getItem('portfolio-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch {}</script>
+
+  <script>try { const t = localStorage.getItem('portfolio-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; if (localStorage.getItem('portfolio-motion') === 'paused') document.documentElement.dataset.motion = 'paused'; } catch {}</script>
+
   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="research.css">
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <link rel="canonical" href="https://emp1241.github.io/projects.html">
+
   <script src="site.js" defer></script>
-</head>
+
+<script src="motion.js" defer></script></head>
+
 <body id="top" data-page="projects.html">
+
 <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
+
   <nav class="site-nav wrap" aria-label="Main navigation">
+
     <a class="brand" href="index.html" aria-label="Brandon Santor, home">
+
       <img class="university-logo" src="assets/tamu-white.svg" width="76" height="76" alt="Texas A&amp;M University">
+
       <span><span class="brand-name">Brandon Santor</span><span class="brand-meta">Geospatial research &amp; software</span></span>
+
     </a>
+
     <div class="nav-tools">
+
       <div class="navlinks">
+
 <a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html" aria-current="page">Projects</a><a href="resume.html">Resume</a>
+
 </div>
+
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true" hidden><svg class="theme-moon" viewbox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.7 8.7 0 0 1 10 3.5 8.7 8.7 0 1 0 20.5 14Z"></path></svg><svg class="theme-sun" viewbox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"></path></svg><span id="theme-label">Dark</span></button>
-    </div>
+
+    <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false" hidden>Pause effects</button></div>
+
   </nav>
+
 </header>
 
-
 <main id="main" tabindex="-1">
+
 <section class="page-intro"><div class="wrap">
+
 <div class="page-title-row"><div>
+
 <span class="eyebrow">Selected work</span><h1>GIS research, built into tools.</h1>
+
 </div></div>
-<p class="lead">Research software, spatial evidence systems, scientific data workflows, and field methods. Explore the problem, my contribution, and the limits of each project.</p>
+
+<p class="lead">Research I lead, software I create, and the data workflows that connect them. Explore the methods, engineering, and results behind each project.</p>
+
 </div></section><section class="section wrap" aria-label="Featured project"><article class="featured-project" aria-labelledby="featured-title">
+
       <div class="featured-copy">
+
         <span class="eyebrow">Featured · Research leadership, GIS &amp; software</span>
-        <h2 id="featured-title">NWSW research &amp; spatial evidence</h2>
-        <p>I lead cross-team evidence synthesis and contribute original GIS and source-verification work. The Spatial Evidence Workbench supports that research with traceable sources, review decisions, and reproducible handoffs.</p>
-        <ul class="tags" aria-label="NWSW technologies">
-<li class="tag">Python / FastAPI</li>
-<li class="tag">PostgreSQL / PostGIS</li>
-<li class="tag">TypeScript</li>
-<li class="tag">Leaflet</li>
-</ul>
-        <div class="actions"><a class="button" href="project-nwsw.html">Read the NWSW case study</a></div>
+
+        <h2 id="featured-title">NWSW · The research behind the system</h2>
+
+        <p>I lead the research, reconcile source records, build reusable GIS layers, and integrate the team’s evidence. Research Architect generates our coordination system; my independent Spatial Evidence Workbench supports spatial investigation.</p>
+
+        <ul class="tags" aria-label="Research strengths"><li class="tag">Research leadership</li><li class="tag">Spatial data engineering</li><li class="tag">Source reconciliation</li></ul><div class="actions"><a class="button" href="project-nwsw.html">Read the NWSW case study</a></div>
+
       </div>
-      <figure class="featured-media"><a href="project-nwsw.html" aria-label="Explore NWSW research and its workbench"><img src="assets/screenshots/nwsw-home.webp" width="1440" height="940" loading="lazy" decoding="async" alt="NWSW application interface in a labeled synthetic QA workspace."></a><figcaption>Research supported by purpose-built software. Dated application capture; synthetic QA content is separate from research evidence.</figcaption></figure></article>
+
+      <figure class="featured-media"><a href="project-nwsw.html" aria-label="Explore NWSW research and its workbench"><img src="assets/nwsw-research.svg" width="1280" height="800" loading="lazy" decoding="async" alt="NWSW research workflow from source reconciliation to reviewed synthesis."></a><figcaption>Research leadership and original GIS work, supported by two distinct systems I designed.</figcaption></figure></article>
 
 </section><section class="section wrap" aria-labelledby="more-projects-title"><div class="section-head"><h2 id="more-projects-title">More projects</h2></div>
+
 <div class="project-grid">
+
 <a class="project-card" href="project-mars.html"><span class="card-art card-art--screenshot" aria-hidden="true"><img src="assets/screenshots/mars-rocknest-thumb.webp" width="720" height="346" loading="lazy" decoding="async" alt=""><span>02 / Mars Explorer</span></span><span class="eyebrow">Planetary GIS · Project lead</span><h3>Mars Explorer</h3>
+
 <p>Curiosity imagery, source-linked scientific records, and bounded reconstructed terrain in a database-driven explorer.</p>
+
 <span class="card-link">Explore the project</span></a><a class="project-card" href="project-cole.html"><span class="card-art card-art--screenshot" aria-hidden="true"><img src="assets/screenshots/cole-opening-thumb.webp" width="720" height="531" loading="lazy" decoding="async" alt=""><span>03 / COLE · Cost Of Living Explorer</span></span><span class="eyebrow">Decision support · Project lead</span><h3>COLE · Cost Of Living Explorer</h3>
+
 <p>County costs, climate preferences, visible assumptions, and local exploration using EPI, Census, and NOAA data.</p>
+
 <span class="card-link">Explore the project</span></a><a class="project-card" href="project-trae.html"><span class="card-art card-art--screenshot" aria-hidden="true"><img src="assets/screenshots/trae-workspace-thumb.webp" width="720" height="321" loading="lazy" decoding="async" alt=""><span>04 / Tree-Ring Atlas Explorer</span></span><span class="eyebrow">Research software · Creator &amp; developer</span><h3>Tree-Ring Atlas Explorer</h3>
+
 <p>Tree-ring records, climate context, reviewed imports, and reproducible exports for Torbenson Lab.</p>
+
 <span class="card-link">Explore the project</span></a><a class="project-card" href="project-tvae.html"><span class="card-art card-art--screenshot" aria-hidden="true"><img src="assets/screenshots/tvae-atlas-thumb.webp" width="720" height="321" loading="lazy" decoding="async" alt=""><span>05 / Thermal Vent Atlas Explorer</span></span><span class="eyebrow">Research WebGIS · Creator &amp; developer</span><h3>Thermal Vent Atlas Explorer</h3>
+
 <p>Online and offline hydrothermal-vent exploration developed from Sylvan Lab requirements.</p>
-<span class="card-link">Explore the project</span></a><a class="project-card" href="project-research-architect.html?intro=1"><span class="card-art card-art--screenshot" aria-hidden="true"><img src="assets/screenshots/phalainx-kit-plan-thumb.webp" width="720" height="433" loading="lazy" decoding="async" alt=""><span>06 / PhalAInx AI</span></span><span class="eyebrow">AI research systems · Creator &amp; designer</span><h3>PhalAInx AI</h3>
-<p>My software brand: Research Architect and a multi-LLM collaboration workspace in development.</p>
+
+<span class="card-link">Explore the project</span></a><a class="project-card" href="project-research-architect.html?intro=1"><span class="card-art card-art--screenshot" aria-hidden="true"><img src="assets/screenshots/phalainx-kit-plan-thumb.webp" width="720" height="433" loading="lazy" decoding="async" alt=""><span>06 / PhalAInx</span></span><span class="eyebrow">AI research systems · Creator &amp; designer</span><h3 aria-label="PhalAInx"><span class="phal-wordmark">Phal<span class="ai-emphasis">AI</span>nx</span></h3>
+
+<p>My independent software studio, home to Research Architect and a multi-LLM collaboration application in development.</p>
+
 <span class="card-link">Explore the project</span></a><a class="project-card" href="project-gnss.html"><span class="card-art card-art--screenshot" aria-hidden="true"><img src="assets/screenshots/gnss-poster-thumb.webp" width="720" height="540" loading="lazy" decoding="async" alt=""><span>07 / Smartphone GNSS Error</span></span><span class="eyebrow">Field research · GNSS</span><h3>Smartphone GNSS Error</h3>
+
 <p>Original research poster and comparison of measured smartphone error with reported uncertainty.</p>
+
 <span class="card-link">Explore the project</span></a>
-</div></section>
+
+<a class="project-card" href="project-nwsw-workbench.html"><div class="card-art card-art--screenshot" aria-hidden="true"><img src="assets/screenshots/nwsw-provenance.webp" width="1440" height="918" alt="" loading="lazy" decoding="async"><span>08 / Independent software</span></div><span class="eyebrow">Evidence software · Independent creator</span><h3>Spatial Evidence Workbench</h3><p>Original evidence, review history, PostGIS investigations, and context-preserving exports in an application I independently built.</p><span class="card-link">Explore the software</span></a></div></section>
+
 <p id="action-status" class="visually-hidden" role="status"></p>
+
 </main>
+
 <footer class="site-footer"><div class="wrap footer-row">
+
 <div>Brandon Santor<p class="small">Personal portfolio · Geospatial research &amp; software</p>
+
 <p class="small">Independent work and research experience at Texas A&amp;M University.</p>
+
 </div>
+
 <div class="footer-links">
+
 <a href="projects.html">Explore projects</a><a href="#top">Back to top ↑</a>
+
 </div>
+
 </div></footer>
+
 </body>
+
 </html>

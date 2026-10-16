@@ -9,7 +9,7 @@
   dialog.id = 'project-intro-dialog';
   dialog.className = 'project-intro-dialog';
   dialog.setAttribute('aria-labelledby', 'intro-dialog-title');
-  dialog.innerHTML = '<div class="intro-toolbar"><div><span class="eyebrow">Brandon Santor · Independent software</span><h2 id="intro-dialog-title">PhalAInx AI</h2></div><button type="button" class="gallery-button" data-skip-intro>Skip intro · View project →</button></div><div class="intro-screen"></div><p class="intro-status" role="status"></p>';
+  dialog.innerHTML = '<div class="intro-toolbar"><div><span class="eyebrow">Brandon Santor · Independent software</span><h2 id="intro-dialog-title">Phal<span class="ai-emphasis">AI</span>nx</h2></div><button type="button" class="gallery-button" data-skip-intro>Skip intro · View project →</button></div><div class="intro-screen"></div><p class="intro-status" role="status"></p>';
   document.body.append(dialog);
   const screen = dialog.querySelector('.intro-screen');
   const skip = dialog.querySelector('[data-skip-intro]');

@@ -1,75 +1,139 @@
 <!doctype html>
 <html lang="en" data-theme="dark">
+
 <head>
+
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="description" content="About Brandon Santor: Texas A&amp;M GIST undergraduate, Marine veteran, geospatial software developer, and researcher.">
+
   <meta name="color-scheme" content="dark light">
+
   <meta name="theme-color" content="#500000">
+
   <title>About · Brandon Santor</title>
-  <script>try { const t = localStorage.getItem('portfolio-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch {}</script>
+
+  <script>try { const t = localStorage.getItem('portfolio-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; if (localStorage.getItem('portfolio-motion') === 'paused') document.documentElement.dataset.motion = 'paused'; } catch {}</script>
+
   <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="research.css">
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <link rel="canonical" href="https://emp1241.github.io/about.html">
+
   <script src="site.js" defer></script>
-</head>
+
+<script src="motion.js" defer></script></head>
+
 <body id="top" data-page="about.html">
+
 <a class="skip-link" href="#main">Skip to content</a>
+
 <header class="site-header">
+
   <nav class="site-nav wrap" aria-label="Main navigation">
+
     <a class="brand" href="index.html" aria-label="Brandon Santor, home">
+
       <img class="university-logo" src="assets/tamu-white.svg" width="76" height="76" alt="Texas A&amp;M University">
+
       <span><span class="brand-name">Brandon Santor</span><span class="brand-meta">Geospatial research &amp; software</span></span>
+
     </a>
+
     <div class="nav-tools">
+
       <div class="navlinks">
+
 <a href="index.html">Home</a><a href="about.html" aria-current="page">About</a><a href="projects.html">Projects</a><a href="resume.html">Resume</a>
+
 </div>
+
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true" hidden><svg class="theme-moon" viewbox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.7 8.7 0 0 1 10 3.5 8.7 8.7 0 1 0 20.5 14Z"></path></svg><svg class="theme-sun" viewbox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"></path></svg><span id="theme-label">Dark</span></button>
-    </div>
+
+    <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false" hidden>Pause effects</button></div>
+
   </nav>
+
 </header>
 
-
 <main id="main" tabindex="-1">
+
 <section class="page-intro"><div class="wrap">
+
 <div class="page-title-row"><div>
+
 <span class="eyebrow">About</span><h1>Brandon Santor</h1>
+
 </div></div>
+
 <p class="lead">Geospatial researcher, software developer, and Marine Corps veteran at Texas A&amp;M University.</p>
+
 </div></section><section class="section wrap split" aria-labelledby="about-title">
+
     <div>
+
 <span class="eyebrow">About</span><h2 id="about-title">Research questions. Working software.</h2>
+
 </div>
+
     <div class="prose">
+
       <p class="lead">I am a Geographic Information Science &amp; Technology undergraduate at Texas A&amp;M University, a U.S. Marine Corps veteran, and a geospatial software developer.</p>
-      <p>My work spans spatial evidence systems, offline and online WebGIS, scientific data workflows, GNSS field analysis, and structured human-and-AI research systems. I create tools that help researchers inspect their data, preserve its context, and carry it into reproducible analysis.</p>
-      <p>I am a paid research assistant in Torbenson Lab and lead the NWSW GIS Practicum application. My longer-term interests include spatial decision support for site characterization and surface operations, including planetary settings.</p>
+
+      <p>I process complex tree-ring measurements and climate records into research-ready datasets, map deep-ocean vents and geomicrobiology context, and reconstruct Martian landscapes in 3D from orbital data. I also build spatial decision tools, investigate smartphone positioning error, and design research systems that keep a team’s evidence and methods connected.</p>
+
+      <p>I am a paid research assistant in Torbenson Lab, lead the NWSW GIS research project, and lead the team developing Mars Explorer. My work combines research design, data preparation, application architecture, field methods, and the feature development that makes a tool useful beyond its first demonstration.</p>
+
     <p>My portfolio also includes <a href="project-mars.html">Mars Explorer</a>, connecting planetary geography and scientific records, and <a href="project-cole.html">COLE</a>, a county-scale decision-support application using national public data.</p>
+
 </div>
+
   </section>
 
-
 <section class="section wrap split" aria-labelledby="direction-title"><div>
+
 <span class="eyebrow">Research direction</span><h2 id="direction-title">Tools for scientific decisions.</h2>
+
 </div>
+
 <div class="prose">
+
 <p>I’m interested in spatial decision support for site characterization and surface operations, including planetary environments. My current work builds the data handling, field methods, and research software behind that direction.</p>
+
 <p>Across these projects, I focus on keeping original evidence accessible, recording how an analysis was produced, and giving researchers tools they can use in the lab and in the field.</p>
+
 <div class="actions">
+
 <a class="button" href="projects.html">Explore my projects</a><a class="button button--secondary" href="resume.html">Experience &amp; qualifications</a>
+
 </div>
+
 </div></section>
+
 <p id="action-status" class="visually-hidden" role="status"></p>
+
 </main>
+
 <footer class="site-footer"><div class="wrap footer-row">
+
 <div>Brandon Santor<p class="small">Personal portfolio · Geospatial research &amp; software</p>
+
 <p class="small">Independent work and research experience at Texas A&amp;M University.</p>
+
 </div>
+
 <div class="footer-links">
+
 <a href="projects.html">Explore projects</a><a href="#top">Back to top ↑</a>
+
 </div>
+
 </div></footer>
+
 </body>
+
 </html>

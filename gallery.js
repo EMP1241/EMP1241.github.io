@@ -72,6 +72,27 @@
     return true;
   }
 
+  function cleanupLightbox() {
+    const visibleOpener = activeGallery?.slides[activeGallery.index].querySelector('[data-lightbox]');
+    ++imageRequest;
+    image.onload = null;
+    image.onerror = null;
+    image.removeAttribute('src');
+    image.hidden = true;
+    setZoom(false);
+    activeGallery = null;
+    document.body.classList.remove('lightbox-open');
+    const focusTarget = returnFocus?.isConnected && returnFocus.getClientRects().length ? returnFocus : visibleOpener;
+    focusTarget?.focus({preventScroll: true});
+    returnFocus = null;
+  }
+
+  function closeLightbox() {
+    if (dialog.open) dialog.close();
+    // Native close events are queued. Restore now so a quick reopen is independent.
+    cleanupLightbox();
+  }
+
   galleries.forEach(element => {
     const slides = [...element.querySelectorAll('.gallery-slide')];
     const thumbnails = [...element.querySelectorAll('[data-slide]')];
@@ -111,7 +132,8 @@
   });
 
   if (supportsDialog) {
-    dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
+    dialog.querySelector('[data-close]').addEventListener('click', closeLightbox);
+    dialog.addEventListener('cancel', event => { event.preventDefault(); closeLightbox(); });
     dialog.querySelector('[data-prev]').addEventListener('click', () => activeGallery?.step(-1));
     dialog.querySelector('[data-next]').addEventListener('click', () => activeGallery?.step(1));
     zoomButton.addEventListener('click', () => { if (image.complete && image.naturalWidth) setZoom(!zoomed); });
@@ -135,21 +157,10 @@
     });
     dialog.addEventListener('click', event => {
       const bounds = dialog.getBoundingClientRect();
-      if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) dialog.close();
+      if (event.target === dialog && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) closeLightbox();
     });
     dialog.addEventListener('close', () => {
-      const visibleOpener = activeGallery?.slides[activeGallery.index].querySelector('[data-lightbox]');
-      ++imageRequest;
-      image.onload = null;
-      image.onerror = null;
-      image.removeAttribute('src');
-      image.hidden = true;
-      setZoom(false);
-      activeGallery = null;
-      document.body.classList.remove('lightbox-open');
-      const focusTarget = returnFocus?.isConnected && returnFocus.getClientRects().length ? returnFocus : visibleOpener;
-      focusTarget?.focus({preventScroll: true});
-      returnFocus = null;
+      if (!dialog.open && activeGallery) cleanupLightbox();
     });
   }
   // A manually played project clip should stop when its page is hidden.
