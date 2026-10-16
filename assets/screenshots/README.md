@@ -33,8 +33,8 @@ Research Architect’s icon is author-supplied artwork, optimized as a 512-pixel
 
 ## High Command · October 16, 2026
 
-The author supplied the HC icon, Command Deck and Settings interface previews with v0.5.6 artwork labels, and a still from the live animated Home screen. The artwork labels do not establish a software release; sample conversations and counts are presentation content. The home-screen image is a still from the running animated application, as explicitly identified by the creator. WebP derivatives preserve the supplied framing and text. High Command is a separate PhalAInx product in active testing. No private source documents or credentials are published.
+The author supplied the HC icon, Command Deck and Settings views of High Command v0.5.6 with simulated workflows, and a still from the live animated Home screen. High Command v0.5.6 is a prototype in alpha testing; sample conversations and counts illustrate the simulated workflow. The home-screen image is a still from the running animated application, as explicitly identified by the creator. WebP derivatives preserve the supplied framing and text. High Command is a separate PhalAInx product in alpha testing. No private source documents or credentials are published.
 
 The Command Deck and Settings derivatives use the author’s corrected-logo replacements supplied later on October 16. Their versioned asset names prevent an older browser cache from retaining the previous logo.
 
-The October 16 source audit confirmed a working React/TypeScript Home prototype. Native Tauri hosting, Rust coordination services, SQLite project persistence, and connected model orchestration remain integration work.
+The October 16 source audit confirmed a working React/TypeScript prototype. Native Tauri hosting, Rust coordination services, SQLite project persistence, and connected model orchestration remain integration work.

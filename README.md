@@ -1,6 +1,6 @@
 # Brandon Santor · Geospatial Research & Software
 
-Static personal portfolio with nine case studies: NWSW research, the independent Spatial Evidence Workbench, Mars Explorer, COLE, Tree-Ring Atlas Explorer, Thermal Vent Atlas Explorer, PhalAInx, smartphone GNSS research, and High Command. PhalAInx is Brandon's independent software studio. Research Architect and High Command are separate products. High Command is in active testing.
+Static personal portfolio with nine case studies: NWSW research, the independent Spatial Evidence Workbench, Mars Explorer, COLE, Tree-Ring Atlas Explorer, Thermal Vent Atlas Explorer, PhalAInx, smartphone GNSS research, and High Command. PhalAInx is Brandon's independent software studio. Research Architect and High Command are separate products. High Command is in alpha testing.
 
 Open `index.html` in a modern browser or serve the repository root with a static HTTP server. No build or package installation is required.
 
@@ -31,7 +31,7 @@ Before publishing, run `python tools/check_site.py`, `node --check site.js`, `no
 
 GitHub Pages serves the repository root from `main`. Push using an account with write access.
 
-High Command has its own `project-high-command.html` case study, a four-stage planned coordination workflow, and three author-supplied application screenshots. The Command Deck and Settings interface previews carry v0.5.6 artwork labels, not a software release identifier; the home-screen image is a still from the live animated application, as identified by the creator. Product descriptions are based on the supplied executive summary; the owner’s current status, Active testing, supersedes its older Proposed / In Development label.
+High Command has its own `project-high-command.html` case study, a four-stage planned coordination workflow, and three author-supplied application screenshots. High Command is version 0.5.6; the Command Deck and Settings images show simulated workflows; the home-screen image is a still from the live animated application, as identified by the creator. Product descriptions are based on the supplied executive summary; the owner’s current status, Alpha testing, supersedes its older Proposed / In Development label.
 
 Product audiences: High Command is for an individual coordinating multiple models across projects; Research Architect generates individual AI kits for members of a human team working within a shared research system. The owner selected Tauri 2, React/TypeScript, Rust, and SQLite for HC. The October 16 source audit found the React/TypeScript/Vite Home interface implemented; native hosting, Rust services, SQLite project persistence, and connected orchestration remain pending. The portfolio separates implemented interface tools from selected architecture and planned QA.
 
