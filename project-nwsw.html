@@ -43,13 +43,13 @@
 <div class="project-gallery" data-gallery data-gallery-title="NWSW research &amp; spatial evidence" role="region" aria-roledescription="carousel" aria-label="NWSW research &amp; spatial evidence images">
 <div class="gallery-track">
 <figure class="gallery-slide"><a href="assets/screenshots/nwsw-home.webp" data-lightbox aria-label="View larger: NWSW workbench home screen in a labeled synthetic QA workspace."><img src="assets/screenshots/nwsw-home.webp" width="1440" height="940" loading="eager" fetchpriority="high" decoding="async" alt="NWSW workbench home screen in a labeled synthetic QA workspace."></a><figcaption>Actual application interface, September 22, 2026 (v0.2.2). Isolated synthetic QA workspace; test content is not research evidence.</figcaption></figure><figure class="gallery-slide" hidden><a href="assets/screenshots/nwsw-intake.webp" data-lightbox aria-label="View larger: NWSW Add files interface for preserving original evidence."><img src="assets/screenshots/nwsw-intake.webp" width="1440" height="940" loading="lazy" decoding="async" alt="NWSW Add files interface for preserving original evidence."></a><figcaption>Original-file intake in the same isolated QA workspace. A software demonstration, not a completed research assessment.</figcaption></figure>
-</div>
+<figure class="gallery-slide" hidden><a href="assets/screenshots/nwsw-provenance.webp" data-lightbox aria-label="View larger: NWSW offline map with linked source and feature provenance in a synthetic QA workspace."><img src="assets/screenshots/nwsw-provenance.webp" width="1440" height="918" loading="lazy" decoding="async" alt="NWSW offline map with linked source and feature provenance in a synthetic QA workspace."></a><figcaption>Offline map and linked provenance panel, September 22, 2026. Isolated synthetic QA workspace; demonstration geometry is not research evidence.</figcaption></figure></div>
 <div class="gallery-controls">
-<button type="button" class="gallery-button" data-gallery-prev data-gallery-control hidden aria-label="Previous project image">←</button><output data-gallery-count aria-live="polite">1 / 2</output><button type="button" class="gallery-button" data-gallery-next data-gallery-control hidden aria-label="Next project image">→</button>
+<button type="button" class="gallery-button" data-gallery-prev data-gallery-control hidden aria-label="Previous project image">←</button><output data-gallery-count aria-live="polite">1 / 3</output><button type="button" class="gallery-button" data-gallery-next data-gallery-control hidden aria-label="Next project image">→</button>
 </div>
 <div class="gallery-thumbnails">
 <a href="assets/screenshots/nwsw-home.webp" data-slide="0" aria-label="Show image 1: NWSW workbench home screen in a labeled synthetic QA workspace." aria-current="true"><img src="assets/screenshots/nwsw-home.webp" width="1440" height="940" loading="lazy" decoding="async" alt=""></a><a href="assets/screenshots/nwsw-intake.webp" data-slide="1" aria-label="Show image 2: NWSW Add files interface for preserving original evidence."><img src="assets/screenshots/nwsw-intake.webp" width="1440" height="940" loading="lazy" decoding="async" alt=""></a>
-</div>
+<a href="assets/screenshots/nwsw-provenance.webp" data-slide="2" aria-label="Show image 3: NWSW offline map with linked source and feature provenance in a synthetic QA workspace."><img src="assets/screenshots/nwsw-provenance.webp" width="1440" height="918" loading="lazy" decoding="async" alt=""></a></div>
 </div>
 </div>
 </div></section><section class="section wrap" id="case-study" aria-label="Project case study"><div class="project-content case-layout">
@@ -65,6 +65,14 @@
 <h2>Outputs &amp; limits</h2>
 <p>The project has produced reusable GIS layers, corrected source-backed datasets, and documented research handoffs. The workflow records unresolved gaps and distinguishes software checks from reviewed scientific use.</p>
 <p class="status-note">The broader assessment and final cross-team synthesis remain in progress.</p>
+<h2>From source records to usable GIS</h2>
+<p>The research crosses reporting systems and administrative geographies. I reconcile source versions, chronology, and reporting units before combining evidence. Boundary work includes stable identifiers, historical compatibility, geometry checks, and documented joins so a map can be traced back to the geographic definition used.</p>
+<p>Cross-team synthesis connects those pieces into a final evidence matrix. I keep the original contributor's work attached to its source and separate established observations from unresolved questions. Reusable GIS layers, corrected datasets, and documented handoffs are concrete outputs of that process.</p>
+<h2>How the workbench supports an investigation</h2>
+<p>A researcher begins with original documents, tables, or GIS attachments. Intake preserves original bytes and source versions, while parsed records and map companions make the material inspectable. Automated validation, application intake, and human research review have separate records and states.</p>
+<p>Mapped investigations retain their selected sources, boundary versions, filters, and review context. A feature can be followed back to its source and declared geographic support. Exports carry the method, source identities, and scope needed for a later reviewer to understand what was actually included.</p>
+<h2>Engineering choices</h2>
+<p>PostgreSQL/PostGIS is the system of record for evidence and geometry. Python/FastAPI handles bounded parsing, validation, transactions, and exports; TypeScript and Leaflet connect the browser interface. Offline terrain supports the regional map, while immutable original records and version-pinned investigations protect the history behind a result.</p>
 </div>
 <aside class="case-sidebar" aria-label="Project facts"><dl class="facts">
 <dt>My role</dt>

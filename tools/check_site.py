@@ -13,16 +13,25 @@ class Page(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.path = path
         self.ids, self.refs, self.images, self.headings, self.links = [], [], [], [], []
+        self.gallery_count, self.gallery_slides, self.gallery_thumbnails = 0, 0, []
         self.feed(path.read_text(encoding='utf-8'))
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if 'data-gallery' in attrs:
+            self.gallery_count += 1
+        if tag == 'figure' and 'gallery-slide' in attrs.get('class', '').split():
+            self.gallery_slides += 1
+        if 'data-slide' in attrs:
+            self.gallery_thumbnails.append(attrs['data-slide'])
         if 'id' in attrs:
             self.ids.append(attrs['id'])
         if tag in ('a', 'link') and attrs.get('href'):
             self.refs.append(attrs['href'])
-        if tag in ('img', 'script', 'source', 'track') and attrs.get('src'):
+        if tag in ('img', 'script', 'source', 'track', 'video') and attrs.get('src'):
             self.refs.append(attrs['src'])
+        if tag == 'video' and attrs.get('poster'):
+            self.refs.append(attrs['poster'])
         if tag == 'img':
             self.images.append(attrs)
         if re.fullmatch('h[1-6]', tag):
@@ -39,6 +48,8 @@ if set(pages) != expected:
 email = re.compile(r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}', re.I)
 phone = re.compile(r'(?<!\d)(?:\+?1[ .-]?)?\(?\d{3}\)?[ .-]\d{3}[ .-]\d{4}(?!\d)')
 for name, page in pages.items():
+    if page.gallery_count and (page.gallery_count != 1 or page.gallery_slides != 3 or page.gallery_thumbnails != ['0', '1', '2']):
+        errors.append(f'{name}: requires exactly three gallery images with matching thumbnails')
     if page.headings.count(1) != 1:
         errors.append(f'{name}: requires exactly one h1')
     if any(n > 1 for n in Counter(page.ids).values()):

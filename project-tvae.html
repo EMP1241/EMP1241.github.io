@@ -43,13 +43,13 @@
 <div class="project-gallery" data-gallery data-gallery-title="Thermal Vent Atlas Explorer" role="region" aria-roledescription="carousel" aria-label="Thermal Vent Atlas Explorer images">
 <div class="gallery-track">
 <figure class="gallery-slide"><a href="assets/screenshots/tvae-atlas.webp" data-lightbox aria-label="View larger: TVAE offline atlas with hydrothermal vent records and research controls."><img src="assets/screenshots/tvae-atlas.webp" width="1920" height="855" loading="eager" fetchpriority="high" decoding="async" alt="TVAE offline atlas with hydrothermal vent records and research controls."></a><figcaption>Actual TVAE 1.3.0 offline interface. Base atlas, no imported user data. Core vent records: InterRidge; basemap: GEBCO 2025.</figcaption></figure><figure class="gallery-slide" hidden><a href="assets/screenshots/tvae-stats.webp" data-lightbox aria-label="View larger: TVAE summary panel showing activity counts and atlas-region charts."><img src="assets/screenshots/tvae-stats.webp" width="700" height="610" loading="lazy" decoding="async" alt="TVAE summary panel showing activity counts and atlas-region charts."></a><figcaption>Actual TVAE activity and atlas-region summary charts for the base atlas. A software-interface demonstration; no imported user data.</figcaption></figure>
-</div>
+<figure class="gallery-slide" hidden><a href="assets/screenshots/tvae-record.webp" data-lightbox aria-label="View larger: TVAE displaying the GEISEIR site 30 record, map marker, and InterRidge source provenance."><img src="assets/screenshots/tvae-record.webp" width="1920" height="855" loading="lazy" decoding="async" alt="TVAE displaying the GEISEIR site 30 record, map marker, and InterRidge source provenance."></a><figcaption>Actual TVAE record inspection, October 15, 2026: a public InterRidge vent record with source and enrichment fields kept distinct. Offline overview tiles are scaled at this zoom; no imported user data.</figcaption></figure></div>
 <div class="gallery-controls">
-<button type="button" class="gallery-button" data-gallery-prev data-gallery-control hidden aria-label="Previous project image">←</button><output data-gallery-count aria-live="polite">1 / 2</output><button type="button" class="gallery-button" data-gallery-next data-gallery-control hidden aria-label="Next project image">→</button>
+<button type="button" class="gallery-button" data-gallery-prev data-gallery-control hidden aria-label="Previous project image">←</button><output data-gallery-count aria-live="polite">1 / 3</output><button type="button" class="gallery-button" data-gallery-next data-gallery-control hidden aria-label="Next project image">→</button>
 </div>
 <div class="gallery-thumbnails">
 <a href="assets/screenshots/tvae-atlas.webp" data-slide="0" aria-label="Show image 1: TVAE offline atlas with hydrothermal vent records and research controls." aria-current="true"><img src="assets/screenshots/tvae-atlas.webp" width="1920" height="855" loading="lazy" decoding="async" alt=""></a><a href="assets/screenshots/tvae-stats.webp" data-slide="1" aria-label="Show image 2: TVAE summary panel showing activity counts and atlas-region charts."><img src="assets/screenshots/tvae-stats.webp" width="700" height="610" loading="lazy" decoding="async" alt=""></a>
-</div>
+<a href="assets/screenshots/tvae-record.webp" data-slide="2" aria-label="Show image 3: TVAE displaying the GEISEIR site 30 record, map marker, and InterRidge source provenance."><img src="assets/screenshots/tvae-record.webp" width="1920" height="855" loading="lazy" decoding="async" alt=""></a></div>
 </div>
 </div>
 </div></section><section class="section wrap" id="case-study" aria-label="Project case study"><div class="project-content split">
@@ -62,10 +62,18 @@
 <p>I independently developed the WebGIS from Sylvan Lab requirements. I built online and offline map modes, spreadsheet/CSV and GeoJSON imports, filtering, measurement, saved analytical state, and exports that preserve provenance.</p>
 <h2>What I found</h2>
 <p>I delivered TVAE to Sylvan Lab. Dr. Jason B. Sylvan uses it for education and lab research in field and classroom settings.</p>
+<h2>Exploring the atlas</h2>
+<p>A researcher can search by vent name and descriptive fields, browse atlas regions, filter dates, and select records for mapped inspection. The selected record’s details sit beside the map. Nearby-site tools, comparisons, activity and depth summaries, annotations, and exploratory plots help organize questions about the loaded atlas.</p>
+<h2>Source data and local context</h2>
+<p>The base atlas credits the InterRidge Global Database of Active Submarine Hydrothermal Vent Fields v3.4. The interface distinguishes core source fields from local TVAE enrichments and imported user rows. A provenance panel identifies the record source, citation, and field groups, while a field dictionary explains how columns should be interpreted.</p>
+<h2>Research files and reusable sessions</h2>
+<p>CSV and point GeoJSON imports are reviewed as separate user data rather than silently merged with authoritative vent records. Exports use the selected, filtered, or complete record scope, with options for core fields, local enrichments, or imported data. Session files retain filters, selections, imported rows, annotations, route, map position, and layer settings; they depend on the matching base atlas rather than embedding a complete base-data copy.</p>
+<h2>Offline use and planning</h2>
+<p>The Leaflet interface uses locally served GEBCO overview tiles and hillshade. Online mode can use streamed imagery at closer zooms; the current bundled offline range is scaled beyond its native levels. A cruise planner records waypoints and leg distances for exploration, and an optional local sidecar supports persistent atlas edits. Route tools are for research planning rather than operational navigation.</p>
 </div>
 </div>
 
-</section><nav class="section wrap project-pagination" aria-label="Project navigation"><a class="button button--secondary" href="projects.html">← All projects</a><a class="next-project" href="project-research-architect.html"><span class="eyebrow">Next project</span>Research Architect / PhalAInx →</a></nav><p id="action-status" class="visually-hidden" role="status"></p></main><footer class="site-footer"><div class="wrap footer-row">
+</section><nav class="section wrap project-pagination" aria-label="Project navigation"><a class="button button--secondary" href="projects.html">← All projects</a><a class="next-project" href="project-research-architect.html?intro=1"><span class="eyebrow">Next project</span>PhalAInx AI →</a></nav><p id="action-status" class="visually-hidden" role="status"></p></main><footer class="site-footer"><div class="wrap footer-row">
 <div>Brandon Santor<p class="small">Personal portfolio · Geospatial research &amp; software</p>
 <p class="small">Independent work and research experience at Texas A&amp;M University.</p>
 </div>
