@@ -34,3 +34,5 @@ Research Architect’s icon is author-supplied artwork, optimized as a 512-pixel
 ## High Command · October 16, 2026
 
 The author supplied the HC icon, v0.5.6 Command Deck and Settings previews, and a separate command-center visual concept. WebP derivatives preserve the supplied framing and text. The two interface previews are presented as supplied design/interface material; their example conversations and numbers are not scientific findings. The command-center artwork is explicitly captioned as a visual concept. High Command is a separate PhalAInx product in active testing, as stated by its creator. No private source documents or credentials are published.
+
+The Command Deck and Settings derivatives use the author’s corrected-logo replacements supplied later on October 16. Their versioned asset names prevent an older browser cache from retaining the previous logo.
