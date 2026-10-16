@@ -30,4 +30,4 @@ Before publishing, run `python tools/check_site.py`, `node --check site.js`, `no
 
 GitHub Pages serves the repository root from `main`. Push using an account with write access.
 
-High Command has its own `project-high-command.html` case study, a four-stage command workflow, and three author-supplied interface/design previews. The Command Deck and settings visuals carry v0.5.6 labels; the command-center image is labeled as a visual concept. Preview conversations illustrate the interface and are not portfolio research results. Product descriptions are based on the supplied executive summary; the owner’s current status, Active testing, supersedes its older Proposed / In Development label.
+High Command has its own `project-high-command.html` case study, a four-stage command workflow, and three author-supplied application screenshots. The Command Deck and Settings screenshots carry v0.5.6 labels; the home-screen image is a still from the live animated application, as identified by the creator. Product descriptions are based on the supplied executive summary; the owner’s current status, Active testing, supersedes its older Proposed / In Development label.
