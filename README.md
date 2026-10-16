@@ -31,3 +31,5 @@ Before publishing, run `python tools/check_site.py`, `node --check site.js`, `no
 GitHub Pages serves the repository root from `main`. Push using an account with write access.
 
 High Command has its own `project-high-command.html` case study, a four-stage command workflow, and three author-supplied application screenshots. The Command Deck and Settings screenshots carry v0.5.6 labels; the home-screen image is a still from the live animated application, as identified by the creator. Product descriptions are based on the supplied executive summary; the owner’s current status, Active testing, supersedes its older Proposed / In Development label.
+
+Product audiences: High Command is for an individual coordinating multiple models across projects; Research Architect generates individual AI kits for members of a human team working within a shared research system. The owner confirmed HC’s current core stack as Tauri 2, React/TypeScript, Rust, and SQLite. Other tooling and QA items from the supplied setup plan are identified as development/validation plans rather than completed verification.
