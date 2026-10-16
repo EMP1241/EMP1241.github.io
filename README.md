@@ -8,6 +8,7 @@ Open `index.html` in a modern browser or serve the repository root with a static
 - `about.html`, `projects.html`, and `resume.html` provide the main sections.
 - Nine `project-*.html` files provide detailed case studies and galleries, each with three images. The NWSW research page uses architecture diagrams; the workbench page shows real QA application captures. The established `project-research-architect.html` URL presents the PhalAInx studio and its products.
 - `resume.pdf` is a sanitized public résumé created from reviewed portfolio facts.
+- `assets/documents/research-architect-white-paper.pdf` is the author-provided revised white paper; explicit links open it in a separate browser tab without an embedded PDF viewer.
 - `site.js` provides the saved theme preference, legacy fragment redirects, and résumé print control.
 - `gallery.js` provides manual carousels and a keyboard-accessible native-dialog image viewer with fit/full-resolution controls, loading/error feedback, and focus restoration.
 - `project-intro.js` starts the PhalAInx introduction when a visitor opens its project link, with Skip, native playback controls, replay, reduced-motion handling, and failed-playback recovery.
