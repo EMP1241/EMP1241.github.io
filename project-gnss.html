@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An observational study of actual positioning error and device-reported uncertainty across pedestrian crowd categories. A project by Brandon Santor.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#500000">
+  <title>Smartphone GNSS Error · Brandon Santor</title>
+  <script>try { const t = localStorage.getItem('portfolio-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch {}</script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="canonical" href="https://emp1241.github.io/project-gnss.html">
+  <script src="site.js" defer></script>
+</head>
+<body id="top" data-page="project-gnss.html">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav wrap" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="Brandon Santor, home">
+      <img class="university-logo" src="assets/tamu-white.svg" width="76" height="76" alt="Texas A&amp;M University">
+      <span><span class="brand-name">Brandon Santor</span><span class="brand-meta">Geospatial research &amp; software</span></span>
+    </a>
+    <div class="nav-tools">
+      <div class="navlinks">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html" aria-current="true">Projects</a><a href="resume.html">Resume</a>
+</div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="true" hidden><svg class="theme-moon" viewbox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.7 8.7 0 0 1 10 3.5 8.7 8.7 0 1 0 20.5 14Z"></path></svg><svg class="theme-sun" viewbox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"></path></svg><span id="theme-label">Dark</span></button>
+    </div>
+  </nav>
+</header>
+
+
+<main id="main" tabindex="-1">
+<section class="page-intro"><div class="wrap"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="projects.html">Projects</a><span aria-hidden="true"> / </span><span aria-current="page">Case study</span></nav><div class="page-title-row"><div><span class="eyebrow">05 / Field research</span><h1>Smartphone GNSS Error</h1></div></div><p class="lead">An observational study of actual positioning error and device-reported uncertainty across pedestrian crowd categories.</p></div></section><section class="section wrap" aria-label="Project figure"><figure class="result-figure" aria-labelledby="gnss-result-title"><span class="eyebrow">One result within the study</span><h2 id="gnss-result-title">Actual error exceeded reported uncertainty.</h2><p class="small">iPhone 13 · 41+ people category · Mean horizontal error in feet</p><dl class="result-metrics"><div><dt>Actual error</dt><dd>109.4 <span>ft</span></dd></div><div><dt>Reported uncertainty</dt><dd>16.7 <span>ft</span></dd></div></dl><figcaption>Comparison from the original single-site study. These two category means do not describe all devices, crowd conditions, or locations.</figcaption></figure></section><section class="section wrap" aria-label="Project case study"><div class="project-content split">
+<aside class="case-context"><span class="eyebrow">Project context</span><p>Field researcher</p>
+<p>Three smartphones</p>
+<p>Five crowd categories</p></aside><div class="prose">
+<h2>The problem</h2>
+<p>How does pedestrian crowding relate to actual smartphone positioning error, and does device-reported uncertainty reflect that error?</p>
+<h2>My role, data &amp; method</h2>
+<p>I collected 781 retained readings from three smartphones across five crowd categories using ArcGIS Field Maps and a published NGS reference. I analyzed actual versus reported horizontal error in Python using Welch's ANOVA and adjusted regression models.</p>
+<h2>What I found</h2>
+<p>Within this study, at 41+ people the iPhone 13 averaged 109.4 ft of actual error versus 16.7 ft of reported uncertainty. Reported uncertainty understated observed positional error.</p>
+<p class="small">This was a single-site observational study. Repeated readings and reference uncertainty limit inference; the study does not isolate the contribution of any individual receiver frequency or test E911-delivered locations.</p>
+</div>
+</div>
+
+</section><nav class="section wrap project-pagination" aria-label="Project navigation"><a class="button button--secondary" href="projects.html">← All projects</a><a class="next-project" href="project-nwsw.html"><span class="eyebrow">Next project</span>NWSW Spatial Evidence Workbench →</a></nav>
+<p id="action-status" class="visually-hidden" role="status"></p>
+</main>
+<footer class="site-footer"><div class="wrap footer-row"><div>Brandon Santor<p class="small">Personal portfolio · Geospatial research &amp; software</p><p class="small">Independent work and research experience at Texas A&amp;M University.</p></div><div class="footer-links"><a href="projects.html">Explore projects</a><a href="#top">Back to top ↑</a></div></div></footer>
+</body>
+</html>

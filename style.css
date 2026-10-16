@@ -508,3 +508,54 @@ a.project-card:hover { border-color: var(--accent); }
   body.printing-resume .resume-section { margin-bottom: 1.2rem; }
   body.printing-resume .resume-item + .resume-item { margin-top: 1rem; }
 }
+
+/* Multi-page layouts share theme tokens, typography, and navigation. */
+.page-intro { background: linear-gradient(120deg, var(--surface), transparent); }
+.page-title-row { display: flex; align-items: center; gap: 1.6rem; }
+.page-title-row .eyebrow { margin-bottom: .9rem; }
+.page-app-icon { width: 96px; height: 96px; flex: 0 0 auto; object-fit: contain; }
+.text-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 650; }
+.footer-links { display: grid; gap: .4rem; }
+.project-content { min-width: 0; }
+.project-content .prose h2, .project-content .case-section h2 { font-size: clamp(1.5rem, 2.6vw, 2rem); margin: 2rem 0 1rem; }
+.project-content .prose > h2:first-child, .project-content .case-section h2:first-child { margin-top: 0; }
+.project-content .case-section { margin-bottom: 1.5rem; padding-bottom: 1.5rem; }
+.project-content .case-context { padding-top: 0; border-top: 0; }
+.project-content .case-sidebar { border-radius: 8px; }
+.app-screenshot, .result-figure { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--surface); box-shadow: var(--shadow); }
+.app-screenshot > a { display: block; }
+.app-screenshot img { width: 100%; height: auto; }
+.app-screenshot figcaption, .result-figure figcaption { padding: 1rem 1.35rem; color: var(--muted); font-size: .82rem; line-height: 1.65; border-top: 1px solid var(--line); }
+.app-screenshot figcaption a { display: inline-block; margin-left: .5rem; min-height: 28px; }
+.project-pagination { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.next-project { max-width: 35ch; text-align: right; font-weight: 650; }
+.next-project .eyebrow { margin-bottom: .4rem; font-size: .65rem; }
+.result-figure { padding: clamp(1.3rem, 3vw, 2.3rem); }
+.result-figure h2 { max-width: 28ch; margin-bottom: .8rem; font-size: clamp(1.8rem, 3vw, 2.7rem); }
+.result-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-block: 2rem; }
+.result-metrics dt { font-size: .9rem; color: var(--muted); }
+.result-metrics dd { margin: .5rem 0 0; color: var(--accent); font: 400 clamp(2.4rem, 6vw, 4rem)/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.result-metrics dd span { font: 400 1rem var(--sans); color: var(--muted); }
+.result-figure figcaption { padding: 1rem 0 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .page-title-row { animation: page-arrive 450ms var(--ease-out) both; }
+  @keyframes page-arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+}
+@media (max-width: 720px) {
+  .page-title-row { align-items: start; gap: 1rem; }
+  .page-app-icon { width: 60px; height: 60px; }
+  .page-title-row:has(.page-app-icon) { flex-direction: column; }
+  .project-pagination { flex-wrap: wrap; gap: 1.5rem; }
+  .next-project { text-align: left; }
+}
+@media print {
+  .page-intro { background: none; }
+  .project-pagination, .footer-links, .page-intro .actions, .breadcrumb, .app-screenshot figcaption a { display: none; }
+  body[data-page="resume.html"] .page-intro { padding-block: 1rem; }
+  body[data-page="resume.html"] .page-intro h1 { font-size: 2.2rem; }
+  body[data-page="resume.html"] .page-intro .lead { font-size: 1rem; }
+  body[data-page="resume.html"] .site-header, body[data-page="resume.html"] .site-footer { display: none; }
+  body[data-page="resume.html"] #resume { padding-block: 1rem; }
+  body[data-page="resume.html"] .resume-grid { display: block; }
+  .app-screenshot, .result-figure, .resume-item { break-inside: avoid; }
+}
