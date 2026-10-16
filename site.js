@@ -26,7 +26,8 @@
     const legacyPages = {
       about: 'about.html', projects: 'projects.html', resume: 'resume.html',
       nwsw: 'project-nwsw.html', trae: 'project-trae.html', tvae: 'project-tvae.html',
-      'research-architect': 'project-research-architect.html', gnss: 'project-gnss.html'
+      'research-architect': 'project-research-architect.html', gnss: 'project-gnss.html',
+      mars: 'project-mars.html', cole: 'project-cole.html'
     };
     function followLegacyLink() {
       let id;

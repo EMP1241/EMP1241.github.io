@@ -21,7 +21,7 @@ class Page(HTMLParser):
             self.ids.append(attrs['id'])
         if tag in ('a', 'link') and attrs.get('href'):
             self.refs.append(attrs['href'])
-        if tag in ('img', 'script') and attrs.get('src'):
+        if tag in ('img', 'script', 'source', 'track') and attrs.get('src'):
             self.refs.append(attrs['src'])
         if tag == 'img':
             self.images.append(attrs)
@@ -32,7 +32,8 @@ class Page(HTMLParser):
 
 pages = {p.name: Page(p) for p in ROOT.glob('*.html')}
 expected = {'index.html', 'about.html', 'projects.html', 'resume.html', 'project-nwsw.html',
-            'project-trae.html', 'project-tvae.html', 'project-research-architect.html', 'project-gnss.html', '404.html'}
+            'project-trae.html', 'project-tvae.html', 'project-research-architect.html', 'project-gnss.html',
+            'project-mars.html', 'project-cole.html', '404.html'}
 if set(pages) != expected:
     errors.append(f'Unexpected page set: {set(pages) ^ expected}')
 email = re.compile(r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}', re.I)

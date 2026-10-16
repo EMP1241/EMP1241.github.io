@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A local research workbench connecting original sources, spatial records, human review, and reproducible investigations. A project by Brandon Santor.">
+  <meta name="description" content="Original source reconciliation, reusable GIS layers, and cross-team evidence synthesis—with software that preserves the work behind an assessment.">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#500000">
-  <title>NWSW Spatial Evidence Workbench · Brandon Santor</title>
+  <title>NWSW research &amp; spatial evidence · Brandon Santor</title>
   <script>try { const t = localStorage.getItem('portfolio-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch {}</script>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <link rel="canonical" href="https://emp1241.github.io/project-nwsw.html">
   <script src="site.js" defer></script>
+<script src="gallery.js" defer></script>
 </head>
 <body id="top" data-page="project-nwsw.html">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -32,42 +33,53 @@
 </header>
 
 
-<main id="main" tabindex="-1">
-<section class="page-intro"><div class="wrap"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="projects.html">Projects</a><span aria-hidden="true"> / </span><span aria-current="page">Case study</span></nav><div class="page-title-row"><div><span class="eyebrow">01 / Spatial evidence systems</span><h1>NWSW Spatial Evidence Workbench</h1></div></div><p class="lead">A local research workbench connecting original sources, spatial records, human review, and reproducible investigations.</p></div></section><section class="section wrap" aria-label="Project case study"><div class="project-content case-layout">
-      <div class="case-body prose">
-        <div class="case-section">
-<h2>The problem</h2>
-<p>Research teams need to connect mapped records and conclusions to the exact sources, revisions, and review decisions behind them. Integrating documents, tables, GIS files, and contributor packages requires preserving that context through intake, review, and analysis.</p>
+<main id="main" tabindex="-1"><section class="project-hero"><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="projects.html">Projects</a><span aria-hidden="true"> / </span><span aria-current="page">Case study</span></nav><div class="project-hero-grid">
+<div>
+<span class="eyebrow">01 / Research leadership &amp; GIS</span><h1>NWSW research &amp; spatial evidence</h1>
+<p class="lead">Original source reconciliation, reusable GIS layers, and cross-team evidence synthesis—with software that preserves the work behind an assessment.</p>
+<a class="text-link" href="#case-study">Read the case study ↓</a>
 </div>
-        <div class="case-section">
+<div class="project-gallery" data-gallery data-gallery-title="NWSW research &amp; spatial evidence" role="region" aria-roledescription="carousel" aria-label="NWSW research &amp; spatial evidence images">
+<div class="gallery-track">
+<figure class="gallery-slide"><a href="assets/screenshots/nwsw-home.webp" data-lightbox aria-label="View larger: NWSW workbench home screen in a labeled synthetic QA workspace."><img src="assets/screenshots/nwsw-home.webp" width="1440" height="940" loading="eager" fetchpriority="high" decoding="async" alt="NWSW workbench home screen in a labeled synthetic QA workspace."></a><figcaption>Actual application interface, September 22, 2026 (v0.2.2). Isolated synthetic QA workspace; test content is not research evidence.</figcaption></figure><figure class="gallery-slide" hidden><a href="assets/screenshots/nwsw-intake.webp" data-lightbox aria-label="View larger: NWSW Add files interface for preserving original evidence."><img src="assets/screenshots/nwsw-intake.webp" width="1440" height="940" loading="lazy" decoding="async" alt="NWSW Add files interface for preserving original evidence."></a><figcaption>Original-file intake in the same isolated QA workspace. A software demonstration, not a completed research assessment.</figcaption></figure>
+</div>
+<div class="gallery-controls">
+<button type="button" class="gallery-button" data-gallery-prev data-gallery-control hidden aria-label="Previous project image">←</button><output data-gallery-count aria-live="polite">1 / 2</output><button type="button" class="gallery-button" data-gallery-next data-gallery-control hidden aria-label="Next project image">→</button>
+</div>
+<div class="gallery-thumbnails">
+<a href="assets/screenshots/nwsw-home.webp" data-slide="0" aria-label="Show image 1: NWSW workbench home screen in a labeled synthetic QA workspace." aria-current="true"><img src="assets/screenshots/nwsw-home.webp" width="1440" height="940" loading="lazy" decoding="async" alt=""></a><a href="assets/screenshots/nwsw-intake.webp" data-slide="1" aria-label="Show image 2: NWSW Add files interface for preserving original evidence."><img src="assets/screenshots/nwsw-intake.webp" width="1440" height="940" loading="lazy" decoding="async" alt=""></a>
+</div>
+</div>
+</div>
+</div></section><section class="section wrap" id="case-study" aria-label="Project case study"><div class="project-content case-layout">
+<div class="prose">
+<h2>The research problem</h2>
+<p>Team research needs more than a set of maps. Source versions, reporting definitions, geographic identifiers, and unresolved uncertainty must remain connected as evidence moves from collection to an assessment.</p>
 <h2>My role</h2>
-<p>As project lead and application owner, I coordinate research contributions and own the development, integration, operation, and maintenance of the workbench. The research is teamwork; original contributors and sources retain attribution.</p>
+<p>I lead cross-pod evidence synthesis and contribute original GIS and source-verification work. I own the final evidence-matrix integration and took responsibility for the shared boundary work. Original contributors retain credit for their sources, collection, and arguments.</p>
+<h2>Data &amp; GIS work</h2>
+<p>My work includes reconciling source versions and reporting definitions, repairing source-backed datasets, preparing reusable administrative boundary layers, and checking geographic joins. Boundary preparation preserves identifiers, historical compatibility, geometry, and packaging context.</p>
+<h2>Software supporting the research</h2>
+<p>I develop and maintain the Spatial Evidence Workbench: a Python/FastAPI, PostgreSQL/PostGIS, TypeScript, and Leaflet application. It preserves original files, validates incoming packages, records human review, and retains source versions and filter scope in saved investigations and exports.</p>
+<h2>Outputs &amp; limits</h2>
+<p>The project has produced reusable GIS layers, corrected source-backed datasets, and documented research handoffs. The workflow records unresolved gaps and distinguishes software checks from reviewed scientific use.</p>
+<p class="status-note">The broader assessment and final cross-team synthesis remain in progress.</p>
 </div>
-        <div class="case-section">
-<h2>Data and method</h2>
-<p>The application preserves original files and source identities, validates incoming contributor packages, stores spatial records in PostgreSQL/PostGIS, and records explicit review states. Saved investigations and exports retain their source versions, filter scope, methods, and review history.</p>
-<p>The interface uses TypeScript and Leaflet, supported by a Python/FastAPI backend. Bundled terrain supports offline map access.</p>
-</div>
-        <div class="case-section">
-<h2>What I found</h2>
-<p>The implemented workflow keeps file acceptance, automated checks, and human research review separate. Original sources and review history remain traceable through mapped investigations and reproducible exports.</p>
-<p class="status-note">The broader research assessment is ongoing. This case study covers the implemented application and its evidence workflow.</p>
-</div>
-
-      </div>
-      <aside class="case-sidebar" aria-label="NWSW project facts"><dl class="facts">
+<aside class="case-sidebar" aria-label="Project facts"><dl class="facts">
 <dt>My role</dt>
-<dd>Project lead<br>Application owner &amp; maintainer</dd>
+<dd>Research lead for cross-pod synthesis<br>GIS contributor<br>Application owner &amp; maintainer</dd>
 <dt>Context</dt>
-<dd>Texas A&amp;M<br>GEOG 476 GIS Practicum</dd>
+<dd>Texas A&amp;M GEOG 476<br>Team research</dd>
 <dt>Core stack</dt>
-<dd>Python / FastAPI<br>PostgreSQL / PostGIS<br>TypeScript / Vite<br>Leaflet</dd>
+<dd>GIS source reconciliation<br>PostgreSQL / PostGIS<br>Python / FastAPI<br>TypeScript / Leaflet</dd>
 <dt>Status</dt>
 <dd>Ongoing research</dd>
 </dl></aside>
-    </div>
-
-</section><section class="section wrap split" aria-labelledby="workflow-title"><div><span class="eyebrow">Software workflow</span><h2 id="workflow-title">Evidence keeps its context.</h2></div><div class="featured-visual">
+</div></section><section class="section wrap split" aria-labelledby="workflow-title"><div>
+<span class="eyebrow">Software workflow</span><h2 id="workflow-title">Evidence keeps its context.</h2>
+</div>
+<div class="featured-visual">
         <div class="workflow-heading">
 <span class="eyebrow">Inside the workbench</span><span class="small">Select a step to explore</span>
 </div>
@@ -80,9 +92,13 @@
         <p class="source-note">Application workflow illustration. No research records or locations are shown.</p>
       </div>
 
-</section><nav class="section wrap project-pagination" aria-label="Project navigation"><a class="button button--secondary" href="projects.html">← All projects</a><a class="next-project" href="project-trae.html"><span class="eyebrow">Next project</span>Tree-Ring Atlas Explorer →</a></nav>
-<p id="action-status" class="visually-hidden" role="status"></p>
-</main>
-<footer class="site-footer"><div class="wrap footer-row"><div>Brandon Santor<p class="small">Personal portfolio · Geospatial research &amp; software</p><p class="small">Independent work and research experience at Texas A&amp;M University.</p></div><div class="footer-links"><a href="projects.html">Explore projects</a><a href="#top">Back to top ↑</a></div></div></footer>
+</section><nav class="section wrap project-pagination" aria-label="Project navigation"><a class="button button--secondary" href="projects.html">← All projects</a><a class="next-project" href="project-mars.html"><span class="eyebrow">Next project</span>Mars Explorer →</a></nav><p id="action-status" class="visually-hidden" role="status"></p></main><footer class="site-footer"><div class="wrap footer-row">
+<div>Brandon Santor<p class="small">Personal portfolio · Geospatial research &amp; software</p>
+<p class="small">Independent work and research experience at Texas A&amp;M University.</p>
+</div>
+<div class="footer-links">
+<a href="projects.html">Explore projects</a><a href="#top">Back to top ↑</a>
+</div>
+</div></footer>
 </body>
 </html>
