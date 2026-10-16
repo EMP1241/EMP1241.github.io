@@ -1,6 +1,6 @@
 # Portfolio media provenance
 
-All application images are genuine captures. Figures come from the author-selected research PDFs. Images were reviewed for visible contact details, local paths, and private records; optimized WebP derivatives omit metadata. `*-thumb.webp` files are smaller project-card derivatives. Controls pictured in screenshots do not run inside the portfolio. Each current carousel contains three images.
+Images include application captures, author-supplied interface previews, and research figures; the notes below distinguish them. Figures come from the author-selected research PDFs. Images were reviewed for visible contact details, local paths, and private records; optimized WebP derivatives omit metadata. `*-thumb.webp` files are smaller project-card derivatives. Controls pictured in screenshots do not run inside the portfolio. Each current carousel contains three images.
 
 - `nwsw-home.webp`, `nwsw-intake.webp`: NWSW workbench v0.2.2 QA captures, September 22, 2026. The synthetic-workspace banner is preserved. These show test content, not research findings or a completed assessment. The contact footer was cropped from the public derivatives. Later source development is not represented by these dated captures.
 - `nwsw-provenance.webp`: same isolated QA run; actual offline map and linked feature/source provenance. The contributor-name row above the map is omitted. Synthetic labels, approximate-location caveats, scale, and attribution are preserved. Demonstration geometry is not research evidence.
@@ -33,6 +33,8 @@ Research Architect’s icon is author-supplied artwork, optimized as a 512-pixel
 
 ## High Command · October 16, 2026
 
-The author supplied the HC icon and screenshots of the v0.5.6 Command Deck, Settings, and live animated home screen. The home-screen image is a still from the running animated application, as explicitly identified by the creator. WebP derivatives preserve the supplied framing and text. High Command is a separate PhalAInx product in active testing. No private source documents or credentials are published.
+The author supplied the HC icon, Command Deck and Settings interface previews with v0.5.6 artwork labels, and a still from the live animated Home screen. The artwork labels do not establish a software release; sample conversations and counts are presentation content. The home-screen image is a still from the running animated application, as explicitly identified by the creator. WebP derivatives preserve the supplied framing and text. High Command is a separate PhalAInx product in active testing. No private source documents or credentials are published.
 
 The Command Deck and Settings derivatives use the author’s corrected-logo replacements supplied later on October 16. Their versioned asset names prevent an older browser cache from retaining the previous logo.
+
+The October 16 source audit confirmed a working React/TypeScript Home prototype. Native Tauri hosting, Rust coordination services, SQLite project persistence, and connected model orchestration remain integration work.
