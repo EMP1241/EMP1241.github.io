@@ -50,10 +50,16 @@
   }
 
   const printButton = document.getElementById('print-resume');
+  const printQuery = new URLSearchParams(location.search).get('print') === '1';
+  if (printQuery) document.body.classList.add('printing-resume');
   if (printButton) {
     printButton.hidden = false;
     printButton.addEventListener('click', () => {
+      const cleanup = () => document.body.classList.remove('printing-resume');
+      document.body.classList.add('printing-resume');
+      window.addEventListener('afterprint', cleanup, { once: true });
       try { window.print(); } catch {
+        cleanup();
         const status = document.getElementById('action-status');
         if (status) status.textContent = 'The print dialog could not open. Download the PDF or use your browser’s Print command.';
       }

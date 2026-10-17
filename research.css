@@ -143,7 +143,14 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
   .flow-node, .flow-controls button, .motion-toggle { border: 1px solid CanvasText; }
   .flow-controls button[aria-pressed="true"] { border-bottom: 4px solid Highlight; }
 }
+.resume-print-heading { display: none; }
 @media print {
+  body.printing-resume .resume-print-heading { display: block; margin-bottom: 1.2rem; padding-bottom: .7rem; border-bottom: 2px solid #500000; }
+  body.printing-resume .resume-print-heading .resume-print-name { margin: 0; color: #1a1a1a; font-size: 26pt; font-weight: 700; }
+  body.printing-resume .resume-print-heading p, body.printing-resume .resume-print-heading a { margin: .2rem 0; color: #333; font-size: 9pt; }
+  body.printing-resume .page-intro, body.printing-resume .site-header, body.printing-resume .site-footer { display: none !important; }
+  body.printing-resume .resume-item + .resume-item { margin-top: .6rem; }
+  body.printing-resume .resume-item li { font-size: 8.4pt; line-height: 1.28; }
   .motion-toggle, .highlight-controls, .flow-controls { display: none !important; }
   .page-intro::before, .page-intro::after { display: none; }
   .project-content::before, .project-hero::before { display: none; }
