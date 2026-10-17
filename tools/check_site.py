@@ -41,7 +41,7 @@ class Page(HTMLParser):
 
 pages = {p.name: Page(p) for p in ROOT.glob('*.html')}
 expected = {'index.html', 'about.html', 'projects.html', 'resume.html', 'project-nwsw.html',
-            'project-trae.html', 'project-tvae.html', 'project-research-architect.html', 'project-gnss.html',
+            'project-trae.html', 'project-tvae.html', 'project-phalainx.html', 'project-research-architect.html', 'project-gnss.html',
             'project-mars.html', 'project-cole.html', 'project-nwsw-workbench.html', 'project-high-command.html', '404.html'}
 if set(pages) != expected:
     errors.append(f'Unexpected page set: {set(pages) ^ expected}')

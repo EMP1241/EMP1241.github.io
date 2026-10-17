@@ -231,14 +231,19 @@ th[scope="row"] { color: var(--ink); }
   from { opacity: 0; transform: translate3d(26px, 0, 0); }
   to { opacity: .38; transform: translate3d(0, 0, 0); }
 }
+@keyframes grid-breathe { from { opacity: .55; } to { opacity: .62; } }
+@keyframes contour-drift {
+  from { opacity: .38; transform: translate3d(0, 0, 0) scale(1); }
+  to { opacity: .48; transform: translate3d(-.65%, .2%, 0) scale(1.02); }
+}
 @keyframes trace-evidence {
   from { stroke-dashoffset: 51; }
   to { stroke-dashoffset: 0; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .hero::before { animation: grid-settle 4.2s var(--ease-out) both; }
-  .hero::after { animation: contour-settle 3.8s var(--ease-out) both; }
+  .hero::before { animation: grid-settle 4.2s var(--ease-out) both, grid-breathe 30s 4.2s ease-in-out infinite alternate; }
+  .hero::after { animation: contour-settle 3.8s var(--ease-out) both, contour-drift 28s 3.8s ease-in-out infinite alternate; }
   .hero-grid > *, .page-intro > .wrap { animation: rise-in 700ms var(--ease-out) both; }
   .hero-grid > :nth-child(2) { animation-delay: 120ms; }
   .flow-path { animation: trace-evidence 3.6s linear both; }
@@ -604,6 +609,8 @@ a.project-card:hover { border-color: var(--accent); }
 .gallery-thumbnails img { width: 100%; height: 100%; object-fit: contain; }
 .project-card .card-art--screenshot { height: 190px; background: #0b1114; }
 .card-art--screenshot > img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.card-art--screenshot.card-art--icon { background: radial-gradient(ellipse at 50% 40%, #182b49, #080d14); }
+.card-art--screenshot.card-art--icon > img { object-fit: contain; padding: .7rem; }
 .card-art--screenshot > span { color: #fff; background: #10181eeb; padding: .25rem .5rem; border-radius: 3px; }
 .featured-media { display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 1.3rem; background: var(--surface-raised); border-left: 1px solid var(--line); border-radius: 0 12px 12px 0; }
 .featured-media img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 7px; }

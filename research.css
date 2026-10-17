@@ -5,16 +5,18 @@ body[data-project="trae"] { --project-color: 138 190 151; --project-pattern: url
 body[data-project="tvae"] { --project-color: 100 181 220; --project-pattern: url('assets/motifs/ocean.svg'); }
 body[data-project="cole"] { --project-color: 115 190 170; --project-pattern: url('assets/motifs/counties.svg'); }
 body[data-project="research-architect"] { --project-color: 164 153 239; --project-pattern: url('assets/motifs/architecture.svg'); }
+body[data-project="phalainx"] { --project-color: 93 171 224; --project-pattern: url('assets/motifs/architecture.svg'); }
 body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url('assets/motifs/signal.svg'); }
 .project-hero, .project-content { position: relative; isolation: isolate; overflow: clip; }
 .project-hero { background: radial-gradient(ellipse at 95% 25%, rgb(var(--project-color) / .15), transparent 70%), var(--paper); }
-.project-hero::before, .project-content::before { content: ''; position: absolute; inset: -50px 0; z-index: -1; pointer-events: none; background: var(--project-pattern) right top / 700px auto repeat; opacity: .2; transform: translate3d(0,var(--parallax-y,0px),0); }
+.project-hero::before, .project-content::before { content: ''; position: absolute; inset: -50px 0; z-index: -1; pointer-events: none; background: var(--project-pattern) right top / 700px auto repeat; opacity: .2; translate: 0 var(--parallax-y,0px); }
+.project-hero::after { content: ''; position: absolute; inset: -14%; z-index: -1; pointer-events: none; background: radial-gradient(ellipse at 82% 24%, rgb(var(--project-color) / .16), transparent 54%), radial-gradient(ellipse at 16% 78%, rgb(var(--project-color) / .08), transparent 46%); opacity: .62; transform-origin: center; }
 .project-content { padding: clamp(1.25rem,3.5vw,3rem); border: 1px solid var(--line); border-radius: 16px; background: radial-gradient(ellipse at 90% 15%, rgb(var(--project-color) / .1), transparent 80%), var(--surface); }
 .project-content::before { opacity: .16; background-size: 880px auto; }
 .project-content .prose { position: relative; padding: 1.1rem; border-radius: 10px; background: color-mix(in srgb,var(--surface) 83%,transparent); }
 .project-content .prose > h2:first-child { margin-top: 0; }
 .project-content .case-sidebar { background: color-mix(in srgb,var(--surface-raised) 92%,transparent); border-top-color: rgb(var(--project-color)); }
-.hero::after { animation: none !important; transform: translate3d(0,var(--parallax-y,0px),0); }
+.hero::after { translate: 0 var(--parallax-y,0px); }
 .motion-toggle { flex: 0 0 auto; min-height: 44px; padding: .4rem .65rem; border: 1px solid #ffffff55; border-radius: 6px; background: transparent; color: white; font-size: .7rem; }
 .motion-toggle:hover { border-color: #fff; }
 .motion-toggle:disabled { cursor: default; opacity: .8; }
@@ -67,6 +69,11 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
 .resume-project-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; }
 .resume-project-list .resume-item { margin: 0; padding: 1.4rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 @media (prefers-reduced-motion: no-preference) {
+  :root:not([data-motion="paused"]) .project-hero::before { animation: project-pattern-breathe 32s ease-in-out infinite alternate; }
+  :root:not([data-motion="paused"]) .project-hero::after { animation: project-glow-drift 26s ease-in-out infinite alternate; }
+  :root:not([data-motion="paused"]) [data-motion-reveal] { transition: opacity 520ms ease, transform 520ms cubic-bezier(.2,.7,.2,1); }
+  :root:not([data-motion="paused"]) [data-motion-reveal="pending"] { opacity: 0; transform: translate3d(0,14px,0); }
+  :root:not([data-motion="paused"]) [data-motion-reveal="visible"] { opacity: 1; transform: translate3d(0,0,0); }
   :root:not([data-motion="paused"]) .flow-panel:not([hidden]) { animation: flow-enter 500ms ease-out both; }
   :root:not([data-motion="paused"]) .flow-panel:not([hidden]) .flow-node { animation: flow-enter 600ms ease-out both; }
   .flow-node:nth-of-type(2) { animation-delay: 100ms !important; }
@@ -74,8 +81,14 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
   :root:not([data-motion="paused"]) .flow-panel:not([hidden]) .flow-arrow { animation: flow-travel 1100ms ease-in-out 2; }
   @keyframes flow-travel { 0%,100% { opacity: .3; } 50% { opacity: 1; color: var(--ink); } }
   @keyframes flow-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @keyframes project-pattern-breathe { from { opacity: .2; } to { opacity: .25; } }
+  @keyframes project-glow-drift {
+    from { opacity: .62; transform: translate3d(.3%,.2%,0) scale(1); }
+    to { opacity: .78; transform: translate3d(-.5%,-.4%,0) scale(1.035); }
+  }
 }
-:root[data-motion="paused"] *, :root[data-motion="paused"] *::before, :root[data-motion="paused"] *::after { animation: none !important; }
+:root[data-motion="paused"] *, :root[data-motion="paused"] *::before, :root[data-motion="paused"] *::after { animation: none !important; transition: none !important; }
+:root[data-motion="paused"] [data-motion-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
 @media (max-width: 900px) {
   .flow-section { grid-template-columns: 1fr; gap: 1.5rem; }
   .flow-copy { position: static; }
@@ -102,7 +115,8 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
   .resume-highlights, .resume-project-list { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .project-hero::before, .project-content::before, .hero::after { transform: none; }
+  .project-hero::before, .project-hero::after, .project-content::before, .hero::before, .hero::after { transform: none; translate: none; animation: none !important; }
+  [data-motion-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
 @media (forced-colors: active) {
   .project-hero::before, .project-content::before { display: none; }

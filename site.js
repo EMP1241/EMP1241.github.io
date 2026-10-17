@@ -26,7 +26,7 @@
     const legacyPages = {
       about: 'about.html', projects: 'projects.html', resume: 'resume.html',
       nwsw: 'project-nwsw.html', trae: 'project-trae.html', tvae: 'project-tvae.html',
-      'research-architect': 'project-research-architect.html?intro=1', phalainx: 'project-research-architect.html?intro=1', gnss: 'project-gnss.html',
+      'research-architect': 'project-research-architect.html', phalainx: 'project-phalainx.html?intro=1', gnss: 'project-gnss.html',
       mars: 'project-mars.html', cole: 'project-cole.html'
     };
     function followLegacyLink() {
@@ -36,6 +36,17 @@
     }
     followLegacyLink();
     window.addEventListener('hashchange', followLegacyLink);
+  }
+
+  // Older PhalAInx links used the Research Architect page before the studio received its own entry.
+  if (document.body.dataset.page === 'project-research-architect.html') {
+    const oldUrl = new URL(location.href);
+    if (oldUrl.searchParams.get('intro') === '1' || oldUrl.hash === '#brand-products') {
+      const studioUrl = new URL('project-phalainx.html', location.href);
+      if (oldUrl.searchParams.get('intro') === '1') studioUrl.searchParams.set('intro', '1');
+      if (oldUrl.hash === '#brand-products') studioUrl.hash = '#brand-products';
+      location.replace(studioUrl.href);
+    }
   }
 
   const printButton = document.getElementById('print-resume');

@@ -4,6 +4,8 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const toggle = document.querySelector('[data-motion-toggle]');
   const sections = [...document.querySelectorAll('.hero, .project-hero, .project-content')];
+  const revealTargets = [...document.querySelectorAll('.section-head, .featured-project, .project-card, .product-panel, .project-gallery, .project-content, .project-video, .flow-workspace, .resume-item, .resume-highlights article')];
+  const revealSet = new Set(revealTargets);
   const visible = new Set();
   const highlights = [...document.querySelectorAll('[data-highlights]')].map(el => ({
     el, panels: [...el.querySelectorAll('[data-hero-highlight]')], buttons: [...el.querySelectorAll('[data-highlight-select]')],
@@ -13,6 +15,7 @@
   let away = false;
   let frame = null;
   try { paused = localStorage.getItem('portfolio-motion') === 'paused'; } catch {}
+  revealTargets.forEach(el => { el.dataset.motionReveal = paused || reduced.matches ? 'visible' : 'pending'; });
   const enabled = () => !paused && !reduced.matches && !away && !document.hidden;
   function cancelTimer(item) { clearTimeout(item.timer); item.timer = null; }
   function schedule(item) {
@@ -49,7 +52,8 @@
   }
   function queue() { if (enabled() && frame === null && visible.size) frame = requestAnimationFrame(draw); }
   function sync() {
-    root.dataset.motion = paused || reduced.matches ? 'paused' : 'playing';
+    root.dataset.motion = paused || reduced.matches || away || document.hidden ? 'paused' : 'playing';
+    if (paused || reduced.matches) revealTargets.forEach(el => { el.dataset.motionReveal = 'visible'; });
     if (toggle) {
       toggle.textContent = reduced.matches ? 'Reduced motion' : paused ? 'Resume effects' : 'Pause effects';
       toggle.setAttribute('aria-label', toggle.textContent);
@@ -78,6 +82,7 @@
   if ('IntersectionObserver' in window) {
     observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
+        if (entry.isIntersecting && revealSet.has(entry.target)) entry.target.dataset.motionReveal = 'visible';
         if (sections.includes(entry.target)) {
           if (entry.isIntersecting) visible.add(entry.target); else visible.delete(entry.target);
         }
@@ -87,7 +92,10 @@
       queue();
     });
     sections.forEach(el => observer.observe(el)); highlights.forEach(item => observer.observe(item.el));
-  } else sections.forEach(el => visible.add(el));
+  } else {
+    sections.forEach(el => visible.add(el));
+    revealTargets.forEach(el => { el.dataset.motionReveal = 'visible'; });
+  }
   toggle?.addEventListener('click', () => {
     paused = !paused;
     try { localStorage.setItem('portfolio-motion', paused ? 'paused' : 'playing'); } catch {}
@@ -104,6 +112,7 @@
   window.addEventListener('pageshow', () => {
     away = false;
     sections.forEach(el => observer?.observe(el)); highlights.forEach(item => observer?.observe(item.el));
+    revealTargets.forEach(el => observer?.observe(el));
     sync();
   });
   sync();

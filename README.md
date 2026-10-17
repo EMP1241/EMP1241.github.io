@@ -1,27 +1,27 @@
 # Brandon Santor · Geospatial Research & Software
 
-Static personal portfolio with nine case studies: NWSW research, the independent Spatial Evidence Workbench, Mars Explorer, COLE, Tree-Ring Atlas Explorer, Thermal Vent Atlas Explorer, PhalAInx, smartphone GNSS research, and High Command. PhalAInx is Brandon's independent software studio. Research Architect and High Command are separate products. High Command is in alpha testing.
+Static personal portfolio with ten case studies: New World Screwworm research, the independent Spatial Evidence Workbench, Mars Explorer, COLE, Tree-Ring Atlas Explorer, Thermal Vent Atlas Explorer, the PhalAInx studio, Research Architect, smartphone GNSS research, and High Command. PhalAInx is Brandon's independent software studio. Research Architect is a human-team research framework; High Command is a personal multi-model application in alpha testing.
 
 Open `index.html` in a modern browser or serve the repository root with a static HTTP server. No build or package installation is required.
 
-- `index.html` features NWSW's broader research, GIS, and evidence-integration work.
+- `index.html` features the New World Screwworm project and its broader research, GIS, and evidence-integration work.
 - `about.html`, `projects.html`, and `resume.html` provide the main sections.
-- Nine `project-*.html` files provide detailed case studies and galleries, each with three images. The NWSW research page uses architecture diagrams; the workbench page shows real QA application captures. The established `project-research-architect.html` URL presents the PhalAInx studio and its products.
+- Ten `project-*.html` files provide detailed case studies and galleries, each with three images. The NWSW and Research Architect pages use architecture diagrams; the PhalAInx studio page shows genuine packaged-prototype captures. The workbench page shows real QA application captures. `project-phalainx.html` presents the studio; `project-research-architect.html` presents its research framework.
 - `resume.pdf` is a sanitized public résumé created from reviewed portfolio facts.
 - `assets/documents/research-architect-white-paper.pdf` is the author-provided revised white paper; explicit links open it in a separate browser tab without an embedded PDF viewer.
 - `site.js` provides the saved theme preference, legacy fragment redirects, and résumé print control.
 - `gallery.js` provides manual carousels and a keyboard-accessible native-dialog image viewer with fit/full-resolution controls, loading/error feedback, and focus restoration.
 - `project-intro.js` starts the PhalAInx introduction when a visitor opens its project link, with Skip, native playback controls, replay, reduced-motion handling, and failed-playback recovery.
 - `style.css` contains responsive layouts, dark/light themes, reduced-motion support, and print styles.
-- `research.css` adds project-specific decorative motifs, workflow diagrams, studio branding, and the expanded résumé layout. Each of the nine project headers has a labeled tools-and-methods tag list; studio product panels distinguish RA and HC tools.
+- `research.css` adds project-specific decorative motifs, workflow diagrams, studio branding, and the expanded résumé layout. Each project header has a labeled tools-and-methods tag list; PhalAInx, Research Architect, and High Command have separate entries and pages.
 - `workflow.js` changes the headline and input/process/output diagram for each 01–04 stage, with keyboard navigation. All stages remain readable without JavaScript.
-- `motion.js` provides bounded parallax and slow hero fades, with a persistent pause control. Motion respects reduced-motion preferences and stops while hidden; hero rotation pauses on hover, focus, and outside the viewport.
+- `motion.js` provides bounded parallax, rotating hero highlights, one-time scroll reveals, and the persistent pause control. The CSS adds slow ambient motion to every hero banner. Effects respect reduced-motion preferences, pause while the page is hidden, and pause on request.
 - `assets/icons/` contains original TRAE, TVAE, PhalAInx, and author-supplied Research Architect artwork. Mars and COLE use interface-derived marks.
 - `assets/screenshots/` contains reviewed application captures and author-supplied research figures. Its README records provenance and limitations.
 - `assets/video/` contains the original PhalAInx branded introduction clip and its provenance.
 - `assets/tamu-white.svg` is the official white university mark used in the header.
 
-Dark mode is the default. Theme and optional effects preferences are saved locally in the visitor’s browser. Core navigation, case-study content, image links, and native video playback work without JavaScript. Image galleries do not advance automatically. Portfolio links to PhalAInx include `?intro=1`: its 10-second clip starts muted in a native dialog and reveals the project when it ends or is skipped. The query is consumed so a refresh does not repeat it. Direct visits retain manual playback and replay. Reduced-motion visitors get manual Play; failed autoplay keeps controls and Skip available. Playback pauses when the page becomes hidden. Old home-page fragments redirect to corresponding pages.
+Dark mode is the default. Theme and optional effects preferences are saved locally in the visitor’s browser. Core navigation, case-study content, image links, and native video playback work without JavaScript. Image galleries do not advance automatically. Links to the PhalAInx studio include `?intro=1`: its 10-second clip starts muted in a native dialog and reveals the project when it ends or is skipped. The query is consumed so a refresh does not repeat it. Direct visits retain manual playback and replay. Reduced-motion visitors get manual Play; failed autoplay keeps controls and Skip available. Playback pauses when the page becomes hidden. Old home-page fragments redirect to corresponding pages.
 
 The public pages, images, and résumé omit visible private contact information, phone numbers, and postal addresses. Private CV/résumé originals, raw research packages, private evidence records, and imported user datasets are excluded. Both QR codes in the author-selected GNSS figures are preserved: they link to the author's existing public research PDFs, whose original contents are outside this repository. Screenshot controls are static illustrations, not embedded running applications.
 

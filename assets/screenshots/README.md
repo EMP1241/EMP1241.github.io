@@ -14,6 +14,7 @@ Images include application captures, author-supplied interface previews, and res
 - `phalainx-welcome.webp`: genuine packaged PhalAInx prototype welcome capture, September 25, 2026. It explicitly states that AI providers are not connected in this build.
 - `phalainx-kit-plan.webp`: genuine September 25 desktop prototype agent-kit review, using the QA example “Packaged catalog quality check.” Shows project context, scope, local statements, and versioned human approval boundaries. No live provider collaboration is claimed.
 - `phalainx-projects.webp`: genuine September 25 desktop project-opening workspace. Framed to the main application area, omitting the contact footer and separate focus-music panel. The recent-project list is empty in this QA capture.
+- The PhalAInx studio page uses those three September 25 captures as its carousel. They document the packaged prototype shown in the images; provider integrations and the empty QA project list remain explicitly qualified. Research Architect has its own case page and uses the reviewed NWSW architecture and handoff diagrams.
 - `phalainx-intro-still.webp`: frame from the original 10-second PhalAInx branded startup clip. See `../video/README.md`.
 - `gnss-poster.webp`: author-confirmed **GNSS_Deception_Gap.pdf**. Both original QR codes are preserved and decode from the public WebP. The visible email line is omitted; the original file is unchanged.
 - `gnss-results.webp`: results-panel excerpt from that same poster. The complete poster remains available in the gallery.
