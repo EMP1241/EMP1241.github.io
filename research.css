@@ -7,6 +7,13 @@ body[data-project="cole"] { --project-color: 115 190 170; --project-pattern: url
 body[data-project="research-architect"] { --project-color: 164 153 239; --project-pattern: url('assets/motifs/architecture.svg'); }
 body[data-project="phalainx"] { --project-color: 93 171 224; --project-pattern: url('assets/motifs/architecture.svg'); }
 body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url('assets/motifs/signal.svg'); }
+/* General page banners use the research-network motif; project banners below
+   use each project's own map/data motif. Both remain decorative. */
+.page-intro { position: relative; isolation: isolate; overflow: clip; background: radial-gradient(ellipse at 88% 12%, rgb(var(--project-color) / .13), transparent 64%), linear-gradient(120deg, var(--surface), transparent); }
+.page-intro::before, .page-intro::after { content: ''; position: absolute; inset: -14%; z-index: -1; pointer-events: none; }
+.page-intro::before { inset: -45px 0; background: var(--project-pattern) right top / 640px auto repeat; opacity: .14; translate: 0 var(--parallax-y,0px); }
+.page-intro::after { background: radial-gradient(ellipse at 84% 25%, rgb(var(--project-color) / .14), transparent 54%), radial-gradient(ellipse at 16% 78%, rgb(var(--project-color) / .07), transparent 46%); opacity: .5; transform-origin: center; }
+.page-intro > .wrap { position: relative; z-index: 1; }
 .project-hero, .project-content { position: relative; isolation: isolate; overflow: clip; }
 .project-hero { background: radial-gradient(ellipse at 95% 25%, rgb(var(--project-color) / .15), transparent 70%), var(--paper); }
 .project-hero::before, .project-content::before { content: ''; position: absolute; inset: -50px 0; z-index: -1; pointer-events: none; background: var(--project-pattern) right top / 700px auto repeat; opacity: .2; translate: 0 var(--parallax-y,0px); }
@@ -69,6 +76,8 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
 .resume-project-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; }
 .resume-project-list .resume-item { margin: 0; padding: 1.4rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 @media (prefers-reduced-motion: no-preference) {
+  :root:not([data-motion="paused"]) .page-intro::before { animation: intro-pattern-drift 30s ease-in-out infinite alternate; }
+  :root:not([data-motion="paused"]) .page-intro::after { animation: intro-glow-drift 26s ease-in-out infinite alternate; }
   :root:not([data-motion="paused"]) .project-hero::before { animation: project-pattern-breathe 32s ease-in-out infinite alternate; }
   :root:not([data-motion="paused"]) .project-hero::after { animation: project-glow-drift 26s ease-in-out infinite alternate; }
   :root:not([data-motion="paused"]) [data-motion-reveal] { transition: opacity 520ms ease, transform 520ms cubic-bezier(.2,.7,.2,1); }
@@ -81,10 +90,21 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
   :root:not([data-motion="paused"]) .flow-panel:not([hidden]) .flow-arrow { animation: flow-travel 1100ms ease-in-out 2; }
   @keyframes flow-travel { 0%,100% { opacity: .3; } 50% { opacity: 1; color: var(--ink); } }
   @keyframes flow-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
-  @keyframes project-pattern-breathe { from { opacity: .2; } to { opacity: .25; } }
+  @keyframes intro-pattern-drift {
+    from { opacity: .12; background-position: right top; }
+    to { opacity: .24; background-position: calc(100% - 42px) bottom; }
+  }
+  @keyframes intro-glow-drift {
+    from { opacity: .38; transform: translate3d(.7%, .3%, 0) scale(1); }
+    to { opacity: .64; transform: translate3d(-.8%, -.5%, 0) scale(1.045); }
+  }
+  @keyframes project-pattern-breathe {
+    from { opacity: .16; background-position: right top; }
+    to { opacity: .3; background-position: calc(100% - 42px) bottom; }
+  }
   @keyframes project-glow-drift {
-    from { opacity: .62; transform: translate3d(.3%,.2%,0) scale(1); }
-    to { opacity: .78; transform: translate3d(-.5%,-.4%,0) scale(1.035); }
+    from { opacity: .48; transform: translate3d(.8%, .4%, 0) scale(1); }
+    to { opacity: .78; transform: translate3d(-1%, -.7%, 0) scale(1.05); }
   }
 }
 :root[data-motion="paused"] *, :root[data-motion="paused"] *::before, :root[data-motion="paused"] *::after { animation: none !important; transition: none !important; }
@@ -115,16 +135,17 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
   .resume-highlights, .resume-project-list { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .project-hero::before, .project-hero::after, .project-content::before, .hero::before, .hero::after { transform: none; translate: none; animation: none !important; }
+  .page-intro::before, .page-intro::after, .project-hero::before, .project-hero::after, .project-content::before, .hero::before, .hero::after { transform: none; translate: none; animation: none !important; }
   [data-motion-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
 @media (forced-colors: active) {
-  .project-hero::before, .project-content::before { display: none; }
+  .page-intro::before, .page-intro::after, .project-hero::before, .project-content::before { display: none; }
   .flow-node, .flow-controls button, .motion-toggle { border: 1px solid CanvasText; }
   .flow-controls button[aria-pressed="true"] { border-bottom: 4px solid Highlight; }
 }
 @media print {
   .motion-toggle, .highlight-controls, .flow-controls { display: none !important; }
+  .page-intro::before, .page-intro::after { display: none; }
   .project-content::before, .project-hero::before { display: none; }
   .hero-highlights, .flow-section { display: none; }
   .project-content { padding: 0; background: none; border: 0; }

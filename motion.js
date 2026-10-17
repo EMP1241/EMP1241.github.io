@@ -3,7 +3,7 @@
   const root = document.documentElement;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const toggle = document.querySelector('[data-motion-toggle]');
-  const sections = [...document.querySelectorAll('.hero, .project-hero, .project-content')];
+  const sections = [...document.querySelectorAll('.hero, .page-intro, .project-hero, .project-content')];
   const revealTargets = [...document.querySelectorAll('.section-head, .featured-project, .project-card, .product-panel, .project-gallery, .project-content, .project-video, .flow-workspace, .resume-item, .resume-highlights article')];
   const revealSet = new Set(revealTargets);
   const visible = new Set();
