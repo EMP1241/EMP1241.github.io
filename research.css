@@ -144,6 +144,14 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
   .flow-controls button[aria-pressed="true"] { border-bottom: 4px solid Highlight; }
 }
 .resume-print-heading { display: none; }
+.engineering-evidence { margin: 1.2rem 0; border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.15rem; background: rgb(var(--project-color) / .055); }
+.engineering-evidence summary { cursor: pointer; font-weight: 650; color: var(--ink); }
+.engineering-evidence summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
+.engineering-evidence[open] summary { margin-bottom: 1rem; }
+.engineering-evidence p { font-size: .9rem; }
+body[data-project="cole"] .gallery-slide img.gallery-overview,
+body[data-project="cole"] .gallery-thumbnails img.gallery-overview { object-fit: cover; object-position: 50% 7.5%; }
+.card-art--screenshot img[src$="cole-workspace-20261018.webp"] { object-position: 50% 7.5%; }
 @media print {
   body.printing-resume .resume-print-heading { display: block; margin-bottom: 1.2rem; padding-bottom: .7rem; border-bottom: 2px solid #500000; }
   body.printing-resume .resume-print-heading .resume-print-name { margin: 0; color: #1a1a1a; font-size: 26pt; font-weight: 700; }

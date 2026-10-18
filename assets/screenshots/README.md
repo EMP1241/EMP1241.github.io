@@ -39,3 +39,16 @@ The author supplied the HC icon, Command Deck and Settings views of High Command
 The Command Deck and Settings derivatives use the author’s corrected-logo replacements supplied later on October 16. Their versioned asset names prevent an older browser cache from retaining the previous logo.
 
 The October 16 source audit confirmed a working React/TypeScript prototype. Native Tauri hosting, Rust coordination services, SQLite project persistence, and connected model orchestration remain integration work.
+
+## October 18 source-backed refresh
+
+The October 16 HC audit above is historical. Current HC uses native Tauri 2/WebView2 hosting, Rust, and SQLite, with projects, manual conversation imports, tasks/milestones, and verified complete workspace backups. Live model connections and execution remain deferred.
+
+- `hc-command-deck-20261018.webp`: working shared React Command Deck, from `windows-framework-command-deck.png`. Project names and transcripts are isolated QA records. This is a browser capture of the shared interface, not a native-window screenshot; installed Windows startup is verified in separate reports.
+- `hc-tasks-20261018.webp`: working manual task/milestone cards, from `tasks-cards.png`, with synthetic acceptance criteria, links, priority, and status. It demonstrates implemented local records rather than simulated live agent work.
+- `hc-home-20261018.webp`: still from the working animated Home, from `home-fade-settled.png`, in the same isolated browser test environment. No private projects are shown.
+- `cole-workspace-20261018.webp`: full 1280 by 7621 results capture from verified COLE v0.7.0 release `0.7.0-wording-20261017`, extracted wording replay `results-1280-aggieland.png`. It uses public county information and scripted household/income examples. CSS frames the map/results portion in the gallery; the lightbox retains the complete capture, including legends, map attribution, source periods, assumptions, and technical details. It is a county-lookup UI example, not a new geographic research finding.
+- `cole-industry-20261018.webp`: `industry-1280.png` from the same release's fresh-extracted acceptance run. Disclosed BLS employment counts, ranking limits, and source guidance remain visible.
+- `cole-social-20261018.webp`: `county-aggieland.png` from the same release's fresh-extracted social-module browser checks. Public Census county estimates, uncertainty, and example filter criteria remain visible.
+
+These are lossless WebP format derivatives with original pixel dimensions and no copied metadata; no pixels were cropped or retouched. Current NWSW diagrams and dated synthetic Workbench captures remain unchanged. Fresh NWSW map exports and contributor submissions are excluded from this public refresh.
