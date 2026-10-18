@@ -52,3 +52,7 @@ The October 16 HC audit above is historical. Current HC uses native Tauri 2/WebV
 - `cole-social-20261018.webp`: `county-aggieland.png` from the same release's fresh-extracted social-module browser checks. Public Census county estimates, uncertainty, and example filter criteria remain visible.
 
 These are lossless WebP format derivatives with original pixel dimensions and no copied metadata; no pixels were cropped or retouched. Current NWSW diagrams and dated synthetic Workbench captures remain unchanged. Fresh NWSW map exports and contributor submissions are excluded from this public refresh.
+
+## October 18 TRAE minimap capture correction
+
+`trae-workspace-20261018.webp` replaces the first TRAE gallery image, and `trae-workspace-thumb-20261018.webp` replaces its project-card thumbnail. This is a fresh genuine 1280 × 720 browser capture of TRAE v1.0.0 with the public NOAA/NCEI `ca609.rwl` and `ca609.crn` fixtures temporarily imported. The built-in Hide MiniMap control collapses the unavailable inset to 19 × 19 pixels; no inset geography was fabricated. The main Esri imagery map shows Fish Creek Trail in Southern California within western North America, with the raw total ring-width chart visible and smoothing off. Basemap attribution remains visible. No helper or managed-library writes were used. The full image is a lossless WebP conversion of the browser capture; the 720 × 405 thumbnail is resized for the directory card. The other two chart images remain unchanged.
