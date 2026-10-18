@@ -49,7 +49,7 @@ email = re.compile(r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}', re.I)
 phone = re.compile(r'(?<!\d)(?:\+?1[ .-]?)?\(?\d{3}\)?[ .-]\d{3}[ .-]\d{4}(?!\d)')
 for name, page in pages.items():
     if page.gallery_count and (page.gallery_count != 1 or page.gallery_slides != 3 or page.gallery_thumbnails != ['0', '1', '2']):
-        errors.append(f'{name}: requires exactly three gallery images with matching thumbnails')
+        errors.append(f'{name}: requires exactly three gallery items with matching thumbnails')
     if page.headings.count(1) != 1:
         errors.append(f'{name}: requires exactly one h1')
     if any(n > 1 for n in Counter(page.ids).values()):
