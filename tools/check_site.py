@@ -47,7 +47,21 @@ if set(pages) != expected:
     errors.append(f'Unexpected page set: {set(pages) ^ expected}')
 email = re.compile(r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}', re.I)
 phone = re.compile(r'(?<!\d)(?:\+?1[ .-]?)?\(?\d{3}\)?[ .-]\d{3}[ .-]\d{4}(?!\d)')
+listed_projects = ['project-nwsw.html', 'project-research-architect.html', 'project-mars.html',
+                   'project-trae.html', 'project-tvae.html', 'project-high-command.html',
+                   'project-nwsw-workbench.html', 'project-cole.html', 'project-gnss.html']
+if 'projects.html' in pages:
+    directory_order = list(dict.fromkeys(urlsplit(a.get('href', '')).path for a in pages['projects.html'].links
+                                        if urlsplit(a.get('href', '')).path.startswith('project-')))
+    if directory_order != listed_projects:
+        errors.append('projects.html: requires nine ordered project entries; the studio is unlisted')
+studio_products = {'project-research-architect.html', 'project-high-command.html'}
 for name, page in pages.items():
+    studio_links = [a for a in page.links if urlsplit(a.get('href', '')).path == 'project-phalainx.html']
+    if name in studio_products and not studio_links:
+        errors.append(f'{name}: missing studio attribution link')
+    if name not in studio_products | {'project-phalainx.html'} and studio_links:
+        errors.append(f'{name}: the studio should be reached from its product pages')
     if page.gallery_count and (page.gallery_count != 1 or page.gallery_slides != 3 or page.gallery_thumbnails != ['0', '1', '2']):
         errors.append(f'{name}: requires exactly three gallery items with matching thumbnails')
     if page.headings.count(1) != 1:

@@ -9,7 +9,7 @@
   dialog.id = 'project-intro-dialog';
   dialog.className = 'project-intro-dialog';
   dialog.setAttribute('aria-labelledby', 'intro-dialog-title');
-  dialog.innerHTML = '<div class="intro-toolbar"><div><span class="eyebrow">Brandon Santor · Independent software</span><h2 id="intro-dialog-title">Phal<span class="ai-emphasis">AI</span>nx</h2></div><button type="button" class="gallery-button" data-skip-intro>Skip intro · View project →</button></div><div class="intro-screen"></div><p class="intro-status" role="status"></p>';
+  dialog.innerHTML = '<div class="intro-toolbar"><div><span class="eyebrow">Brandon Santor · Independent software</span><h2 id="intro-dialog-title">Phal<span class="ai-emphasis">AI</span>nx</h2></div><button type="button" class="gallery-button" data-skip-intro>Skip intro · View studio →</button></div><div class="intro-screen"></div><p class="intro-status" role="status"></p>';
   document.body.append(dialog);
   const screen = dialog.querySelector('.intro-screen');
   const skip = dialog.querySelector('[data-skip-intro]');
@@ -39,18 +39,18 @@
     video.pause();
     video.currentTime = 0;
     video.muted = true;
-    status.textContent = 'Starts muted. Use the video controls for sound, or skip to the project.';
+    status.textContent = 'Starts muted. Use the video controls for sound, or skip to the studio.';
     dialog.showModal();
     document.body.classList.add('intro-open');
     skip.focus();
     if (automatic && matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      status.textContent = 'Reduced motion is enabled. Select Play to watch, or skip to the project.';
+      status.textContent = 'Reduced motion is enabled. Select Play to watch, or skip to the studio.';
       return;
     }
     try {
       await video.play();
     } catch {
-      if (token === request && dialog.open) status.textContent = 'Select Play to watch the introduction, or skip to the project.';
+      if (token === request && dialog.open) status.textContent = 'Select Play to watch the introduction, or skip to the studio.';
     }
   }
 
@@ -65,7 +65,7 @@
   function mediaError() {
     if (dialog.open) {
       ++request;
-      status.textContent = 'The introduction could not load. Skip to the project to continue.';
+      status.textContent = 'The introduction could not load. Skip to the studio to continue.';
     }
   }
   video.addEventListener('error', mediaError);
