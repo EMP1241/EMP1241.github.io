@@ -6,6 +6,7 @@ import re
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+PUBLIC_EMAIL = 'brandon.santor@tamu.edu'
 errors = []
 
 class Page(HTMLParser):
@@ -74,8 +75,14 @@ for name, page in pages.items():
         if not all(key in img for key in ('alt', 'width', 'height')):
             errors.append(f'{name}: image missing alt or dimensions')
     text = page.path.read_text(encoding='utf-8')
-    if email.search(text) or phone.search(text) or 'mailto:' in text or 'tel:' in text or '[ADD]' in text:
-        errors.append(f'{name}: contact detail or unfinished placeholder')
+    if any(address.lower() != PUBLIC_EMAIL for address in email.findall(text)):
+        errors.append(f'{name}: unapproved email address')
+    mail_links = [a.get('href', '') for a in page.links
+                  if urlsplit(a.get('href', '')).scheme.lower() == 'mailto']
+    if not mail_links or any(href != 'mailto:' + PUBLIC_EMAIL for href in mail_links):
+        errors.append(f'{name}: missing or incorrect public email link')
+    if phone.search(text) or 'tel:' in text or '[ADD]' in text:
+        errors.append(f'{name}: private contact detail or unfinished placeholder')
     if re.search(r'C:\\Users\\|C:/Users/|localhost|127\.0\.0\.1', text, re.I):
         errors.append(f'{name}: local-only path or URL')
     for ref in page.refs:

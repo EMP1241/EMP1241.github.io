@@ -16,6 +16,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'resume.html'
+PUBLIC_EMAIL = 'brandon.santor@tamu.edu'
 
 
 @dataclass
@@ -102,6 +103,9 @@ def read_source():
     # Git may check out CRLF on Windows; fingerprints should ignore that change.
     raw = SOURCE.read_bytes().replace(b'\r\n', b'\n')
     document = Document(raw.decode('utf-8')).root
+    email_link = one(document, lambda n: n.tag == 'a' and n.attrs.get('id') == 'resume-email')
+    if email_link.text() != PUBLIC_EMAIL or email_link.attrs.get('href') != 'mailto:' + PUBLIC_EMAIL:
+        raise ValueError('Resume requires the approved public TAMU email link.')
     resume = one(document, lambda n: n.attrs.get('id') == 'resume')
     experience = one(resume, lambda n: n.attrs.get('id') == 'research-professional-experience')
     jobs = [article_data(n) for n in experience.direct('article')]
@@ -117,6 +121,7 @@ def read_source():
         honor_rows.append(' | '.join(part.text() for part in parts) if parts else row.text())
     return {
         'digest': sha256(raw).hexdigest(),
+        'email': email_link.text(),
         'summary': one(document, lambda n: n.tag == 'p' and classed(n, 'resume-summary')).text(),
         'jobs': jobs,
         'projects': projects,
@@ -163,7 +168,8 @@ def build(output, data):
         flow.append(Spacer(1, 5))
         return KeepTogether(flow)
 
-    story = [p('BRANDON SANTOR', 'name'), p('GEOSPATIAL RESEARCH | SCIENTIFIC SOFTWARE | U.S. MARINE CORPS VETERAN', 'subtitle'), Paragraph('<link href="https://emp1241.github.io" color="#500000">emp1241.github.io</link>', styles['meta']), p(data['summary']), p('RESEARCH & PROFESSIONAL EXPERIENCE', 'section')]
+    contact = '<link href="mailto:' + escape(data['email'], quote=True) + '" color="#500000">' + escape(data['email']) + '</link> | <link href="https://emp1241.github.io" color="#500000">emp1241.github.io</link>'
+    story = [p('BRANDON SANTOR', 'name'), p('GEOSPATIAL RESEARCH | SCIENTIFIC SOFTWARE | U.S. MARINE CORPS VETERAN', 'subtitle'), Paragraph(contact, styles['meta']), p(data['summary']), p('RESEARCH & PROFESSIONAL EXPERIENCE', 'section')]
     story += [record(item) for item in data['jobs']]
     story += [PageBreak(), p('SELECTED SOFTWARE & RESEARCH', 'section')]
     story += [record(item) for item in data['projects']]
@@ -202,6 +208,12 @@ def build(output, data):
     extracted = '\n'.join(page.extract_text() for page in reader.pages)
     if re.search(r'\b\d{3}[ .-]\d{3}[ .-]\d{4}\b|mailto:|C:\\Users\\', extracted, re.I):
         raise ValueError('Unexpected private contact/path content in generated resume.')
+    addresses = re.findall(r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}', extracted, re.I)
+    mail_links = [str(annotation.get_object().get('/A', {}).get('/URI', ''))
+                  for page in reader.pages for annotation in page.get('/Annots', [])
+                  if str(annotation.get_object().get('/A', {}).get('/URI', '')).startswith('mailto:')]
+    if addresses != [PUBLIC_EMAIL] or mail_links != ['mailto:' + PUBLIC_EMAIL]:
+        raise ValueError('Generated resume must contain exactly one approved, clickable TAMU email.')
     print(f'Built {len(reader.pages)} pages from resume.html: {output}')
 
 
