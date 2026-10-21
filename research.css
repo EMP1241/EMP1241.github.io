@@ -182,3 +182,10 @@ body[data-project="high-command"] { --project-color: 93 171 224; --project-patte
 .honors-list strong { font-weight: 600; line-height: 1.6; }
 .honors-list span { margin-top: .3rem; color: var(--muted); font-size: .8rem; }
 #ra-validation .resume-highlights { margin-bottom: 1.25rem; }
+
+/* The NWSW review loop remains readable as a full-width figure and text sequence. */
+.research-network .network-figure { padding: 0; overflow: hidden; }
+.network-figure > a { display: block; }
+.network-figure img { display: block; width: 100%; height: auto; }
+.network-figure figcaption { padding: 1rem 1.25rem; line-height: 1.65; }
+.network-figure > a:focus-visible { outline: 3px solid var(--accent); outline-offset: -4px; }

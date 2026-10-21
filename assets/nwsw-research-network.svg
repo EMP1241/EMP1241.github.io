@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="1980" viewBox="0 0 3200 1980" role="img" aria-labelledby="title desc">
+<title id="title">How the NWSW research system connects</title>
+<desc id="desc">Three checks: Pod human review, Hub human review, and Ingestor verification and scoped reproduction. The same Hub makes the final acceptance decision. Accepted material enters the Library as shared context. Contributors retrieve reviewed findings, corrections and methods for subsequent work.</desc>
+<rect width="3200" height="1980" fill="#0b1216"/>
+<polyline points="0,0 0,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="100,0 100,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="200,0 200,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="300,0 300,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="400,0 400,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="500,0 500,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="600,0 600,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="700,0 700,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="800,0 800,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="900,0 900,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1000,0 1000,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1100,0 1100,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1200,0 1200,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1300,0 1300,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1400,0 1400,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1500,0 1500,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1600,0 1600,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1700,0 1700,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1800,0 1800,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1900,0 1900,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2000,0 2000,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2100,0 2100,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2200,0 2200,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2300,0 2300,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2400,0 2400,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2500,0 2500,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2600,0 2600,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2700,0 2700,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2800,0 2800,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2900,0 2900,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="3000,0 3000,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="3100,0 3100,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,0 3200,0" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,100 3200,100" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,200 3200,200" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,300 3200,300" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,400 3200,400" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,500 3200,500" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,600 3200,600" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,700 3200,700" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,800 3200,800" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,900 3200,900" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1000 3200,1000" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1100 3200,1100" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1200 3200,1200" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1300 3200,1300" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1400 3200,1400" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1500 3200,1500" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1600 3200,1600" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1700 3200,1700" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1800 3200,1800" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="0,1900 3200,1900" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="120" y="104.0" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700">NEW WORLD SCREWWORM (NWSW) PROJECT</text>
+<text x="120" y="212.4" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="78" font-weight="700">A research network with shared memory</text>
+<text x="120" y="293.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="36" font-weight="400">Three checks. Final human acceptance. Reviewed context feeds the next round of work.</text>
+<polyline points="120,355 3080,355" fill="none" stroke="#304047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="920,790 1200,790" fill="none" stroke="#d59a9f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="1200,790 1179.0,779.0 1179.0,801.0" fill="#d59a9f"/>
+<text x="996.75390625" y="722.4" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">Reviewed</text>
+<text x="990.5" y="764.4" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">submission</text>
+<polyline points="2000,790 2280,790" fill="none" stroke="#e0bd82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2280,790 2259.0,779.0 2259.0,801.0" fill="#e0bd82"/>
+<text x="2066.75" y="722.4" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">Authorized</text>
+<text x="2098.75" y="764.4" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">checks</text>
+<polyline points="2680,1150 2680,1400" fill="none" stroke="#e0bd82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2680,1400 2691.0,1379.0 2669.0,1379.0" fill="#e0bd82"/>
+<text x="2730" y="1243.2" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Results +</text>
+<text x="2730" y="1288.2" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="400">limitations</text>
+<polyline points="2280,1610 2000,1610" fill="none" stroke="#8cb9ef" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="2000,1610 2021.0,1621.0 2021.0,1599.0" fill="#8cb9ef"/>
+<text x="2078.75" y="1537.4" fill="#8cb9ef" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">Accepted</text>
+<text x="2073.0" y="1579.4" fill="#8cb9ef" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">for sharing</text>
+<polyline points="520,1400 520,1150" fill="none" stroke="#69c5c2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="520,1150 509.0,1171.0 531.0,1171.0" fill="#69c5c2"/>
+<text x="570" y="1241.4" fill="#69c5c2" font-family="Segoe UI,Arial,sans-serif" font-size="33" font-weight="700">Retrieve shared context</text>
+<text x="570" y="1289.0" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="400">Apply reviewed lessons to the next task</text>
+<rect x="120" y="500" width="800" height="650" rx="30" fill="#141f25" stroke="#304047" stroke-width="2"/>
+<rect x="122" y="530" width="5" height="590" rx="2" fill="#69c5c2" stroke="none" stroke-width="2"/>
+<text x="170" y="567.4" fill="#69c5c2" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">CHECK 01 / POD</text>
+<text x="170" y="645.8" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="51" font-weight="700">Pod human review</text>
+<text x="170" y="715.6" fill="#69c5c2" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="400">Contributor + individual AI</text>
+<circle cx="174" cy="796" r="4" fill="#69c5c2" stroke="#69c5c2" stroke-width="1"/>
+<text x="195" y="804.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Review evidence and reasoning</text>
+<circle cx="174" cy="856" r="4" fill="#69c5c2" stroke="#69c5c2" stroke-width="1"/>
+<text x="195" y="864.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Correct issues and record uncertainty</text>
+<circle cx="174" cy="916" r="4" fill="#69c5c2" stroke="#69c5c2" stroke-width="1"/>
+<text x="195" y="924.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Send the human-reviewed contribution</text>
+<polyline points="170,985 870,985" fill="none" stroke="#304047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="170" y="1049.0" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700">Parallel Pods, accountable people.</text>
+<text x="170" y="1103.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="400">Each contribution retains its sources.</text>
+<rect x="1200" y="500" width="800" height="650" rx="30" fill="#141f25" stroke="#304047" stroke-width="2"/>
+<rect x="1202" y="530" width="5" height="590" rx="2" fill="#d59a9f" stroke="none" stroke-width="2"/>
+<text x="1250" y="567.4" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">CHECK 02 / HUB</text>
+<text x="1250" y="645.8" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="51" font-weight="700">Hub human review</text>
+<text x="1250" y="715.6" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="400">Project-level research oversight</text>
+<circle cx="1254" cy="796" r="4" fill="#d59a9f" stroke="#d59a9f" stroke-width="1"/>
+<text x="1275" y="804.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Assess scope, methods and evidence</text>
+<circle cx="1254" cy="856" r="4" fill="#d59a9f" stroke="#d59a9f" stroke-width="1"/>
+<text x="1275" y="864.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Resolve questions or request revisions</text>
+<circle cx="1254" cy="916" r="4" fill="#d59a9f" stroke="#d59a9f" stroke-width="1"/>
+<text x="1275" y="924.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Define what the Ingestor must check</text>
+<polyline points="1250,985 1950,985" fill="none" stroke="#304047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1250" y="1049.0" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700">Research decisions stay human-led.</text>
+<text x="1250" y="1103.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="400">The Hub also coordinates assignments.</text>
+<rect x="2280" y="500" width="800" height="650" rx="30" fill="#141f25" stroke="#304047" stroke-width="2"/>
+<rect x="2282" y="530" width="5" height="590" rx="2" fill="#e0bd82" stroke="none" stroke-width="2"/>
+<text x="2330" y="567.4" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">CHECK 03 / INGESTOR</text>
+<text x="2330" y="645.8" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="51" font-weight="700">Verify + reproduce</text>
+<text x="2330" y="715.6" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="400">Within the authorized scope</text>
+<circle cx="2334" cy="796" r="4" fill="#e0bd82" stroke="#e0bd82" stroke-width="1"/>
+<text x="2355" y="804.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Check manifests, versions and hashes</text>
+<circle cx="2334" cy="856" r="4" fill="#e0bd82" stroke="#e0bd82" stroke-width="1"/>
+<text x="2355" y="864.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Rerun the specified reproducible steps</text>
+<circle cx="2334" cy="916" r="4" fill="#e0bd82" stroke="#e0bd82" stroke-width="1"/>
+<text x="2355" y="924.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Report matches, failures and limits</text>
+<polyline points="2330,985 3030,985" fill="none" stroke="#304047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2330" y="1048.2" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Checks produce an inspectable record.</text>
+<text x="2330" y="1102.4" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">Results return to the Hub for acceptance.</text>
+<rect x="2280" y="1400" width="800" height="420" rx="30" fill="#141f25" stroke="#304047" stroke-width="2"/>
+<rect x="2282" y="1430" width="5" height="360" rx="2" fill="#d59a9f" stroke="none" stroke-width="2"/>
+<text x="2330" y="1467.4" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">FINAL ACCEPTANCE</text>
+<text x="2330" y="1545.8" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="51" font-weight="700">Back to the Hub</text>
+<text x="2330" y="1614.0" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="400">The same Hub reviews the check results.</text>
+<text x="2330" y="1669.0" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="400">Human authority accepts or returns work</text>
+<text x="2330" y="1714.0" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="400">and sets the approved sharing scope.</text>
+<text x="2330" y="1782.4" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">Acceptance controls Library publication.</text>
+<rect x="120" y="1400" width="1880" height="420" rx="30" fill="#141f25" stroke="#304047" stroke-width="2"/>
+<rect x="122" y="1430" width="5" height="360" rx="2" fill="#8cb9ef" stroke="none" stroke-width="2"/>
+<text x="170" y="1467.4" fill="#8cb9ef" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">LIBRARY / SHARED PROJECT MEMORY</text>
+<text x="170" y="1544.2" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="49" font-weight="700">Reviewed knowledge accumulates.</text>
+<text x="170" y="1614.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Findings, corrections, methods and review history</text>
+<text x="170" y="1664.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">remain linked to their sources and versions.</text>
+<text x="170" y="1753.2" fill="#69c5c2" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Available in Library</text>
+<text x="170" y="1791.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400">Approved material within its recorded scope</text>
+<text x="825" y="1753.2" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Request from Hub</text>
+<text x="825" y="1791.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400">Held material remains request-only</text>
+<polyline points="1720,1610 1600,1490" fill="none" stroke="#8cb9ef" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1720,1610 1850,1510" fill="none" stroke="#8cb9ef" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1720,1610 1850,1720" fill="none" stroke="#8cb9ef" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1720,1610 1570,1740" fill="none" stroke="#8cb9ef" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1600" cy="1490" r="18" fill="#1b303e" stroke="#8cb9ef" stroke-width="3"/>
+<circle cx="1850" cy="1510" r="18" fill="#1b303e" stroke="#8cb9ef" stroke-width="3"/>
+<circle cx="1850" cy="1720" r="18" fill="#1b303e" stroke="#8cb9ef" stroke-width="3"/>
+<circle cx="1570" cy="1740" r="18" fill="#1b303e" stroke="#8cb9ef" stroke-width="3"/>
+<circle cx="1720" cy="1610" r="85" fill="#1b303e" stroke="#8cb9ef" stroke-width="3"/>
+<text x="1676.25" y="1595.6" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">Shared</text>
+<text x="1671.75" y="1636.6" fill="#f3f0e7" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">context</text>
+<text x="1558.75390625" y="1459.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Sources</text>
+<text x="1803.25" y="1479.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Methods</text>
+<text x="1800.0" y="1774.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Decisions</text>
+<text x="1494.50390625" y="1794.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Corrections</text>
+<text x="120" y="1919.8" fill="#69c5c2" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Iterative contextual learning: later work uses the reviewed record when agents retrieve current context.</text>
+<text x="120" y="1969.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Brandon Santor / Research systems</text>
+<text x="2619.015625" y="1969.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Logical review and reuse flow / 21 Oct 2026</text>
+</svg>
