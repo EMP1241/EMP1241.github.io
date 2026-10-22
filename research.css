@@ -189,3 +189,19 @@ body[data-project="high-command"] { --project-color: 93 171 224; --project-patte
 .network-figure img { display: block; width: 100%; height: auto; }
 .network-figure figcaption { padding: 1rem 1.25rem; line-height: 1.65; }
 .network-figure > a:focus-visible { outline: 3px solid var(--accent); outline-offset: -4px; }
+
+/* Working demos replace the homepage's rotating text panel. */
+body[data-page="index.html"] .hero-grid { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(1.5rem, 3vw, 3rem); }
+body[data-page="index.html"] .hero h1 { font-size: clamp(2.7rem, 4.5vw, 4.6rem); }
+.home-demo .demo-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .25rem 1rem; padding: .9rem 1rem; border-bottom: 1px solid var(--line); }
+.home-demo .demo-heading .eyebrow { margin: 0; color: var(--accent); }
+.home-demo .demo-heading .small { font-size: .7rem; color: var(--muted); }
+.home-demo .gallery-slide figcaption { height: 7rem; }
+.home-demo .gallery-slide figcaption .text-link { display: inline-block; margin-top: .3rem; }
+@media (max-width: 900px) {
+  body[data-page="index.html"] .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  body[data-page="index.html"] .hero h1 { max-width: 21ch; }
+}
+@media print {
+  .home-demo { display: none; }
+}
