@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800"><rect width="1280" height="800" fill="#0b151b"/><g font-family="Arial,sans-serif"><text x="70" y="75" fill="#e8aaa6" font-size="19" letter-spacing="3">NWSW / THE INVESTIGATION</text><text x="70" y="140" fill="#fff8ef" font-size="43">From source records to spatial evidence</text><path d="M620 292h40M345 375v50M935 375v50M620 507h40" fill="none" stroke="#77a9b1" stroke-width="3" stroke-dasharray="7 8"/><rect x="70" y="210" width="550" height="165" rx="16" fill="#14252c" stroke="#456474"/><text x="95" y="253" fill="#9fd7dc" font-size="18">01</text><text x="95" y="294" fill="#f4eee5" font-size="28">Reconcile the sources</text><text x="95" y="330" fill="#b9c5cc" font-size="19">Versions, chronology, reporting definitions</text><rect x="660" y="210" width="550" height="165" rx="16" fill="#14252c" stroke="#456474"/><text x="685" y="253" fill="#9fd7dc" font-size="18">02</text><text x="685" y="294" fill="#f4eee5" font-size="28">Prepare the geography</text><text x="685" y="330" fill="#b9c5cc" font-size="19">Boundary vintage, identifiers, geometry</text><rect x="70" y="425" width="550" height="165" rx="16" fill="#14252c" stroke="#456474"/><text x="95" y="468" fill="#9fd7dc" font-size="18">03</text><text x="95" y="509" fill="#f4eee5" font-size="28">Check the relationships</text><text x="95" y="545" fill="#b9c5cc" font-size="19">Documented joins and geographic support</text><rect x="660" y="425" width="550" height="165" rx="16" fill="#14252c" stroke="#456474"/><text x="685" y="468" fill="#9fd7dc" font-size="18">04</text><text x="685" y="509" fill="#f4eee5" font-size="28">Synthesize the research</text><text x="685" y="545" fill="#b9c5cc" font-size="19">Reviewed contributions and evidence matrix</text><text x="70" y="705" fill="#b9c5cc" font-size="20">Research leadership, GIS development, and cross-team synthesis.</text><text x="70" y="747" fill="#7e969e" font-size="16">Brandon Santor · Research system architecture</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+<title id="title">NWSW source-to-evidence research sequence</title>
+<desc id="desc">Four stages connected by downward arrows: reconcile source records; prepare geography; check geographic relationships; integrate reviewed contributions. Preserve source definitions, boundary versions, documented joins, methods, attribution and uncertainty. This is a research workflow, not a claim of completed biological findings.</desc>
+<rect width="1280" height="800" fill="#0b151b"/>
+<text x="60" y="62.4" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#e4a5ab">NWSW / THE INVESTIGATION</text>
+<text x="60" y="128.4" font-family="Segoe UI,Arial,sans-serif" font-size="43" font-weight="700" fill="#f3f0e7">From source records to spatial evidence.</text>
+<text x="60" y="175.0" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="400" fill="#c0ced3">A clear path from source review to cross-team synthesis.</text>
+<rect x="60" y="212" width="1160" height="100" rx="16" fill="#14252c" stroke="#3d5965" stroke-width="1.5"/>
+<text x="86" y="267.0" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#88d5d2">01</text>
+<text x="155" y="248.8" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="700" fill="#f3f0e7">Reconcile source records</text>
+<text x="155" y="288.2" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#c0ced3">Check versions, dates and reporting definitions.</text>
+<polyline points="105,312 105,347" fill="none" stroke="#88d5d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="105,347 111.0,335.0 99.0,335.0" fill="#88d5d2"/>
+<rect x="60" y="347" width="1160" height="100" rx="16" fill="#14252c" stroke="#3d5965" stroke-width="1.5"/>
+<text x="86" y="402.0" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#88d5d2">02</text>
+<text x="155" y="383.8" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="700" fill="#f3f0e7">Prepare the geography</text>
+<text x="155" y="423.2" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#c0ced3">Retain boundary versions, identifiers and coordinate systems.</text>
+<polyline points="105,447 105,482" fill="none" stroke="#88d5d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="105,482 111.0,470.0 99.0,470.0" fill="#88d5d2"/>
+<rect x="60" y="482" width="1160" height="100" rx="16" fill="#14252c" stroke="#3d5965" stroke-width="1.5"/>
+<text x="86" y="537.0" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#88d5d2">03</text>
+<text x="155" y="518.8" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="700" fill="#f3f0e7">Check geographic relationships</text>
+<text x="155" y="558.2" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#c0ced3">Document joins, geographic support and unresolved gaps.</text>
+<polyline points="105,582 105,617" fill="none" stroke="#88d5d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="105,617 111.0,605.0 99.0,605.0" fill="#88d5d2"/>
+<rect x="60" y="617" width="1160" height="100" rx="16" fill="#14252c" stroke="#3d5965" stroke-width="1.5"/>
+<text x="86" y="672.0" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#88d5d2">04</text>
+<text x="155" y="653.8" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="700" fill="#f3f0e7">Integrate reviewed contributions</text>
+<text x="155" y="693.2" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#c0ced3">Keep methods, attribution and uncertainty with the synthesis.</text>
+<text x="60" y="781.6" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="400" fill="#c0ced3">Brandon Santor / Research leadership, GIS development and synthesis</text>
+</svg>

@@ -1,1 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" width="1280" height="800"><rect width="1280" height="800" fill="#0b151b"/><g font-family="Arial,sans-serif"><text x="70" y="75" fill="#e8aaa6" font-size="19" letter-spacing="3">NWSW / THE RESEARCH SYSTEM</text><text x="70" y="140" fill="#fff8ef" font-size="43">Research Architect → project-specific Hub</text><path d="M620 292h40M345 375v50M935 375v50M620 507h40" fill="none" stroke="#77a9b1" stroke-width="3" stroke-dasharray="7 8"/><rect x="70" y="210" width="550" height="165" rx="16" fill="#14252c" stroke="#456474"/><text x="95" y="253" fill="#9fd7dc" font-size="18">01</text><text x="95" y="294" fill="#f4eee5" font-size="28">Design the framework</text><text x="95" y="330" fill="#b9c5cc" font-size="19">Research Architect: roles, methods, review</text><rect x="660" y="210" width="550" height="165" rx="16" fill="#14252c" stroke="#456474"/><text x="685" y="253" fill="#9fd7dc" font-size="18">02</text><text x="685" y="294" fill="#f4eee5" font-size="28">Generate the research system</text><text x="685" y="330" fill="#b9c5cc" font-size="19">NWSW Hub and bounded contributor kits</text><rect x="70" y="425" width="550" height="165" rx="16" fill="#14252c" stroke="#456474"/><text x="95" y="468" fill="#9fd7dc" font-size="18">03</text><text x="95" y="509" fill="#f4eee5" font-size="28">Coordinate the work</text><text x="95" y="545" fill="#b9c5cc" font-size="19">Assignments, current context, decisions</text><rect x="660" y="425" width="550" height="165" rx="16" fill="#14252c" stroke="#456474"/><text x="685" y="468" fill="#9fd7dc" font-size="18">04</text><text x="685" y="509" fill="#f4eee5" font-size="28">Support spatial inspection</text><text x="685" y="545" fill="#b9c5cc" font-size="19">Separate, independently built workbench</text><text x="70" y="705" fill="#b9c5cc" font-size="20">The generated research system and independent GIS application have distinct roles.</text><text x="70" y="747" fill="#7e969e" font-size="16">Brandon Santor · Research system architecture</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+<title id="title">Research Architect generates the NWSW role kits</title>
+<desc id="desc">Research Architect generates three project role kits: Hub, contributor Pods with individual AI Spokes, and Ingestor. Branch arrows indicate generation, not a sequence of review steps. The independently built Spatial Evidence Workbench is used alongside the coordination system; it is not a generated kit or an asserted automated integration.</desc>
+<rect width="1280" height="800" fill="#0b151b"/>
+<text x="60" y="62.4" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#e4a5ab">NWSW / SYSTEM ARCHITECTURE</text>
+<text x="60" y="130.8" font-family="Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" fill="#f3f0e7">From framework to research roles.</text>
+<text x="60" y="178.0" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="400" fill="#c0ced3">Branch arrows show which role kits the framework generates.</text>
+<rect x="60" y="230" width="310" height="330" rx="16" fill="#14252c" stroke="#e4a5ab" stroke-width="1.5"/>
+<text x="88" y="275.6" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" fill="#e4a5ab">REUSABLE FRAMEWORK</text>
+<text x="88" y="351.2" font-family="Segoe UI,Arial,sans-serif" font-size="39" font-weight="700" fill="#f3f0e7">Research</text>
+<text x="88" y="402.2" font-family="Segoe UI,Arial,sans-serif" font-size="39" font-weight="700" fill="#f3f0e7">Architect</text>
+<text x="88" y="468.2" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#c0ced3">Roles, methods</text>
+<text x="88" y="503.2" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#c0ced3">and review controls</text>
+<polyline points="370,395 440,395" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="440,275 440,515" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="440,275 520,275" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="520,275 508.0,269.0 508.0,281.0" fill="#e4a5ab"/>
+<polyline points="440,395 520,395" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="520,395 508.0,389.0 508.0,401.0" fill="#e4a5ab"/>
+<polyline points="440,515 520,515" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="520,515 508.0,509.0 508.0,521.0" fill="#e4a5ab"/>
+<text x="520" y="218.6" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="700" fill="#e4a5ab">GENERATED NWSW ROLE KITS</text>
+<rect x="520" y="230" width="700" height="90" rx="16" fill="#14252c" stroke="#e4a5ab" stroke-width="1.5"/>
+<text x="548" y="267.0" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#e4a5ab">Hub</text>
+<text x="548" y="301.6" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#c0ced3">Assignments, research review and final acceptance.</text>
+<rect x="520" y="350" width="700" height="90" rx="16" fill="#14252c" stroke="#88d5d2" stroke-width="1.5"/>
+<text x="548" y="387.0" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#88d5d2">Contributor kits</text>
+<text x="548" y="421.6" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#c0ced3">Individual AI Spokes for human-led Pods.</text>
+<rect x="520" y="470" width="700" height="90" rx="16" fill="#14252c" stroke="#e9c38b" stroke-width="1.5"/>
+<text x="548" y="507.0" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="700" fill="#e9c38b">Ingestor</text>
+<text x="548" y="541.6" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#c0ced3">File checks and specified reproduction steps.</text>
+<rect x="60" y="630" width="1160" height="120" rx="16" fill="#14252c" stroke="#3d5965" stroke-width="1.5"/>
+<text x="86" y="661.8" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#e9c38b">INDEPENDENT APPLICATION</text>
+<text x="86" y="708.8" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="700" fill="#f3f0e7">Spatial Evidence Workbench</text>
+<text x="720" y="675.4" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#c0ced3">Mapped investigations and exports.</text>
+<text x="720" y="714.4" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#c0ced3">Used alongside the research system.</text>
+<text x="60" y="785.0" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="400" fill="#c0ced3">Brandon Santor / Research system architecture</text>
+</svg>
