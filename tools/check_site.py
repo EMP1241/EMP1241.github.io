@@ -14,6 +14,7 @@ class Page(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.path = path
         self.ids, self.refs, self.images, self.headings, self.links = [], [], [], [], []
+        self.open_heading = None
         self.gallery_count, self.gallery_slides, self.gallery_thumbnails = 0, 0, []
         self.feed(path.read_text(encoding='utf-8'))
 
@@ -37,8 +38,17 @@ class Page(HTMLParser):
             self.images.append(attrs)
         if re.fullmatch('h[1-6]', tag):
             self.headings.append(int(tag[1]))
+            if self.open_heading:
+                errors.append(f'{self.path.name}: nested or unclosed heading')
+            self.open_heading = tag
         if tag == 'a':
             self.links.append(attrs)
+
+    def handle_endtag(self, tag):
+        if re.fullmatch('h[1-6]', tag):
+            if tag != self.open_heading:
+                errors.append(f'{self.path.name}: mismatched heading end tag {tag}')
+            self.open_heading = None
 
 pages = {p.name: Page(p) for p in ROOT.glob('*.html')}
 expected = {'index.html', 'about.html', 'projects.html', 'resume.html', 'project-nwsw.html',
@@ -67,6 +77,8 @@ for name, page in pages.items():
         errors.append(f'{name}: requires exactly three gallery items with matching thumbnails')
     if page.headings.count(1) != 1:
         errors.append(f'{name}: requires exactly one h1')
+    if any(next_level > level + 1 for level, next_level in zip(page.headings, page.headings[1:])):
+        errors.append(f'{name}: heading outline skips a level')
     if any(n > 1 for n in Counter(page.ids).values()):
         errors.append(f'{name}: duplicate IDs')
     if 'main' not in page.ids or 'top' not in page.ids:
@@ -75,6 +87,13 @@ for name, page in pages.items():
         if not all(key in img for key in ('alt', 'width', 'height')):
             errors.append(f'{name}: image missing alt or dimensions')
     text = page.path.read_text(encoding='utf-8')
+    if name == '404.html':
+        if '<base ' in text:
+            errors.append('404.html: base URL would redirect same-page skip links')
+        for ref in page.refs:
+            url = urlsplit(ref)
+            if not url.scheme and not url.netloc and url.path and not url.path.startswith('/'):
+                errors.append(f'404.html: nested missing URLs require root-relative assets and links: {ref}')
     if any(address.lower() != PUBLIC_EMAIL for address in email.findall(text)):
         errors.append(f'{name}: unapproved email address')
     mail_links = [a.get('href', '') for a in page.links
@@ -99,7 +118,7 @@ for name, page in pages.items():
     # Main navigation must consistently link to the four sections.
     required = ('index.html', 'about.html', 'projects.html', 'resume.html')
     for href in required:
-        if not any(a.get('href') == href for a in page.links):
+        if not any(a.get('href', '').lstrip('/') == href for a in page.links):
             errors.append(f'{name}: navigation missing {href}')
 
 if errors:

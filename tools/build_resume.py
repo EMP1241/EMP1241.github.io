@@ -87,7 +87,7 @@ def plain(text):
 
 
 def article_data(node):
-    headings = node.direct('h4')
+    headings = node.direct('h3')
     metas = [p for p in node.direct('p') if classed(p, 'meta')]
     lists = node.direct('ul')
     links = list(node.find(lambda n: n.tag == 'a' and n.attrs.get('href', '').startswith('project-')))
@@ -111,10 +111,10 @@ def read_source():
     jobs = [article_data(n) for n in experience.direct('article')]
     if len(jobs) != 6 or any(len(job['bullets']) != 3 for job in jobs):
         raise ValueError('Every research/professional experience role must have three bullets; expected six roles.')
-    selected = one(resume, lambda n: n.tag == 'section' and any(h.text() == 'Selected software & research' for h in n.direct('h3')))
+    selected = one(resume, lambda n: n.tag == 'section' and any(h.text() == 'Selected software & research' for h in n.direct('h2')))
     projects = [article_data(n) for n in selected.find(lambda n: n.tag == 'article' and classed(n, 'resume-item'))]
     sidebar = one(resume, lambda n: n.tag == 'aside')
-    sections = {n.direct('h3')[0].text(): n for n in sidebar.direct('section') if n.direct('h3')}
+    sections = {n.direct('h2')[0].text(): n for n in sidebar.direct('section') if n.direct('h2')}
     honor_rows = []
     for row in sections['Honors & scholarships'].find(lambda n: n.tag == 'li'):
         parts = row.direct('strong') + row.direct('span')

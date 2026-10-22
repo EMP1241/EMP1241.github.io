@@ -17,7 +17,7 @@ class Element {
   hasAttribute(k) { return k in this.attrs; }
   removeAttribute(k) { delete this.attrs[k]; }
   addEventListener(k, fn) { (this.events[k] ??= []).push(fn); }
-  emit(k, event = {}) { (this.events[k] || []).forEach(fn => fn({target: this, preventDefault() {}, ...event})); }
+  emit(k, event = {}) { (this.events[k] || []).forEach(fn => fn({type: k, target: this, preventDefault() {}, ...event})); }
   append(el) { this.children.push(el); el.parent = this; }
   contains(el) { return el === this || this.children.some(child => child.contains(el)); }
   matches() { return false; }
@@ -115,4 +115,31 @@ v.rotation.emit('click'); assert.equal(v.timers.size, 1);
 v.slides[0].map.video.duration = 12; v.slides[0].map.video.emit('loadedmetadata');
 assert.equal([...v.timers.values()][0].delay, 12750, 'Allow the short clip to finish');
 v.win.emit('pagehide'); assert.equal(v.timers.size, 0); assert.ok(v.slides[0].map.video.pauseCount > 0);
-console.log('PASS: gallery rotation, wrapping, repeated pause/resume, focus, hover, visibility, effects, lightbox cleanup, page lifecycle, reduced motion, and video interactions.');
+const manual = fixture({videoSlide: true}); manual.observer.report(true);
+const manualClip = manual.slides[0].map.video;
+manualClip.emit('keydown', {key: 'Tab'});
+assert.equal(manual.timers.size, 1, 'Tab navigation alone must not take over playback');
+manualClip.emit('keydown', {key: ' '});
+assert.equal(manual.timers.size, 0, 'Keyboard video controls must stop slide rotation');
+const manualPlayCount = manualClip.playCount;
+manualClip.muted = false;
+manual.observer.report(false); manual.observer.report(true);
+manual.doc.hidden = true; manual.doc.emit('visibilitychange');
+manual.doc.hidden = false; manual.doc.emit('visibilitychange');
+assert.equal(manualClip.playCount, manualPlayCount, 'Scrolling or returning to the tab must not override manual playback');
+assert.equal(manualClip.muted, false, 'Lifecycle updates must preserve the user\'s sound setting');
+const pointer = fixture({videoSlide: true}); pointer.observer.report(true);
+const pointerClip = pointer.slides[0].map.video;
+pointerClip.emit('pointerdown');
+const pointerPlayCount = pointerClip.playCount;
+pointer.observer.report(false); pointer.observer.report(true);
+assert.equal(pointerClip.playCount, pointerPlayCount, 'Mouse/touch video interaction must also take ownership of playback');
+const modal = fixture({videoSlide: true}); modal.observer.report(true);
+modal.anchors[0].emit('click');
+const modalClip = modal.dialog.map.video;
+modalClip.emit('keydown', {key: ' '});
+const modalPlayCount = modalClip.playCount;
+modal.doc.hidden = true; modal.doc.emit('visibilitychange');
+modal.doc.hidden = false; modal.doc.emit('visibilitychange');
+assert.equal(modalClip.playCount, modalPlayCount, 'The lightbox must retain a manual pause after returning to the tab');
+console.log('PASS: gallery rotation, lifecycle, reduced motion, lightbox cleanup, and mouse/touch/keyboard ownership of playback and sound.');

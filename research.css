@@ -59,7 +59,7 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
 .flow-node { min-width: 0; border: 1px solid rgb(var(--project-color) / .5); border-radius: 9px; padding: .85rem .65rem; background: var(--surface-raised); }
 .flow-node > span { display: block; color: var(--accent); font: .58rem/1.4 var(--sans); letter-spacing: .1em; text-transform: uppercase; margin-bottom: .85rem; }
 .flow-node > strong { display: block; font: 600 .83rem/1.55 var(--sans); overflow-wrap: anywhere; }
-.flow-arrow { align-self: center; text-align: center; color: rgb(var(--project-color)); font-size: 1.2rem; }
+.flow-arrow { align-self: center; text-align: center; color: var(--accent); font-size: 1.2rem; }
 .ai-emphasis { color: #78cfff; text-shadow: 0 0 22px #39a3ff60; font-weight: 700; }
 :root[data-theme="light"] .ai-emphasis { color: #11638e; text-shadow: none; }
 .intro-toolbar .ai-emphasis { color: #78cfff !important; }
@@ -69,8 +69,8 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
 .resume-highlights article { padding: 1.5rem; border: 1px solid var(--line); border-radius: 12px; background: radial-gradient(ellipse at top right,#bc777320,transparent),var(--surface); }
 .resume-highlights strong { display: block; font: 400 2rem/1.2 var(--display); color: var(--accent); margin-bottom: .7rem; }
 .resume-highlights p { color: var(--muted); font-size: .85rem; }
-.resume-section > h3 { border-bottom: 1px solid var(--line); padding-bottom: .8rem; margin-bottom: 1.5rem; color: var(--accent); font-size: .85rem; letter-spacing: .1em; text-transform: uppercase; }
-.resume-item h4 { font-size: 1.05rem; }
+.resume-section > h2 { border-bottom: 1px solid var(--line); padding-bottom: .8rem; margin-bottom: 1.5rem; color: var(--accent); font: 700 .85rem/1.25 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
+.resume-item h3 { font-size: 1.05rem; line-height: 1.4; }
 .resume-item p, .resume-item li { font-size: .92rem; }
 .resume-item .meta { margin-block: .3rem .7rem; }
 .resume-project-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; }
@@ -138,6 +138,10 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
   .page-intro::before, .page-intro::after, .project-hero::before, .project-hero::after, .project-content::before, .hero::before, .hero::after { transform: none; translate: none; animation: none !important; }
   [data-motion-reveal] { opacity: 1 !important; transform: none !important; transition: none !important; }
 }
+@media (max-width: 380px) {
+  .nav-tools { column-gap: 6px; }
+  .navlinks { gap: 0; }
+}
 @media (forced-colors: active) {
   .page-intro::before, .page-intro::after, .project-hero::before, .project-content::before { display: none; }
   .flow-node, .flow-controls button, .motion-toggle { border: 1px solid CanvasText; }
@@ -153,6 +157,7 @@ body[data-project="cole"] .gallery-slide img.gallery-overview,
 body[data-project="cole"] .gallery-thumbnails img.gallery-overview { object-fit: cover; object-position: 50% 7.5%; }
 .card-art--screenshot img[src$="cole-workspace-20261018.webp"] { object-position: 50% 7.5%; }
 @media print {
+  [data-motion-reveal] { opacity: 1 !important; transform: none !important; }
   body.printing-resume .resume-print-heading { display: block; margin-bottom: 1.2rem; padding-bottom: .7rem; border-bottom: 2px solid #500000; }
   body.printing-resume .resume-print-heading .resume-print-name { margin: 0; color: #1a1a1a; font-size: 26pt; font-weight: 700; }
   body.printing-resume .resume-print-heading p, body.printing-resume .resume-print-heading a { margin: .2rem 0; color: #333; font-size: 9pt; }
@@ -196,7 +201,7 @@ body[data-page="index.html"] .hero h1 { font-size: clamp(2.7rem, 4.5vw, 4.6rem);
 .home-demo .demo-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .25rem 1rem; padding: .9rem 1rem; border-bottom: 1px solid var(--line); }
 .home-demo .demo-heading .eyebrow { margin: 0; color: var(--accent); }
 .home-demo .demo-heading .small { font-size: .7rem; color: var(--muted); }
-.home-demo .gallery-slide figcaption { height: 7rem; }
+.home-demo .gallery-slide figcaption { min-height: 7rem; }
 .home-demo .gallery-slide figcaption .text-link { display: inline-block; margin-top: .3rem; }
 @media (max-width: 900px) {
   body[data-page="index.html"] .hero-grid { grid-template-columns: minmax(0, 1fr); }
