@@ -24,20 +24,44 @@
   let imageRequest = 0;
   const states = [];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  const canAutoplay = () => !document.hidden && !reduced.matches && document.documentElement.dataset.motion !== 'paused';
+  let away = false;
+  const canAutoplay = () => !away && !document.hidden && !reduced.matches && document.documentElement.dataset.motion !== 'paused';
+
+  function syncSlideshow(state) {
+    clearTimeout(state.timer);
+    state.timer = null;
+    const enabled = canAutoplay();
+    const running = enabled && !state.paused && state.visible && !state.hover && !state.focus && !dialog.open && state.slides.length > 1;
+    if (state.count) state.count.setAttribute('aria-live', running ? 'off' : 'polite');
+    if (state.rotation) {
+      state.rotation.disabled = !enabled;
+      state.rotation.textContent = reduced.matches ? 'Reduced motion' : !enabled ? 'Effects paused' : state.paused ? 'Resume slideshow' : 'Pause slideshow';
+    }
+    if (!running) return;
+    const clip = state.slides[state.index].querySelector('video');
+    const duration = clip && Number.isFinite(clip.duration) ? clip.duration * 1000 + 750 : 0;
+    // Give short demonstration clips time to complete, with a bounded dwell.
+    state.timer = setTimeout(() => {
+      state.timer = null;
+      state.step(1);
+    }, Math.max(7000, Math.min(30000, duration)));
+  }
 
   function playMuted(clip) {
     clip.muted = true;
     clip.play()?.catch(() => {}); // Native controls remain available if autoplay is blocked.
   }
 
-  function syncGalleryVideos() {
-    states.forEach(state => state.slides.forEach((slide, index) => {
-      const clip = slide.querySelector('video');
-      if (!clip) return;
-      if (index === state.index && state.visible && !dialog.open && canAutoplay()) playMuted(clip);
-      else clip.pause();
-    }));
+  function syncGalleryPlayback() {
+    states.forEach(state => {
+      syncSlideshow(state);
+      state.slides.forEach((slide, index) => {
+        const clip = slide.querySelector('video');
+        if (!clip) return;
+        if (index === state.index && state.visible && !dialog.open && canAutoplay()) playMuted(clip);
+        else clip.pause();
+      });
+    });
     if (dialog.open && !video.hidden && video.hasAttribute('src')) {
       if (canAutoplay()) playMuted(video);
       else video.pause();
@@ -123,7 +147,7 @@
     activeGallery = gallery;
     returnFocus = opener;
     dialog.showModal();
-    syncGalleryVideos();
+    syncGalleryPlayback();
     renderLightbox();
     document.body.classList.add('lightbox-open');
     dialog.querySelector('[data-close]').focus();
@@ -141,7 +165,7 @@
     loading.textContent = '';
     setZoom(false);
     activeGallery = null;
-    syncGalleryVideos();
+    syncGalleryPlayback();
     document.body.classList.remove('lightbox-open');
     const focusTarget = returnFocus?.isConnected && returnFocus.getClientRects().length ? returnFocus : visibleOpener;
     focusTarget?.focus({preventScroll: true});
@@ -158,16 +182,32 @@
     const slides = [...element.querySelectorAll('.gallery-slide')];
     const thumbnails = [...element.querySelectorAll('[data-slide]')];
     if (!slides.length) return;
-    const state = {element, slides, index: 0, visible: true, title: element.dataset.galleryTitle || 'Project gallery'};
+    const state = {element, slides, index: 0, visible: !('IntersectionObserver' in window), hover: element.matches(':hover'), focus: element.contains(document.activeElement), paused: false, timer: null, title: element.dataset.galleryTitle || 'Project gallery'};
     states.push(state);
     slides.forEach(slide => {
       const clip = slide.querySelector('video');
       const status = slide.querySelector('[data-video-status]');
-      if (!clip || !status) return;
-      clip.addEventListener('error', () => { status.textContent = ' Video unavailable. Try Watch larger to open the original.'; });
-      clip.addEventListener('loadeddata', () => { status.textContent = ''; });
+      if (!clip) return;
+      clip.addEventListener('loadedmetadata', () => syncSlideshow(state));
+      clip.addEventListener('pointerdown', () => { state.paused = true; syncSlideshow(state); });
+      if (status) {
+        clip.addEventListener('error', () => { status.textContent = ' Video unavailable. Try Watch larger to open the original.'; });
+        clip.addEventListener('loadeddata', () => { status.textContent = ''; });
+      }
     });
     const count = element.querySelector('[data-gallery-count]');
+    state.count = count;
+    const controls = element.querySelector('.gallery-controls');
+    if (controls && slides.length > 1) {
+      const rotation = document.createElement('button');
+      rotation.type = 'button';
+      rotation.className = 'gallery-button gallery-rotation';
+      rotation.setAttribute('data-gallery-rotation', '');
+      rotation.textContent = 'Pause slideshow';
+      rotation.addEventListener('click', () => { state.paused = !state.paused; syncSlideshow(state); });
+      controls.append(rotation);
+      state.rotation = rotation;
+    }
     function select(index) {
       state.index = (index + slides.length) % slides.length;
       slides.forEach((slide, n) => { slide.hidden = n !== state.index; });
@@ -176,8 +216,10 @@
         else thumb.removeAttribute('aria-current');
       });
       if (count) count.textContent = `${state.index + 1} / ${slides.length}`;
+      const upcomingImage = slides[(state.index + 1) % slides.length].querySelector('img');
+      if (upcomingImage) upcomingImage.loading = 'eager';
       if (dialog.open && activeGallery === state) renderLightbox();
-      syncGalleryVideos();
+      syncGalleryPlayback();
     }
     state.select = select;
     state.step = amount => select(state.index + amount);
@@ -197,6 +239,12 @@
       if (event.key === 'Home') select(0);
       else if (event.key === 'End') select(slides.length - 1);
       else state.step(event.key === 'ArrowLeft' ? -1 : 1);
+    });
+    element.addEventListener('mouseenter', () => { state.hover = true; syncSlideshow(state); });
+    element.addEventListener('mouseleave', () => { state.hover = false; syncSlideshow(state); });
+    element.addEventListener('focusin', () => { state.focus = true; syncSlideshow(state); });
+    element.addEventListener('focusout', event => {
+      if (!element.contains(event.relatedTarget)) { state.focus = false; syncSlideshow(state); }
     });
     element.querySelectorAll('[data-gallery-control]').forEach(control => { control.hidden = slides.length < 2; });
     select(0);
@@ -241,16 +289,20 @@
         const state = states.find(item => item.element === entry.target);
         if (state) state.visible = entry.isIntersecting;
       });
-      syncGalleryVideos();
+      syncGalleryPlayback();
     });
-    states.filter(state => state.element.querySelector('video')).forEach(state => observer.observe(state.element));
+    states.forEach(state => observer.observe(state.element));
   }
-  document.documentElement.addEventListener('portfolio:motion-change', syncGalleryVideos);
-  reduced.addEventListener('change', syncGalleryVideos);
+  document.documentElement.addEventListener('portfolio:motion-change', syncGalleryPlayback);
+  reduced.addEventListener('change', syncGalleryPlayback);
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden) document.querySelectorAll('video').forEach(video => video.pause());
-    else syncGalleryVideos();
+    syncGalleryPlayback();
+    if (document.hidden) document.querySelectorAll('video').forEach(clip => clip.pause());
   });
-  window.addEventListener('pagehide', () => document.querySelectorAll('video').forEach(video => video.pause()));
-  window.addEventListener('pageshow', syncGalleryVideos);
+  window.addEventListener('pagehide', () => {
+    away = true;
+    syncGalleryPlayback();
+    document.querySelectorAll('video').forEach(clip => clip.pause());
+  });
+  window.addEventListener('pageshow', () => { away = false; syncGalleryPlayback(); });
 })();
