@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+<title id="title">NWSW research context restored for a new session</title>
+<desc id="desc">Two inputs support a resumed research session. The selected saved checkpoint supplies decisions and open work. Source-linked context is retrieved in needed pages and checked using identity and hashes. The numbered pages are schematic, with no fixed page count. Original records remain retained. This illustrates explicit retrieval and restoration, not automatic synchronization or guaranteed AI recall.</desc>
+<rect width="1280" height="800" fill="#0b151b"/>
+<text x="60" y="62.4" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#e4a5ab">NWSW / RESEARCH CONTINUITY</text>
+<text x="60" y="130.8" font-family="Segoe UI,Arial,sans-serif" font-size="46" font-weight="700" fill="#f3f0e7">Keep the thread across sessions.</text>
+<text x="60" y="178.0" font-family="Segoe UI,Arial,sans-serif" font-size="25" font-weight="400" fill="#c0ced3">Restore saved state. Retrieve the evidence the next task needs.</text>
+<circle cx="195" cy="300" r="90" fill="#0b151b" stroke="#3d5965" stroke-width="2"/>
+<circle cx="195" cy="300" r="72" fill="#14252c" stroke="#e4a5ab" stroke-width="3"/>
+<rect x="172" y="265" width="46" height="61" rx="4" fill="#26333c" stroke="#e4a5ab" stroke-width="1.5"/>
+<polyline points="183,277 207,277" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="183,290 207,290" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="183,303 198,303" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="244" cy="351" r="19" fill="#0b151b" stroke="#e4a5ab" stroke-width="2"/>
+<polyline points="235,352 241,358 253,344" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="60" y="434.8" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="700" fill="#e4a5ab">Selected checkpoint</text>
+<text x="60" y="473.4" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#c0ced3">Decisions and open work</text>
+<polyline points="285,300 545,300 545,278 640,278" fill="none" stroke="#e4a5ab" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="640,278 628.0,272.0 628.0,284.0" fill="#e4a5ab"/>
+<text x="350" y="281.6" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#e4a5ab">Load state</text>
+<rect x="60" y="530" width="305" height="144" rx="8" fill="#14252c" stroke="#3d5965" stroke-width="1.5"/>
+<rect x="74" y="516" width="305" height="144" rx="8" fill="#14252c" stroke="#55757f" stroke-width="1.5"/>
+<rect x="88" y="502" width="305" height="144" rx="8" fill="#14252c" stroke="#88d5d2" stroke-width="1.5"/>
+<text x="112" y="552.4" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700" fill="#88d5d2">Original records</text>
+<text x="112" y="593.8" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#c0ced3">Retained originals</text>
+<polyline points="112,620 217,620" fill="none" stroke="#3d5965" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="235,620 360,620" fill="none" stroke="#3d5965" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="393,586 550,586 550,486 640,486" fill="none" stroke="#88d5d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="640,486 628.0,480.0 628.0,492.0" fill="#88d5d2"/>
+<text x="414" y="637.6" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#88d5d2">Retrieve</text>
+<rect x="640" y="222" width="580" height="478" rx="18" fill="#101f28" stroke="#68828f" stroke-width="1.5"/>
+<polyline points="640,278 1220,278" fill="none" stroke="#3d5965" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="670" y="254.4" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#c0ced3">NEW SESSION</text>
+<circle cx="1140" cy="250" r="5" fill="#3d5965" stroke="#3d5965" stroke-width="1"/>
+<circle cx="1162" cy="250" r="5" fill="#3d5965" stroke="#3d5965" stroke-width="1"/>
+<circle cx="1184" cy="250" r="5" fill="#3d5965" stroke="#3d5965" stroke-width="1"/>
+<text x="674" y="333.2" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#e4a5ab">Restore the selected state</text>
+<rect x="674" y="362" width="512" height="46" rx="6" fill="#25303a" stroke="#3d5965" stroke-width="1.5"/>
+<text x="693" y="391.6" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#f3f0e7">Decisions</text>
+<polyline points="901,375 901,395" fill="none" stroke="#3d5965" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="928" y="391.6" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#f3f0e7">Open work</text>
+<text x="674" y="466.8" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700" fill="#88d5d2">Retrieve context as needed</text>
+<rect x="680" y="500" width="140" height="70" rx="6" fill="#0b151b" stroke="#3d5965" stroke-width="1.5"/>
+<rect x="674" y="494" width="140" height="70" rx="6" fill="#1b333b" stroke="#88d5d2" stroke-width="1.5"/>
+<text x="694" y="534.6" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#88d5d2">01</text>
+<polyline points="743,523 790,523" fill="none" stroke="#3d5965" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="743,539 775,539" fill="none" stroke="#3d5965" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="858" y="500" width="140" height="70" rx="6" fill="#0b151b" stroke="#3d5965" stroke-width="1.5"/>
+<rect x="852" y="494" width="140" height="70" rx="6" fill="#14252c" stroke="#3d5965" stroke-width="1.5"/>
+<text x="872" y="534.6" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#88d5d2">02</text>
+<polyline points="921,523 968,523" fill="none" stroke="#3d5965" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="921,539 953,539" fill="none" stroke="#3d5965" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1036" y="500" width="140" height="70" rx="6" fill="#0b151b" stroke="#3d5965" stroke-width="1.5"/>
+<rect x="1030" y="494" width="140" height="70" rx="6" fill="#14252c" stroke="#3d5965" stroke-width="1.5"/>
+<text x="1050" y="534.6" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700" fill="#88d5d2">...</text>
+<polyline points="1099,523 1146,523" fill="none" stroke="#3d5965" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1099,539 1131,539" fill="none" stroke="#3d5965" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="674" y="624.2" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400" fill="#c0ced3">Check source identity and hashes</text>
+<text x="674" y="670.8" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700" fill="#f3f0e7">Continue the assignment</text>
+<polyline points="60,736 1220,736" fill="none" stroke="#3d5965" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="60" y="776.2" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#c0ced3">Illustrated mechanism / Context is retrieved when a session resumes.</text>
+</svg>

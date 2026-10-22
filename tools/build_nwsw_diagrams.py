@@ -1,4 +1,4 @@
-"""Build the NWSW architecture and research-sequence illustrations.
+"""Build the NWSW architecture, research-sequence and continuity illustrations.
 
 SVGs are published assets. Optional PNG previews are for visual inspection.
 Requires Pillow and Windows Segoe UI fonts, like build_research_network.py.
@@ -32,6 +32,11 @@ class Diagram:
     def line(self, points, color=TEAL, width=3):
         self.draw.line([(int(x * 2), int(y * 2)) for x, y in points], fill=color, width=width * 2, joint='curve')
         self.svg.append(f'<polyline points="{" ".join(f"{x},{y}" for x,y in points)}" fill="none" stroke="{color}" stroke-width="{width}" stroke-linecap="round" stroke-linejoin="round"/>')
+
+    def circle(self, x, y, radius, fill=PANEL, stroke=BORDER, width=2):
+        self.draw.ellipse(tuple(int(v * 2) for v in (x-radius, y-radius, x+radius, y+radius)),
+                          fill=fill, outline=stroke, width=width * 2)
+        self.svg.append(f'<circle cx="{x}" cy="{y}" r="{radius}" fill="{fill}" stroke="{stroke}" stroke-width="{width}"/>')
 
     def arrow(self, points, color=TEAL):
         self.line(points, color)
@@ -122,10 +127,70 @@ def investigation(preview_dir):
     g.save('nwsw-research', preview_dir)
 
 
+def continuity(preview_dir):
+    g = Diagram('NWSW research context restored for a new session',
+                'Two inputs support a resumed research session. The selected saved checkpoint supplies decisions and open work. Source-linked context is retrieved in needed pages and checked using identity and hashes. The numbered pages are schematic, with no fixed page count. Original records remain retained. This illustrates explicit retrieval and restoration, not automatic synchronization or guaranteed AI recall.')
+    g.text(60, 48, 'NWSW / RESEARCH CONTINUITY', 18, PINK, True)
+    g.text(60, 94, 'Keep the thread across sessions.', 46, bold=True)
+    g.text(60, 158, 'Restore saved state. Retrieve the evidence the next task needs.', 25, MUTED)
+
+    # Two distinct inputs converge on a session: saved state and source retrieval.
+    # The checkpoint is a bookmark, not an assertion that all sources fit in memory.
+    g.circle(195, 300, 90, fill=BG, stroke=BORDER)
+    g.circle(195, 300, 72, fill=PANEL, stroke=PINK, width=3)
+    g.rect((172, 265, 218, 326), fill='#26333c', stroke=PINK, radius=4)
+    g.line([(183, 277), (207, 277)], PINK, 3)
+    g.line([(183, 290), (207, 290)], PINK, 3)
+    g.line([(183, 303), (198, 303)], PINK, 3)
+    g.circle(244, 351, 19, fill=BG, stroke=PINK)
+    g.line([(235, 352), (241, 358), (253, 344)], PINK, 3)
+    g.text(60, 410, 'Selected checkpoint', 31, PINK, True, 365)
+    g.text(60, 455, 'Decisions and open work', 23, MUTED, max_width=365)
+    g.arrow([(285, 300), (545, 300), (545, 278), (640, 278)], PINK)
+    g.text(350, 264, 'Load state', 22, PINK, True, 180)
+
+    # Stacked source pages communicate a retained archive without fake records.
+    for offset, color in [(0, BORDER), (14, '#55757f'), (28, TEAL)]:
+        g.rect((60+offset, 530-offset, 365+offset, 674-offset), fill=PANEL, stroke=color, radius=8)
+    g.text(112, 530, 'Original records', 28, TEAL, True, 255)
+    g.text(112, 577, 'Retained originals', 21, MUTED, max_width=255)
+    for x, length in [(112, 105), (235, 125)]:
+        g.line([(x, 620), (x+length, 620)], BORDER, 5)
+    g.arrow([(393, 586), (550, 586), (550, 486), (640, 486)], TEAL)
+    g.text(414, 620, 'Retrieve', 22, TEAL, True, 180)
+
+    # A large open work surface keeps the image readable at gallery scale.
+    g.rect((640, 222, 1220, 700), fill='#101f28', stroke='#68828f', radius=18)
+    g.line([(640, 278), (1220, 278)], BORDER, 2)
+    g.text(670, 240, 'NEW SESSION', 18, MUTED, True, 390)
+    for x in (1140, 1162, 1184):
+        g.circle(x, 250, 5, fill=BORDER, stroke=BORDER, width=1)
+    g.text(674, 310, 'Restore the selected state', 29, PINK, True, 512)
+    g.rect((674, 362, 1186, 408), fill='#25303a', stroke=BORDER, radius=6)
+    g.text(693, 374, 'Decisions', 22, WHITE, True, 190)
+    g.line([(901, 375), (901, 395)], BORDER, 2)
+    g.text(928, 374, 'Open work', 22, WHITE, True, 235)
+    g.text(674, 446, 'Retrieve context as needed', 26, TEAL, True, 512)
+    for i, x in enumerate((674, 852, 1030), 1):
+        g.rect((x+6, 500, x+146, 570), fill=BG, stroke=BORDER, radius=6)
+        g.rect((x, 494, x+140, 564), fill='#1b333b' if i == 1 else PANEL,
+               stroke=TEAL if i == 1 else BORDER, radius=6)
+        g.text(x+20, 513, f'0{i}' if i < 3 else '...', 27, TEAL, True, 60)
+        g.line([(x+69, 523), (x+116, 523)], BORDER, 3)
+        g.line([(x+69, 539), (x+101, 539)], BORDER, 3)
+    g.text(674, 605, 'Check source identity and hashes', 24, MUTED, max_width=512)
+    g.text(674, 650, 'Continue the assignment', 26, WHITE, True, 512)
+
+    g.line([(60, 736), (1220, 736)], BORDER, 1)
+    g.text(60, 761, 'Illustrated mechanism / Context is retrieved when a session resumes.', 19, MUTED, max_width=1160)
+    g.save('nwsw-context-recovery', preview_dir)
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--preview-dir', type=Path)
     args = parser.parse_args()
     architecture(args.preview_dir)
     investigation(args.preview_dir)
-    print('Built assets/nwsw-system.svg and assets/nwsw-research.svg')
+    continuity(args.preview_dir)
+    print('Built NWSW architecture, research sequence and context recovery illustrations.')
