@@ -210,3 +210,55 @@ body[data-page="index.html"] .hero h1 { font-size: clamp(2.7rem, 4.5vw, 4.6rem);
 @media print {
   .home-demo { display: none; }
 }
+
+/* Two reading depths: a short open summary, then optional technical records. */
+.project-brief { padding-block: 1.75rem 0; scroll-margin-top: 1rem; }
+.project-glance { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 12px; background: var(--surface); }
+.project-glance > summary { padding: 1.1rem 1.4rem; cursor: pointer; color: var(--ink); font-weight: 650; }
+.project-glance > summary::marker, .engineering-evidence > summary::marker { color: var(--accent); }
+.project-glance > summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+.glance-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem 2rem; padding: .25rem 1.4rem 1.25rem; }
+.glance-grid > div { min-width: 0; }
+.glance-grid dt { font-size: .75rem; font-weight: 700; color: var(--accent); margin-bottom: .4rem; }
+.glance-grid dd { margin: 0; color: var(--ink); font-size: .9rem; line-height: 1.65; }
+.glance-more { display: inline-block; margin: 0 1.4rem 1.2rem; font-size: .85rem; }
+.engineering-evidence h3 { margin-block: 1.2rem .6rem; font: 650 .95rem/1.5 var(--sans); }
+.engineering-evidence p + p { margin-top: .9rem; }
+.verification-results { margin-top: .8rem; }
+.verification-results > div { padding-block: .8rem; border-bottom: 1px solid var(--line); }
+.verification-results dt { font-weight: 650; font-size: .95rem; }
+.verification-results dd { margin: .4rem 0 0; font-size: .9rem; color: var(--muted); }
+.implementation-example { scroll-margin-top: 2rem; }
+.implementation-example .actions { margin-block: 1.1rem; }
+.implementation-example .example-scope { max-width: 75ch; color: var(--muted); font-size: .9rem; }
+.code-sample { margin-block: .8rem 1.2rem; padding: 1.2rem; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); white-space: pre-wrap; overflow-wrap: anywhere; font: .8rem/1.6 ui-monospace, Consolas, monospace; }
+.example-steps { padding-left: 1.3rem; }
+.example-steps li + li { margin-top: .7rem; }
+
+/* Native fragment links stay usable with JavaScript disabled. */
+html.resume-page { scroll-behavior: auto; }
+.resume-jump { position: sticky; top: 0; z-index: 40; padding-block: .6rem; background: var(--paper); border-bottom: 1px solid var(--line); box-shadow: 0 5px 15px #00000012; }
+.resume-jump > div { display: flex; flex-wrap: wrap; gap: .3rem .7rem; }
+.resume-jump a { display: inline-flex; align-items: center; min-height: 44px; padding: .4rem .75rem; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--surface); font-size: .8rem; text-decoration: none; }
+.resume-jump a:hover { border-color: var(--accent); color: var(--accent); }
+.resume-section[id] { scroll-margin-top: 6rem; }
+.toolkit-group + .toolkit-group { margin-top: 1.3rem; }
+.toolkit-group h3 { margin-bottom: .6rem; font: 650 .85rem/1.5 var(--sans); color: var(--ink); }
+.toolkit-group .skills-list { gap: 6px; }
+.toolkit-group .skills-list li { font-size: .8rem; }
+@media (max-width: 720px) {
+  .glance-grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .project-glance > summary { padding: 1rem; }
+  .glance-grid { padding-inline: 1rem; }
+  .glance-more { margin-inline: 1rem; }
+  .resume-jump > div { gap: .3rem; }
+  .resume-jump a { padding-inline: .65rem; }
+  .resume-section[id] { scroll-margin-top: 8rem; }
+}
+@media (max-height: 480px) { .resume-jump { position: static; } }
+@media print {
+  .resume-jump { display: none !important; }
+  .project-brief { padding-block: 1rem; }
+  .glance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .toolkit-group { break-inside: avoid; }
+}

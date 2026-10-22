@@ -119,6 +119,14 @@ def read_source():
     for row in sections['Honors & scholarships'].find(lambda n: n.tag == 'li'):
         parts = row.direct('strong') + row.direct('span')
         honor_rows.append(' | '.join(part.text() for part in parts) if parts else row.text())
+    skill_groups = [
+        {'title': group.direct('h3')[0].text(),
+         'skills': [n.text() for n in group.find(lambda n: n.tag == 'li')]}
+        for group in sections['Technical toolkit'].direct('div') if classed(group, 'toolkit-group')
+    ]
+    skills = [n.text() for n in sections['Technical toolkit'].find(lambda n: n.tag == 'li')]
+    if len(skill_groups) != 4 or [skill for group in skill_groups for skill in group['skills']] != skills:
+        raise ValueError('Technical toolkit requires four groups containing every listed skill.')
     return {
         'digest': sha256(raw).hexdigest(),
         'email': email_link.text(),
@@ -127,7 +135,7 @@ def read_source():
         'projects': projects,
         'education': [article_data(n) for n in sections['Education'].direct('article')],
         'honors': honor_rows,
-        'skills': [n.text() for n in sections['Technical toolkit'].find(lambda n: n.tag == 'li')],
+        'skill_groups': skill_groups,
         'communication': sections['Research communication'].direct('p')[0].text(),
     }
 
@@ -180,7 +188,10 @@ def build(output, data):
         left.append(p(' | '.join(x for x in [item['meta'], *item['bullets']] if x), 'small'))
     left.append(p('HONORS & SCHOLARSHIPS', 'support-title'))
     left += [p(text, 'small') for text in data['honors']]
-    right.append(p('; '.join(data['skills']) + '.', 'small'))
+    for group in data['skill_groups']:
+        label = escape(plain(group['title']))
+        skills = escape(plain('; '.join(group['skills'])))
+        right.append(Paragraph('<b>' + label + ':</b> ' + skills + '.', styles['small']))
     right.append(p('RESEARCH COMMUNICATION', 'support-title'))
     right.append(p(data['communication'], 'small'))
     support = Table([[left, right]], colWidths=[258, 258], hAlign='LEFT')

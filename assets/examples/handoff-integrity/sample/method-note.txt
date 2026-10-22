@@ -1,0 +1,4 @@
+SYNTHETIC EXAMPLE - no scientific procedure or result.
+Method ID: example-method-01
+Compare each named file with its recorded SHA-256 digest.
+Keep technical verification separate from a researcher's acceptance decision.

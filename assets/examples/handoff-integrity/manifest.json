@@ -1,0 +1,7 @@
+{
+  "format": "portfolio-integrity-example/1",
+  "files": {
+    "sample/source-note.txt": "6ed6124b4030c63ad848c1a81aad6e25c6f140df6d6e5f14a9d9b08017ba6180",
+    "sample/method-note.txt": "13c847b8ef7c68525df2fde2a42f6e0ff38ef8184ddce130134ef58380e71771"
+  }
+}

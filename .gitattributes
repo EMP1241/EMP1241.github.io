@@ -3,3 +3,6 @@
 *.png binary
 *.webp binary
 *.mp4 binary
+*.zip binary
+# Hash examples compare original bytes; keep text endings stable after checkout.
+assets/examples/handoff-integrity/** text eol=lf

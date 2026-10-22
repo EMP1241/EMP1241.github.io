@@ -1,0 +1,4 @@
+SYNTHETIC EXAMPLE - no research records.
+Source ID: example-source-01
+This note stands in for an original file included in a research handoff.
+The verification checks these bytes against the supplied manifest.
