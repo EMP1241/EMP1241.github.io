@@ -1,0 +1,27 @@
+Built-in image generation edit, 2026-10-23.
+Input: previous crew-positioning-grid-300m-v2 illustration.
+Final asset: crew-positioning-hub-300m-20261023.webp.
+Original prompts and earlier corrections remain in crew-positioning-prompt.txt.
+
+Edit this exact infographic by EXTENDING ITS CANVAS DOWNWARD by approximately 230 pixels, producing a taller landscape graphic roughly 1584 x 1224. Keep ALL existing content above the new extension unchanged: the 300x300 m map, 100m spacing, sixteen SMALL anchor-point markers, three SMALL crew-position dots, all numbered panels 01–03 including the corrected single-wearer four-anchor diagram, the modernized Channel Sounding identification, and the visor inset. Do not enlarge people or spikes on the map. Do not change map dimensions or number of anchors.
+
+The NEW bottom band explains the missing CENTRAL COMMAND HUB and continuous distribution of location updates. Match dark navy, thin cyan borders, crisp white typography and polished diagram style. This is a LOGICAL DATAFLOW, not physical radio coverage or a tested deployment.
+New band title exact: "04 / Keep the team synchronized"
+Small subtitle exact: "Continuous update loop while connected"
+Below that, three spacious boxes in one row, connected by clear right-pointing arrows:
+LEFT box heading: "Position updates"
+Subtext: "Wearer ID · coordinates · timestamp"
+Small icon: the three crew identity dots, cyan/amber/violet. These are packets arriving from the positioning system, not crew members being merged into one location.
+CENTER box heading: "Command hub"
+Subtext line 1: "Maintain the shared map"
+Subtext line 2: "Latest crew positions + shared pins"
+Icon: simple server/command console and small storage cylinder. Central hub must be visually prominent.
+RIGHT box heading: "Connected headsets"
+Subtext: "Receive updated positions and pins"
+Icon: three small headset/display symbols, indicating all connected wearers receive shared state.
+Arrow LEFT→CENTER label: "Location updates"
+Arrow CENTER→RIGHT label: "Distribute shared state"
+A thinner return arrow RIGHT→CENTER routed BELOW the boxes, label: "New pins and changes"
+Do not point this return arrow all the way back to the input box. This is a continuous hub-and-headset update loop.
+No direct 300m radio-range claim, no fixed network protocol, no update frequency/latency claim, no deployed/live-tested claim. The existing modernized-concept eyebrow provides context.
+Prioritize clear arrow routing, exact readable text and a central hub that stores current positions and redistributes them. Leave enough vertical padding so the return arrow and subtitle fit without crowding. If needed extend canvas a little further to maintain legibility, but preserve the original full graphic.

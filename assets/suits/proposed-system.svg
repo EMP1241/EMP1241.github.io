@@ -1,23 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title"><title id="title">Proposed lunar navigation system</title><defs><linearGradient id="bg"><stop stop-color="#101c29"/><stop offset="1" stop-color="#08121b"/></linearGradient><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#83bdde"/></marker></defs><rect width="1280" height="800" fill="url(#bg)"/>
-<text x="60" y="68" fill="#83bdde" font-family="Segoe UI,Arial,sans-serif" font-size="18">NASA SUITS / STUDENT CHALLENGE PROPOSAL</text>
-<text x="60" y="130" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="42">Proposed lunar navigation system</text>
-<text x="60" y="180" fill="#a4bac9" font-family="Segoe UI,Arial,sans-serif" font-size="24">Proposed sensing and positioning inputs → an augmented-reality interface</text>
-<rect x="60" y="235" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
-<text x="86" y="277" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">01 / Local positioning</text>
-<text x="86" y="321" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">BLE beacons + trilateration concept</text>
-<text x="86" y="352" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Waypoint bearing, distance and height</text>
-<rect x="660" y="235" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
-<text x="686" y="277" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">02 / Nearby terrain</text>
-<text x="686" y="321" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Depth-sensing and LiDAR concepts</text>
-<text x="686" y="352" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Terrain shape and obstacle cues</text>
-<rect x="60" y="445" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
-<text x="86" y="487" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">03 / HoloLens 2 interface</text>
-<text x="86" y="531" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Navigation and suit-status overlays</text>
-<text x="86" y="562" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Spatial anchors + geological annotations</text>
-<rect x="660" y="445" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
-<text x="686" y="487" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">04 / Human evaluation</text>
-<text x="686" y="531" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Planned route and task trials</text>
-<text x="686" y="562" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Accuracy, completion time and usability</text>
-<g fill="none" stroke="#83bdde" stroke-width="2.5" marker-end="url(#arrow)"><path d="M340 405V440"/><path d="M940 405V425H640V530H625"/><path d="M620 560H655"/></g>
-<text x="60" y="752" fill="#a4bac9" font-family="Segoe UI,Arial,sans-serif" font-size="20">Brandon Santor / Team lead and system designer / 2021 proposal; testing was planned.</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc">
+<title id="title">Proposed lunar positioning and command-hub system</title>
+<desc id="desc">Wearable tags and fixed spikes supply position updates to a central command hub. The hub maintains a shared map and distributes current positions and pins to connected headsets. New pins and changes return to the hub. Nearby depth sensing supplies terrain cues to each headset.</desc>
+<defs>
+<linearGradient id="bg"><stop stop-color="#101c29"/><stop offset="1" stop-color="#08121b"/></linearGradient>
+<marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#83bdde" stroke-width="1.5"/></marker>
+<marker id="return-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#e5bd7a" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1280" height="800" fill="url(#bg)"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="60" y="65" fill="#83bdde" font-size="18" letter-spacing="2">NASA SUITS / PROPOSED SYSTEM</text>
+<text x="60" y="126" fill="#dce6ef" font-size="40">Positioning, a command hub, and shared displays</text>
+<text x="60" y="176" fill="#a4bac9" font-size="24">Continuous location updates while connected to the shared network</text>
+<g fill="#142735" stroke="#405b6d">
+<rect x="60" y="240" width="320" height="155" rx="18"/>
+<rect x="480" y="240" width="320" height="155" rx="18" stroke="#83bdde" stroke-width="2"/>
+<rect x="900" y="240" width="320" height="155" rx="18"/>
+<rect x="60" y="495" width="740" height="140" rx="18"/>
+<rect x="900" y="495" width="320" height="140" rx="18"/>
+</g>
+<g fill="#dce6ef" font-size="26" font-weight="600">
+<text x="84" y="278">Local positioning</text>
+<text x="504" y="278">Command hub</text>
+<text x="924" y="278">Connected headsets</text>
+<text x="84" y="535">One shared coordinate reference</text>
+<text x="924" y="535">Nearby terrain</text>
+</g>
+<g fill="#b5c8d5" font-size="21">
+<text x="84" y="322">Wearable tags + fixed spikes</text>
+<text x="84" y="354">RSSI + trilateration proposal</text>
+<text x="504" y="322">Maintain latest crew positions</text>
+<text x="504" y="354">Store shared waypoints + pins</text>
+<text x="924" y="322">Receive updated shared state</text>
+<text x="924" y="354">Display crew + destinations</text>
+<text x="84" y="578">Known spike positions establish a common local coordinate frame.</text>
+<text x="84" y="610">Each headset relates shared positions to its own position and view.</text>
+<text x="924" y="578">Depth sensing + LiDAR</text>
+<text x="924" y="610">Local terrain + obstacle cues</text>
+</g>
+<g fill="none" stroke="#83bdde" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M380 320H474"/><path d="M800 320H894"/><path d="M1220 565H1245V320H1225"/>
+</g>
+<g fill="#a4bac9" font-size="18" text-anchor="middle">
+<text x="430" y="303">Updates</text><text x="850" y="303">Shared state</text>
+</g>
+<path d="M1060 395V452H640V401" fill="none" stroke="#e5bd7a" stroke-width="2.5" marker-end="url(#return-arrow)"/>
+<rect x="689" y="428" width="250" height="28" rx="5" fill="#0c1822"/>
+<text x="814" y="449" text-anchor="middle" fill="#e5bd7a" font-size="20">New pins and changes</text>
+<text x="60" y="696" fill="#dce6ef" font-size="23">The hub distributes current positions across the work area.</text>
+<text x="60" y="752" fill="#a4bac9" font-size="17">2021 proposal + designer clarification. Proposed architecture; network performance was not demonstrated.</text>
+</g></svg>
