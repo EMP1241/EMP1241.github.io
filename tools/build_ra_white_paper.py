@@ -152,7 +152,7 @@ class Mechanism(Flowable):
         super().__init__()
         self.kind = kind
         self.width = WIDTH
-        self.height = {'context': 184, 'library': 176, 'recovery': 151, 'paging': 182}[kind]
+        self.height = {'context': 184, 'library': 176, 'recovery': 151, 'paging': 182, 'knowledge': 166}[kind]
 
     def draw(self):
         c = self.canv
@@ -216,6 +216,15 @@ class Mechanism(Flowable):
             box(368,12,148,62,'Guarded next step',('Record completion or','finish pending finalization'),True)
             path([(326,110),(326,90),(74,90),(74,74)])
             path([(148,43),(179,43)]);path([(337,43),(368,43)])
+        elif self.kind == 'knowledge':
+            box(0,102,152,58,'Select research methods',('Question + analysis unit','Review responsibilities'))
+            box(182,102,152,58,'Resolve dependencies',('Method + specialist guides','Sources + reuse rights'))
+            box(364,102,152,58,'Generate the role kit',('Pinned selected material','Long texts outside startup'),True)
+            path([(152,131),(182,131)]);path([(334,131),(364,131)])
+            box(0,4,240,57,'Read when needed',('Local catalog / search / exact read','Bounded UTF-8 responses'))
+            box(276,4,240,57,'Continue until complete',('Same source hash on every part','Original source remains inspectable'),True)
+            path([(440,102),(440,83),(120,83),(120,61)])
+            path([(240,32),(276,32)])
         elif self.kind == 'paging':
             box(0,117,152,58,'Run one scoped lookup',('Or read one message result','Keep completeness status'))
             box(190,111,326,70,'Retain the complete result',('Findings + source pins + review conditions','A fixed result hash identifies every continuation'),True)
@@ -237,7 +246,7 @@ def footer(canvas, doc):
     canvas.setStrokeColor(colors.HexColor('#d5dcde'))
     canvas.setLineWidth(.5)
     canvas.line(48, 42, 564, 42)
-    canvas.drawString(48, 28, 'Public edition 4  |  October 23, 2026  |  RA 2.3 revision 2')
+    canvas.drawString(48, 28, 'Public edition 5  |  October 23, 2026  |  RA 2.4 revision 2')
     canvas.drawRightString(564, 28, str(doc.page))
     canvas.restoreState()
 
@@ -274,7 +283,7 @@ def build():
             elif block == '<!-- benchmark -->':
                 story.append(Benchmark())
             elif block in ['<!-- context-flow -->','<!-- library-flow -->',
-                           '<!-- recovery-flow -->','<!-- paging-flow -->']:
+                           '<!-- recovery-flow -->','<!-- paging-flow -->','<!-- knowledge-flow -->']:
                 kind = block.removeprefix('<!-- ').removesuffix('-flow -->')
                 story.extend([Mechanism(kind), Spacer(1, 7)])
             elif block.startswith('|'):
@@ -302,7 +311,7 @@ def build():
                             leftMargin=48, rightMargin=48, topMargin=57,
                             bottomMargin=55, title='Research Architect: Continuity, coordination, and review',
                             author='Brandon Santor',
-                            subject='RA 2.3.0 revision 2; public edition 4; October 23, 2026')
+                            subject='RA 2.4.0 revision 2; public edition 5; October 23, 2026')
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
     buffer.seek(0)
     reader = PdfReader(buffer)

@@ -4,13 +4,13 @@
 
 Brandon Santor | Creator and principal designer | PhalAInx independent software studio
 
-October 23, 2026 | Public edition 4 | RA 2.3.0 development preview, distribution revision 2
+October 23, 2026 | Public edition 5 | RA 2.4.0 development preview, distribution revision 2
 
 ### Executive summary
 
 Research Architect (RA) builds a shared operating structure for human teams that use individual AI assistants. A reviewed project design becomes role-specific kits, source references, work assignments, review requirements, and persistent project records. The framework helps a team resume work, exchange evidence, preserve decisions, and recover after an interrupted operation.
 
-RA has been used in the New World Screwworm (NWSW) research project. Its coordinating Hub and shared Library are operational systems with retained execution and verification records. The reusable RA 2.3 revision-2 distribution has also been packaged, checked, and delivered. These are separate artifacts: a generic release does not automatically replace an existing project's customized installation.
+RA has been used in the New World Screwworm (NWSW) research project. Its coordinating Hub and shared Library are operational systems with retained execution and verification records. The current reusable release is RA 2.4 revision 2, with scientific library 1.5. Its knowledge expansion was checked in the actual extracted package. The earlier RA 2.3 Hub/Library improvements remain deployed and tested; 2.4 has not been migrated into that live installation.
 
 ### What the current framework provides
 
@@ -25,7 +25,7 @@ RA has been used in the New World Screwworm (NWSW) research project. Its coordin
 
 The NWSW case includes verified exchanges, file preservation through a Hub upgrade, and an isolated whole-project restore. The 2.3 release adds scoped diagnostics, selective context reconstruction, persistent owner decisions, guarded upgrades, and a shared Library client. Checks on kits generated from the delivered archive passed for all three roles.
 
-A repeated-context fixture reduced emitted prompt text from 773,391 to 119,362 characters while reconstructing the selected sources exactly. This is a measured reduction in repeated text for that fixture, not a measured token bill or an increase in research accuracy.
+An earlier RA 2.3 fixture reduced repeated prompt text from 773,391 to 119,362 characters with exact source reconstruction. This measures emitted characters in that fixture, not billing savings or research accuracy.
 
 <!-- page -->
 ## 1. Architecture and responsibilities
@@ -100,7 +100,7 @@ If a shared table used the wrong unit label, its correction should identify the 
 
 The Doctor runs scoped, deterministic checks through the existing validators. Its local browser interface is normally launched by an agent; direct recovery access binds an explicit installation when normal startup is unavailable. Reports retain exact targets and findings. Repeated refreshes reuse the recorded result rather than repeat an operation. Routine diagnostics require no model calls.
 
-The interface diagnoses problems and directs recovery. It does not execute arbitrary scripts or automatically perform every repair. Revision 2 fixes failed-run replay, request-only unknown outcomes, UTF-8 output budgeting, and stale release-title metadata.
+The interface diagnoses problems and directs recovery. It does not execute arbitrary scripts or automatically perform every repair. RA 2.3 revision 2 fixes failed-run replay, request-only unknown outcomes, UTF-8 output budgeting, and stale release-title metadata.
 
 ### An interruption is a state to resolve
 
@@ -171,7 +171,7 @@ This is a tested deployment to the customized Hub, not a new generic RA ZIP revi
 
 ### Check the artifact that users receive
 
-The delivered development preview is RA 2.3.0, distribution revision 2: 289 archive members and 626,241 bytes. Hub, Spoke, and Ingestor kits generated from that archive passed installed-runtime integrity, runtime delivery hashes, startup routing, selective reconstruction, and explicit reuse checks. This tests the distributed artifact, rather than assuming a successful source checkout proves package completeness.
+The earlier RA 2.3.0 development preview, distribution revision 2, contained 289 archive members and 626,241 bytes. Hub, Spoke, and Ingestor kits generated from that archive passed installed-runtime integrity, runtime delivery hashes, startup routing, selective reconstruction, and explicit reuse checks. This tests the distributed artifact, rather than assuming a successful source checkout proves package completeness.
 
 ### Reduce repeated context in a defined fixture
 
@@ -195,7 +195,7 @@ Deterministic runtime checks use local synthetic data and require no model calls
 <!-- page -->
 ## 8. Research practice and the literature behind it
 
-RA retains 30 universal research rules and 16 method modules. Version 2.3 adds seven research-practice instructions that make task scope, shared evidence, alternatives, coordination, cost controls, and closeout explicit. These are workflow rules implemented in the framework, not claims that prompting alone guarantees scientific reliability.
+RA retains 30 universal research rules. The 16 method modules in RA 2.3 have expanded to 41 routes in RA 2.4 revision 2. Version 2.3 added seven research-practice instructions that make task scope, shared evidence, alternatives, coordination, cost controls, and closeout explicit. These are workflow rules implemented in the framework, not claims that prompting alone guarantees scientific reliability.
 
 ### Seven expectations carried into the role kits
 
@@ -216,7 +216,50 @@ LongMemEval separates indexing, retrieval, and reading, and tests temporal updat
 Earlier guidance on agent components, configurable conversations, and deployed research systems provides additional architectural context. [1-3] The references are selected foundations, not an exhaustive inventory of the creator's research. Performance reported by these authors is not transferred to RA.
 
 <!-- page -->
-## 9. Deployment boundaries and the next evaluation
+## 9. Method-specific knowledge, retrieved when needed
+
+RA 2.4 revision 2 supplies scientific library 1.5 with 41 method routes, eight shared foundations, and 12 specialist chapters. A route links the selected research method to its guidance, hypothetical worked case, and source dependencies. The compiler includes these dependencies in the generated kit so a participant can inspect the basis for a procedure.
+
+<!-- knowledge-flow -->
+
+Figure 7. Selected methods determine the material included in a kit. Longer chapters and reference texts remain outside routine startup. The local reader retrieves complete selected material in bounded responses; fingerprints bind continuations to the same source. Retrieval itself makes no network or model calls.
+
+| Available material | What a participant can inspect |
+| --- | --- |
+| Four multi-agent chapters | Role contracts, paired evaluations and costs, memory/failure recovery, and reproduction of scientific work. |
+| Eight statistics chapters | Hierarchical models, missingness, survival, causal estimation, simulation, multiplicity, surveys, and Bayesian checks. |
+| 102 source records; 27 local reference texts | Recorded publication identity, inspection scope, source locator, and reuse rights; full local text only where provided. |
+
+Nine new routes extend the preceding 32 to multi-agent research, marine science, agronomy, linguistics, anthropology, legal research, arts/design, archaeology, and organizational research. Coverage and within-field depth remain recorded as a backlog. The counts describe available material, not complete disciplinary coverage.
+
+The local reference extracts contain about 655,000 words, including bibliographies. That is a corpus-size measure, not a measure of review quality or model learning. Metadata-only references remain distinct from bundled texts; preprints retain their publication class. Extracted text can lose equations, figures, or tables, so the original remains necessary when those affect interpretation.
+
+<!-- page -->
+## 10. Checking the knowledge package that was delivered
+
+The actual RA 2.4 revision-2 ZIP was extracted and checked against the candidate. All 418 content pins matched across the 419-member archive. New Hub, Spoke, and Ingestor kits were generated in fresh Python processes with representative methods. Each returned Doctor CONSISTENT and scientific-library revision 1.5.
+
+| Check | Result and practical meaning |
+| --- | --- |
+| Selected guidance exports | Nineteen changed method selections exported with their required specialist and source dependencies. |
+| Complete chapter transport | Selected chapters reconstructed exactly through responses within 2,048-byte limits. Large text was continued, not silently cut off. |
+| Revision and compatibility | Exports rejected a changed source index; older 1.4 libraries remained compatible. Startup and export labels followed the verified revision. |
+| Worked arithmetic | Independently calculated examples checked agent contrasts, clustering, imputation pooling, survival summaries, simulation precision, multiplicity, and weighting. |
+
+Seven focused tests passed. The source graph includes 206 indexed records, connecting guidance and source metadata. All 468 files in the earlier candidate, its delivered ZIP, and the 32 earlier base method files were preserved. The scope was changed knowledge, dependency exports, and revision handling; unchanged operational repair suites were not replayed.
+
+### What deeper guidance enables
+
+A team evaluating several AI assistants can inspect guidance on giving systems paired tasks, recording total cost, and separating software failure from scientific disagreement. A repeated-measures study can retrieve guidance on the unit of analysis, dependence, and uncertainty. These are implemented decision-support materials and hypothetical examples, not newly completed empirical studies.
+
+Simulation guidance draws on structured design and reporting of computer experiments. Debate literature provides context for inspecting disagreements between model outputs; its published results do not establish that RA improves accuracy. [8, 9] Source inspection and reuse permissions remain explicit rather than treating every collected paper as fully reviewed.
+
+### Keep the deployment claim precise
+
+The knowledge package is implemented and tested for future kits. No live Hub/Library migration, approval change, closed-work-order change, new billing experiment, or independent scientific-outcome evaluation occurred in these checks. Existing successful RA 2.3 operations retain their own dated evidence.
+
+<!-- page -->
+## 11. Deployment boundaries and the next evaluation
 
 ### Configure the project, not just the files
 
@@ -243,7 +286,7 @@ The delivered preview and operational case establish useful engineering behavior
 
 ### Edition note
 
-This newly written paper replaces the October 22 public document. It covers RA 2.3 revision 2, the deployed Library and owner-decision mechanisms, and the October 23 Hub improvements, with new architecture and measurement figures. Historical operational results retain their original dates and scope.
+Public edition 5 replaces edition 4. It adds RA 2.4 revision 2 and scientific library 1.5, including a knowledge-delivery diagram and extracted-package results. The RA 2.3 operational case, installed Hub improvements, and earlier measurements retain their original dates and scope.
 
 <!-- page -->
 ## References and evidence
@@ -264,7 +307,24 @@ This newly written paper replaces the October 22 public document. It covers RA 2
 
 [7] Shao, Y., and colleagues. *Assisting in Writing Wikipedia-like Articles From Scratch with Large Language Models*. NAACL 2024, pp. 6252-6278. [Read paper and metadata](https://aclanthology.org/2024.naacl-long.347/).
 
-### Release identity
+[8] Morris, T. P., White, I. R., and Crowther, M. J. *Using simulation studies to evaluate statistical methods*. Statistics in Medicine, 38(11), 2074-2102, 2019. [Read paper](https://doi.org/10.1002/sim.8086).
+
+[9] Du, Y., and colleagues. *Improving Factuality and Reasoning in Language Models through Multiagent Debate*. ICML 2024, PMLR 235, 11733-11763. [Read paper](https://proceedings.mlr.press/v235/du24e.html).
+
+<!-- page -->
+## Release identity and engineering evidence
+
+### Current RA 2.4 revision-2 package
+
+Research_Architect_v2_4_0_preview_r2.zip | 2,314,335 bytes | 419 archive members
+
+SHA-256: 817a665f6652b6c72782b29e6aead139519e9e273e37fae65ec27010ac87eb6f
+
+Scientific library 1.5. The distribution receipt records seven passing focused tests, 418 verified content pins, all three generated-role consistency checks, and complete selected specialist reconstruction. The portfolio independently checked the delivered archive's size and SHA-256 against that receipt.
+
+The public [RA 2.4 verification summary](https://emp1241.github.io/assets/documents/ra-2.4-preview-verification.html) records the package inventory and testing scope. The detailed knowledge-expansion report, source ledger, and delivery integrity receipt remain the underlying engineering evidence.
+
+### Retained RA 2.3 release identity
 
 Research_Architect_v2_3_0_preview_r2.zip | 626,241 bytes | 289 archive members
 
@@ -276,6 +336,6 @@ The RA release is supported by its final package and closeout receipts, revision
 
 The public [RA verification summary](https://emp1241.github.io/assets/documents/ra-2.3-preview-verification.html) distinguishes fresh checks from reused results. A [standalone synthetic file-verification example](https://github.com/EMP1241/EMP1241.github.io/tree/main/assets/examples/handoff-integrity) makes the fingerprint-checking method inspectable without publishing private application source or team records.
 
-Detailed private locators, hashes, and editorial decisions are retained separately. They include participant and operational records that are not part of this public paper. Public references provide design context; they are not independent validation of the RA deployment. Earlier references were reviewed for edition 3; the four added research sources were checked for this edition on October 23, 2026.
+Detailed private locators, hashes, and editorial decisions are retained separately. They include participant and operational records that are not part of this public paper. Public references provide design context; they are not independent validation of the RA deployment. Earlier references retain their prior review record. The two added methodology references were checked against their publisher pages on October 23, 2026. The source catalog remains distinct from this paper's selected bibliography.
 
 Prepared with AI-assisted source review and drafting under the author's direction. Creator reports, operational execution records, software tests, and independent human evaluation retain their stated evidence classes.
