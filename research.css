@@ -264,11 +264,3 @@ html.resume-page { scroll-behavior: auto; }
 }
 
 body[data-project="suits"] { --project-color: 131 189 222; --project-pattern: url('assets/motifs/signal.svg'); }
-
-/* The lunar scene leads the SUITS gallery and its decorative hero backdrop. */
-body[data-project="suits"] .project-hero::before {
-  background-image: linear-gradient(90deg,var(--paper),transparent 80%), url('assets/suits/lunar-ar-tin-concept-20261023.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}

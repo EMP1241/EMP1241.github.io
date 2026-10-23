@@ -14,7 +14,7 @@ This review compared the portfolio with current project source, release artifact
 | High Command | Windows alpha; current October 22 package, schema 7 | Add supervised Rust/SQLite storage, bounded message reading, staged resumable imports, and explicit operation recovery. Preserve the owner’s public v0.5.6 designation; live model execution and automatic capture remain later work. |
 | Hydro | Checked literature-research draft v8 | Add a separate About mention of Martian valley-network literature synthesis. No new software project entry, original GIS/calculation claim, or draft publication. |
 | Smartphone GNSS | Author-confirmed poster and continued field study | Retain the current research interpretation and original QR-code poster derivative. No new field observations or causal explanation inferred from this review. |
-| NASA SUITS | 2021–2022 proposal plus labeled modernized illustration | Retain the latest lunar-first gallery and command-hub explanation. No deployed or tested lunar positioning claim. |
+| NASA SUITS | 2021–2022 proposal with illustrated positioning and command-hub architecture | Retain the latest lunar-first gallery and command-hub explanation. No deployed or tested lunar positioning claim. |
 | PhalAInx | Unlisted independent studio page | Keep the studio distinct from its two products and refresh RA/HC status. Older prototype-folder work is not silently introduced as a new product. |
 
 ## Meaning of the larger figures
