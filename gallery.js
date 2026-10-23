@@ -32,20 +32,24 @@
     clearTimeout(state.timer);
     state.timer = null;
     const enabled = canAutoplay();
-    const running = enabled && !state.paused && state.visible && !state.hover && !state.focus && !dialog.open && state.slides.length > 1;
+    const clip = state.slides[state.index].querySelector('video');
+    // A resting pointer should not strand a completed demo. Image reading and
+    // keyboard/native-player interaction still suspend automatic navigation.
+    const running = enabled && !state.paused && state.visible && (!state.hover || clip) && !state.focus && !dialog.open && state.slides.length > 1;
     if (state.count) state.count.setAttribute('aria-live', running ? 'off' : 'polite');
     if (state.rotation) {
       state.rotation.disabled = !enabled;
       state.rotation.textContent = reduced.matches ? 'Reduced motion' : !enabled ? 'Effects paused' : state.paused ? 'Resume slideshow' : 'Pause slideshow';
     }
     if (!running) return;
-    const clip = state.slides[state.index].querySelector('video');
-    const duration = clip && Number.isFinite(clip.duration) ? clip.duration * 1000 + 750 : 0;
-    // Give short demonstration clips time to complete, with a bounded dwell.
+    const remaining = clip && Number.isFinite(clip.duration) ? Math.max(0, clip.duration - (clip.currentTime || 0)) * 1000 : 0;
+    // Ended is the normal trigger. The fallback also releases an unavailable
+    // or stalled preview rather than freezing the entire gallery.
+    const delay = clip ? clip.ended ? 500 : Math.max(15000, remaining + 5000) : 7000;
     state.timer = setTimeout(() => {
       state.timer = null;
       state.step(1);
-    }, Math.max(7000, Math.min(30000, duration)));
+    }, delay);
   }
 
   function playMuted(clip) {
@@ -60,7 +64,7 @@
       state.slides.forEach((slide, index) => {
         const clip = slide.querySelector('video');
         if (!clip) return;
-        if (index === state.index && state.visible && !dialog.open && canAutoplay()) playMuted(clip);
+        if (index === state.index && state.visible && !dialog.open && canAutoplay()) { if (!clip.ended) playMuted(clip); }
         else clip.pause();
       });
     });
@@ -192,7 +196,9 @@
       const clip = slide.querySelector('video');
       const status = slide.querySelector('[data-video-status]');
       if (!clip) return;
+      clip.loop = false;
       clip.addEventListener('loadedmetadata', () => syncSlideshow(state));
+      clip.addEventListener('ended', () => { if (slide === state.slides[state.index]) syncSlideshow(state); });
       function takePlaybackControl(event) {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.altKey || event.ctrlKey || event.metaKey)) return;
         manualPlayback.add(clip);
@@ -220,7 +226,10 @@
       state.rotation = rotation;
     }
     function select(index) {
+      const previous = state.index;
       state.index = (index + slides.length) % slides.length;
+      const selectedClip = slides[state.index].querySelector('video');
+      if (previous !== state.index && selectedClip?.ended && !manualPlayback.has(selectedClip)) selectedClip.currentTime = 0;
       slides.forEach((slide, n) => { slide.hidden = n !== state.index; });
       thumbnails.forEach((thumb, n) => {
         if (n === state.index) thumb.setAttribute('aria-current', 'true');

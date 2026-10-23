@@ -1,0 +1,9 @@
+$ python verify.py
+MATCH: both sample files match the supplied manifest
+
+$ python verify.py --self-test
+PASS: intact sample matches its manifest
+PASS: changed file is detected
+PASS: missing file is detected
+PASS: unexpected file is detected
+PASS: malformed manifest is rejected

@@ -10,7 +10,7 @@ class Element {
     this.tagName = tag.toUpperCase(); this.attrs = {}; this.dataset = {}; this.style = {};
     this.events = {}; this.children = []; this.hidden = false; this.open = false;
     this.isConnected = true; this.classList = {add() {}, remove() {}, toggle() {}};
-    this.textContent = ''; this.playCount = 0; this.pauseCount = 0;
+    this.currentTime = 0; this.ended = false; this.textContent = ''; this.playCount = 0; this.pauseCount = 0;
   }
   setAttribute(k, v) { this.attrs[k] = String(v); }
   getAttribute(k) { return this.attrs[k] ?? null; }
@@ -113,8 +113,20 @@ assert.ok(v.slides[0].map.video.playCount > 0);
 v.slides[0].map.video.emit('pointerdown'); assert.equal(v.timers.size, 0, 'Native video interaction stops slide rotation');
 v.rotation.emit('click'); assert.equal(v.timers.size, 1);
 v.slides[0].map.video.duration = 12; v.slides[0].map.video.emit('loadedmetadata');
-assert.equal([...v.timers.values()][0].delay, 12750, 'Allow the short clip to finish');
+assert.equal([...v.timers.values()][0].delay, 17000, 'Fallback allows playback to finish plus a stall margin');
 v.win.emit('pagehide'); assert.equal(v.timers.size, 0); assert.ok(v.slides[0].map.video.pauseCount > 0);
+const ended = fixture({videoSlide: true}); ended.observer.report(true);
+const endedClip = ended.slides[0].map.video;
+assert.equal(endedClip.loop, false, 'Gallery previews must emit ended');
+ended.root.emit('mouseenter'); assert.equal(ended.timers.size, 1, 'A resting pointer must not freeze a video gallery');
+endedClip.currentTime = 5; endedClip.ended = true; endedClip.emit('ended');
+assert.equal([...ended.timers.values()][0].delay, 500);
+ended.fire(); assert.equal(ended.count.textContent, '2 / 3', 'Advance after completion');
+ended.root.emit('mouseleave'); ended.fire(); ended.fire();
+assert.equal(endedClip.currentTime, 0, 'A completed preview rewinds on returning to its slide');
+const pausedEnd = fixture({videoSlide: true}); pausedEnd.observer.report(true);
+pausedEnd.rotation.emit('click'); pausedEnd.slides[0].map.video.ended = true; pausedEnd.slides[0].map.video.emit('ended');
+assert.equal(pausedEnd.timers.size, 0, 'Completion cannot override an explicit slideshow pause');
 const manual = fixture({videoSlide: true}); manual.observer.report(true);
 const manualClip = manual.slides[0].map.video;
 manualClip.emit('keydown', {key: 'Tab'});

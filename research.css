@@ -76,10 +76,10 @@ body[data-project="gnss"] { --project-color: 222 165 101; --project-pattern: url
 .resume-project-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.2rem; }
 .resume-project-list .resume-item { margin: 0; padding: 1.4rem; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
 @media (prefers-reduced-motion: no-preference) {
-  :root:not([data-motion="paused"]) .page-intro::before { animation: intro-pattern-drift 30s ease-in-out infinite alternate; }
-  :root:not([data-motion="paused"]) .page-intro::after { animation: intro-glow-drift 26s ease-in-out infinite alternate; }
-  :root:not([data-motion="paused"]) .project-hero::before { animation: project-pattern-breathe 32s ease-in-out infinite alternate; }
-  :root:not([data-motion="paused"]) .project-hero::after { animation: project-glow-drift 26s ease-in-out infinite alternate; }
+  :root:not([data-motion="paused"]) .page-intro::before { animation: intro-pattern-drift 18s ease-in-out infinite alternate; }
+  :root:not([data-motion="paused"]) .page-intro::after { animation: intro-glow-drift 20s ease-in-out infinite alternate; }
+  :root:not([data-motion="paused"]) .project-hero::before { animation: project-pattern-breathe 18s ease-in-out infinite alternate; }
+  :root:not([data-motion="paused"]) .project-hero::after { animation: project-glow-drift 20s ease-in-out infinite alternate; }
   :root:not([data-motion="paused"]) [data-motion-reveal] { transition: opacity 520ms ease, transform 520ms cubic-bezier(.2,.7,.2,1); }
   :root:not([data-motion="paused"]) [data-motion-reveal="pending"] { opacity: 0; transform: translate3d(0,14px,0); }
   :root:not([data-motion="paused"]) [data-motion-reveal="visible"] { opacity: 1; transform: translate3d(0,0,0); }
@@ -267,3 +267,7 @@ body[data-project="suits"] { --project-color: 131 189 222; --project-pattern: ur
 
 /* Full studio lockup needs more space than a product icon. */
 body[data-project="phalainx"] .project-hero .page-app-icon { width: clamp(180px, 22vw, 260px); height: auto; aspect-ratio: 974 / 963; object-fit: contain; }
+
+/* One continuous tree-ring motif: no repeated tile edges behind the hero. */
+body[data-project="trae"] .project-hero::before,
+body[data-project="trae"] .project-content::before { background-repeat: no-repeat; background-size: cover; }

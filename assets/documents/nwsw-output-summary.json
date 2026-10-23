@@ -1,0 +1,28 @@
+{
+  "description": "Selected aggregate results from Brandon Santor's completed local research and engineering checks. No event coordinates or contributor datasets are included.",
+  "precision_experiment": {
+    "completed": "2026-10-14",
+    "comparisons": 16,
+    "final_runs_per_comparison": 4000000,
+    "total_runs": 64000000,
+    "target_percentage_points": 0.1,
+    "runs_per_comparison": [1000000, 2000000, 4000000],
+    "maximum_probability_margin_percentage_points": [0.141337, 0.105641, 0.077207],
+    "scope": "Maximum adjusted probability margin among 32 fixed metrics. Simulation precision under specified assumptions, not real-world location accuracy or biological validation.",
+    "original_chart_sha256": "7522c32c458d34a34731079f4c372b689b47f7ac06bcf5a2978c8ade639e1982"
+  },
+  "gis_rebuild": {
+    "checked_utc_date": "2026-10-18",
+    "software": "ArcGIS Pro 3.7.3",
+    "passed_stages": 9,
+    "linked_layers": 16,
+    "checks": ["Attributes and identifiers", "Coordinate systems and geometry", "Fresh map exports", "Reopening after relocation"],
+    "scope": "Completed local rebuild and portability checks. Independent recipient reproduction is a separate step. Layer count is not a count of scientific findings."
+  },
+  "source_reconciliation": {
+    "record_date": "2026-10-11",
+    "source_rows_checked": 31172,
+    "retained_inputs": 124,
+    "scope": "Completed source-reconciliation checks, preserving source differences and unresolved conflicts. These checks do not establish field accuracy."
+  }
+}

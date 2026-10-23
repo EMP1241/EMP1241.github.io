@@ -9,7 +9,7 @@
   const visible = new Set();
   const highlights = [...document.querySelectorAll('[data-highlights]')].map(el => ({
     el, panels: [...el.querySelectorAll('[data-hero-highlight]')], buttons: [...el.querySelectorAll('[data-highlight-select]')],
-    current: 0, visible: true, hover: false, focus: false, timer: null, animations: [], request: 0
+    current: 0, visible: true, focus: false, timer: null, animations: [], request: 0
   }));
   let paused = false;
   let away = false;
@@ -20,8 +20,8 @@
   function cancelTimer(item) { clearTimeout(item.timer); item.timer = null; }
   function schedule(item) {
     cancelTimer(item);
-    if (!enabled() || !item.visible || item.hover || item.focus || item.panels.length < 2) return;
-    item.timer = setTimeout(() => { show(item, (item.current + 1) % item.panels.length, true); }, 8500);
+    if (!enabled() || !item.visible || item.focus || item.panels.length < 2) return;
+    item.timer = setTimeout(() => { show(item, (item.current + 1) % item.panels.length, true); }, 6500);
   }
   async function show(item, index, automatic = false) {
     if (index < 0 || index >= item.panels.length) return;
@@ -29,16 +29,16 @@
     cancelTimer(item);
     item.animations.forEach(a => a.cancel()); item.animations = [];
     if (automatic && enabled() && item.panels[item.current].animate) {
-      const outgoing = item.panels[item.current].animate([{opacity: 1}, {opacity: 0}], {duration: 1000, easing: 'ease-in-out'});
+      const outgoing = item.panels[item.current].animate([{opacity: 1}, {opacity: 0}], {duration: 450, easing: 'ease-in-out'});
       item.animations.push(outgoing);
       try { await outgoing.finished; } catch {}
-      if (request !== item.request || !enabled() || item.hover || item.focus || !item.visible) return;
+      if (request !== item.request || !enabled() || item.focus || !item.visible) return;
     }
     item.current = index;
     item.panels.forEach((panel, i) => { panel.hidden = i !== index; });
     item.buttons.forEach((button, i) => button.setAttribute('aria-pressed', String(i === index)));
     const panel = item.panels[index];
-    if (enabled() && panel.animate) item.animations.push(panel.animate([{opacity: 0}, {opacity: 1}], {duration: 1600, easing: 'ease-in-out'}));
+    if (enabled() && panel.animate) item.animations.push(panel.animate([{opacity: 0}, {opacity: 1}], {duration: 650, easing: 'ease-in-out'}));
     schedule(item);
   }
   function draw() {
@@ -73,8 +73,6 @@
     item.buttons.forEach((button, i) => button.addEventListener('click', () => show(item, i)));
     item.el.querySelector('[data-highlight-controls]').hidden = false;
     item.el.classList.add('highlights-ready');
-    item.el.addEventListener('mouseenter', () => { item.hover = true; cancelTimer(item); });
-    item.el.addEventListener('mouseleave', () => { item.hover = false; schedule(item); });
     item.el.addEventListener('focusin', () => { item.focus = true; cancelTimer(item); });
     item.el.addEventListener('focusout', event => { if (!item.el.contains(event.relatedTarget)) { item.focus = false; schedule(item); } });
   });
