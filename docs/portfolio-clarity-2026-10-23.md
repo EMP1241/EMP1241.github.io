@@ -26,3 +26,7 @@
 - Static page/link/heading/image/contact checks, JavaScript syntax, gallery lifecycle tests, example ZIP consistency, white-paper fingerprint, and résumé fingerprint.
 - Real Chrome playback advanced through all three homepage clips, wrapped, and replayed the first clip. Hero content rotated. Desktop and 390-pixel layout checks found no horizontal overflow on the changed landing/project layouts inspected.
 - All six new evidence panels were visually reviewed. The precision-chart footer was repositioned to avoid the x-axis label.
+
+## Subsequent HC qualification
+
+The HC project returned its completed F01c record on October 23 after the first clarity deployment. The page, project directory, studio description, and résumé now distinguish the tested opt-in single-session pilot from the normal delivered build. The reviewed record reports live managed sign-in, sending, text streaming, file approval/denial, stop, authenticated restart, and reconnect; interruption retained existing text and identities without automatic resend, while an unavailable final result stayed unknown. Supporting evidence covers 15 process, 9 UI, and 12 packaged import/close/resume scenarios. The normal launcher remains P13d; broader command/tool qualification and multi-agent coordination are unfinished. No new public version was established. Private session identifiers, working paths, and raw receipts are not republished.
