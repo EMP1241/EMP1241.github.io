@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="3200" height="1980" viewBox="0 0 3200 1980" role="img" aria-labelledby="title desc">
 <title id="title">How the NWSW research system connects</title>
-<desc id="desc">Three checks: Pod human review, Hub human review, and Ingestor verification and scoped reproduction. The same Hub makes the final acceptance decision. Accepted material enters the Library as shared context. Contributors retrieve reviewed findings, corrections and methods for subsequent work.</desc>
+<desc id="desc">Three checks: Pod human review, Hub human review, and Ingestor verification and scoped reproduction. The same Hub makes the final acceptance decision. Accepted material is registered and published within its approved use scope before Library retrieval. Contributors retrieve reviewed findings, corrections and methods for subsequent work.</desc>
 <rect width="3200" height="1980" fill="#0b1216"/>
 <polyline points="0,0 0,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="100,0 100,1980" fill="none" stroke="#101c22" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
@@ -72,8 +72,8 @@
 <text x="2730" y="1288.2" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="400">limitations</text>
 <polyline points="2280,1610 2000,1610" fill="none" stroke="#8cb9ef" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 <polygon points="2000,1610 2021.0,1621.0 2021.0,1599.0" fill="#8cb9ef"/>
-<text x="2078.75" y="1537.4" fill="#8cb9ef" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">Accepted</text>
-<text x="2073.0" y="1579.4" fill="#8cb9ef" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">for sharing</text>
+<text x="2085.75390625" y="1537.4" fill="#8cb9ef" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">Register</text>
+<text x="2081.25" y="1579.4" fill="#8cb9ef" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">+ publish</text>
 <polyline points="520,1400 520,1150" fill="none" stroke="#69c5c2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 <polygon points="520,1150 509.0,1171.0 531.0,1171.0" fill="#69c5c2"/>
 <text x="570" y="1241.4" fill="#69c5c2" font-family="Segoe UI,Arial,sans-serif" font-size="33" font-weight="700">Retrieve shared context</text>
@@ -127,7 +127,7 @@
 <text x="2330" y="1614.0" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="400">The same Hub reviews the check results.</text>
 <text x="2330" y="1669.0" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="400">Human authority accepts or returns work</text>
 <text x="2330" y="1714.0" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="30" font-weight="400">and sets the approved sharing scope.</text>
-<text x="2330" y="1782.4" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">Acceptance controls Library publication.</text>
+<text x="2330" y="1782.4" fill="#d59a9f" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="400">Acceptance + governed publication.</text>
 <rect x="120" y="1400" width="1880" height="420" rx="30" fill="#141f25" stroke="#304047" stroke-width="2"/>
 <rect x="122" y="1430" width="5" height="360" rx="2" fill="#8cb9ef" stroke="none" stroke-width="2"/>
 <text x="170" y="1467.4" fill="#8cb9ef" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">LIBRARY / SHARED PROJECT MEMORY</text>
@@ -135,7 +135,7 @@
 <text x="170" y="1614.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Findings, corrections, methods and review history</text>
 <text x="170" y="1664.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">remain linked to their sources and versions.</text>
 <text x="170" y="1753.2" fill="#69c5c2" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Available in Library</text>
-<text x="170" y="1791.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400">Approved material within its recorded scope</text>
+<text x="170" y="1791.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400">Registered files / verified aliases; scoped use</text>
 <text x="825" y="1753.2" fill="#e0bd82" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Request from Hub</text>
 <text x="825" y="1791.8" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="400">Held material remains request-only</text>
 <polyline points="1720,1610 1600,1490" fill="none" stroke="#8cb9ef" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -155,5 +155,5 @@
 <text x="1494.50390625" y="1794.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Corrections</text>
 <text x="120" y="1919.8" fill="#69c5c2" font-family="Segoe UI,Arial,sans-serif" font-size="31" font-weight="400">Iterative contextual learning: later work uses the reviewed record when agents retrieve current context.</text>
 <text x="120" y="1969.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Brandon Santor / Research systems</text>
-<text x="2619.015625" y="1969.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Logical review and reuse flow / 21 Oct 2026</text>
+<text x="2619.015625" y="1969.2" fill="#b3c1c6" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="400">Logical review and reuse flow / 23 Oct 2026</text>
 </svg>

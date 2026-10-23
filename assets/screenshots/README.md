@@ -60,3 +60,14 @@ These are lossless WebP format derivatives with original pixel dimensions and no
 ## October 18 HC Home video replacement
 
 The third HC gallery item now uses `../video/hc-home-5s-20261018.mp4`, a genuine five-second native Windows recording. `hc-home-video-poster-20261018.webp` is its first-frame poster and thumbnail (1440 × 960); it replaces the previously used browser Home still in the live gallery. The historical `hc-home-20261018.webp` capture remains available as an archived asset. See the video directory README for recording provenance.
+
+## October 23 COLE release reconciliation
+
+Two gallery detail images now come from the exact extracted COLE0.10.0 release verification under0.10.0-multi-industry-20261023/extracted/all-browser. The screenshots contain public county data and scripted QA criteria; no private household records are shown.
+
+- `cole-multi-industry-20261023.webp`: multi-industry/multi-industry-1280.png, demonstrating two sectors and Any selected matching, with disclosure and ranking guidance visible.
+- `cole-age-profile-20261023.webp`: age/details-aggieland.png, showing the public ACS BrazosCounty age profile, median-age margin of error, and submitted test criteria.
+- The first map/results view remains the dated0.7.0 capture; it is not relabeled as0.10.0. Superseded industry/social captures remain archival.
+- `../icons/cole.png` is the current application icon from src/cole/static/cole-icon.png.
+
+WebP conversion is lossless, preserves original dimensions, and makes no semantic pixel edits. The source package SHA256 is d266ea8677af655b1991874511af925feb9262a4995430e88cca900c5f37aead. Full source/package mapping remains in the private reconciliation record; the release ZIP itself is not published here.
