@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title"><title id="title">Design the interface. Define how to test it.</title><defs><linearGradient id="bg"><stop stop-color="#101c29"/><stop offset="1" stop-color="#08121b"/></linearGradient><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#83bdde"/></marker></defs><rect width="1280" height="800" fill="url(#bg)"/>
+<text x="60" y="68" fill="#83bdde" font-family="Segoe UI,Arial,sans-serif" font-size="18">NASA SUITS / STUDENT CHALLENGE PROPOSAL</text>
+<text x="60" y="130" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="42">Design the interface. Define how to test it.</text>
+<text x="60" y="180" fill="#a4bac9" font-family="Segoe UI,Arial,sans-serif" font-size="24">Evaluation tasks documented in the original proposal; these are planned checks.</text>
+<rect x="60" y="235" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
+<text x="86" y="277" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">Navigation trials</text>
+<text x="86" y="321" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Follow a route using waypoint guidance</text>
+<text x="86" y="352" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Record task time and positioning accuracy</text>
+<rect x="660" y="235" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
+<text x="686" y="277" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">Task instructions</text>
+<text x="686" y="321" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Compare a task board with instructions</text>
+<text x="686" y="352" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Assess completion time and user feedback</text>
+<rect x="60" y="445" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
+<text x="86" y="487" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">Terrain recognition</text>
+<text x="86" y="531" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Identify shapes and surface obstacles</text>
+<text x="86" y="562" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Evaluate the proposed depth display</text>
+<rect x="660" y="445" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
+<text x="686" y="487" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">Voice interaction</text>
+<text x="686" y="531" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Test recognition with background noise</text>
+<text x="686" y="562" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Observe errors and interaction friction</text>
+<text x="60" y="752" fill="#a4bac9" font-family="Segoe UI,Arial,sans-serif" font-size="20">Proposal-stage evaluation design / No completed trial results are claimed.</text>
+</svg>

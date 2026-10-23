@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title"><title id="title">A navigation concept for the astronaut’s view.</title><defs><linearGradient id="bg"><stop stop-color="#101c29"/><stop offset="1" stop-color="#08121b"/></linearGradient><marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#83bdde"/></marker></defs><rect width="1280" height="800" fill="url(#bg)"/>
+<text x="60" y="68" fill="#83bdde" font-family="Segoe UI,Arial,sans-serif" font-size="18">NASA SUITS / STUDENT CHALLENGE PROPOSAL</text>
+<text x="60" y="130" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="42">A navigation concept for the astronaut’s view.</text>
+<text x="60" y="180" fill="#a4bac9" font-family="Segoe UI,Arial,sans-serif" font-size="24">Proposed sensing and positioning inputs → an augmented-reality interface</text>
+<rect x="60" y="235" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
+<text x="86" y="277" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">01 / Local positioning</text>
+<text x="86" y="321" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">BLE beacons + trilateration concept</text>
+<text x="86" y="352" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Waypoint bearing, distance and height</text>
+<rect x="660" y="235" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
+<text x="686" y="277" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">02 / Nearby terrain</text>
+<text x="686" y="321" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Depth-sensing and LiDAR concepts</text>
+<text x="686" y="352" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Terrain shape and obstacle cues</text>
+<rect x="60" y="445" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
+<text x="86" y="487" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">03 / HoloLens 2 interface</text>
+<text x="86" y="531" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Navigation and suit-status overlays</text>
+<text x="86" y="562" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Spatial anchors + geological annotations</text>
+<rect x="660" y="445" width="560" height="170" rx="18" fill="#142735" stroke="#405b6d"/>
+<text x="686" y="487" fill="#dce6ef" font-family="Segoe UI,Arial,sans-serif" font-size="27">04 / Human evaluation</text>
+<text x="686" y="531" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Planned route and task trials</text>
+<text x="686" y="562" fill="#b5c8d5" font-family="Segoe UI,Arial,sans-serif" font-size="22">Accuracy, completion time and usability</text>
+<g fill="none" stroke="#83bdde" stroke-width="2.5" marker-end="url(#arrow)"><path d="M340 405V440"/><path d="M940 405V425H640V530H625"/><path d="M620 560H655"/></g>
+<text x="60" y="752" fill="#a4bac9" font-family="Segoe UI,Arial,sans-serif" font-size="20">Brandon Santor / Team lead and system designer / 2021 proposal; testing was planned.</text>
+</svg>

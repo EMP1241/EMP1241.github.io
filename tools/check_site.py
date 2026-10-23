@@ -53,19 +53,19 @@ class Page(HTMLParser):
 pages = {p.name: Page(p) for p in ROOT.glob('*.html')}
 expected = {'index.html', 'about.html', 'projects.html', 'resume.html', 'project-nwsw.html',
             'project-trae.html', 'project-tvae.html', 'project-phalainx.html', 'project-research-architect.html', 'project-gnss.html',
-            'project-mars.html', 'project-cole.html', 'project-nwsw-workbench.html', 'project-high-command.html', '404.html'}
+            'project-mars.html', 'project-cole.html', 'project-nwsw-workbench.html', 'project-high-command.html', 'project-suits.html', '404.html'}
 if set(pages) != expected:
     errors.append(f'Unexpected page set: {set(pages) ^ expected}')
 email = re.compile(r'[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}', re.I)
 phone = re.compile(r'(?<!\d)(?:\+?1[ .-]?)?\(?\d{3}\)?[ .-]\d{3}[ .-]\d{4}(?!\d)')
 listed_projects = ['project-nwsw.html', 'project-research-architect.html', 'project-mars.html',
                    'project-trae.html', 'project-tvae.html', 'project-high-command.html',
-                   'project-nwsw-workbench.html', 'project-cole.html', 'project-gnss.html']
+                   'project-nwsw-workbench.html', 'project-cole.html', 'project-gnss.html', 'project-suits.html']
 if 'projects.html' in pages:
     directory_order = list(dict.fromkeys(urlsplit(a.get('href', '')).path for a in pages['projects.html'].links
                                         if urlsplit(a.get('href', '')).path.startswith('project-')))
     if directory_order != listed_projects:
-        errors.append('projects.html: requires nine ordered project entries; the studio is unlisted')
+        errors.append('projects.html: requires ten ordered project entries; the studio is unlisted')
 studio_products = {'project-research-architect.html', 'project-high-command.html'}
 for name, page in pages.items():
     studio_links = [a for a in page.links if urlsplit(a.get('href', '')).path == 'project-phalainx.html']

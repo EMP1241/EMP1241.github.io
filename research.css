@@ -262,3 +262,5 @@ html.resume-page { scroll-behavior: auto; }
   .glance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .toolkit-group { break-inside: avoid; }
 }
+
+body[data-project="suits"] { --project-color: 131 189 222; --project-pattern: url('assets/motifs/signal.svg'); }
