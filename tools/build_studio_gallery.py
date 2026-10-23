@@ -73,7 +73,7 @@ def products():
     a.text(195,247,'Research Architect',32,INK,650)
     a.text(195,282,'For human research teams',22,PURPLE)
     a.rect(92,320,210,252,fill='#0b0d15')
-    a.image(OUT/'ra-whitepaper-cover-20261022.png',100,328,194,236)
+    a.image(OUT/'ra-whitepaper-cover-20261023.png',100,328,194,236)
     a.text(333,367,'Individual kits',23,INK,650)
     a.text(333,410,'Shared methods',23,MUTED)
     a.text(333,453,'Research context',23,MUTED)
@@ -88,7 +88,7 @@ def products():
     a.image(ROOT/'assets/screenshots/hc-command-deck-20261018.webp',680,327,505,280)
     a.text(675,655,'Local desktop workspace',25,INK,600)
     a.text(675,695,'Active alpha testing',21,GOLD)
-    a.text(60,763,'RA 2.3 preview / White paper: October 22 design reference',19,MUTED)
+    a.text(60,763,'RA 2.3 revision 2 / Technical white paper: October 23, 2026',19,MUTED)
     a.save('studio-products-20261022.svg')
 
 
@@ -97,8 +97,8 @@ def engineering():
     a.text(60,68,'PHALAINX / DEVELOPMENT MATERIAL',18,PURPLE,700)
     a.text(60,130,'Published design. Runnable checks.',46,INK,650)
     a.rect(60,180,395,535,fill='#191722',stroke='#5d4c78')
-    a.image(OUT/'ra-whitepaper-cover-20261022.png',79,196,357,463)
-    a.text(82,692,'Technical white paper / 7 pages',21,PURPLE,600)
+    a.image(OUT/'ra-whitepaper-cover-20261023.png',79,196,357,463)
+    a.text(82,692,'Technical white paper / 11 pages',21,PURPLE,600)
     a.rect(485,180,735,335)
     a.text(510,214,'PUBLIC INTEGRITY EXAMPLE / SYNTHETIC FILES',16,GOLD,700)
     source=(ROOT/'assets/examples/handoff-integrity/verify.py').read_text(encoding='utf-8')
