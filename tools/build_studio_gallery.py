@@ -47,7 +47,7 @@ class Art:
 def identity():
     a=Art('PhalAInx independent software studio', 'The existing PhalAInx emblem, with its metallic rings, purple light and gold arrow, paired with the studio name and its founder Brandon Santor. Studio identity artwork, not an application screenshot.')
     a.nodes.append('<rect width="700" height="800" fill="url(#glow)"/><defs><clipPath id="emblem"><rect x="45" y="80" width="580" height="540"/></clipPath></defs>')
-    a.image(ROOT/'assets/screenshots/phalainx-intro-still.webp',-345,60,1280,720,'clip-path="url(#emblem)"')
+    a.image(ROOT/'assets/icons/phalainx-branding.png',-400,52,1280,950,'clip-path="url(#emblem)"')
     a.line(640,180,640,620)
     a.text(60,68,'PHALAINX / STUDIO IDENTITY',18,PURPLE,700)
     a.nodes.append(f'<text x="700" y="330" font-family="Segoe UI,Arial,sans-serif" font-size="72" font-weight="650" fill="{INK}">Phal<tspan fill="{GOLD}">AI</tspan>nx</text>')
