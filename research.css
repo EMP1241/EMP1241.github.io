@@ -264,3 +264,6 @@ html.resume-page { scroll-behavior: auto; }
 }
 
 body[data-project="suits"] { --project-color: 131 189 222; --project-pattern: url('assets/motifs/signal.svg'); }
+
+/* Full studio lockup needs more space than a product icon. */
+body[data-project="phalainx"] .project-hero .page-app-icon { width: clamp(180px, 22vw, 260px); height: auto; aspect-ratio: 974 / 963; object-fit: contain; }
