@@ -35,3 +35,32 @@ Mini schematic: four anchors converge into one position estimate, with three col
 Bottom small attractive visor inset: lunar waypoint, crew markers and shared pin. Caption exact: "Positions → crew markers, waypoints and shared pins"
 
 Constraints: This MUST depict 300 x 300 m, 100 m spacing, 4x4 =16 spikes, 3 astronauts and local ranging links. Do not depict a universal 150 m coverage guarantee. Do not mention RSSI or imply Channel Sounding existed in the 2021 proposal. No accuracy numbers, NASA logos, implementation claims, tested/deployed claims, watermarks, or long disclaimer footer. Make the spatial arrangement precise and visually interesting, with strong readability at full image size.
+
+
+Scale correction edit:
+Edit the provided infographic. The main map has a serious physical-scale error: its astronauts and spikes are about TEN TIMES TOO BIG for a 300 x 300 meter area. Correct this, preserving the diagram and all text.
+
+CHANGE ONLY THE MAIN LEFT TERRAIN MAP'S ASTRONAUTS AND SPIKE HARDWARE:
+1. Replace the three large main-map astronauts with TINY real white-suited human figures, approximately 1.8 m tall. The 300 m width is about 790 pixels, so EACH ASTRONAUT MUST BE ONLY 4–5 PIXELS HIGH and 2–3 pixels wide at this output size. They should appear as tiny white flecks on broad lunar terrain, NOT large visible character renderings. Remove their old giant bodies and giant shadows, filling with matching terrain. Do not retain ANY giant person in the main map.
+2. Retain the exact positions of all three crew solutions. Keep the existing readable "Crew 01", "Crew 02", "Crew 03" labels, but use fine leader lines from the labels to the tiny people. A thin open locator ring about 12 pixels across may surround a tiny person if needed; it is a graphic locator, not a suit or body. Colored dashed local links converge exactly on each tiny person's position.
+3. The sixteen spike tripod renderings are ALSO much too big. Replace each main-map spike with tiny 1 m hardware at its exact existing grid intersection, only 2–3 pixels tall, supplemented by a restrained 4-pixel cyan point locator. Remove the old large tripods and oversized shadows. Keep EXACTLY 16 anchor locations in the same 4x4 grid.
+4. Add a small "Details enlarged" label above the RIGHT explanation-panel illustrations, because only those illustrations show close-up astronauts and hardware. Keep all right-hand detail illustrations and their sizes unchanged.
+
+PRESERVE EXACTLY:
+300 x 300 m extent; four rows and four columns of spikes; 100 m interval lines; 0/100/200/300 axis labels; all dimension brackets; three same crew locations; three local four-anchor dashed link groups; overall composition and 1586 x 992 dimensions; title/subtitle; modernized Channel Sounding identification; dark palette; all explanatory text; AR visor preview.
+Terrain should remain a genuinely broad overhead view. A person is about 1/167 of the 300 m width, not 1/15. The essential correction is the dramatic size reduction of ALL humans and hardware in the main map while retaining readable leader labels. No other redesign, no new large symbols over the tiny figures, no new people.
+
+Point-locator correction edit:
+Correct the LEFT main map only. Replace all three white person pictograms inside the cyan, amber and violet circles with TINY WHITE DOTS, 2 pixels across. NO visible human silhouette or anatomy on the main map. At this scale a person is too small to depict as a recognizable character. Shrink each colored circle to an 8-pixel-wide open locator ring around the white dot. Keep the Crew 01/02/03 labels and dashed links exactly in place.
+Replace all SIXTEEN left-map miniature tripod/antenna drawings with TINY CYAN POINTS, 3 pixels across. Remove ALL remaining visible tripod legs, vertical antenna shafts, glows extending above grid intersections, and hardware shadows from the main map. A 1-meter spike is too small to render as a tripod in a 300-meter map. Only sixteen small cyan dots should mark the four-by-four lattice.
+This is an object removal and replacement edit, not a redesign. Do not move coordinates, do not alter grid, 300m dimensions, 100m spacing, terrain, headings, text, colors or layout. Preserve RIGHT-HAND panels and all their enlarged people/hardware entirely unchanged. On the MAIN map there must be ZERO recognizable human figures and ZERO tripod drawings: only tiny white crew points and cyan anchor points. Preserve terrain behind removed objects.
+
+Single-wearer explanation edit:
+Edit ONLY the small illustration INSIDE the right-hand "03 Estimate each position" panel. All other pixels, main terrain map, crew points, 16 anchor points, grid, text, dimensions, panels 01/02, legend and bottom visor must remain unchanged.
+Replace panel 03's confusing four differently colored rays and three-crew legend with a clear SINGLE-WEARER calculation:
+Within that panel draw four small neutral white fixed-anchor icons arranged as the corners of a rectangle, labeled A, B, C, D. In the center, one small CYAN astronaut/tag icon labeled "Crew 01". Four thin CYAN dashed lines connect that ONE tag to the four anchors. All four links have the SAME cyan color, with no amber or violet lines. No extra astronauts. Remove the Crew 02 and Crew 03 legend entries completely from this panel.
+At the bottom of this small panel add this exact concise caption: "Four nearby anchors → one wearer’s position"
+Optional second tiny line if space allows: "Repeat separately for each tag."
+This is a diagram of one person's four distance inputs, NOT four crew members and NOT three identities combined. Keep it spacious, straightforward and legible. Preserve the main image's exact dimensions, everything outside this panel, and its style.
+
+Final active asset: crew-positioning-grid-300m-v2-20261023.webp
