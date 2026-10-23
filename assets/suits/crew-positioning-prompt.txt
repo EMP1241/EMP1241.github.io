@@ -1,0 +1,37 @@
+Built-in image generation; style reference: earlier unpublished local-positioning illustration.
+Generated 2026-10-23. Final asset: crew-positioning-grid-300m-20261023.webp.
+
+Use case: scientific-educational.
+Asset type: polished landscape lunar navigation infographic, approximately 1600 x 1000, for a dark research portfolio.
+Reference image: STYLE REFERENCE ONLY: retain its photoreal lunar terrain, dark navy technical panels, crisp white typography, cyan/amber/violet accents. Rebuild the map entirely; do NOT preserve its tiny 30 m layout or RSSI method.
+
+Primary request: A LARGE 300 x 300 meter lunar work area, a fixed telemetry spike every 100 meters, with MULTIPLE astronauts using nearby anchors. Show how a MODERNIZED Bluetooth Channel Sounding concept could support their separate AR navigation views. This is proposed system visualization, not measured lunar performance.
+
+COMPOSITION: left ~65% square near-vertical orthographic OVERHEAD terrain map; right ~35% clean numbered explanation panels and a small AR visor inset. No horizon, no Earth, no atmospheric fog.
+TITLE exact: "A shared positioning grid for the crew"
+SUBTITLE exact: "300 × 300 m area · 100 m spike spacing"
+EYEBROW exact: "SUITS / MODERNIZED CHANNEL SOUNDING CONCEPT"
+
+MAIN MAP geometry is critical:
+A SQUARE 300 m by 300 m area divided into THREE equal 100 m intervals along each axis, forming NINE large square cells.
+Place EXACTLY SIXTEEN fixed telemetry spikes at the intersections of a FOUR-by-FOUR lattice: four evenly spaced spike columns and four evenly spaced spike rows, including boundary corners. No missing, extra or clustered spikes. Small crisp anchor symbols with tiny real tripod spikes underneath; enlarged symbols are for visibility, not hardware size. Neutral white or pale cyan anchor symbols. Light grid lines connect the lattice.
+Axis ticks outside bottom and left are EXACTLY 0, 100, 200, 300 m, aligned with the four spike rows/columns. Dimension brackets show full "300 m" width and "300 m" height. No second inconsistent scale bar.
+Terrain extends beneath the entire grid: lunar regolith, small craters, low ridges, shadow and a light TIN terrain mesh in places. It must feel like a broad work area, not a close-up campsite.
+
+Place THREE astronauts inside DIFFERENT cells: one near the center of the lower-left cell, one near the center of the middle cell, one near the center of the upper-right cell. Tiny realistic astronauts at correct broad terrain scale, surrounded by distinct small colored PERSON SYMBOLS for readability. Identity labels "Crew 01", "Crew 02", "Crew 03" in cyan, amber, violet respectively.
+For EACH astronaut, draw FOUR thin same-color dashed bidirectional ranging links ONLY to the four nearby spikes forming that astronaut's surrounding 100 m cell. This keeps each illustrated tag-to-anchor link well below 150 m, rather than linking across all 300 m. Exactly 12 links total. Colors distinguish the three independent ranging solutions. No links between astronauts, no whole-area coverage domes, no range spheres, no guaranteed-position halos. A small legend: tripod symbol "Known-position spike"; person symbol "Astronaut + wearable tag"; dashed line "Two-way ranging link".
+Small caption inside map near bottom: "Each wearer uses nearby anchors."
+
+RIGHT PANEL text exact, readable:
+"01  Exchange radio signals"
+"Wearable tags communicate with nearby fixed spikes."
+Small diagram wearable tag ↔ spike, clearly two-way.
+"02  Measure distance"
+"Channel Sounding uses phase and timing measurements."
+Small abstract wave + timer schematic, not RSSI bars.
+"03  Estimate each position"
+"Combine ranges with known anchor coordinates."
+Mini schematic: four anchors converge into one position estimate, with three color-coded crew identities listed alongside.
+Bottom small attractive visor inset: lunar waypoint, crew markers and shared pin. Caption exact: "Positions → crew markers, waypoints and shared pins"
+
+Constraints: This MUST depict 300 x 300 m, 100 m spacing, 4x4 =16 spikes, 3 astronauts and local ranging links. Do not depict a universal 150 m coverage guarantee. Do not mention RSSI or imply Channel Sounding existed in the 2021 proposal. No accuracy numbers, NASA logos, implementation claims, tested/deployed claims, watermarks, or long disclaimer footer. Make the spatial arrangement precise and visually interesting, with strong readability at full image size.
