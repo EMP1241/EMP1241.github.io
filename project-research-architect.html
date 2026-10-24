@@ -18,7 +18,7 @@
   <script>try { const t = localStorage.getItem('portfolio-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; if (localStorage.getItem('portfolio-motion') === 'paused') document.documentElement.dataset.motion = 'paused'; } catch {}</script>
 
   <link rel="stylesheet" href="style.css?v=20261023-clarity">
-<link rel="stylesheet" href="research.css?v=20261023-clarity">
+<link rel="stylesheet" href="research.css?v=20261024-example">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
@@ -26,7 +26,7 @@
 
   <script src="site.js" defer></script>
 
-<script src="gallery.js?v=20261023-clarity" defer></script>
+<script src="gallery.js?v=20261024-example" defer></script>
 
 <script src="workflow.js" defer></script><script src="motion.js?v=20261023-clarity" defer></script>
 </head>
@@ -154,6 +154,11 @@
 <p class="prose">A handoff can look complete even when a file has changed. This small Python example compares two synthetic notes with a manifest of expected filenames and SHA-256 fingerprints, then demonstrates changed, missing, and unexpected files.</p>
 <p class="example-scope">Created for this portfolio to make the method inspectable. It is a standalone demonstration, not a release of the RA runtime. A match establishes byte agreement with the supplied manifest; authorship, scientific validity, and approval require separate evidence.</p>
 <div class="actions"><a class="button" href="assets/examples/handoff-integrity.zip" download="handoff-integrity.zip">Download runnable example ↓</a><a class="button button--secondary" href="https://github.com/EMP1241/EMP1241.github.io/blob/main/assets/examples/handoff-integrity/verify.py" target="_blank" rel="noopener noreferrer">Read the full Python source ↗</a></div>
+<div class="example-visuals" id="integrity-visuals" data-image-set data-gallery-title="Research Architect · Code, examples, results" role="group" aria-label="Three-part walkthrough of the public file-checking example">
+<figure class="example-frame" data-image-frame><a href="assets/evidence/ra-code.svg" data-lightbox aria-label="Enlarge image 1: the exact Python file-checking function"><img src="assets/evidence/ra-code.svg" width="1400" height="900" loading="lazy" decoding="async" alt="The downloadable Python function reads a file, calculates its SHA-256 fingerprint, and compares it with the expected value."><span class="example-enlarge" aria-hidden="true">View larger ↗</span></a><figcaption><span class="eyebrow">01 · The code</span> <strong>Check the file’s fingerprint.</strong> <p>The exact Python function included in the download, with the full verifier available above.</p></figcaption></figure>
+<figure class="example-frame" data-image-frame><a href="assets/evidence/ra-example-cases.svg" data-lightbox aria-label="Enlarge image 2: the sample files and five test cases"><img src="assets/evidence/ra-example-cases.svg" width="1400" height="900" loading="lazy" decoding="async" alt="Two synthetic notes and their manifest are tested unchanged, with an edited note, a missing note, an extra file, and an invalid expected fingerprint."><span class="example-enlarge" aria-hidden="true">View larger ↗</span></a><figcaption><span class="eyebrow">02 · The examples</span> <strong>Change the inputs on purpose.</strong> <p>Five cases exercise the two sample notes and manifest. Each change uses a temporary copy.</p></figcaption></figure>
+<figure class="example-frame" data-image-frame><a href="assets/evidence/ra-results.svg" data-lightbox aria-label="Enlarge image 3: the five passing results from the actual self-test"><img src="assets/evidence/ra-results.svg" width="1400" height="900" loading="lazy" decoding="async" alt="Actual self-test results: all five checks pass, confirming the intact sample and detecting changed, missing, unexpected, and malformed inputs."><span class="example-enlarge" aria-hidden="true">View larger ↗</span></a><figcaption><span class="eyebrow">03 · The result</span> <strong>See what the checks found.</strong> <p>All five checks passed when the downloadable example ran. The results are typeset for readability.</p> <a class="text-link" href="assets/evidence/integrity-example-output.txt" target="_blank" rel="noopener">Read the captured output ↗</a></figcaption></figure>
+</div>
 <details class="engineering-evidence"><summary>Run the example and inspect the core check</summary>
 <ol class="example-steps"><li>Extract the ZIP and open a terminal in the <code>handoff-integrity</code> folder. Python 3.10 or newer is the only requirement.</li><li>Run <code>python verify.py</code>. The intact example reports that both files match the manifest.</li><li>Run <code>python verify.py --self-test</code>. Five checks exercise intact, changed, missing, unexpected, and malformed inputs using temporary copies.</li></ol>
 <h3>The byte-comparison function</h3><p>This is the same function included in the download. The full script also checks the manifest structure and expected file list.</p>

@@ -1,7 +1,8 @@
 (() => {
   'use strict';
   const galleries = [...document.querySelectorAll('[data-gallery]')];
-  if (!galleries.length || document.getElementById('media-lightbox')) return;
+  const imageSets = [...document.querySelectorAll('[data-image-set]')];
+  if ((!galleries.length && !imageSets.length) || document.getElementById('media-lightbox')) return;
 
   const dialog = document.createElement('dialog');
   dialog.id = 'media-lightbox';
@@ -268,6 +269,28 @@
     });
     element.querySelectorAll('[data-gallery-control]').forEach(control => { control.hidden = slides.length < 2; });
     select(0);
+  });
+
+  // Static walkthroughs share the modal without becoming rotating galleries.
+  imageSets.forEach(element => {
+    const slides = [...element.querySelectorAll('[data-image-frame]')];
+    if (!slides.length) return;
+    const state = {
+      element, slides, index: 0,
+      title: element.dataset.galleryTitle || 'Image walkthrough',
+      step(amount) {
+        this.index = (this.index + amount + slides.length) % slides.length;
+        renderLightbox();
+      }
+    };
+    slides.forEach((slide, index) => {
+      const anchor = slide.querySelector('[data-lightbox]');
+      anchor?.addEventListener('click', event => {
+        if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+        state.index = index;
+        if (showLightbox(state, anchor)) event.preventDefault();
+      });
+    });
   });
 
   if (supportsDialog) {

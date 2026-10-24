@@ -34,7 +34,7 @@ class Element {
   querySelectorAll(s) { return this.lists?.[s] || []; }
 }
 
-function fixture({videoSlide = false, reducedMotion = false} = {}) {
+function fixture({videoSlide = false, reducedMotion = false, staticImageSet = false} = {}) {
   const timers = new Map(); let id = 0;
   const doc = new Element(); doc.documentElement = new Element(); doc.body = new Element();
   doc.activeElement = null; doc.hidden = false; doc.getElementById = () => null;
@@ -51,11 +51,11 @@ function fixture({videoSlide = false, reducedMotion = false} = {}) {
   }
   root.append(controls); [prev, count, next, ...thumbs].forEach(el => controls.append(el));
   root.map = {'.gallery-controls': controls, '[data-gallery-count]': count, '[data-gallery-prev]': prev, '[data-gallery-next]': next};
-  root.lists = {'.gallery-slide': slides, '[data-slide]': thumbs, '[data-lightbox]': anchors, '[data-gallery-control]': [prev, next]};
+  root.lists = {'.gallery-slide': slides, '[data-image-frame]': slides, '[data-slide]': thumbs, '[data-lightbox]': anchors, '[data-gallery-control]': [prev, next]};
   const dialog = new Element('dialog'); const keys = ['img','video','.lightbox-viewport','[data-position]','[data-zoom]','.lightbox-caption','.lightbox-loading','.lightbox-original','#lightbox-title','[data-prev]','[data-next]','[data-close]'];
   dialog.map = Object.fromEntries(keys.map(k => [k, new Element(k === 'video' ? 'video' : 'div')]));
   doc.createElement = tag => tag === 'dialog' ? dialog : new Element(tag);
-  doc.lists = {'[data-gallery]': [root]};
+  doc.lists = {'[data-gallery]': staticImageSet ? [] : [root], '[data-image-set]': staticImageSet ? [root] : []};
   const win = new Element(); let observer;
   class Observer {
     constructor(fn) { this.callback = fn; observer = this; }
@@ -154,4 +154,23 @@ const modalPlayCount = modalClip.playCount;
 modal.doc.hidden = true; modal.doc.emit('visibilitychange');
 modal.doc.hidden = false; modal.doc.emit('visibilitychange');
 assert.equal(modalClip.playCount, modalPlayCount, 'The lightbox must retain a manual pause after returning to the tab');
-console.log('PASS: gallery rotation, lifecycle, reduced motion, lightbox cleanup, and mouse/touch/keyboard ownership of playback and sound.');
+const walkthrough = fixture({staticImageSet: true});
+assert.equal(walkthrough.timers.size, 0, 'Static walkthroughs must never start rotation');
+assert.ok(walkthrough.slides.every(slide => !slide.hidden), 'All three static frames remain visible');
+walkthrough.anchors[1].emit('click', {ctrlKey: true});
+assert.equal(walkthrough.dialog.open, false, 'Modified clicks retain normal link behavior');
+for (let i = 0; i < 3; i++) {
+  walkthrough.anchors[1].emit('click');
+  assert.equal(walkthrough.dialog.open, true);
+  assert.equal(walkthrough.dialog.map['[data-position]'].textContent, '2 / 3', 'Open the image actually clicked');
+  walkthrough.dialog.map['[data-next]'].emit('click');
+  assert.equal(walkthrough.dialog.map['[data-position]'].textContent, '3 / 3');
+  walkthrough.dialog.map['[data-next]'].emit('click');
+  assert.equal(walkthrough.dialog.map['[data-position]'].textContent, '1 / 3', 'Modal navigation wraps');
+  walkthrough.dialog.map['[data-close]'].emit('click');
+  walkthrough.dialog.emit('close');
+  assert.equal(walkthrough.dialog.open, false);
+  assert.equal(walkthrough.timers.size, 0);
+  assert.ok(walkthrough.slides.every(slide => !slide.hidden), 'Modal navigation must not hide the static frames');
+}
+console.log('PASS: gallery lifecycle/playback, static walkthrough navigation, and lightbox cleanup.');

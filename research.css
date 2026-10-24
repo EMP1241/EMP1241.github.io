@@ -231,6 +231,18 @@ body[data-page="index.html"] .hero h1 { font-size: clamp(2.7rem, 4.5vw, 4.6rem);
 .implementation-example { scroll-margin-top: 2rem; }
 .implementation-example .actions { margin-block: 1.1rem; }
 .implementation-example .example-scope { max-width: 75ch; color: var(--muted); font-size: .9rem; }
+.example-visuals { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-block: 1.6rem; }
+.example-frame { min-width: 0; margin: 0; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.example-frame > a { display: block; position: relative; border-radius: 11px 11px 0 0; }
+.example-frame > a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.example-frame img { display: block; width: 100%; height: auto; aspect-ratio: 14 / 9; object-fit: contain; background: #0b151b; border-radius: 11px 11px 0 0; }
+.example-enlarge { position: absolute; right: .55rem; bottom: .55rem; padding: .25rem .45rem; border: 1px solid #8aa3ad; border-radius: 5px; background: #0b151bee; color: #f1f4ef; font-size: .7rem; }
+.example-frame figcaption { padding: 1rem; }
+.example-frame figcaption .eyebrow { display: block; margin-bottom: .45rem; }
+.example-frame figcaption strong { display: block; font-size: 1rem; line-height: 1.4; }
+.example-frame figcaption p { margin-block: .55rem; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+.example-frame figcaption .text-link { font-size: .8rem; }
+@media (max-width: 800px) { .example-visuals { grid-template-columns: minmax(0, 1fr); } }
 .code-sample { margin-block: .8rem 1.2rem; padding: 1.2rem; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); white-space: pre-wrap; overflow-wrap: anywhere; font: .8rem/1.6 ui-monospace, Consolas, monospace; }
 .example-steps { padding-left: 1.3rem; }
 .example-steps li + li { margin-top: .7rem; }
