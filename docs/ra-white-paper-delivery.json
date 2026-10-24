@@ -1,10 +1,10 @@
 {
-  "edition": "Owner-supplied public edition 4",
+  "edition": "Owner-supplied public edition 10",
   "date": "2026-10-23",
-  "pages": 8,
-  "scope": "Historical RA 2.1 operational case with late-stage participant and agent onboarding limitation. Current RA 2.3/2.4 evidence is maintained separately on the portfolio.",
-  "pdf_sha256": "5902c83b013b2bcdd673a2ea8ccd811a12e00287539ad2fd7ff80c2c34412408",
-  "source_sha256": "f572653e69091422c6a7534bd5185c880d8e77b05c9e5c1186fa2cda0e2af8ca",
+  "pages": 15,
+  "scope": "Historical NWSW deployment and RA 2.5.1 engineering, guided setup, shared Library authority, and onboarding limits.",
+  "pdf_sha256": "3e22389c4a3b8c3c99e63f93e082d4645e77050e7bddbc835148b301b01af6e9",
+  "source_sha256": "47dae63fbc0bcfe3c1f15628562cdf5248c5c4a25335f1839c3849a0e64f9101",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true
 }

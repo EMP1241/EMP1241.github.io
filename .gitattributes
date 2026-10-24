@@ -7,4 +7,4 @@
 # Hash examples compare original bytes; keep text endings stable after checkout.
 assets/examples/handoff-integrity/** text eol=lf
 # Preserve the exact owner-supplied paper source against its delivery hash.
-docs/research-architect-white-paper.md -text
+docs/research-architect-white-paper.md -text whitespace=cr-at-eol

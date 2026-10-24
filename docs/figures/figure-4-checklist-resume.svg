@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1680" viewBox="0 0 2400 1680">
+<rect x="0" y="0" width="2400" height="1680" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="0" y="0" width="2400" height="240" rx="0" fill="#142C3C" stroke="#142C3C" stroke-width="3"/>
+<text x="80" y="70.6" font-family="Arial" font-size="32" font-weight="700" fill="#8FD7CE">04  /  RESEARCH ARCHITECT</text>
+<text x="80" y="144.6" font-family="Arial" font-size="62" font-weight="700" fill="#FFFFFF">Required questions survive an interruption</text>
+<text x="80" y="205.8" font-family="Arial" font-size="36" font-weight="400" fill="#D9E7ED">New setup sessions: 43 required items, including the opening invitation.</text>
+<rect x="80" y="300" width="1060" height="280" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="300" width="10" height="280" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="110" y="345.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">01  /  READ COMPACT STATUS</text>
+<text x="110" y="402.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Resume the saved checklist</text>
+<text x="110" y="463.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">A new or returning chat identifies the pending item.</text>
+<text x="110" y="516.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">New sessions start with the invitation to ask questions.</text>
+<rect x="1260" y="300" width="1060" height="280" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1260" y="300" width="10" height="280" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="1290" y="345.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">02  /  ASK + WAIT</text>
+<text x="1290" y="402.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Get the human response</text>
+<text x="1290" y="463.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Ask the next required question. Clarify uncertainty.</text>
+<text x="1290" y="516.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Do not infer consent from a question or silence.</text>
+<polyline points="1140,440 1260,440" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="1260,440 1239.2897166458883,450.0042072845583 1239.2897166458883,429.9957927154417" fill="#3075A3"/>
+<rect x="1260" y="720" width="1060" height="280" rx="16" fill="#FFF3DD" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1260" y="720" width="10" height="280" rx="4" fill="#A46414" stroke="#A46414" stroke-width="3"/>
+<text x="1290" y="765.2" font-family="Arial" font-size="29" font-weight="700" fill="#A46414">CLARIFICATION / DEFERRED</text>
+<text x="1290" y="822.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Keep the same item pending</text>
+<text x="1290" y="883.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Record the discussion without marking an answer.</text>
+<text x="1290" y="936.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">For the opening, wait until the user chooses to begin.</text>
+<polyline points="1790,580 1790,720" fill="none" stroke="#A46414" stroke-width="7"/>
+<polygon points="1790,720 1779.9957927154417,699.2897166458885 1800.0042072845583,699.2897166458885" fill="#A46414"/>
+<polyline points="2320,860 2360,860 2360,440 2320,440" fill="none" stroke="#A46414" stroke-width="7"/>
+<polygon points="2320,440 2340.7102833541117,429.9957927154417 2340.7102833541117,450.0042072845583" fill="#A46414"/>
+<rect x="80" y="720" width="1060" height="280" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="720" width="10" height="280" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="110" y="765.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">ACTUAL ANSWER</text>
+<text x="110" y="822.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Record response and provenance</text>
+<text x="110" y="883.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Return to compact status for the next requirement.</text>
+<text x="110" y="936.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Saved history supports fresh-chat continuation.</text>
+<polyline points="1260,550 1200,550 1200,860 1140,860" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="1140,860 1160.7102833541117,849.9957927154417 1160.7102833541117,870.0042072845583" fill="#087F80"/>
+<polyline points="80,860 40,860 40,440 80,440" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="80,440 59.28971664588843,450.0042072845583 59.28971664588843,429.9957927154417" fill="#087F80"/>
+<rect x="320" y="1180" width="1760" height="290" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="320" y="1180" width="10" height="290" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="350" y="1225.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">ALL REQUIRED ANSWERS + EXPLICIT PREPARATION APPROVAL</text>
+<text x="350" y="1282.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Bind exact configuration; then compile and verify</text>
+<text x="350" y="1343.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">An unanswered required item blocks the supported preparation path.</text>
+<text x="350" y="1396.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Changed configuration requires renewed approval. Walkthroughs follow the build.</text>
+<polyline points="610,1000 610,1090 810,1090 810,1180" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="810,1180 799.9957927154417,1159.2897166458883 820.0042072845583,1159.2897166458883" fill="#087F80"/>
+<rect x="70" y="1555" width="2260" height="80" rx="10" fill="#EDF5F8" stroke="#EDF5F8" stroke-width="3"/>
+<text x="95" y="1602.2" font-family="Arial" font-size="34" font-weight="400" fill="#486274">Legacy ledgers and approvals remain valid. Recorded answers do not authenticate human decisions.</text></svg>

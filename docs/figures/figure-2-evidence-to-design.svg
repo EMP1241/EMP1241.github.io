@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1680" viewBox="0 0 2400 1680">
+<rect x="0" y="0" width="2400" height="1680" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="0" y="0" width="2400" height="240" rx="0" fill="#142C3C" stroke="#142C3C" stroke-width="3"/>
+<text x="80" y="70.6" font-family="Arial" font-size="32" font-weight="700" fill="#8FD7CE">02  /  RESEARCH ARCHITECT</text>
+<text x="80" y="144.6" font-family="Arial" font-size="62" font-weight="700" fill="#FFFFFF">From scientific evidence to a defensible design</text>
+<text x="80" y="205.8" font-family="Arial" font-size="36" font-weight="400" fill="#D9E7ED">Two inputs meet at a reviewed design; the compiler packages the resulting decisions.</text>
+<rect x="80" y="300" width="1060" height="300" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="300" width="10" height="300" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="110" y="345.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">METHOD GUIDANCE</text>
+<text x="110" y="402.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Published methodological research</text>
+<text x="110" y="463.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Identify the original edition, relevant passages,</text>
+<text x="110" y="516.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">assumptions, limits and source availability.</text>
+<rect x="1260" y="300" width="1060" height="300" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1260" y="300" width="10" height="300" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="1290" y="345.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">OBSERVATIONS</text>
+<text x="1290" y="402.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Authorized project evidence</text>
+<text x="1290" y="463.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Use supplied data or approved Library findings.</text>
+<text x="1290" y="516.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Preserve origin, methods, artifacts and use limits.</text>
+<rect x="80" y="715" width="1060" height="300" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="715" width="10" height="300" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="110" y="760.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">READ + APPRAISE</text>
+<text x="110" y="817.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Test the method against the question</text>
+<text x="110" y="878.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Use RA appraisals as reading aids. Inspect the</text>
+<text x="110" y="931.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">original before consequential methodological use.</text>
+<rect x="1260" y="715" width="1060" height="300" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1260" y="715" width="10" height="300" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="1290" y="760.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">INSPECT + CHARACTERIZE</text>
+<text x="1290" y="817.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Test what the evidence can support</text>
+<text x="1290" y="878.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Check measurement, missingness, dependence</text>
+<text x="1290" y="931.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">and independent units; identify uncertainty.</text>
+<polyline points="610,600 610,715" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="610,715 599.9957927154417,694.2897166458885 620.0042072845583,694.2897166458885" fill="#3075A3"/>
+<polyline points="1790,600 1790,715" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="1790,715 1779.9957927154417,694.2897166458885 1800.0042072845583,694.2897166458885" fill="#087F80"/>
+<rect x="320" y="1180" width="1760" height="290" rx="16" fill="#FFF3DD" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="320" y="1180" width="10" height="290" rx="4" fill="#A46414" stroke="#A46414" stroke-width="3"/>
+<text x="350" y="1225.2" font-family="Arial" font-size="29" font-weight="700" fill="#A46414">HUMAN + AGENT REVIEW</text>
+<text x="350" y="1282.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Approve the design and exact kit configuration</text>
+<text x="350" y="1343.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Match question, evidence and method; record rationale and review gates.</text>
+<text x="350" y="1396.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">The compiler delivers selected guidance and provenance to each role.</text>
+<polyline points="610,1015 610,1100 810,1100 810,1180" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="810,1180 799.9957927154417,1159.2897166458883 820.0042072845583,1159.2897166458883" fill="#3075A3"/>
+<polyline points="1790,1015 1790,1100 1590,1100 1590,1180" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="1590,1180 1579.9957927154417,1159.2897166458883 1600.0042072845583,1159.2897166458883" fill="#087F80"/>
+<rect x="70" y="1555" width="2260" height="80" rx="10" fill="#EDF5F8" stroke="#EDF5F8" stroke-width="3"/>
+<text x="95" y="1602.2" font-family="Arial" font-size="34" font-weight="400" fill="#486274">A bibliography supplies methodological grounding. Study validity depends on applicability and review.</text></svg>

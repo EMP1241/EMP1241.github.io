@@ -80,7 +80,7 @@ def products():
     a.text(333,496,'Human review',23,MUTED)
     a.line(92,600,583,600)
     a.text(92,646,'Framework + continuity tools',25,INK,600)
-    a.text(92,687,'RA 2.4 development preview',21,PURPLE)
+    a.text(92,687,'RA 2.5.1 development preview',21,PURPLE)
     a.image(ROOT/'assets/icons/high-command.webp',670,205,90,90)
     a.text(780,247,'High Command',32,INK,650)
     a.text(780,282,'For individual project work',22,GOLD)
@@ -88,7 +88,7 @@ def products():
     a.image(ROOT/'assets/screenshots/hc-command-deck-20261018.webp',680,327,505,280)
     a.text(675,655,'Local desktop workspace',25,INK,600)
     a.text(675,695,'Active alpha testing',21,GOLD)
-    a.text(60,763,'RA 2.4 preview / White paper: historical RA 2.1 case, updated October 23',19,MUTED)
+    a.text(60,763,'RA 2.5.1 preview / White paper: deployment and engineering, October 23',19,MUTED)
     a.save('studio-products-20261022.svg')
 
 
@@ -98,7 +98,7 @@ def engineering():
     a.text(60,130,'Published design. Runnable checks.',46,INK,650)
     a.rect(60,180,395,535,fill='#191722',stroke='#5d4c78')
     a.image(OUT/'ra-whitepaper-cover-20261023.png',79,196,357,463)
-    a.text(82,692,'Technical white paper / 8 pages',21,PURPLE,600)
+    a.text(82,692,'Technical white paper / 15 pages',21,PURPLE,600)
     a.rect(485,180,735,335)
     a.text(510,214,'PUBLIC INTEGRITY EXAMPLE / SYNTHETIC FILES',16,GOLD,700)
     source=(ROOT/'assets/examples/handoff-integrity/verify.py').read_text(encoding='utf-8')

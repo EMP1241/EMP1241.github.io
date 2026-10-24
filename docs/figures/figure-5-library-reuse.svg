@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1680" viewBox="0 0 2400 1680">
+<rect x="0" y="0" width="2400" height="1680" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="0" y="0" width="2400" height="240" rx="0" fill="#142C3C" stroke="#142C3C" stroke-width="3"/>
+<text x="80" y="70.6" font-family="Arial" font-size="32" font-weight="700" fill="#8FD7CE">05  /  RESEARCH ARCHITECT</text>
+<text x="80" y="144.6" font-family="Arial" font-size="62" font-weight="700" fill="#FFFFFF">The evidence route: task to approved Library finding</text>
+<text x="80" y="205.8" font-family="Arial" font-size="36" font-weight="400" fill="#D9E7ED">Numbers show review order. A transport receipt never substitutes for a review decision.</text>
+<rect x="80" y="330" width="500" height="330" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="330" width="10" height="330" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="110" y="375.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">01  /  HUB</text>
+<text x="110" y="428.0" font-family="Arial" font-size="40" font-weight="700" fill="#193749">Bounded task</text>
+<text x="110" y="493.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Question + scope</text>
+<text x="110" y="546.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Inputs + methods</text>
+<text x="110" y="600.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Expected artifacts</text>
+<rect x="660" y="330" width="500" height="330" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="660" y="330" width="10" height="330" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="690" y="375.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">02  /  SPOKE</text>
+<text x="690" y="428.0" font-family="Arial" font-size="40" font-weight="700" fill="#193749">Perform work</text>
+<text x="690" y="493.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Research with agent</text>
+<text x="690" y="546.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Keep methods, data</text>
+<text x="690" y="600.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">and decision trail</text>
+<rect x="1240" y="330" width="500" height="330" rx="16" fill="#FFF3DD" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1240" y="330" width="10" height="330" rx="4" fill="#A46414" stroke="#A46414" stroke-width="3"/>
+<text x="1270" y="375.2" font-family="Arial" font-size="29" font-weight="700" fill="#A46414">03  /  SOURCE HUMAN</text>
+<text x="1270" y="428.0" font-family="Arial" font-size="40" font-weight="700" fill="#193749">Approve submission</text>
+<text x="1270" y="493.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Review exact output</text>
+<text x="1270" y="546.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Accept contribution</text>
+<text x="1270" y="600.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Record actual approval</text>
+<rect x="1820" y="330" width="500" height="330" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1820" y="330" width="10" height="330" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="1850" y="375.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">04  /  HUB</text>
+<text x="1850" y="428.0" font-family="Arial" font-size="40" font-weight="700" fill="#193749">Review + accept</text>
+<text x="1850" y="493.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Inspect evidence</text>
+<text x="1850" y="546.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Accept for validation</text>
+<text x="1850" y="600.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Send to Ingestor</text>
+<polyline points="580,495 660,495" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="660,495 639.2897166458885,505.0042072845583 639.2897166458885,484.9957927154417" fill="#3075A3"/>
+<polyline points="1160,495 1240,495" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="1240,495 1219.2897166458883,505.0042072845583 1219.2897166458883,484.9957927154417" fill="#3075A3"/>
+<polyline points="1740,495 1820,495" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="1820,495 1799.2897166458883,505.0042072845583 1799.2897166458883,484.9957927154417" fill="#3075A3"/>
+<polyline points="2070,660 2070,850" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="2070,850 2059.995792715442,829.2897166458885 2080.004207284558,829.2897166458885" fill="#3075A3"/>
+<rect x="1820" y="850" width="500" height="330" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1820" y="850" width="10" height="330" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="1850" y="895.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">05  /  INGESTOR</text>
+<text x="1850" y="948.0" font-family="Arial" font-size="40" font-weight="700" fill="#193749">Validate results</text>
+<text x="1850" y="1013.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Reproduce if needed</text>
+<text x="1850" y="1066.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Record checks / limits</text>
+<text x="1850" y="1120.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Return findings to Hub</text>
+<rect x="1240" y="850" width="500" height="330" rx="16" fill="#FFF3DD" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1240" y="850" width="10" height="330" rx="4" fill="#A46414" stroke="#A46414" stroke-width="3"/>
+<text x="1270" y="895.2" font-family="Arial" font-size="29" font-weight="700" fill="#A46414">06  /  HUB + HUMAN</text>
+<text x="1270" y="948.0" font-family="Arial" font-size="40" font-weight="700" fill="#193749">Final approval</text>
+<text x="1270" y="1013.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Review validation</text>
+<text x="1270" y="1066.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Approve exact version</text>
+<text x="1270" y="1120.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">and permitted use</text>
+<rect x="660" y="850" width="500" height="330" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="660" y="850" width="10" height="330" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="690" y="895.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">07  /  HUB ONLY</text>
+<text x="690" y="948.0" font-family="Arial" font-size="40" font-weight="700" fill="#193749">Publish / correct</text>
+<text x="690" y="1013.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Read/write authority</text>
+<text x="690" y="1066.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Methods + artifacts</text>
+<text x="690" y="1120.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Provenance + limits</text>
+<rect x="80" y="850" width="500" height="330" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="850" width="10" height="330" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="110" y="895.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">08  /  SPOKES + INGESTOR</text>
+<text x="110" y="948.0" font-family="Arial" font-size="40" font-weight="700" fill="#193749">Read + reuse</text>
+<text x="110" y="1013.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Approved versions</text>
+<text x="110" y="1066.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Keep provenance</text>
+<text x="110" y="1120.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Read-only access</text>
+<polyline points="1820,1015 1740,1015" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="1740,1015 1760.7102833541117,1004.9957927154417 1760.7102833541117,1025.0042072845583" fill="#3075A3"/>
+<polyline points="1240,1015 1160,1015" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="1160,1015 1180.7102833541117,1004.9957927154417 1180.7102833541117,1025.0042072845583" fill="#087F80"/>
+<polyline points="660,1015 580,1015" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="580,1015 600.7102833541115,1004.9957927154417 600.7102833541115,1025.0042072845583" fill="#087F80"/>
+<rect x="80" y="1280" width="2240" height="220" rx="16" fill="#EDF5F8" stroke="#EDF5F8" stroke-width="3"/>
+<text x="110" y="1331.4" font-family="Arial" font-size="33" font-weight="700" fill="#486274">DECISION EVIDENCE FOR HUB REVIEW</text>
+<text x="110" y="1391.2" font-family="Arial" font-size="39" font-weight="400" fill="#193749">Supply relevant human-agent transcripts, session coverage and omissions with the submission.</text>
+<text x="110" y="1446.2" font-family="Arial" font-size="39" font-weight="400" fill="#193749">Retain them in restricted review storage; Library publication does not automatically disclose transcripts.</text>
+<rect x="70" y="1555" width="2260" height="80" rx="10" fill="#EDF5F8" stroke="#EDF5F8" stroke-width="3"/>
+<text x="95" y="1602.2" font-family="Arial" font-size="34" font-weight="400" fill="#486274">Correction proposals return to the Hub; only the Hub publishes reviewed corrections.</text></svg>

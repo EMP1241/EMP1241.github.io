@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1680" viewBox="0 0 2400 1680">
+<rect x="0" y="0" width="2400" height="1680" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="0" y="0" width="2400" height="240" rx="0" fill="#142C3C" stroke="#142C3C" stroke-width="3"/>
+<text x="80" y="70.6" font-family="Arial" font-size="32" font-weight="700" fill="#8FD7CE">03  /  RESEARCH ARCHITECT</text>
+<text x="80" y="144.6" font-family="Arial" font-size="62" font-weight="700" fill="#FFFFFF">Trace a scientific source into a generated kit</text>
+<text x="80" y="205.8" font-family="Arial" font-size="36" font-weight="400" fill="#D9E7ED">Illustrative route: clustered task results across projects. This is not a new experiment.</text>
+<rect x="80" y="300" width="1060" height="280" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="300" width="10" height="280" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="110" y="345.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">01  /  FRAME THE DESIGN</text>
+<text x="110" y="402.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Identify the independent units</text>
+<text x="110" y="463.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Repeated results within projects may be dependent.</text>
+<text x="110" y="516.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Decide what the data actually allow you to infer.</text>
+<rect x="1260" y="300" width="1060" height="280" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1260" y="300" width="10" height="280" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="1290" y="345.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">02  /  INSPECT THE ORIGINAL</text>
+<text x="1290" y="402.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Cameron and Miller (2015) [8]</text>
+<text x="1290" y="463.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Read relevant guidance on clustered inference</text>
+<text x="1290" y="516.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">and limitations when there are few clusters.</text>
+<polyline points="1140,440 1260,440" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="1260,440 1239.2897166458883,450.0042072845583 1239.2897166458883,429.9957927154417" fill="#3075A3"/>
+<rect x="1260" y="720" width="1060" height="300" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1260" y="720" width="10" height="300" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="1290" y="765.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">03  /  SELECT GUIDANCE</text>
+<text x="1290" y="822.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">STATISTICAL_ANALYSIS</text>
+<text x="1290" y="883.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">CLUSTER2015 source identity + focused appraisal.</text>
+<text x="1290" y="936.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Record applicability and unresolved assumptions.</text>
+<rect x="80" y="720" width="1060" height="300" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="720" width="10" height="300" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="110" y="765.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">04  /  DELIVER THE SELECTION</text>
+<text x="110" y="822.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Compiler creates the role kit</text>
+<text x="110" y="883.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">METHOD_SELECTION.json + knowledge index.</text>
+<text x="110" y="936.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">SCIENCE_PROVENANCE.json: origins + hashes.</text>
+<polyline points="1790,580 1790,720" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="1790,720 1779.9957927154417,699.2897166458885 1800.0042072845583,699.2897166458885" fill="#3075A3"/>
+<polyline points="1260,870 1140,870" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="1140,870 1160.7102833541117,859.9957927154417 1160.7102833541117,880.0042072845583" fill="#3075A3"/>
+<rect x="320" y="1190" width="1760" height="290" rx="16" fill="#FFF3DD" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="320" y="1190" width="10" height="290" rx="4" fill="#A46414" stroke="#A46414" stroke-width="3"/>
+<text x="350" y="1235.2" font-family="Arial" font-size="29" font-weight="700" fill="#A46414">05  /  RETRIEVE + APPLY + REVIEW</text>
+<text x="350" y="1292.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Use the source in the actual research decision</text>
+<text x="350" y="1353.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">This kit includes the appraisal and external original-paper link, not its full text.</text>
+<text x="350" y="1406.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Read relevant originals, assess fit and preserve the reasoning for human review.</text>
+<polyline points="610,1020 610,1100 810,1100 810,1190" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="810,1190 799.9957927154417,1169.2897166458883 820.0042072845583,1169.2897166458883" fill="#3075A3"/>
+<rect x="70" y="1555" width="2260" height="80" rx="10" fill="#EDF5F8" stroke="#EDF5F8" stroke-width="3"/>
+<text x="95" y="1602.2" font-family="Arial" font-size="34" font-weight="400" fill="#486274">Hashes verify delivered bytes. They do not prove reading, comprehension or scientific suitability.</text></svg>

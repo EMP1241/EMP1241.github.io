@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1680" viewBox="0 0 2400 1680">
+<rect x="0" y="0" width="2400" height="1680" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="0" y="0" width="2400" height="240" rx="0" fill="#142C3C" stroke="#142C3C" stroke-width="3"/>
+<text x="80" y="70.6" font-family="Arial" font-size="32" font-weight="700" fill="#8FD7CE">01  /  RESEARCH ARCHITECT</text>
+<text x="80" y="144.6" font-family="Arial" font-size="62" font-weight="700" fill="#FFFFFF">A research team with a shared evidence base</text>
+<text x="80" y="205.8" font-family="Arial" font-size="36" font-weight="400" fill="#D9E7ED">Factory configuration above; project roles and controlled Library access below.</text>
+<rect x="80" y="295" width="1060" height="270" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="295" width="10" height="270" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="110" y="340.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">METHODS + HUMAN PROJECT DESIGN</text>
+<text x="110" y="397.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Research Architect factory</text>
+<text x="110" y="458.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Select applicable guidance, record decisions,</text>
+<text x="110" y="511.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">complete intake and approve exact configuration.</text>
+<rect x="1260" y="295" width="1060" height="270" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1260" y="295" width="10" height="270" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="1290" y="340.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">SOURCE COLLECTION</text>
+<text x="1290" y="397.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Scientific-methods knowledge base</text>
+<text x="1290" y="458.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Published sources, focused appraisals and limits.</text>
+<text x="1290" y="511.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Distinct from the project Library.</text>
+<polyline points="1260,430 1140,430" fill="none" stroke="#3075A3" stroke-width="7"/>
+<polygon points="1140,430 1160.7102833541117,419.9957927154417 1160.7102833541117,440.0042072845583" fill="#3075A3"/>
+<text x="80" y="632.2" font-family="Arial" font-size="34" font-weight="700" fill="#486274">ROLE KITS</text>
+<rect x="80" y="685" width="690" height="330" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="685" width="10" height="330" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="110" y="730.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">READ + WRITE AUTHORITY</text>
+<text x="110" y="787.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Hub</text>
+<text x="110" y="848.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Read + write Library access.</text>
+<text x="110" y="901.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Publish additions and corrections.</text>
+<text x="110" y="955.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Coordinate tasks and reviews.</text>
+<rect x="855" y="685" width="690" height="330" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="855" y="685" width="10" height="330" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="885" y="730.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">RESEARCH + HUMAN REVIEW</text>
+<text x="885" y="787.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Spokes</text>
+<text x="885" y="848.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Perform assigned work.</text>
+<text x="885" y="901.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Human approves submission;</text>
+<text x="885" y="955.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">route it to the Hub.</text>
+<rect x="1630" y="685" width="690" height="330" rx="16" fill="#EDF5F8" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="1630" y="685" width="10" height="330" rx="4" fill="#3075A3" stroke="#3075A3" stroke-width="3"/>
+<text x="1660" y="730.2" font-family="Arial" font-size="29" font-weight="700" fill="#3075A3">VALIDATE + REPORT</text>
+<text x="1660" y="787.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Ingestor</text>
+<text x="1660" y="848.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Receive Hub-accepted work.</text>
+<text x="1660" y="901.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Validate / reproduce as needed;</text>
+<text x="1660" y="955.2" font-family="Arial" font-size="40" font-weight="400" fill="#193749">return results to the Hub.</text>
+<polyline points="425,565 425,650 1975,650 1975,685" fill="none" stroke="#8BA3B1" stroke-width="7"/>
+<polygon points="1975,685 1964.9957927154417,664.2897166458885 1985.0042072845583,664.2897166458885" fill="#8BA3B1"/>
+<polyline points="1200,650 1200,685" fill="none" stroke="#8BA3B1" stroke-width="7"/>
+<polygon points="1200,685 1189.9957927154417,664.2897166458885 1210.0042072845583,664.2897166458885" fill="#8BA3B1"/>
+<polyline points="425,650 425,685" fill="none" stroke="#8BA3B1" stroke-width="7"/>
+<polygon points="425,685 414.9957927154417,664.2897166458885 435.0042072845583,664.2897166458885" fill="#8BA3B1"/>
+<rect x="80" y="1180" width="2240" height="290" rx="16" fill="#E8F4F0" stroke="#8BA3B1" stroke-width="3"/>
+<rect x="80" y="1180" width="10" height="290" rx="4" fill="#087F80" stroke="#087F80" stroke-width="3"/>
+<text x="110" y="1225.2" font-family="Arial" font-size="29" font-weight="700" fill="#087F80">HUB-PUBLISHED / APPROVED PROJECT EVIDENCE</text>
+<text x="110" y="1282.8" font-family="Arial" font-size="46" font-weight="700" fill="#193749">Shared Library</text>
+<text x="110" y="1343.0" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Findings + methods + source provenance + artifacts + dependencies + review limits.</text>
+<text x="110" y="1396.6" font-family="Arial" font-size="40" font-weight="400" fill="#193749">Hub reads, publishes and corrects; Spokes and Ingestor read approved versions.</text>
+<polyline points="260,1015 260,1180" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="260,1180 249.9957927154417,1159.2897166458883 270.0042072845583,1159.2897166458883" fill="#087F80"/>
+<polyline points="720,1180 720,1015" fill="none" stroke="#087F80" stroke-width="7"/>
+<polygon points="720,1015 730.0042072845583,1035.7102833541117 709.9957927154417,1035.7102833541117" fill="#087F80"/>
+<text x="290" y="1077.2" font-family="Arial" font-size="34" font-weight="700" fill="#087F80">Read + write</text>
+<text x="290" y="1125.2" font-family="Arial" font-size="29" font-weight="400" fill="#087F80">Additions / corrections</text>
+<polyline points="2220,1180 2220,1115 1440,1115 1440,1015" fill="none" stroke="#3075A3" stroke-width="7" stroke-dasharray="14 12"/>
+<polygon points="1440,1015 1450.0042072845583,1035.7102833541117 1429.9957927154417,1035.7102833541117" fill="#3075A3"/>
+<polyline points="2150,1115 2150,1015" fill="none" stroke="#3075A3" stroke-width="7" stroke-dasharray="14 12"/>
+<polygon points="2150,1015 2160.004207284558,1035.7102833541117 2139.995792715442,1035.7102833541117" fill="#3075A3"/>
+<text x="1050" y="1157.6" font-family="Arial" font-size="32" font-weight="400" fill="#3075A3">Spokes + Ingestor: read only</text>
+<rect x="70" y="1555" width="2260" height="80" rx="10" fill="#EDF5F8" stroke="#EDF5F8" stroke-width="3"/>
+<text x="95" y="1602.2" font-family="Arial" font-size="34" font-weight="400" fill="#486274">Spokes and Ingestor send contributions to the Hub. They do not write to the Library.</text></svg>
