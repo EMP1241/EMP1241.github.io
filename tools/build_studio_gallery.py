@@ -80,7 +80,7 @@ def products():
     a.text(333,496,'Human review',23,MUTED)
     a.line(92,600,583,600)
     a.text(92,646,'Framework + continuity tools',25,INK,600)
-    a.text(92,687,'RA 2.5.1 development preview',21,PURPLE)
+    a.text(92,687,'RA 2.6.1 development preview',21,PURPLE)
     a.image(ROOT/'assets/icons/high-command.webp',670,205,90,90)
     a.text(780,247,'High Command',32,INK,650)
     a.text(780,282,'For individual project work',22,GOLD)
@@ -88,7 +88,7 @@ def products():
     a.image(ROOT/'assets/screenshots/hc-command-deck-20261018.webp',680,327,505,280)
     a.text(675,655,'Local desktop workspace',25,INK,600)
     a.text(675,695,'Active alpha testing',21,GOLD)
-    a.text(60,763,'RA 2.5.1 preview / White paper: deployment and engineering, October 23',19,MUTED)
+    a.text(60,763,'RA 2.6.1 preview / Written plans and recorded review before kit creation',19,MUTED)
     a.save('studio-products-20261022.svg')
 
 
