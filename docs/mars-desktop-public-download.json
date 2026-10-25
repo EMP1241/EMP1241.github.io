@@ -1,10 +1,11 @@
 {
-  "release_url": "https://github.com/EMP1241/EMP1241.github.io/releases/tag/mars-explorer-desktop-v0.9.2-20261024",
-  "download_url": "https://github.com/EMP1241/EMP1241.github.io/releases/download/mars-explorer-desktop-v0.9.2-20261024/Mars-Explorer-0.9.2-Windows-x64.zip",
-  "tag": "mars-explorer-desktop-v0.9.2-20261024",
-  "bytes": 640853236,
-  "sha256": "cceb583e07fa4dd633ddfcb0f761d0ae6801a0ad9c2da91fbde7b822c9d1266c",
-  "build": "desktop-gallery-candidate-14-20261024",
-  "app_version": "0.9.2",
-  "verified_public": true
+  "release_url": "https://github.com/EMP1241/EMP1241.github.io/releases/tag/mars-explorer-desktop-v1.0.0-rc.1-20261025",
+  "download_url": "https://github.com/EMP1241/EMP1241.github.io/releases/download/mars-explorer-desktop-v1.0.0-rc.1-20261025/Mars-Explorer-1.0.0-rc.1-Windows-x64.zip",
+  "tag": "mars-explorer-desktop-v1.0.0-rc.1-20261025",
+  "bytes": 640973272,
+  "sha256": "f14634daa8ff40c779cf8fb15672fdd458521a0e07ed1c1a1ced8bf5b213a992",
+  "build": "desktop-72e4c10654cf",
+  "app_version": "1.0.0-rc.1",
+  "verified_public": true,
+  "verification_basis": "Mars owner publication receipt, October 25, 2026; public release asset rechecked during portfolio refresh."
 }
