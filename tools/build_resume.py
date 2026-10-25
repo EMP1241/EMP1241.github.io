@@ -165,7 +165,7 @@ def build(output, data):
     def p(text, style='body'):
         return Paragraph(escape(plain(text)), styles[style])
 
-    def record(item):
+    def record(item, keep=True):
         title = escape(plain(item['title']))
         if item['link']:
             title = '<link href="' + escape(item['link'], quote=True) + '" color="#500000">' + title + '</link>'
@@ -174,13 +174,25 @@ def build(output, data):
             flow.append(p(item['meta'], 'meta'))
         flow += [Paragraph(escape(plain(text)), styles['bullet'], bulletText='-') for text in item['bullets']]
         flow.append(Spacer(1, 5))
-        return KeepTogether(flow)
+        return KeepTogether(flow) if keep else flow
 
     contact = '<link href="mailto:' + escape(data['email'], quote=True) + '" color="#500000">' + escape(data['email']) + '</link> | <link href="https://emp1241.github.io" color="#500000">emp1241.github.io</link>'
     story = [p('BRANDON SANTOR', 'name'), p('GEOSPATIAL RESEARCH | SCIENTIFIC SOFTWARE | U.S. MARINE CORPS VETERAN', 'subtitle'), Paragraph(contact, styles['meta']), p(data['summary']), p('RESEARCH & PROFESSIONAL EXPERIENCE', 'section')]
     story += [record(item) for item in data['jobs']]
     story += [PageBreak(), p('SELECTED SOFTWARE & RESEARCH', 'section')]
-    story += [record(item) for item in data['projects']]
+    projects = data['projects']
+    project_rows = [[record(projects[i], keep=False), record(projects[i + 1], keep=False) if i + 1 < len(projects) else '']
+                    for i in range(0, len(projects), 2)]
+    project_table = Table(project_rows, colWidths=[258, 258], hAlign='LEFT')
+    project_table.setStyle(TableStyle([
+        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+        ('LEFTPADDING', (0, 0), (-1, -1), 0),
+        ('RIGHTPADDING', (0, 0), (0, -1), 18),
+        ('RIGHTPADDING', (1, 0), (1, -1), 0),
+        ('TOPPADDING', (0, 0), (-1, -1), 0),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+    ]))
+    story.append(project_table)
 
     left, right = [p('EDUCATION', 'support-title')], [p('TECHNICAL TOOLKIT', 'support-title')]
     for item in data['education']:

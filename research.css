@@ -248,12 +248,17 @@ body[data-page="index.html"] .hero h1 { font-size: clamp(2.7rem, 4.5vw, 4.6rem);
 .example-steps li + li { margin-top: .7rem; }
 
 /* Native fragment links stay usable with JavaScript disabled. */
+html { scroll-padding-top: 96px; }
 html.resume-page { scroll-behavior: auto; }
-.resume-jump { position: sticky; top: 0; z-index: 40; padding-block: .6rem; background: var(--paper); border-bottom: 1px solid var(--line); box-shadow: 0 5px 15px #00000012; }
-.resume-jump > div { display: flex; flex-wrap: wrap; gap: .3rem .7rem; }
-.resume-jump a { display: inline-flex; align-items: center; min-height: 44px; padding: .4rem .75rem; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--surface); font-size: .8rem; text-decoration: none; }
-.resume-jump a:hover { border-color: var(--accent); color: var(--accent); }
-.resume-section[id] { scroll-margin-top: 6rem; }
+.section-nav { position: sticky; top: 0; z-index: 60; padding-block: .6rem; background: var(--paper); border-block: 1px solid var(--line); box-shadow: 0 5px 15px #00000012; }
+.section-nav > div { display: flex; flex-wrap: nowrap; gap: .5rem; overflow-x: auto; scrollbar-width: thin; padding-block: 3px; }
+.section-nav a { display: inline-flex; flex: 0 0 auto; align-items: center; min-height: 44px; padding: .4rem .75rem; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: var(--surface); font-size: .8rem; text-decoration: none; white-space: nowrap; }
+.section-nav a:hover { border-color: var(--accent); color: var(--accent); }
+.section-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.resume-section[id] { scroll-margin-top: 0; }
+.flow-copy, .case-sidebar { top: 104px; }
+.plan-examples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-block: 1.5rem; }
+.plan-examples .resume-item { margin: 0; padding: 1.4rem; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
 .toolkit-group + .toolkit-group { margin-top: 1.3rem; }
 .toolkit-group h3 { margin-bottom: .6rem; font: 650 .85rem/1.5 var(--sans); color: var(--ink); }
 .toolkit-group .skills-list { gap: 6px; }
@@ -263,13 +268,12 @@ html.resume-page { scroll-behavior: auto; }
   .project-glance > summary { padding: 1rem; }
   .glance-grid { padding-inline: 1rem; }
   .glance-more { margin-inline: 1rem; }
-  .resume-jump > div { gap: .3rem; }
-  .resume-jump a { padding-inline: .65rem; }
-  .resume-section[id] { scroll-margin-top: 8rem; }
+  .section-nav > div { gap: .3rem; }
+  .section-nav a { padding-inline: .65rem; }
+  .plan-examples { grid-template-columns: minmax(0, 1fr); }
 }
-@media (max-height: 480px) { .resume-jump { position: static; } }
 @media print {
-  .resume-jump { display: none !important; }
+  .section-nav { display: none !important; }
   .project-brief { padding-block: 1rem; }
   .glance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .toolkit-group { break-inside: avoid; }
