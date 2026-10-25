@@ -1,6 +1,5 @@
 {
-  "edition": 10,
-  "date": "2026-10-23",
+  "date": "2026-10-25",
   "external_references": [
     {
       "id": "1",
@@ -319,6 +318,16 @@
       "id": "E6",
       "title": "RA 2.5.1 implementation and verification records",
       "text": "Santor B. Research Architect 2.5.1 implementation and verification records, October 23 2026. Versioned setup-workflow source and generated Hub, Spoke and Ingestor instructions; evidence-review and Library-client documentation; transcript-export implementation; retained compiler-omission, legacy-preservation and three-role delivery checks; and a recorded two-turn gpt-5.6-sol low-reasoning intake test. Source inspection establishes implemented controls and supplied instructions; test receipts establish the specific behaviors exercised. These records are distinct from the dated NWSW deployment evidence. File identities and verification scopes are retained with the release."
+    },
+    {
+      "id": "E7",
+      "title": "RA 2.3 through 2.6.1 implementation and scoped verification",
+      "text": "Santor B. Research Architect 2.3 through 2.6.1 implementation and scoped verification records, compiled October 25 2026. Retained context measurements, setup handoff and plan delivery checks, exact-PDF review and refusal tests, three-role instruction delivery, and the environment gate's eight focused groups and six negative entry-point checks. Release reports and hash-pinned receipts record each scope. This paper revision reran no operational or scientific suites."
+    },
+    {
+      "id": "E8",
+      "title": "Creator account of runtime use and browser-host migrations",
+      "text": "Santor B. Creator account of runtime use and browser-host migrations, retained with RA 2.6.1 field-use documentation. Reports Architect use in Codex with Astra and 6.1 High, kit operation in Antigravity, Claude and Codex, and browser-chat problems requiring teammate migrations. Labels and outcomes are creator-reported field evidence; no controlled platform benchmark or new adoption rate is inferred."
     }
   ],
   "scope": "Every listed external source supports a cited passage; the full 134-record library is not presented as this paper bibliography."

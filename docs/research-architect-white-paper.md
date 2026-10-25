@@ -4,16 +4,15 @@ Technical white paper with an operational case study from the NWSW project
 
 Brandon Santor
 Creator and Principal Designer of Research Architect
-October 23 2026
-Revised public edition 10   Historical RA 2.1 case and RA 2.5.1 engineering update   October 23 2026
+October 25 2026
 
 ## Executive summary
 
 Research Architect provides an operating framework for human research teams working with AI. It converts a reviewed project design into individual role kits, preserves project state across sessions, records evidence and decisions, and supports versioned handoffs and recovery. The New World Screwworm (NWSW) deployment supplied an active setting in which these mechanisms were used and refined. A shared project Library retains approved research findings with methods, provenance, artifacts and review limits. The Hub has read/write access and alone publishes additions and corrections; Spokes and Ingestor have read-only access to approved evidence, returning new contributions through human review, Hub acceptance and Ingestor validation. [E5] [E6]
 
-The documented results include creator-reported onboarding of eight people, verified remote exchanges, preservation of accumulated files during a live Hub upgrade, and an isolated whole-project restore. RA 2.1.0 distribution revision 2 carries reusable operational improvements into a separate development-preview package. Its October 16 release verification passed 171 offline regression tests. [E1] [E2]
+The documented results include creator-reported onboarding of eight people, verified remote exchanges, preservation of accumulated files during a live Hub upgrade and an isolated whole-project restore. The current RA 2.6.1 factory adds executable setup-environment verification, review of the exact written plan before kit creation, scoped delivery and retained approval evidence. Historical deployment results and current software tests retain their separate dates and work units. [E1] [E2] [E7]
 
-Selected operational and release results [E1] [E2]
+Selected dated operational and release results [E1] [E2]
 
 | Capability | Documented result and scope |
 | --- | --- |
@@ -23,7 +22,7 @@ Selected operational and release results [E1] [E2]
 | Project recovery | 123,098 files verified in the original October 11 isolated restore exercise. |
 | Release verification | 171 offline tests passed on Windows; no model calls or remote transfers in that run. |
 
-This edition retains the deployment case and updates the distinction among generic software, project-specific operation, recipient reports and tested behavior. The evidence supports practical continuity and recovery mechanisms. Broader adoption, comparative efficiency and research-quality effects require their own evaluation. RA configures instructions and workflow around existing AI hosts; it does not train model weights.
+This paper brings the engineering account to RA 2.6.1 while retaining the deployment case. Documented field operation includes Architect use in Codex and generated-kit operation across the reported Antigravity, Claude and Codex environments. RA requires a coding-capable agent workspace with persistent local files and code execution; any provider meeting those capabilities can qualify. The framework supplies usable software and coordination functions around existing models. Broader adoption and comparative research-quality effects remain questions for separate evaluation. [E7] [E8]
 
 ## 1 Introduction
 
@@ -31,7 +30,7 @@ AI-assisted research often spans several people, model sessions and collections 
 
 Existing agent literature supplies useful design context. OpenAI describes models, tools and instructions as foundational components and discusses orchestration and guardrails. AutoGen demonstrates configurable conversations combining agents, tools and human input. Anthropic describes the coordination, evaluation and reliability work behind a deployed multi-agent research system. These sources inform the architectural context; their performance results are not evidence of RA performance. [1] [2] [3]
 
-RA addresses the operating structure surrounding a research task. The Architect helps establish questions, assignments, methods, dependencies and review requirements. A compiler produces individual role kits and coordinated folders. Local helpers preserve state and verify artifacts, while the selected AI host supplies model inference, file access and any available connectors. Human operators retain responsibility for scientific judgments and consequential decisions.
+RA addresses the operating structure surrounding a research task. The Architect helps establish questions, assignments, methods, dependencies and review requirements. A compiler produces individual role kits and coordinated folders. Local helpers preserve state, inspect artifacts, prepare reviewed exchanges and support recovery. The selected coding-agent host supplies model inference and actual file/code access. These tools extend the workflow available to the agent without changing its model weights. Human operators retain responsibility for scientific judgments and consequential decisions. [E7]
 
 ## 2 System architecture
 
@@ -40,6 +39,18 @@ RA combines a reviewed project design, human-operated roles, persistent records 
 ### Project design and role kits
 
 The Hub issues bounded tasks, reviews contributions and validation results, obtains final human approval and uses its read/write Library authority to publish additions and corrections. Spokes conduct assigned work with their human operators, who accept and approve exact submissions. The Ingestor receives Hub-accepted work, validates it and reproduces results when needed, then returns its findings to the Hub. Generated kits carry these responsibilities, selected methods and continuity records. Generation does not grant remote access or establish scientific approval. [E6]
+
+### Local agent workspace and verified setup
+
+RA and its kits operate in an agent environment that can access persistent local project files and execute code on the machine. Codex, Antigravity and Claude Code are examples, rather than a provider whitelist. Uploading a ZIP to ordinary browser-only chat or running code in a temporary sandbox does not establish the required working environment. Manual file exchange and recovery remain useful between suitable local workspaces. [E7] [E8]
+
+After the environment and Python responses, a bounded preflight requires an agent file challenge, saved readback and a result from an independent Python process. The environment respondent explicitly confirms the actual local agent workspace and persistent host. Missing, stale or withdrawn evidence blocks later intake and all supported kit-generation routes. File/code access is machine-checked; physical locality and long-term host durability are human-confirmed. The same saved evidence is rechecked on resume and before publication without repeatedly launching the worker. [E7]
+
+### Written plan and scoped delivery
+
+The finalized design produces a shared-team PDF and a Hub PDF. The shared edition contains the permitted team context and explicitly selected coordinator sections; the Hub edition also carries its approved coordinator records and setup responsibilities. Role-specific handoffs preserve the storage, transport, permissions, model plan, owners and pending actions relevant to each recipient. Generation does not configure cloud accounts or grant permissions. [E7]
+
+Before kits can be created, the accountable human must approve the exact bytes of both plan editions, bound to the configuration and source snapshot. Compilation copies those reviewed PDFs unchanged and attaches separate review receipts. Changed configuration, intake or plan artifacts require renewed review; explicit refusal blocks creation. Existing approval events remain in history. The current build also requires the verified setup-environment receipt, so recorded prose alone cannot satisfy the local-capability requirement. [E7]
 
 ### Persistent context and source retrieval
 
@@ -67,11 +78,19 @@ Human-agent discussions can preserve the decisions, alternatives, objections and
 
 Local helpers stage payloads, validate configured routes and retain receipts. Authorized host connectors perform remote transfer during active sessions. Preparation, delivery, reading, adoption, research acceptance and permitted downstream use remain distinct. Backup helpers verify selected project contents and captured external files, retain explicit recovery metadata and exercise restoration. Storage and transport configuration remain responsibilities of the deployment.
 
+### Diagnostics and repair coordination
+
+The Doctor diagnoses the explicitly selected kit and its configured components. It leaves the sealed kit unchanged while writing external reports and diagnostic-operation records. Its seven scopes cover identity, context, storage, messages, Library, backup and recovery. Compact findings retain complete evidence through bounded continuation. A clean result establishes the checked technical state, rather than scientific approval, and diagnosis does not itself authorize repair. [E7]
+
+The Hub can coordinate a repair and relay the configured human authority's actual, bounded instruction to a Spoke. The Spoke's agent performs permitted work locally, subject to its operator/host controls and the recovery tool's checks. RA supplies no general Hub-issued repair capability or remote-control channel. For example, lock recovery requires the inspected lock hash, the same host and a proven dead owner process. Checkpoint recovery retains its clean-base, review and publication requirements. This preserves practical maintenance coordination without treating a Hub message as a tool grant. [E7]
+
 ## 3 NWSW deployment
 
 The NWSW project provided an operational case for RA-generated kits and a coordinating Hub. The creator reported onboarding eight people by October 16, 2026, while remaining the only person who had run or configured the Architect itself. This is evidence of participant onboarding in a creator-supported deployment, rather than eight independent framework configurations. [E1]
 
-The Hub maintained exchanges, source routes, instructions and checkpoints while the team continued assigned work. The original case examined selected operational records from October 8 through October 16. This revision also considers later technical returns and Hub maintenance through October 23. Historical quantities below retain their observation dates; they are not estimates of the current complete project.
+The creator also reports running the Architect in Codex with Astra and 6.1 High, using those supplied model/setting labels, and running generated kits in Antigravity, Claude and Codex. Early browser-chat use caused operational problems that required teammate migrations to suitable local coding-agent workspaces. These are field-use reports, distinct from the smaller scripted early-intake trials. A missing platform name in an older test report does not establish that no kit ran on that platform. [E8]
+
+The Hub maintained exchanges, source routes, instructions and checkpoints while the team continued assigned work. The original case examined selected operational records from October 8 through October 16. Later technical returns and Hub maintenance extend through October 23; current factory controls and runtime-use clarifications are included in this October 25 revision. Historical quantities below retain their observation dates; they are not estimates of the current complete project. [E1] [E7] [E8]
 
 Generic RA, the deployed NWSW coordination system and the independent NWSW Spatial Evidence Workbench are separate systems. The Workbench's web interface, database, spatial features and application tests are not capabilities or validation results of the RA distribution. This paper reports coordination and software-engineering observations without publishing the project's research findings or contributor records.
 
@@ -119,21 +138,25 @@ The October 16 release receipt records 171 passing offline regression tests in e
 
 Instruction maintenance has a separate boundary. RA records stable IDs, complete versioned text, authority, applicability and explicit supersession. Routine Hub saves may append evidenced observations about an existing instruction, but cannot define or rewrite a rule. A new startup instruction requires reviewed reconfiguration and verification that the selected installation actually loads it. Delivered packages and acknowledgments alone do not establish fresh-session behavior.
 
-The deployed Hub continued to evolve after the package freeze. An October 21 local update changed context rendering while retaining original source bytes, hashes and controls; its contributor rollout remained held. Later lightweight message-handling rules were also local operational changes. Neither change is included here as a shipped generic RA 2.1 feature or a team-wide upgrade. [E1]
+The deployed Hub continued to evolve after the historical RA 2.1 package freeze. Later context and message improvements informed the reusable RA 2.3 implementation and remain in the current factory. In a retained repeated-context fixture, emitted prompt length fell from 773,391 to 119,362 characters, an 84.5664% reduction, with matching source hashes and complete reconstruction; confirmed same-conversation reuse emitted 277 characters. These are scenario-specific output measurements. Provider-token counts, billing and whole-task productivity are separate measures. [E1] [E7]
 
-### RA 2.5 factory update
+### Current factory configuration and verification
 
-The current factory is RA 2.5.1, with operational runtime 2.4.0 and scientific library 1.9. These version identifiers distinguish kit preparation, operational helpers and methodological content. Generated manifests and startup text identify the delivered components. The factory includes persistent setup gates and role-specific evidence-review instructions. Existing deployments and dated measurements retain their original identities. [E3] [E6]
+The current factory is RA 2.6.1, with operational runtime 2.4.0 and scientific library 1.9. These identifiers distinguish kit preparation, operational helpers and methodological content. Manifests and startup text identify the delivered components. Factory updates carry forward the existing Library, context, backup and exchange mechanisms while adding configuration and delivery controls. Existing deployments and dated measurements retain their original identities. [E3] [E6] [E7]
 
-New RA 2.5.1 sessions use a persistent setup ledger with 43 baseline questions and additional required followups. Startup directs the Architect to inspect compact status each turn and after resume. Ordinary compilation requires recorded answers, an explicit human preparation response and approval bound to the exact configuration inputs. Deferrals remain pending; revisions preserve history and reopen affected decisions. A verified build and each operator's walkthrough are separate completion steps. Existing protocol-1 ledgers retain their 42-item catalog and approval bindings. Human identity and the adequacy of prose answers remain outside structural validation. [E3] [E6]
+New sessions use a persistent setup ledger with 43 baseline questions and additional required followups. Compact status identifies the pending item on each turn and after resume. Environment/Python answers require the separate verified preflight before later intake. Ordinary compilation then requires completed responses, explicit human preparation approval, the exact configuration binding and current review of both plan PDFs. Deferrals remain pending; changed decisions preserve history and reopen affected work. Build verification and each operator's walkthrough remain separate completion stages. Existing protocol-1 ledgers retain their 42-item catalog and historical approvals. [E3] [E6] [E7]
 
 The RA 2.5 revision 1 verification exercised the changed question workflow, interrupted and stale-state paths, configuration binding and the extracted package. A synthetic four-role project compiled, each generated kit passed its consistency check and actual operator walkthroughs remained pending. Three teaching-runner defects were repaired: all-failed-project handling, infeasible sensitivity shifts and bounded duplicate-safe JSON input. Earlier operational experiments were retained rather than rerun. Revision 2 changes release identification and documentation; its adjacent integrity receipt records only those changed-path checks. [E3]
 
-The scientific collection contains 134 reference records and 38 local reference texts. Six targeted critical appraisals cover methodology, agent evaluation, failure analysis and computational reproducibility. Their relevant dependencies travel through 19 method routes; large bodies remain available on demand rather than entering routine startup. These counts describe coverage and availability, not 134 completed full-paper reviews. [E4]
+The scientific collection contains 134 reference records and 38 local reference texts. Six targeted critical appraisals cover methodology, agent evaluation, failure analysis and computational reproducibility, with dependencies across 19 method routes. Complete runnable teaching cases address clustered workflow evaluation, nested model selection and target-population generalization. They pair declared plans, fixed data, analysis, diagnostics and bounded conclusions with applicability safeguards. Large source bodies remain retrievable on demand. These counts describe coverage and availability, rather than 134 completed full-paper reviews. [E3] [E4]
 
-The reusable Library integration introduced in RA 2.3 remains in RA 2.5.1. Every generated role receives a configurable discovery client that verifies catalog revision, hashes, byte counts and audience, preserves complete matching metadata through continuation, and prepares submission records for Hub review. The discovery client grants no write authority. Spokes and Ingestor have read-only Library access; the Hub has read/write authority and uses authorized tooling to publish additions and corrections. Earlier registration/discovery evidence is retained. Generating a kit does not install the NWSW backend or grant access to its holdings. [E3] [E5] [E6]
+The reusable Library integration introduced in RA 2.3 remains in RA 2.6.1. Every generated role receives a configurable discovery client that verifies catalog revision, hashes, byte counts and audience, preserves complete matching metadata through continuation and prepares submission records for Hub review. The discovery client grants no write authority. Spokes and Ingestor have read-only Library access; the Hub has read/write authority and uses authorized tooling to publish additions and corrections. Earlier registration/discovery evidence is retained. Generating a kit does not install the NWSW backend or grant access to its holdings. [E3] [E5] [E6] [E7]
 
 The opening invitation is the first required item in new protocol-2 sessions. Questions about setup remain pending until the human chooses to begin intake. Targeted compiler checks rejected 14 representative required-item omissions and preserved legacy ledgers and approvals. In a two-turn fresh-chat test using gpt-5.6-sol at low reasoning, the agent asked the invitation, explained approval and recorded a request for explanation as a deferral with zero answers. These results document early-intake behavior and structural gate enforcement; the full interview was not rerun. [E6]
+
+The written-plan implementation was checked through eight focused test groups. The exact-PDF review gate was then exercised through eleven review-to-build groups and five refusal/renewal checks. Successful compilation copied the reviewed bytes while rendering was disabled; changed plan evidence blocked publication. Separate role-delivery checks verified local-runtime instructions in fresh Hub, Ingestor and Spoke kits and their resume context. These records establish the particular software paths exercised, rather than a new complete interview or independent team trial. [E7]
+
+The current environment gate passed eight focused groups and six additional negative entry-point checks. Unsupported answers could not complete step 1, and missing evidence blocked readiness, approval, workflow-backed export and normal/draft/direct generation. Changed evidence, host/workspace drift, code failure or timeout and withdrawn confirmation remained blocked. One successful four-role build preserved the earlier configuration and PDF approval bytes; an interrupted-publication case stopped after capability evidence changed. These are synthetic engineering scenarios using real file/code execution. They are distinct from the field deployment and retain the underlying test receipts. [E7]
 
 ## 6 Research basis and methodological applicability
 
@@ -157,7 +180,7 @@ RA has supported continuing work across people, sessions and files. Role kits su
 
 ### Scope and assurance
 
-Evidence includes creator statements, execution receipts, synthetic software checks and recipient reports. Later diagnostics and inspected exports strengthen specific execution histories, while participant adoption remains unevenly evidenced. Reports of successful save, reload or refresh support their observed scope; they do not establish that stale state or lost context has been eliminated.
+The evidence combines creator-reported deployment experience, retained execution receipts, recipient returns, synthetic software checks and observed model conversations. Reports of Architect and kit use across named hosts are part of that evidence. The smaller GPT-5.6-sol early-intake trials describe their own scripted scenarios; they are not an exhaustive history of live use. Each execution report supports the operation and measures it records. Further independent-lead or comparative evaluation adds evidence without negating those observed results. [E1] [E6] [E7] [E8]
 
 File consistency does not authenticate authors or certify scientific validity. Human decisions remain distinct from technical checks, and local accounts and host configuration remain trust boundaries. Folder visibility alone does not establish research-use permission. Locks and selection checks do not form one transaction across uploads, designation and unrelated writers; cutover needs an idle window and reconciliation.
 
@@ -171,17 +194,17 @@ The lead and existing team must then supply explanations, identify authoritative
 
 ### Context and performance evaluation
 
-Bounded retrieval and durable checkpoints provide mechanisms for limiting working context. Their net benefit must be measured over complete tasks, including initialization, tool results, checkpoint creation, restoration, retries and failures. Exploratory runtime diagnostics showed reducible prompt overhead, but an incomplete lean-context recovery pilot did not establish completed-task savings. This paper makes no comparative productivity, token-cost or research-quality claim. Cost and holdout considerations for future comparisons follow the cited evaluation literature. [5] [9]
+Bounded retrieval and durable checkpoints provide practical control over working context. The documented fixture reductions establish lower emitted prompt volume in their tested scenarios. End-to-end evaluation should additionally count initialization, tool results, saving, restoration, retries and failures, with actual provider usage and billing where available. The paper does not convert character reductions into an unsupported token-cost or research-quality percentage. Comparable tasks, credible simpler baselines and claim-matched holdouts remain necessary for broader efficiency estimates. [5] [9] [E7]
 
 ### Broader adoption
 
-The next milestone is another project lead configuring a new team with documented support requirements. Existing-project adoption needs preserved state, a separate candidate, compatibility checks and deliberate cutover. Recipient tests must identify loaded startup guidance, selected checkpoint, complete restoration and behavior in fresh and resumed sessions. General automatic upgrades have not been established.
+A useful next milestone is another project lead configuring a new team with documented support requirements. The reported cross-host operations provide field experience; systematic comparisons should identify the loaded startup guidance, selected checkpoint, complete restoration and behavior in fresh and resumed sessions. Existing-project adoption requires preserved state, compatibility checks, reviewed updates and deliberate cutover. Automatic migration across unrelated projects is a separate capability from the existing reviewed maintenance tools. [E7] [E8]
 
-The historical RA 2.1 case and current RA 2.5.1 factory are development previews. Additional-lead adoption and broader platform evaluation remain distinct from implemented local setup, Library-client and source-retrieval capabilities. Deployment claims remain tied to their own receipts and dates. [E1] [E3] [E6]
+The historical RA 2.1 case and current RA 2.6.1 factory remain development previews. Additional-lead adoption and systematic platform comparisons are distinct from the implemented setup gates, Library client, source retrieval and reported multi-host kit operation. Claims remain tied to their actual records and observation dates. [E1] [E7] [E8]
 
 ## 8 Conclusion
 
-Research Architect has supported a creator-configured team with verified exchanges, preserved history and whole-project recovery. Field experience informed tested improvements in RA 2.1. Later returns strengthened selected continuity evidence while adoption remained unevenly evidenced. The framework provides a reusable, human-supervised operating structure with traceable engineering results. Its next phase is repeatable deployment by additional project leads.
+Research Architect has supported a creator-configured team with verified exchanges, preserved history and whole-project recovery. Field experience informed reusable context, Library and maintenance improvements. The current factory adds explicit capability evidence, a human-reviewed written plan and verified delivery while preserving prior decisions. These results support a reusable, human-supervised operating structure with traceable engineering evidence. Continued evaluation can test its setup burden, comparative costs and research-quality effects across additional leads and projects. [E1] [E7] [E8]
 
 ## Visual guide from evidence to research design
 
@@ -205,13 +228,13 @@ For this source, the kit carries bibliographic metadata, an original-paper link 
 
 ## Visual guide questions and continuity
 
-RA stores setup progress in a persistent ledger. At the start of a turn or a resumed conversation, compact status identifies the next required item. A clarification request is part of the conversation; it is not an answer to the setup requirement. An actual response can be recorded, while a deferral remains pending. The same record supports continuation in a fresh chat. [E3]
+RA stores setup progress in a persistent ledger. Compact status identifies the pending question on each setup turn and after resume; clarification is not completion. After the environment/Python responses, actual capability evidence and local-host confirmation unlock later intake. The finalized design then produces the exact PDFs for human review. Only current environment evidence, completed requirements and the bound plan approval permit kit creation. Figure 4 shows these distinct gates and the subsequent walkthrough/resume stages. [E7]
 
-![Saved status identifies the pending question, beginning with the required opening invitation. Clarifications stay pending; actual answers advance. Complete requirements and exact configuration approval allow compilation.](figures/figure-4-checklist-resume.png)
+![Verified local setup precedes completed intake, review of exact team and Hub PDFs, kit creation and operator walkthroughs. Machine-checked file and code access is distinguished from human-confirmed local host persistence.](figures/figure-4-checklist-resume.png)
 
-Figure 4  Required questions and saved continuity. New sessions include the opening invitation. Clarifications remain pending; actual answers advance the checklist. Completed requirements and exact configuration-bound preparation approval permit supported compilation. Legacy ledgers are preserved. [E6]
+Figure 4  Verified setup, exact plan review and continuity. File/code evidence and explicit local-host confirmation precede later intake. The human reviews both plan editions before kits are created from those unchanged bytes. Operator walkthroughs and saved-state restoration remain separate. Legacy approval history is preserved. [E7]
 
-Preparation approval is bound to the exact configuration inputs. Generation, verified build completion and operator walkthroughs are separate stages. These gates supply durable state and enforce supported compilation prerequisites; they do not guarantee that every model will follow every conversational instruction. The accompanying scoped behavior report records the observed clarification and fresh-chat trial separately from earlier software tests. No model-cost reduction or complete onboarding result is inferred from the diagram. [E3]
+Preparation approval is bound to the exact configuration inputs and reviewed PDF identities. A separate environment receipt binds the setup workspace, current prerequisite answers, interpreter, machine and verification tools. Changes invalidate the affected evidence; attaching a capability receipt to unchanged approved records does not rewrite them. These controls enforce the supported preparation paths. They do not prove human comprehension, permanent host persistence or perfect instruction following by every model. The retained conversation trials and software checks remain separately scoped. [E6] [E7]
 
 ## Visual guide sharing and reusing Library evidence
 
@@ -261,14 +284,18 @@ The Hub's authorized publication tooling verifies immutable catalog files and de
 
 [E6] Santor B. Research Architect 2.5.1 implementation and verification records, October 23 2026. Versioned setup-workflow source and generated Hub, Spoke and Ingestor instructions; evidence-review and Library-client documentation; transcript-export implementation; retained compiler-omission, legacy-preservation and three-role delivery checks; and a recorded two-turn gpt-5.6-sol low-reasoning intake test. Source inspection establishes implemented controls and supplied instructions; test receipts establish the specific behaviors exercised. These records are distinct from the dated NWSW deployment evidence. File identities and verification scopes are retained with the release.
 
+[E7] Santor B. Research Architect 2.3 through 2.6.1 implementation and scoped verification records, compiled October 25 2026. Retained context measurements, setup handoff and plan delivery checks, exact-PDF review and refusal tests, three-role instruction delivery, and the environment gate's eight focused groups and six negative entry-point checks. Release reports and hash-pinned receipts record each scope. This paper revision reran no operational or scientific suites.
+
+[E8] Santor B. Creator account of runtime use and browser-host migrations, retained with RA 2.6.1 field-use documentation. Reports Architect use in Codex with Astra and 6.1 High, kit operation in Antigravity, Claude and Codex, and browser-chat problems requiring teammate migrations. Labels and outcomes are creator-reported field evidence; no controlled platform benchmark or new adoption rate is inferred.
+
 ### Evidence availability
 
-The operational case draws on retained private deployment records and dated software-validation receipts. This public edition reports aggregate engineering observations and does not include participant records or research findings. Detailed source locators, hashes, evidence classifications and revision decisions are retained separately for editorial review. The published references above provide scholarly and engineering context; they do not independently validate the RA case.
+The public paper reports aggregate engineering observations from retained deployment records, dated software receipts and creator accounts. Participant records and research payloads remain private. Exact locators, hashes and evidence classifications are retained for editorial review. The cited research supplies methodological context; RA's engineering results are supported by its own records.
 
 ### Reading the engineering evidence
 
-The numerical results belong to their stated dates and work units. Transfer identities count recorded exchanges rather than completed research tasks. The isolated restore is one recovery exercise, and the large context fixture is one synthetic engineering case. The release regression covers the named software scope. These observations should not be pooled into an adoption rate or treated as independent demonstrations of research quality.
+Results retain their dates and units. Transfer IDs count recorded exchanges; the isolated restore and context fixture establish their specific recovery and output results. Regression reports cover their named software paths. These observations support the operating mechanisms described here without forming an independent adoption rate or research-quality effect.
 
-Further evaluation should freeze the task, authorized evidence, runtime configuration, stopping rules and grading criteria before execution. Full-context, bounded-retrieval and checkpoint strategies should face the same task and evidence. Accounting should include failed attempts and restoration work, preserve missing counters as unknown, and assess citations, uncertainty and unauthorized actions alongside completion. This is an evaluation plan; it is not an additional result of this paper. [5] [8] [9]
+Future comparisons should freeze tasks, authorized evidence, runtime settings, stopping rules and grading criteria. Compare context strategies on the same tasks and include retries, failures and restoration work. Record actual usage when available and retain unavailable counters as unknown. Assess citations, uncertainty and unauthorized actions alongside completion. This is an evaluation plan. [5] [8] [9]
 
-Prepared with AI-assisted source review and drafting. The author configured the deployment and supplied the dated onboarding report. File verification, AI review, recipient reporting and independent human evaluation are distinguished throughout.
+Prepared with AI-assisted source review and drafting. Brandon Santor configured the deployment and supplied the creator accounts. Execution records, recipient reports and independent evaluation retain their respective scopes.
