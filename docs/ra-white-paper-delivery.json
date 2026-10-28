@@ -1,11 +1,12 @@
 {
   "title": "Research Architect for Coordinated AI Research",
-  "date": "2026-10-25",
-  "pages": 17,
-  "scope": "Current RA 2.6.1 setup verification, written-plan review and delivery, research guidance, shared Library, continuity, and dated NWSW field evidence.",
-  "pdf_sha256": "45841f546fac9d122c99583393c1509edd0d8a8cd45cf38ad196c23233e4e9db",
+  "date": "2026-10-27",
+  "pages": 19,
+  "scope": "Owner-supplied public white paper including the October 27 publisher repair and cited evidence. PDF replacement only; software version unchanged.",
+  "pdf_sha256": "a79c994ce989c76d663892feff5653b8a8237db22e015a2ea960c2b169004fc9",
   "source_sha256": "99be8500eb39ee3233d37b4cf0968c985c5e37d0d8d3aea507ae1844978facb0",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
-  "pdf_source": "User-supplied RA_White_Paper.pdf; byte-identical to the current Agent Builder public delivery."
+  "pdf_source": "User-authorized public RA_White_Paper.pdf, imported byte-for-byte from the Desktop delivery.",
+  "source_status": "The retained Markdown source and source_sha256 describe the October 25 delivery; no replacement Markdown was supplied or imported with this PDF-only update."
 }
