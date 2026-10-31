@@ -2,11 +2,11 @@
   "title": "Research Architect for Coordinated AI Research",
   "date": "2026-10-31",
   "pages": 28,
-  "scope": "Owner-supplied October 31 public white paper documenting explicit Hub disclosure authorization and saved initial assessments in all new Hub, Spoke and Ingestor kits. Reference E15 describes the focused delivery and restoration checks and distinguishes them from live model compliance. Software version unchanged.",
-  "pdf_sha256": "3a030de709d7e7d06e8476fed7b71768cc0dabb36266ff3e887aec45eace12c3",
+  "scope": "Owner-supplied October 31 public white paper with constructive language describing delivered capabilities and continued development. Measurements, evidence identities, six figures, late-onboarding constraints, and human approval and access boundaries are preserved. Software version unchanged.",
+  "pdf_sha256": "e34a4d3424aef0cd3b4a1e7a141cd552000193d1a520a0b46ce758c54466ea9f",
   "source_sha256": "99be8500eb39ee3233d37b4cf0968c985c5e37d0d8d3aea507ae1844978facb0",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
-  "pdf_source": "User-authorized final October 31 RA_White_Paper.pdf documenting the two kit safeguards, imported unchanged from the Agent Builder public handoff.",
+  "pdf_source": "User-authorized final October 31 RA_White_Paper.pdf with the delivered-capabilities language pass, imported unchanged from the Agent Builder public handoff.",
   "source_status": "The retained Markdown source and source_sha256 describe the October 25 delivery, not this October 31 PDF. No replacement Markdown was included in this handoff."
 }
