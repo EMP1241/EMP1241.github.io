@@ -1,12 +1,12 @@
 {
   "title": "Research Architect for Coordinated AI Research",
-  "date": "2026-10-27",
-  "pages": 19,
-  "scope": "Owner-supplied public white paper including the October 27 publisher repair and cited evidence. PDF replacement only; software version unchanged.",
-  "pdf_sha256": "40bb7c56131908fdf3b004181bacafd7714de34b034b5f078e3d1ddd8f63a344",
+  "date": "2026-10-31",
+  "pages": 28,
+  "scope": "Owner-supplied public white paper with the expanded October 31 account, context-recovery explanation on page 5 and Figure 6 on page 25. Software version unchanged.",
+  "pdf_sha256": "53c2545db0b028ca05b281159a2a2af96878f684d97cd24d772333711d696bdb",
   "source_sha256": "99be8500eb39ee3233d37b4cf0968c985c5e37d0d8d3aea507ae1844978facb0",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
-  "pdf_source": "User-authorized October 27 corrected public RA_White_Paper.pdf, imported unchanged; current public file reconfirmed by Agent Builder on October 31.",
-  "source_status": "The retained Markdown source and source_sha256 describe the October 25 delivery; no replacement Markdown was supplied or imported with this PDF-only update."
+  "pdf_source": "User-authorized final October 31 RA_White_Paper.pdf, imported unchanged from the Agent Builder public handoff.",
+  "source_status": "The retained Markdown source and source_sha256 describe the October 25 delivery, not this October 31 PDF. No replacement Markdown was included in this handoff."
 }

@@ -29,6 +29,8 @@
 <script src="gallery.js?v=20261024-example" defer></script>
 
 <script src="workflow.js" defer></script><script src="motion.js?v=20261023-clarity" defer></script>
+<link rel="stylesheet" href="assets/evidence/ra-context-recovery.css?v=20261031">
+<script src="assets/evidence/ra-context-recovery.js?v=20261031" defer></script>
 </head>
 
 <body id="top" data-page="project-research-architect.html" data-project="research-architect">
@@ -121,10 +123,48 @@
 <h2>Return to the work without losing its history</h2>
 <p>I built saved checkpoints: records of the project’s sources, methods, decisions, and unfinished work at a particular time. The tools find the latest checkpoint, check its files, and retrieve the records needed for the next task. RA Doctor provides a local interface for checking a kit and saving the results without calling an AI model.</p>
 <p>After an interruption, the records distinguish finished work from failed tasks and outcomes that remain unknown. Version checks and recovery copies help prevent an update from losing earlier work. The original evidence, corrections, and decisions about closing a task remain available for review.</p>
+
+<details class="engineering-evidence" id="context-recovery-example">
+<summary>Explore how a focused context leads back to the original evidence</summary>
+<p>I built context recovery so an assistant can find the decisions and sources needed for its task without repeating the whole project history. This example follows a question from a saved record to a focused working context, then back to the exact evidence used in the answer.</p>
+<div id="ra-context-example">
+  <h3>Full record → focused working context</h3>
+  <p class="cx-note">Invented building-energy study · task lookup after required startup. These character counts describe this illustration, not measured RA compression or all the context needed to start a session.</p>
+  <div id="cx-interactive" hidden>
+    <div class="cx-controls" role="group" aria-label="Context recovery steps">
+      <button type="button" data-step="0" aria-pressed="false" aria-controls="cx-source">1. Stored record</button>
+      <button type="button" data-step="1" aria-pressed="true" aria-controls="cx-source">2. Working context</button>
+      <button type="button" data-step="2" aria-pressed="false" aria-controls="cx-source">3. Exact evidence</button>
+      <button type="button" data-step="3" aria-pressed="false" aria-controls="cx-source">4. Grounded answer</button>
+    </div>
+    <div class="cx-bars">
+      <div><div class="cx-label"><span>Original record retained</span><strong id="cx-total"></strong></div><div class="cx-track" aria-hidden="true"><div class="cx-archive"></div></div></div>
+      <div><div class="cx-label"><span id="cx-count-label">Selected task context</span><strong id="cx-count"></strong></div><div class="cx-track" aria-hidden="true"><div id="cx-fill" class="cx-fill"></div></div></div>
+    </div>
+    <p class="cx-note">Both bars use the same scale. The full original record stays available in every step.</p>
+    <div id="cx-source" class="cx-source">
+      <div aria-live="polite" aria-atomic="true"><h4 id="cx-stage"></h4><p id="cx-status" class="cx-note"></p></div>
+      <pre id="cx-text" tabindex="0" role="region" aria-label="Example text for the selected context-recovery step"></pre>
+    </div>
+  </div>
+  <noscript><p>The four-step interactive view uses JavaScript. The diagram below shows the same example.</p></noscript>
+  <details><summary>What changes after a restart or lost context?</summary>
+    <p>Reload the required instructions, identity, current decisions, and task state. Check the selected source versions again and retrieve the evidence needed for the task. A saved index or a successful file check does not mean the assistant has read or retained that material.</p>
+  </details>
+  <details><summary>How this differs from the measured RA results</summary>
+    <p>The invented example retains 437,112 characters, selects 2,450 for this task, and uses 3,716 after retrieving the exact evidence. A small task packet does not retain all project information.</p>
+    <p>A separate measured repeated-context fixture reduced emitted text from 773,391 to 119,362 characters (84.57%), with reconstruction of the selected source text verified. The 277-character reuse result applied only when the required context was already present in the same conversation; it was not a fresh restoration.</p>
+    <p>Selecting relevant material, avoiding exact repetition, and reusing context already present are different mechanisms. This illustration demonstrates task-specific lookup.</p>
+  </details>
+  <details><summary>View the diagram from the white paper</summary>
+    <figure><a href="assets/evidence/ra-context-recovery.png" target="_blank" rel="noopener noreferrer"><img src="assets/evidence/ra-context-recovery.png" width="2550" height="3300" loading="lazy" decoding="async" alt="Four-step context-recovery example: retain the full record, select task context, retrieve exact sources, and give an answer that preserves the decision and unresolved question."></a><figcaption>Figure 6 from the white paper. Invented example showing focused context and exact retrieval. <a href="assets/evidence/ra-context-recovery.png" target="_blank" rel="noopener noreferrer">Open full image ↗</a></figcaption></figure>
+  </details>
+</div>
+</details>
 <h2 id="ra-research-foundation">Research behind the architecture</h2>
 <p>I reviewed thousands of research and technical sources and translated research expectations into instructions and working tools: cite the evidence, compare methods, retain conflicting findings, document uncertainty, and keep people responsible for decisions. The scientific library provides method guides, source records, and complete examples using invented data. Relevant source material can be retrieved in full when the task needs it.</p>
 <p>The illustrated white paper explains the design, the research behind it, and its use in the New World Screwworm project. It includes references and records of the engineering checks.</p>
-<div class="actions"><a class="button button--secondary" id="ra-white-paper-link" href="assets/documents/research-architect-white-paper.pdf?v=20261027" target="_blank" rel="noopener noreferrer" aria-label="Read the Research Architect white paper (PDF, opens in a new tab)">White paper</a></div>
+<div class="actions"><a class="button button--secondary" id="ra-white-paper-link" href="assets/documents/research-architect-white-paper.pdf?v=20261031" target="_blank" rel="noopener noreferrer" aria-label="Read the Research Architect white paper (PDF, opens in a new tab)">White paper</a></div>
 
 <h2 id="ra-library-updates">Keep shared research current without rebuilding the whole collection.</h2>
 <p>I added tools that prepare reviewed additions and corrections while reusing unchanged Library records. The Hub can update the shared collection without treating every saved item as new work. Checks reject conflicting or outdated inputs, and the reader keeps source references connected to the exact version being used.</p>

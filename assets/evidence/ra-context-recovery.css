@@ -1,0 +1,26 @@
+#ra-context-example { display: grid; gap: 1rem; min-width: 0; color: var(--ink); }
+#ra-context-example h3, #ra-context-example h4, #ra-context-example p { margin: 0; }
+#ra-context-example h3 { font: 600 1.15rem/1.4 var(--sans); }
+#ra-context-example h4 { font: 600 1rem/1.5 var(--sans); }
+#ra-context-example [hidden] { display: none; }
+#ra-context-example .cx-note { color: var(--muted); font-size: .85rem; line-height: 1.65; }
+#ra-context-example .cx-controls { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .5rem; margin-bottom: 1.25rem; }
+#ra-context-example button { min-width: 0; min-height: 48px; padding: .65rem .8rem; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--ink); font: 600 .85rem/1.5 var(--sans); text-align: left; cursor: pointer; }
+#ra-context-example button[aria-pressed="true"] { border-color: var(--accent); box-shadow: inset 0 -3px var(--accent); background: var(--surface-raised); }
+#ra-context-example button:hover { border-color: var(--accent); }
+#ra-context-example :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+#ra-context-example .cx-bars { display: grid; gap: 1rem; margin-bottom: .75rem; }
+#ra-context-example .cx-label { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .25rem 1rem; font-size: .85rem; }
+#ra-context-example .cx-label strong { font-variant-numeric: tabular-nums; }
+#ra-context-example .cx-track { height: 12px; margin-top: .35rem; background: var(--surface-raised); border: 1px solid var(--line); }
+#ra-context-example .cx-fill { height: 100%; background: var(--accent); transition: width .2s ease; }
+#ra-context-example .cx-archive { width: 100%; height: 100%; background: var(--muted); opacity: .5; }
+#ra-context-example .cx-source { display: grid; gap: .75rem; margin-top: 1.25rem; }
+#ra-context-example pre { margin: 0; padding: 1rem; max-height: 34rem; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--ink); font: .82rem/1.65 ui-monospace,monospace; }
+#ra-context-example details { min-width: 0; }
+#ra-context-example details p { margin-top: .75rem; }
+#ra-context-example figure { margin: 1rem 0 0; }
+#ra-context-example img { display: block; width: 100%; height: auto; }
+#ra-context-example figcaption { margin-top: .75rem; font-size: .85rem; color: var(--muted); }
+@media (max-width: 420px) { #ra-context-example .cx-controls { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { #ra-context-example .cx-fill { transition: none; } }
