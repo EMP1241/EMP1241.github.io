@@ -2,11 +2,11 @@
   "title": "Research Architect for Coordinated AI Research",
   "date": "2026-10-31",
   "pages": 28,
-  "scope": "Owner-supplied public white paper with the expanded October 31 account, context-recovery explanation on page 5 and Figure 6 on page 25. Software version unchanged.",
-  "pdf_sha256": "53c2545db0b028ca05b281159a2a2af96878f684d97cd24d772333711d696bdb",
+  "scope": "Owner-supplied October 31 public white paper, including context recovery and the corrected 10th man explanation of controlled evidence access, independent first assessments, Hub-authorized comparison, operational awareness, preserved dissent, and human final acceptance. Explanation of existing governance; software version unchanged.",
+  "pdf_sha256": "9cc70de4497bdc0303121f4757e800319cddaef009b601eb2fb07eab61d6534e",
   "source_sha256": "99be8500eb39ee3233d37b4cf0968c985c5e37d0d8d3aea507ae1844978facb0",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
-  "pdf_source": "User-authorized final October 31 RA_White_Paper.pdf, imported unchanged from the Agent Builder public handoff.",
+  "pdf_source": "User-authorized October 31 RA_White_Paper.pdf with the 10th man governance clarification, imported unchanged from the Agent Builder public handoff.",
   "source_status": "The retained Markdown source and source_sha256 describe the October 25 delivery, not this October 31 PDF. No replacement Markdown was included in this handoff."
 }
