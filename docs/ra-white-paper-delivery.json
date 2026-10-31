@@ -3,10 +3,10 @@
   "date": "2026-10-27",
   "pages": 19,
   "scope": "Owner-supplied public white paper including the October 27 publisher repair and cited evidence. PDF replacement only; software version unchanged.",
-  "pdf_sha256": "a79c994ce989c76d663892feff5653b8a8237db22e015a2ea960c2b169004fc9",
+  "pdf_sha256": "40bb7c56131908fdf3b004181bacafd7714de34b034b5f078e3d1ddd8f63a344",
   "source_sha256": "99be8500eb39ee3233d37b4cf0968c985c5e37d0d8d3aea507ae1844978facb0",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
-  "pdf_source": "User-authorized public RA_White_Paper.pdf, imported byte-for-byte from the Desktop delivery.",
+  "pdf_source": "User-authorized October 27 corrected public RA_White_Paper.pdf, imported unchanged; current public file reconfirmed by Agent Builder on October 31.",
   "source_status": "The retained Markdown source and source_sha256 describe the October 25 delivery; no replacement Markdown was supplied or imported with this PDF-only update."
 }
