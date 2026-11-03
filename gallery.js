@@ -77,6 +77,7 @@
 
   function clearLightboxVideo() {
     video.pause();
+    video.querySelectorAll('track').forEach(track => track.remove());
     manualPlayback.delete(video);
     video.onloadeddata = null;
     video.onerror = null;
@@ -100,7 +101,6 @@
     if (!activeGallery) return;
     const slide = activeGallery.slides[activeGallery.index];
     const source = slide.querySelector('img, video');
-    const text = slide.querySelector('figcaption').textContent.trim();
     const token = ++imageRequest;
     setZoom(false);
     clearLightboxVideo();
@@ -116,14 +116,18 @@
     const original = dialog.querySelector('.lightbox-original');
     original.href = source.getAttribute('src');
     original.textContent = `Open original ${isVideo ? 'video' : 'image'} in a new tab ↗`;
-    dialog.querySelector('#lightbox-title').textContent = activeGallery.title;
+    dialog.querySelector('#lightbox-title').textContent = source.getAttribute('data-project-name') || activeGallery.title;
     position.textContent = `${activeGallery.index + 1} / ${activeGallery.slides.length}`;
-    caption.textContent = text;
+    // These captions are trusted local page markup. Keep their project and
+    // text-description links usable in the enlarged view as well.
+    caption.innerHTML = slide.querySelector('figcaption').innerHTML;
     dialog.querySelector('[data-prev]').disabled = activeGallery.slides.length < 2;
     dialog.querySelector('[data-next]').disabled = activeGallery.slides.length < 2;
     loading.textContent = isVideo ? 'Loading video…' : 'Loading image…';
     if (isVideo) {
-      video.setAttribute('aria-label', source.getAttribute('aria-label') || 'Project demonstration');
+      video.setAttribute('aria-label', source.getAttribute('data-project-name') || source.getAttribute('aria-label') || 'Project demonstration');
+      video.setAttribute('aria-describedby', 'lightbox-caption');
+      source.querySelectorAll('track').forEach(track => video.append(track.cloneNode(true)));
       if (source.getAttribute('poster')) video.poster = source.getAttribute('poster');
       video.onloadeddata = () => { if (token === imageRequest) loading.textContent = ''; };
       video.onerror = () => {

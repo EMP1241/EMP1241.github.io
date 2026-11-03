@@ -1,0 +1,7 @@
+Thermal Vent Atlas Explorer — silent video description
+
+00:00:00.000–00:00:01.500: Explore Indian Ocean seafloor relief and plate boundaries.
+00:00:01.500–00:00:04.000: Zoom toward the selected vent records.
+00:00:04.000–00:00:05.967: Open the vent summary charts.
+
+Public InterRidge data. No imported user records are shown.

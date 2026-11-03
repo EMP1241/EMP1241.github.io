@@ -1,0 +1,6 @@
+Mars Explorer — silent video description
+
+00:00:00.000–00:00:04.000: Pan and zoom through Mont Mercou rover imagery.
+00:00:04.000–00:00:08.000: Switch to the sol 3053 station view and pan across the scene.
+
+NASA/JPL-Caltech imagery. This panorama viewer is separate from the reconstructed 3D terrain.
