@@ -8,7 +8,11 @@ The current source-owner chat confirmed a completed V8 research assessment, with
 
 Updated the page, homepage, directory, about page and résumé to recognize the completed written assessment. Replaced the stale claim that the reporting-scenario work was only in design with a high-level description of its interpretive purpose. Existing completed source repairs, GIS workflows and numerical experiments remain credited.
 
-A later detailed resident-expert consultation failed with a platform content restriction. This is a bounded status and communication update, not a complete verification of every new scientific result. No unverified new model result, statistical parameter, geographic output or research download was added.
+A later detailed resident-expert helper prompt failed with a generic platform content restriction. The failure identified no particular source, calculation or finding. It did not establish a restriction on portfolio editing. No claim is made that a platform-wide restriction was subsequently lifted.
+
+On Brandon's request to resume, completed an editorial follow-up using the existing V8 two-page executive companion and dated project source map. The V8 freeze identifies a 49-page reviewed local binder and an unchanged two-page companion. Checked companion SHA-256: `ca45504fbdd6613026e3dcdc4728ebc80f1a1487806764b2b9a43594f5a587ef`. V9 figure work was still in preparation when checked; no held report or underlying dataset was published.
+
+Added general-audience accounts of the completed regional chronology, livestock context, retrospective geographic-model comparisons, and reporting-sensitivity analyses. Explained the differing performance measures, inconsistent benefit of corridor information, and distinction between assumptions about missing reports and measured reporting rates. Retained that model revision used earlier results and left no untouched validation set. These are descriptions of completed work, without new biological analysis, new computations, operational maps, model parameters or forecast claims. Updated the NWSW hero highlights, overview, detail sections, navigation, homepage, directory, about page and résumé to match.
 
 ## Research Architect
 
