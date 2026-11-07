@@ -1,0 +1,39 @@
+.research-figure {
+  padding: 0;
+  margin-block: 2rem;
+  overflow: hidden;
+}
+.research-figure > a {
+  display: block;
+  position: relative;
+  background: #fff;
+}
+.research-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.research-figure .figure-enlarge {
+  display: block;
+  padding: .45rem .8rem;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  background: var(--surface);
+  font-size: .75rem;
+  text-align: right;
+}
+.research-figure > a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+.research-figure figcaption {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .84rem;
+  line-height: 1.7;
+}
+@media print {
+  .research-figure .figure-enlarge { display: none; }
+}

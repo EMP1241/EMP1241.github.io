@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-07",
+  "scope": "Unchanged selected project figures for inline portfolio explanation. No new research analysis or geographic outputs.",
+  "figures": [
+    {
+      "asset": "assets/evidence/nwsw-texas-network-20261107.png",
+      "source_figure": "visuals/texas_network.png",
+      "source_edition": "NWSW geography reader visual edition V9",
+      "sha256": "6119b86a04f49678fc7302c2eb2c1a83383b1e2e6762d97cccf672029ae4e514",
+      "width": 1950,
+      "height": 1665,
+      "imported_without_pixel_changes": true
+    },
+    {
+      "asset": "assets/evidence/nwsw-aerial-address-review-20261107.png",
+      "source_figure": "visuals/market_aerial_context.png",
+      "source_edition": "NWSW geography reader visual edition V9",
+      "sha256": "b19c34d53255f2267ffac22889895f22981be993bcf7a18da931748662931088",
+      "width": 1950,
+      "height": 1260,
+      "imported_without_pixel_changes": true
+    },
+    {
+      "asset": "assets/evidence/nwsw-model-comparison-20261107.png",
+      "source_figure": "reader_figures/model_capture.png",
+      "source_edition": "NWSW geography reader visual edition V9",
+      "sha256": "1a25fef6492a2b06174061866781cb86c5cd8e5fc7a262bec40bc5ac49322891",
+      "width": 1950,
+      "height": 917,
+      "imported_without_pixel_changes": true
+    }
+  ]
+}
