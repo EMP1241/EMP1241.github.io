@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-10",
+  "scope": "Four owner-selected completed research figures imported unchanged for the NWSW portfolio. Selection numbers refer to the displayed review list: 1, 3, 7, and 17.",
+  "source_root": "C:/Users/brand/Desktop/HUB Project/outputs/nwsw_usda_binder_geography_20261110_print_checked",
+  "source_briefing": "NWSW_Research_Briefing_Texas_AM_Geography_2026-11-08.pdf",
+  "figures": [
+    {
+      "selection": 1,
+      "asset": "assets/evidence/nwsw-regional-record-overview-20261110.png",
+      "source": "assets/v37/regional_record_overview.png",
+      "briefing_page": 18,
+      "width": 1950,
+      "height": 1995,
+      "sha256": "8f77720c25f2e99cfaff1f88f2d4bcf31efad893c213af63c56e28e8d0542328",
+      "placement": "First hero gallery image",
+      "scope": "Retained cutoff display with different source windows, units and location methods. Mexico uses published positions; Guatemala and U.S. animal positions are simulated. Apparent densities are not comparable across countries. Sources, credits and Equal Earth projection remain in the figure."
+    },
+    {
+      "selection": 3,
+      "asset": "assets/evidence/nwsw-guatemala-monte-carlo-20261110.png",
+      "source": "assets/visuals/guatemala_mc_farm20.png",
+      "briefing_page": 21,
+      "width": 1950,
+      "height": 1695,
+      "sha256": "970dec9d912368d84ba44a1f1822c5829434a2f8fe75cfaeb197e147a104f61a",
+      "placement": "Location-assumption comparison",
+      "scope": "Four million conditional allocations per panel for the same 20 Farm references. Fixed classes, extent and ramp; simulated occupancy probability per 20 km cell. These are possible locations under stated rules, not observed farms."
+    },
+    {
+      "selection": 7,
+      "asset": "assets/evidence/nwsw-us-model-comparison-20261110.png",
+      "source": "assets/v12/us_relative_density.png",
+      "briefing_page": 45,
+      "width": 1950,
+      "height": 1230,
+      "sha256": "defb76d654154e64d76b865024e6f11663926dd0be2bf856487f8efce8811293",
+      "placement": "County allocation result",
+      "scope": "Model from 52 confirmations through October 3 versus 56 later confirmations through November 3. Each panel is normalized to its own total, using matching county geometry, extent, EPSG:5070, classes and colors. Census TIGER/Line 2025 counties and APHIS export retrieved November 7. County averages do not locate premises."
+    },
+    {
+      "selection": 17,
+      "asset": "assets/evidence/nwsw-border-arid-context-20261110.png",
+      "source": "assets/v37/texas_mexico_border_arid_150km.png",
+      "briefing_page": 62,
+      "width": 2010,
+      "height": 2070,
+      "sha256": "70eb85103088156acc96c0112cebfe7260e23ec9e87a563b0a2409182950f779",
+      "placement": "Border and environmental context; replaces the older highway figure",
+      "scope": "Selected 150 km band on each side of the border in mapped arid/semiarid classes. Not a measured journey, transmission route or infection probability. U.S. animal positions are simulated. Beck et al. 2023 CC BY 4.0, WOAH and other source credits are retained within the complete figure."
+    }
+  ],
+  "imported_without_pixel_changes": true,
+  "accessibility": "Descriptive alt text, adjacent plain-language captions and full-size links are provided. Shared map legends and source credits are preserved. No new classification, geographic analysis or recoloring was performed."
+}
