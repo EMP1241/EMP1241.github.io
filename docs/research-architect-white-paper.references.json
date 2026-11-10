@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-11-10",
   "external_references": [
     {
       "id": "1",
@@ -286,6 +286,66 @@
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
       "citation_authors": "Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK"
+    },
+    {
+      "id": "12",
+      "authors": [
+        "Heuer RJ Jr"
+      ],
+      "year": "1999",
+      "title": "Psychology of Intelligence Analysis",
+      "venue": "Center for the Study of Intelligence, Central Intelligence Agency",
+      "kind": "Methodological monograph",
+      "url": "https://www.cia.gov/resources/csi/static/Pyschology-of-Intelligence-Analysis.pdf",
+      "scope": "Chapter 8, printed pages 72-73 (PDF pages 100-101): devil's advocacy and conflicting interpretations; no RA efficacy evidence",
+      "accessed": "October 31 2026",
+      "supports_RA_performance": false
+    },
+    {
+      "id": "13",
+      "authors": [
+        "Rieber S",
+        "Thomason N"
+      ],
+      "year": "2005",
+      "title": "Creation of a National Institute for Analytic Methods",
+      "venue": "Studies in Intelligence 49(4)",
+      "kind": "Methodological commentary",
+      "url": "https://www.cia.gov/resources/csi/static/National-Institute-Analytic-Methods.pdf",
+      "scope": "PDF pages 3-4 and endnotes: need to test analytic methods and limits of assigned devil's advocacy; no new RA trial",
+      "accessed": "October 31 2026",
+      "supports_RA_performance": false
+    },
+    {
+      "id": "14",
+      "authors": [
+        "Pelczar PD"
+      ],
+      "year": "2025",
+      "title": "The role of critical thinking",
+      "venue": "Australian Naval Institute, October 10; article heading From Analysis to Algorithms: Preserving the Art of Critical Thinking",
+      "kind": "Professional commentary; public introductory excerpt inspected",
+      "url": "https://navalinstitute.com.au/the-role-of-critical-thinking/",
+      "scope": "Public excerpt identifies the tenth man formulation and its World War Z use. Member-only remainder was not inspected. Used for terminology, not efficacy or proof of official intelligence doctrine",
+      "accessed": "October 31 2026",
+      "supports_RA_performance": false
+    },
+    {
+      "id": "15",
+      "authors": [
+        "Pitre P",
+        "Ramakrishnan N",
+        "Wang X"
+      ],
+      "year": "2025",
+      "title": "CONSENSAGENT: Towards Efficient and Effective Consensus in Multi-Agent LLM Interactions Through Sycophancy Mitigation",
+      "venue": "Findings of the Association for Computational Linguistics: ACL 2025, 22112-22133",
+      "kind": "Peer-reviewed conference paper; abstract and bibliographic record inspected for this revision",
+      "url": "https://aclanthology.org/2025.findings-acl.1141/",
+      "doi": "10.18653/v1/2025.findings-acl.1141",
+      "scope": "Multi-agent reinforcement/sycophancy motivation; no transfer of benchmark performance to RA",
+      "accessed": "October 31 2026",
+      "supports_RA_performance": false
     }
   ],
   "primary_RA_evidence": [
@@ -322,13 +382,74 @@
     {
       "id": "E7",
       "title": "RA 2.3 through 2.6.1 implementation and scoped verification",
-      "text": "Santor B. Research Architect 2.3 through 2.6.1 implementation and scoped verification records, compiled October 25 2026. Retained context measurements, setup handoff and plan delivery checks, exact-PDF review and refusal tests, three-role instruction delivery, and the environment gate's eight focused groups and six negative entry-point checks. Release reports and hash-pinned receipts record each scope. This paper revision reran no operational or scientific suites."
+      "text": "Santor B. Research Architect 2.3 through 2.6.1 implementation and scoped verification records, compiled October 25 2026. Retained context measurements, setup handoff and plan delivery checks, exact-PDF review and refusal tests, three-role instruction delivery, and the environment gate's eight focused groups and six negative entry-point checks. Release reports and hash-pinned receipts record each scope. These records retain their original verification scope."
     },
     {
       "id": "E8",
       "title": "Creator account of runtime use and browser-host migrations",
       "text": "Santor B. Creator account of runtime use and browser-host migrations, retained with RA 2.6.1 field-use documentation. Reports Architect use in Codex with Astra and 6.1 High, kit operation in Antigravity, Claude and Codex, and browser-chat problems requiring teammate migrations. Labels and outcomes are creator-reported field evidence; no controlled platform benchmark or new adoption rate is inferred."
+    },
+    {
+      "id": "E9",
+      "title": "NWSW incremental Library publication and closeout evidence",
+      "text": "Santor B. NWSW incremental Library publication and closeout evidence, October 27 2026. Retained source review and final release receipt record 741 selected metadata objects reused, 28 new metadata objects, nine changed aliases verified, 49 unchanged aliases retained and verified index, navigation, status and normal closeout. Dated reuse proof and original interrupted-controller qualifications remain explicit. Exact private locators and SHA256 pins are retained in the editorial evidence manifest. This is deployed engineering evidence, not a participant-adoption or scientific-quality study."
+    },
+    {
+      "id": "E10",
+      "title": "RA publisher integration and targeted verification records",
+      "text": "Santor B. Research Architect publisher integration and targeted verification records, October 27 2026. Retained source provenance, publisher operating contract, 19 publisher methods, one legacy-reader regression, three additional failure checks and archive-to-generated-Hub delivery records. The package carries local preparation, origin-aware reading and receipt checks; provider writes and controlled release remain backend responsibilities. Evidence records retain exact source and archive hashes."
+    },
+    {
+      "id": "E11",
+      "title": "RA operating instructions and source review for research workflow explanations",
+      "text": "Santor B. Research Architect 2.6.1 operating instructions and implementation source review, October 31 2026. Inspected project-design and workload guidance, governance and review templates, independent-evidence guidance, command routing, persistence and context procedures, model plans, and reviewed migration contracts. Exact local sources and SHA-256 pins are retained in the editorial evidence manifest. This establishes documented instructions, record structures and inspected implementation behavior, not universal compliance, a new runtime release or completed comparative trials. Outside-research intake and specialist packets are described as a composed use of existing mechanisms with stated implementation and testing limits."
+    },
+    {
+      "id": "E12",
+      "title": "Participant context replay and Hub observational context measurements",
+      "text": "Santor B. Retained participant context optimization report and Hub message-context comparison, held in the October 22 2026 integration assessment and inspected October 31. The participant report records controlled local CLI replays against the same CP076 sources; the Hub report records a retrospective observational workflow comparison. Units, counted output scope, differing workloads and unavailable measures remain explicit. These are separate from the generic repeated-context fixture. The editorial manifest pins the supplied report, retained comparison and their provenance."
+    },
+    {
+      "id": "E13",
+      "title": "NWSW research review and coordination case evidence",
+      "text": "Santor B. Retained NWSW Hub operational cases, October 14-29 2026, inspected October 31. Records cover source-claim correction and its bounded human-authorized release, date/coverage correction, visualization verification, a contributor-reported eight-assignment closure application, incoming-route repair, and a scoped evidence audit. Exact source identities, hashes, actors, dates, outcomes and limits are retained privately. AI review, human decisions, technical checks, sender reports and publication receipts are distinguished. These cases do not constitute independent scientific validation or comparative evidence that all RA deployments improve research quality."
+    },
+    {
+      "id": "E14",
+      "title": "Library held-item discovery and request evidence",
+      "text": "Santor B. NWSW Library operating guide, reviewed metadata projection, request-route implementation and October 30 2026 catalog example, inspected October 31. Available in Library and Request from Hub preserve exact identities and distinct access/use states. Safe metadata disclosure is reviewed; requests inform the human lead's review priorities without guaranteeing fulfillment. The private editorial manifest pins the inspected guide, code and example. Generic client capability remains distinct from this deployment, and no new cloud audit, payload release or automatic priority scheduler is inferred."
+    },
+    {
+      "id": "E15",
+      "title": "Universal independent-review kit delivery verification",
+      "text": "Santor B. Universal independent-review kit delivery and restoration verification, October 31 2026. Retained three-role fixtures, sealed outputs and scoped check results establish delivery of Hub authorization and preserved initial-assessment instructions. Existing approvals were preserved. The checked scope covers kit delivery and restoration."
+    },
+    {
+      "id": "E16",
+      "title": "Completed NWSW public-source research briefing and final review record",
+      "text": "Santor B. New World Screwworm: Reported Spread, Surveillance Gaps and Geographic Priorities. Public-source academic research briefing, NWSW-GEO-20261108; prepared November 8 and reviewed November 10 2026. Exact print-checked artifact: 136 pages, SHA-256 c34543221107cdb6c42379900b7b3e32ecaf8df2770a0fa8b7c0c7362086f6cc. Matched companions: two-page executive summary and 101-page Retained Sources and Reading Notes. Inspected locators include the cover, pp. 2-7, 10-12, 21, 44-52, 99-109 and source notes. The final review receipt identifies the output hashes and retained build inputs. Brandon's eight-person/eight-week account is an owner statement; the cover separately credits him and seven data-collection contributors. The report records its assumptions, retrospective evaluation windows and scientific limits; prepared for the named recipient does not establish agency endorsement or adoption."
+    },
+    {
+      "id": "E17",
+      "title": "Qualified contributor review and completed team Library publication",
+      "text": "Santor B. NWSW contributor-package assessment, actual owner decision and final Library release receipt, October 29 2026; inspected November 10. The retained review identifies source-claim corrections and preserves the original submission and review trail. The owner authorizes qualified descriptive ingestion and existing-team Library publication. The final receipt records three canonical additions, fourteen membership references and preservation of prior canonical records, with attribution and use limits. These records establish the selected review/decision/publication sequence. They do not constitute an automatic artifact-level import audit of every briefing section. Exact private locators and hashes remain in the editorial evidence manifest."
+    },
+    {
+      "id": "E18",
+      "title": "Identifier-based date recovery and preserved chronology inputs",
+      "text": "Santor B. Regional date recovery and R analysis, retained October 15-16 2026 acquisition and completion records; inspected November 10. The acquisition records 2,629 missing outbreak-start dates recovered by exact identifier and 45 of 45 known dates agreeing after UTC normalization. Original fields and the earlier run are preserved; enriched records retain source references, response hashes and match/uncertainty fields. The completion receipt scopes the result to date recovery, temporal accounting and file consistency; coordinate accuracy and cross-source identity reconciliation remain separate. Exact source and receipt hashes are retained privately."
     }
   ],
-  "scope": "Every listed external source supports a cited passage; the full 134-record library is not presented as this paper bibliography."
+  "scope": "Every listed external source supports a cited passage; the full 134-record library is not presented as this paper bibliography.",
+  "context_figure_example": {
+    "figure": 6,
+    "classification": "invented worked illustration, not an operational measurement",
+    "archive_characters": 437112,
+    "working_context_characters": 2450,
+    "working_context_and_retrieved_evidence_characters": 3716,
+    "answer_excluded_from_input_count": true,
+    "printed_text": "excerpts",
+    "scope": "task lookup after required startup",
+    "interactive_source_sha256": "5ea3c5bbd97a0ba0cc078b79d600d4bd4dca8542f8628d95c493b5dff5446d08"
+  }
 }
