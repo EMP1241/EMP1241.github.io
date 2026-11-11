@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "external_references": [
     {
       "id": "1",
@@ -438,9 +438,19 @@
       "id": "E18",
       "title": "Identifier-based date recovery and preserved chronology inputs",
       "text": "Santor B. Regional date recovery and R analysis, retained October 15-16 2026 acquisition and completion records; inspected November 10. The acquisition records 2,629 missing outbreak-start dates recovered by exact identifier and 45 of 45 known dates agreeing after UTC normalization. Original fields and the earlier run are preserved; enriched records retain source references, response hashes and match/uncertainty fields. The completion receipt scopes the result to date recovery, temporal accounting and file consistency; coordinate accuracy and cross-source identity reconciliation remain separate. Exact source and receipt hashes are retained privately."
+    },
+    {
+      "id": "E19",
+      "title": "Dated research safeguarding knowledge and future-kit delivery",
+      "text": "Santor B. Research safeguarding knowledge supplement and changed-path delivery records, November 11 2026. Reconciled two supplied research collections; added fourteen selected bibliographic records and fifteen attributed source appraisals, seven guides, four templates and an invented semantic-data example. Existing source records, scientific modules, runtime and version labels were preserved. Source/index checks, all 41 method-route exports, complete bounded retrieval and one supported synthetic four-role build establish content and delivery at their stated scope. The common route reaches Hub, Spoke and Ingestor, including methods-pending setup. Guidance delivery is separate from live model compliance and research-outcome evaluation; no automatic validators or external framework dependencies are claimed."
+    },
+    {
+      "id": "E20",
+      "title": "Local declared semantic-data and claim concordance verification",
+      "text": "Santor B. Local semantic-data and claim-to-evidence implementation and delivery verification, November 11 2026. Retained phase reports cover 17 semantic tests, 15 claim tests and nine affected hot-spot tests, one supported four-role project build and execution of the delivered Hub tool. The implementation binds exact CSV/source/final-text bytes, validates declared relationships and reconstructs supported quantities and quotations. Existing operational tools, scientific source records, approvals and version labels were preserved. Current package SHA-256 before this paper refresh: 8eee86def877d5cb603aeddf8cc255db2cb0e669b967512d1a27dea330fa83cf. No model, network or embedding calls are introduced. Scope is deterministic declared checks and delivery, with scientific interpretation and actual human acceptance retained."
     }
   ],
-  "scope": "Every listed external source supports a cited passage; the full 134-record library is not presented as this paper bibliography.",
+  "scope": "Every listed external source supports a cited passage; the full 148-record methodology collection is not presented as this paper bibliography.",
   "context_figure_example": {
     "figure": 6,
     "classification": "invented worked illustration, not an operational measurement",

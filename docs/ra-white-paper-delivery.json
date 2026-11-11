@@ -5,14 +5,14 @@
   "figures": 7,
   "external_references": 15,
   "primary_evidence_records": 20,
-  "scope": "Agent Builder-authored white paper with the completed eight-person, eight-week NWSW case study, its source-to-review-to-briefing diagram, and constructive language describing delivered capabilities and continuing development. Earlier evidence, figures, supported measurements and human review boundaries are preserved. Software version unchanged.",
+  "scope": "Research Architect methodology knowledge base, governed project Library, local data and claim checks, and the completed NWSW case study.",
   "pdf_sha256": "b04acfcf8877787bbe10a4342c8e7e11617221ab6e63a8a990bfdbf6cc9c53ed",
-  "source_sha256": "41efab47c120df1f06e2dfd7ba7a1a217be0c7519a35c61108c2eae53415e19c",
-  "references_sha256": "2ac13798a23ba42f3b6524d344c5aaa4adfb021e7facc771a4e9d430ace19adc",
+  "source_sha256": "add3c37f5e4160febb8121897a2ab207b66a8773a21f8be1a01dc059f7ff15d2",
+  "references_sha256": "ed63c57511cb2d9e2f55f6f5e6c0554e3f7755a9debdd870d049ff40cb2f4458",
   "predecessor_pdf_sha256": "e34a4d3424aef0cd3b4a1e7a141cd552000193d1a520a0b46ce758c54466ea9f",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
   "pdf_source": "Agent Builder public handoff, imported unchanged.",
-  "source_status": "The retained Markdown and references document the previous November 10 delivery; the current paper is maintained by Agent Builder.",
-  "verification": "Agent Builder verified the 33-page paper. The portfolio checks the PDF hash and page count; retained source hashes identify the earlier delivery."
+  "source_status": "The retained Markdown and references match the current reviewed public handoff. The editable Word document remains with the delivery project.",
+  "verification": "The current PDF, Markdown and references match the reviewed delivery hashes; the PDF contains 33 pages."
 }

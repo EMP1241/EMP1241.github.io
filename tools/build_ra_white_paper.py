@@ -1,6 +1,6 @@
 """Verify the owner-supplied RA white paper; portfolio authoring is retired.
 
-The Agent Builder project maintains the PDF. The retained Markdown is an earlier delivery.
+The Agent Builder project maintains the PDF and its matching Markdown text.
 Keep the historical command name for existing verification workflows. Import
 reviewed deliveries unchanged and update docs/ra-white-paper-delivery.json;
 never rebuild the owner-authored PDF from the former portfolio template.
@@ -26,7 +26,7 @@ def check():
     pages = len(PdfReader(targets['pdf_sha256']).pages)
     if pages != receipt['pages']:
         raise SystemExit('Owner delivery page count mismatch')
-    print(f'Owner white paper verified: {pages} pages; PDF and retained historical source hashes match the delivery receipt')
+    print(f'Owner white paper verified: {pages} pages; PDF and source hashes match the delivery receipt')
 
 
 if __name__ == '__main__':
