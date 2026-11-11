@@ -109,8 +109,8 @@ def read_source():
     resume = one(document, lambda n: n.attrs.get('id') == 'resume')
     experience = one(resume, lambda n: n.attrs.get('id') == 'research-professional-experience')
     jobs = [article_data(n) for n in experience.direct('article')]
-    if len(jobs) != 6 or any(len(job['bullets']) != 3 for job in jobs):
-        raise ValueError('Every research/professional experience role must have three bullets; expected six roles.')
+    if len(jobs) != 6 or any(len(job['bullets']) != (2 if job['title'].startswith('U.S. Marine Corps') else 3) for job in jobs):
+        raise ValueError('Expected six roles, with two Marine Corps bullets and three bullets for each other role.')
     selected = one(resume, lambda n: n.tag == 'section' and any(h.text() == 'Selected software & research' for h in n.direct('h2')))
     projects = [article_data(n) for n in selected.find(lambda n: n.tag == 'article' and classed(n, 'resume-item'))]
     sidebar = one(resume, lambda n: n.tag == 'aside')
