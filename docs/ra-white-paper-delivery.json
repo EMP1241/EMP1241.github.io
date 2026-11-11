@@ -1,18 +1,18 @@
 {
   "title": "Research Architect for Coordinated AI Research",
-  "date": "2026-11-10",
-  "pages": 32,
+  "date": "2026-11-11",
+  "pages": 33,
   "figures": 7,
   "external_references": 15,
-  "primary_evidence_records": 18,
+  "primary_evidence_records": 20,
   "scope": "Agent Builder-authored white paper with the completed eight-person, eight-week NWSW case study, its source-to-review-to-briefing diagram, and constructive language describing delivered capabilities and continuing development. Earlier evidence, figures, supported measurements and human review boundaries are preserved. Software version unchanged.",
-  "pdf_sha256": "c4932e843dbfb1ed7e04e6968c5c55f71cf748d2aa8cb51c41a2a850e5e41757",
+  "pdf_sha256": "b04acfcf8877787bbe10a4342c8e7e11617221ab6e63a8a990bfdbf6cc9c53ed",
   "source_sha256": "41efab47c120df1f06e2dfd7ba7a1a217be0c7519a35c61108c2eae53415e19c",
   "references_sha256": "2ac13798a23ba42f3b6524d344c5aaa4adfb021e7facc771a4e9d430ace19adc",
   "predecessor_pdf_sha256": "e34a4d3424aef0cd3b4a1e7a141cd552000193d1a520a0b46ce758c54466ea9f",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
-  "pdf_source": "Final November 10 RA_White_Paper.pdf from Agent Builder's completed NWSW case-study handoff, imported unchanged after author QA passed.",
-  "source_status": "The retained Markdown, references and seven referenced figures match the author's finalized delivery. The editable Word document remains with Agent Builder.",
-  "verification": "Author verified Markdown/Word/PDF agreement, prior-content preservation, public-safe sources and all 32 rendered pages. Portfolio independently checked the new case pages, cover and diagram, matched delivery hashes and verified all referenced figure files."
+  "pdf_source": "Agent Builder public handoff, imported unchanged.",
+  "source_status": "The retained Markdown and references document the previous November 10 delivery; the current paper is maintained by Agent Builder.",
+  "verification": "Agent Builder verified the 33-page paper. The portfolio checks the PDF hash and page count; retained source hashes identify the earlier delivery."
 }
