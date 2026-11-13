@@ -71,7 +71,6 @@ def products():
     a.rect(645,178,575,540)
     a.image(ROOT/'assets/icons/research-architect.webp',85,205,90,90)
     a.image(ROOT/'assets/branding/research-architect-wordmark-20261113.png',190,196,400,116)
-    a.text(195,303,'For human research teams',22,PURPLE)
     a.rect(92,320,210,252,fill='#0b0d15')
     a.image(OUT/'ra-whitepaper-cover-20261111.png',100,328,194,236)
     a.text(333,367,'Individual kits',23,INK,650)
