@@ -64,14 +64,14 @@ def identity():
 
 
 def products():
-    a=Art('Research Architect and High Command, software from PhalAInx', 'The current Research Architect icon and published technical white paper represent the framework for human research teams. A current High Command Command Deck capture represents the desktop application for individuals. Research Architect is a development preview; High Command is in alpha testing.')
+    a=Art('Research Architect and High Command, software from PhalAInx', 'The current Research Architect icon, silver-and-cyan wordmark, and published technical white paper represent the framework for human research teams. A current High Command Command Deck capture represents the desktop application for individuals. Research Architect is a development preview; High Command is in alpha testing.')
     a.text(60,68,'PHALAINX / THE PRODUCT FAMILY',18,PURPLE,700)
     a.text(60,130,'For teams and individual projects.',43,INK,650)
     a.rect(60,178,555,540)
     a.rect(645,178,575,540)
     a.image(ROOT/'assets/icons/research-architect.webp',85,205,90,90)
-    a.text(195,247,'Research Architect',32,INK,650)
-    a.text(195,282,'For human research teams',22,PURPLE)
+    a.image(ROOT/'assets/branding/research-architect-wordmark-20261113.png',190,196,400,116)
+    a.text(195,303,'For human research teams',22,PURPLE)
     a.rect(92,320,210,252,fill='#0b0d15')
     a.image(OUT/'ra-whitepaper-cover-20261111.png',100,328,194,236)
     a.text(333,367,'Individual kits',23,INK,650)

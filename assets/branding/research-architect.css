@@ -1,0 +1,37 @@
+/* Research Architect: full brand where it fits; compact cards retain the icon. */
+.ra-brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(.7rem, 1.5vw, 1.2rem);
+  width: 100%;
+}
+.project-hero h1.ra-brand { max-width: 560px; }
+.ra-brand__icon {
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(64px, 8vw, 108px);
+  height: auto;
+  border-radius: 18%;
+}
+.ra-brand__wordmark {
+  display: block;
+  flex: 1 1 0;
+  width: 0;
+  min-width: 0;
+  height: auto;
+  object-fit: contain;
+}
+.ra-brand--product { max-width: 520px; margin-bottom: 1rem; }
+.ra-brand--product .ra-brand__icon { width: clamp(64px, 7vw, 96px); }
+@media (forced-colors: active) {
+  .ra-brand__icon, .ra-brand__wordmark { display: none; }
+  .ra-brand > .visually-hidden {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip-path: none;
+    white-space: normal;
+  }
+}
