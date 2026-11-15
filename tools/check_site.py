@@ -121,6 +121,12 @@ for name, page in pages.items():
         if not any(a.get('href', '').lstrip('/') == href for a in page.links):
             errors.append(f'{name}: navigation missing {href}')
 
+from publication_facts import check as check_publication_facts
+try:
+    check_publication_facts(ROOT,deep=True)
+except (ValueError,OSError,KeyError) as exc:
+    errors.append(str(exc))
+
 if errors:
     raise SystemExit('\n'.join(errors))
 print(f'PASS: {len(pages)} pages; local links/assets/fragments; IDs/headings; image descriptions; contact-detail patterns.')

@@ -35,7 +35,7 @@ GNSS figures distinguish the measured campus study from an illustrative present-
 
 Before publishing, run `python tools/check_site.py`, `python tools/build_ra_white_paper.py --check`, `node --check site.js`, `node --check gallery.js`, `node tools/check_gallery.cjs`, `node --check project-intro.js`, `node --check workflow.js`, `node --check motion.js`, and `git diff --check`. The validator checks the exact gallery count and thumbnail indices. Browser checks should cover desktop/mobile layout, gallery wrapping and thumbnails, repeated lightbox open/close, keyboard/focus behavior, zoom, failed-image recovery, theme persistence, project-entry video, skip/replay/end cleanup, and navigation.
 
-GitHub Pages serves the repository root from `main`. Push using an account with write access.
+GitHub Pages serves the checked static artifact built from `main`. The Pages workflow validates facts and downloads before deployment. Push using an account with write access.
 
 For resume edits, run `python tools/build_resume.py` with ReportLab and pypdf available, render the resulting PDF, and inspect both pages before publishing. `python tools/build_resume.py --check` verifies that the download's embedded source fingerprint matches the current `resume.html`.
 
@@ -62,3 +62,19 @@ Owner documentation handoff (October 23): the supplied eight-page edition 4 supe
 RA knowledge expansion (October 23, latest): distribution revision 4, scientific library 1.7, adds nine specialist chapters and a separate seven-case operational collection. The portfolio independently checked the actual ZIP and all 451 content hashes. Current totals are 41 methods, 29 specialists, 129 source records, and 38 local texts. The owner-supplied white paper and human/agent onboarding limitation are unchanged; recorded operational successes remain distinct from the six new local verification groups.
 
 RA complete research cases (October 23, latest): distribution revision 5, scientific library 1.8, adds three synthetic runnable studies and three guides. Current totals are 41 methods, 32 specialists, 134 source records, and 38 local texts; the seven earlier operational cases remain separate. The final archive, report, receipt, and all 467 content hashes were independently verified. White paper, live deployment evidence, and onboarding limitation are unchanged.
+
+
+## Shared publication facts and checked deployment
+
+Edit shared RA/NWSW facts only in [data/project-facts.json](data/project-facts.json).
+The current pages and resume are generated from the templates under
+`publication/templates/`. RA keeps a verified snapshot and supplies the
+reviewed white paper, references and figures. See
+[the update procedure](docs/publication-facts.md) for the coordinated commands.
+
+`python tools/check_site.py` now includes the publication-facts and imported
+artifact checks. The Pages workflow runs those checks, the regression tests,
+PDF fingerprints and JavaScript checks before deployment. A failing build
+leaves the previous site live. `python tools/build_site.py --output OUTPUT`
+validates and prepares the static site; it rejects existing output directories.
+Public content remains static and works without a client-side facts fetch.

@@ -1,0 +1,526 @@
+{
+  "schema_version": 1,
+  "revision": "2026-11-15.1",
+  "authority": {
+    "repository": "EMP1241/EMP1241.github.io",
+    "path": "data/project-facts.json",
+    "url": "https://raw.githubusercontent.com/EMP1241/EMP1241.github.io/main/data/project-facts.json",
+    "policy": "Edit this file in the portfolio repository. RA holds a generated, verified snapshot. Update evidence and consumers together; retained historical observations keep their original scope."
+  },
+  "facts": {
+    "ra.factory.version": {
+      "value": "2.6.1",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-version"
+    },
+    "ra.factory.status": {
+      "value": "development preview",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-version"
+    },
+    "ra.runtime.version": {
+      "value": "2.4.0",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-version"
+    },
+    "ra.library.revision": {
+      "value": "1.9",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-version"
+    },
+    "ra.inventory.methods": {
+      "value": 41,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.foundations": {
+      "value": 8,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.guides": {
+      "value": 39,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.sources": {
+      "value": 148,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.local_texts": {
+      "value": 38,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.appraisals": {
+      "value": 21,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.operational_cases": {
+      "value": 7,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.runnable_cases": {
+      "value": 3,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.active_team_expansion_automated": {
+      "value": false,
+      "type": "boolean",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-generation"
+    },
+    "nwsw.report.title": {
+      "value": "New World Screwworm: Bias, Uncertainty, and the Geography of Reported Spread",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.date": {
+      "value": "2026-11-12",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.finalized": {
+      "value": "2026-11-13",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.pages": {
+      "value": 169,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.printed_last": {
+      "value": 167,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.source_notes_first": {
+      "value": 138,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.assigned_questions": {
+      "value": 11,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.followups": {
+      "value": 5,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.appendices": {
+      "value": 6,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.report.sha256": {
+      "value": "46c3c8f480a742fe60a86c212b84e4608620b1a9b313583268d43c7d982e7e66",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.summary.pages": {
+      "value": 2,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.sources.pages": {
+      "value": 134,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.sources.records": {
+      "value": 127,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.summary.sha256": {
+      "value": "928e7a0c24625c6011dc0033d7fd306fa23dcec35916c0f35017679fcf8bcd3a",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.sources.sha256": {
+      "value": "478e27828a8ad35d9f366316e42af337171022a0ad239d0a640d0f22ea69ebe3",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "nwsw.claim_review.date": {
+      "value": "2026-10-29",
+      "type": "string",
+      "scope": "dated observation",
+      "as_of": "2026-10-29",
+      "source": "nwsw-claim-review"
+    },
+    "nwsw.claim_review.total": {
+      "value": 130,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-10-29",
+      "source": "nwsw-claim-review"
+    },
+    "nwsw.claim_review.establishes": {
+      "value": 64,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-10-29",
+      "source": "nwsw-claim-review"
+    },
+    "nwsw.claim_review.suggests": {
+      "value": 7,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-10-29",
+      "source": "nwsw-claim-review"
+    },
+    "nwsw.claim_review.consistent": {
+      "value": 13,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-10-29",
+      "source": "nwsw-claim-review"
+    },
+    "nwsw.claim_review.does_not_show": {
+      "value": 46,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-10-29",
+      "source": "nwsw-claim-review"
+    },
+    "nwsw.comparison.start": {
+      "value": "2026-10-04",
+      "type": "string",
+      "scope": "dated observation",
+      "as_of": "2026-11-03",
+      "source": "nwsw-edition"
+    },
+    "nwsw.comparison.end": {
+      "value": "2026-11-03",
+      "type": "string",
+      "scope": "dated observation",
+      "as_of": "2026-11-03",
+      "source": "nwsw-edition"
+    },
+    "nwsw.comparison.cutoff": {
+      "value": "2026-10-03",
+      "type": "string",
+      "scope": "dated observation",
+      "as_of": "2026-11-03",
+      "source": "nwsw-edition"
+    },
+    "nwsw.comparison.retrospective": {
+      "value": true,
+      "type": "boolean",
+      "scope": "dated observation",
+      "as_of": "2026-11-03",
+      "source": "nwsw-edition"
+    },
+    "workbench.source_version": {
+      "value": "0.3.0-dev.0",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "workbench-source"
+    },
+    "workbench.gallery_version": {
+      "value": "0.2.2",
+      "type": "string",
+      "scope": "historical",
+      "as_of": "2026-11-15",
+      "source": "workbench-gallery"
+    },
+    "workbench.candidate_date": {
+      "value": "2026-09-22",
+      "type": "string",
+      "scope": "dated observation",
+      "as_of": "2026-09-22",
+      "source": "workbench-candidate"
+    },
+    "workbench.tests.date": {
+      "value": "2026-09-23",
+      "type": "string",
+      "scope": "dated observation",
+      "as_of": "2026-09-23",
+      "source": "workbench-tests"
+    },
+    "workbench.tests.python": {
+      "value": 535,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-09-23",
+      "source": "workbench-tests"
+    },
+    "workbench.tests.frontend": {
+      "value": 57,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-09-23",
+      "source": "workbench-tests"
+    },
+    "workbench.tests.browser": {
+      "value": 42,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-09-23",
+      "source": "workbench-tests"
+    },
+    "workbench.tests.mapping_frontend": {
+      "value": 65,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-09-23",
+      "source": "workbench-tests"
+    },
+    "workbench.tests.mapping_browser": {
+      "value": 8,
+      "type": "integer",
+      "scope": "dated observation",
+      "as_of": "2026-09-23",
+      "source": "workbench-tests"
+    },
+    "primer.author": {
+      "value": "U.S. Government",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.title": {
+      "value": "A Tradecraft Primer: Structured Analytic Techniques for Improving Intelligence Analysis",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.date": {
+      "value": "2009-03",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.host": {
+      "value": "Central Intelligence Agency",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.host_short": {
+      "value": "CIA",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.url": {
+      "value": "https://www.cia.gov/resources/csi/static/Tradecraft-Primer-apr09.pdf",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.printed_pages": {
+      "value": "17-18",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.pdf_pages": {
+      "value": "21-22",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.pdf_first": {
+      "value": 21,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "primer.method": {
+      "value": "Devil's Advocacy",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "tradecraft-primer"
+    },
+    "ra.factory.distribution_revision": {
+      "value": 1,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-version"
+    },
+    "ra.inventory.domain_guides": {
+      "value": 41,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.worked_designs": {
+      "value": 41,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.local_words": {
+      "value": 797582,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "nwsw.report.reviewed": {
+      "value": "2026-11-15",
+      "type": "string",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "nwsw-edition"
+    },
+    "ra.inventory.discovery_records": {
+      "value": 274,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.discovery_citation_rows": {
+      "value": 279,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.bias_controls": {
+      "value": 29,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.review_templates": {
+      "value": 4,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    },
+    "ra.inventory.safeguard_guides": {
+      "value": 7,
+      "type": "integer",
+      "scope": "current",
+      "as_of": "2026-11-15",
+      "source": "ra-inventory"
+    }
+  },
+  "sources": {
+    "ra-version": {
+      "locator": "Research Architect base/VERSION.json",
+      "scope": "Factory, runtime and library identities; checked against source by the build gate."
+    },
+    "ra-inventory": {
+      "locator": "Research Architect scientific_library registries, index and appraisal files",
+      "scope": "Counts computed from the maintained source by the build gate."
+    },
+    "ra-generation": {
+      "locator": "Research Architect tools/setup_project.py and runtime/kit_upgrade.py",
+      "scope": "Generation requires a new destination; active-team expansion is deliberate integration."
+    },
+    "nwsw-edition": {
+      "locator": "Current NWSW assessment, dated 2026-11-12, finalized and delivered 2026-11-13",
+      "scope": "Document identity, physical pagination and source companion; retained reader/delivery receipts checked 2026-11-15. No new scientific validation.",
+      "reader_receipt_sha256": "9ea878dbd978bb6488a0802c47f8c7d98da3dc549f08b409af6277313e7f5372"
+    },
+    "nwsw-claim-review": {
+      "locator": "Completed October 29, 2026 scoped proposition review",
+      "sha256": "1df66b1dea99dca3b255304f4ce6599363be87f8f39a3e2841823d8f718a22af",
+      "scope": "130 selected propositions; evidence grading, not a current claim census or scientific acceptance."
+    },
+    "workbench-source": {
+      "locator": "Workbench workbench/api/db.py and workbench/web/package.json",
+      "scope": "Maintained local source version; does not establish a published release."
+    },
+    "workbench-gallery": {
+      "locator": "Historical Workbench gallery captures",
+      "scope": "Interface version shown in retained screenshots."
+    },
+    "workbench-candidate": {
+      "locator": "Workbench September 22, 2026 portable-package candidate receipt",
+      "sha256": "fda0e77208cd8e0249d08face9d1d79b52baa4be0bb9ab7ce5df3399248d87bd",
+      "scope": "Candidate package identity."
+    },
+    "workbench-tests": {
+      "locator": "Workbench separate September 23, 2026 seamless-review and map-layer receipts",
+      "scope": "Two distinct test passes; totals must not be summed."
+    },
+    "tradecraft-primer": {
+      "url": "https://www.cia.gov/resources/csi/static/Tradecraft-Primer-apr09.pdf",
+      "scope": "Cover author/date and printed pages 17-18. Methodological reference, not evidence of the nickname origin or RA effectiveness."
+    }
+  }
+}

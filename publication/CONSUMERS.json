@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "mode": "portfolio",
+  "facts": "data/project-facts.json",
+  "consumers": [
+    {
+      "output": "index.html",
+      "template": "publication/templates/index.html.tmpl",
+      "format": "html",
+      "required": {
+        "nwsw.comparison.start": 1,
+        "nwsw.comparison.end": 1,
+        "nwsw.report.pages": 1
+      }
+    },
+    {
+      "output": "projects.html",
+      "template": "publication/templates/projects.html.tmpl",
+      "format": "html",
+      "required": {
+        "nwsw.comparison.start": 1,
+        "nwsw.comparison.end": 1,
+        "nwsw.report.pages": 1
+      }
+    },
+    {
+      "output": "about.html",
+      "template": "publication/templates/about.html.tmpl",
+      "format": "html",
+      "required": {
+        "nwsw.comparison.start": 1,
+        "nwsw.comparison.end": 1,
+        "nwsw.report.pages": 1
+      }
+    },
+    {
+      "output": "resume.html",
+      "template": "publication/templates/resume.html.tmpl",
+      "format": "html",
+      "required": {
+        "nwsw.report.pages": 2
+      }
+    },
+    {
+      "output": "project-nwsw.html",
+      "template": "publication/templates/project-nwsw.html.tmpl",
+      "format": "html",
+      "required": {
+        "nwsw.comparison.start": 2,
+        "nwsw.comparison.end": 2,
+        "nwsw.report.pages": 2,
+        "nwsw.report.date": 2,
+        "nwsw.report.finalized": 2,
+        "nwsw.claim_review.total": 1,
+        "nwsw.claim_review.date": 2,
+        "nwsw.claim_review.establishes": 1,
+        "nwsw.claim_review.suggests": 1,
+        "nwsw.claim_review.consistent": 1,
+        "nwsw.claim_review.does_not_show": 1,
+        "nwsw.report.title": 1,
+        "nwsw.summary.pages": 1,
+        "nwsw.sources.pages": 1,
+        "nwsw.sources.records": 1
+      }
+    },
+    {
+      "output": "project-nwsw-workbench.html",
+      "template": "publication/templates/project-nwsw-workbench.html.tmpl",
+      "format": "html",
+      "required": {
+        "workbench.gallery_version": 1,
+        "workbench.candidate_date": 1,
+        "workbench.source_version": 1,
+        "workbench.tests.date": 1,
+        "workbench.tests.python": 1,
+        "workbench.tests.frontend": 1,
+        "workbench.tests.browser": 1,
+        "workbench.tests.mapping_frontend": 1,
+        "workbench.tests.mapping_browser": 1
+      }
+    },
+    {
+      "output": "project-research-architect.html",
+      "template": "publication/templates/project-research-architect.html.tmpl",
+      "format": "html",
+      "required": {
+        "ra.factory.version": 4,
+        "ra.factory.status": 2,
+        "primer.method": 1,
+        "primer.author": 1,
+        "primer.url": 1,
+        "primer.date": 1,
+        "primer.printed_pages": 1,
+        "primer.host_short": 1,
+        "ra.inventory.foundations": 1,
+        "ra.inventory.domain_guides": 1,
+        "ra.inventory.methods": 1,
+        "ra.inventory.guides": 1,
+        "ra.inventory.sources": 2,
+        "ra.inventory.local_texts": 1,
+        "ra.inventory.local_words": 1,
+        "ra.inventory.appraisals": 1,
+        "ra.inventory.worked_designs": 1,
+        "ra.inventory.runnable_cases": 1,
+        "ra.inventory.bias_controls": 1,
+        "ra.inventory.discovery_records": 1,
+        "ra.inventory.review_templates": 1,
+        "ra.inventory.operational_cases": 1,
+        "nwsw.report.pages": 1,
+        "nwsw.report.date": 1,
+        "nwsw.report.finalized": 1,
+        "nwsw.summary.pages": 1,
+        "nwsw.sources.pages": 1,
+        "ra.factory.distribution_revision": 1,
+        "ra.runtime.version": 1,
+        "ra.library.revision": 1
+      }
+    },
+    {
+      "output": "README.md",
+      "template": "publication/templates/README.md.tmpl",
+      "format": "text",
+      "required": {
+        "ra.factory.version": 1,
+        "ra.runtime.version": 1,
+        "ra.library.revision": 1,
+        "nwsw.report.date": 1,
+        "nwsw.report.finalized": 1,
+        "nwsw.report.pages": 1,
+        "nwsw.sources.pages": 1,
+        "ra.inventory.methods": 1,
+        "ra.inventory.sources": 1,
+        "ra.inventory.guides": 1,
+        "ra.inventory.appraisals": 1
+      }
+    }
+  ]
+}

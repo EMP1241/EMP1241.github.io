@@ -14,5 +14,7 @@
   "imported_without_modification": true,
   "pdf_source": "Agent Builder public handoff, imported unchanged.",
   "source_status": "The retained Markdown and references match the current reviewed public handoff. The editable Word document remains with the delivery project.",
-  "verification": "All 16 external bibliographic identities checked. Current files, source pins, generated-kit citation delivery, paper and resume layout checked; historical measurements retain their scope. See ra-nwsw-publication-audit.json."
+  "verification": "All 16 external bibliographic identities checked. Current files, source pins, generated-kit citation delivery, paper and resume layout checked; historical measurements retain their scope. See ra-nwsw-publication-audit.json.",
+  "facts_revision": "2026-11-15.1",
+  "facts_sha256": "86c1a6db72c9cb2deb346ca84afe4694fd472ffe22458ee880d09beec4a35c12"
 }

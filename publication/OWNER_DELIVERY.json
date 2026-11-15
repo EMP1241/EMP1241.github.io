@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "facts_sha256": "86c1a6db72c9cb2deb346ca84afe4694fd472ffe22458ee880d09beec4a35c12",
+  "revision": "2026-11-15.1",
+  "engine_sha256": "d92561fa5489609b73cfc2279ab906600cf40b929f1fb818dcf99eaf243a5bad",
+  "owner_docx_sha256": "dd50a743b0dc0fb304689309d23f321d562cc44e5e169cef980545c7dadb7a9a",
+  "owner_receipt_sha256": "acbe8904dceba30fa0eaf3f23f32165ccfe1153b5979d18627445252544a44b2",
+  "files": {
+    "docs/research-architect-white-paper.md": "f47a45345b7600815cf9a883a46c8eb7951260d0ed2bb80afa2e92002b4451ef",
+    "docs/research-architect-white-paper.references.json": "0bfd3f32fdbf13d311fe14060f04430e193501a04b89c8fb9dc23ccf4c411c3c",
+    "assets/documents/research-architect-white-paper.pdf": "5a470dd89ad593473ded8b5edfdbacbc7e5635ef3600c32f01327fd4e8e25ce7",
+    "docs/figures/figure-7-completed-case.svg": "84e3c55520aabdaa7aeee1e1738ba950b1338239fd84e5301d3fd106b2b89b2f",
+    "docs/figures/figure-7-completed-case.png": "3ba1421d5948a903908f502d854b8ebf3fa6da0cb9efad30a5ef4c5f9214e46c"
+  }
+}

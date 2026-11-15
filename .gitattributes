@@ -8,3 +8,18 @@
 assets/examples/handoff-integrity/** text eol=lf
 # Preserve the exact owner-supplied paper source against its delivery hash.
 docs/research-architect-white-paper.md -text whitespace=cr-at-eol
+
+# Publication facts and generated artifacts have exact byte bindings.
+index.html -text
+projects.html -text
+about.html -text
+resume.html -text
+project-nwsw.html -text
+project-nwsw-workbench.html -text
+project-research-architect.html -text
+README.md -text
+data/project-facts.json -text
+publication/** -text
+docs/ra-white-paper-delivery.json -text
+docs/research-architect-white-paper.references.json -text
+tools/publication_facts.py -text

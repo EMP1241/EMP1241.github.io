@@ -15,10 +15,13 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def check():
+    from publication_facts import check as check_publication_facts
+    check_publication_facts(ROOT,deep=True)
     receipt = json.loads((ROOT / 'docs/ra-white-paper-delivery.json').read_text(encoding='utf-8'))
     targets = {
         'pdf_sha256': ROOT / 'assets/documents/research-architect-white-paper.pdf',
         'source_sha256': ROOT / 'docs/research-architect-white-paper.md',
+        'references_sha256': ROOT / 'docs/research-architect-white-paper.references.json',
     }
     for key, path in targets.items():
         if hashlib.sha256(path.read_bytes()).hexdigest() != receipt[key]:

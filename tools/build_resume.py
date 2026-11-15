@@ -245,6 +245,9 @@ def main():
     parser.add_argument('--output', type=Path, default=ROOT / 'resume.pdf')
     parser.add_argument('--check', action='store_true', help='Verify PDF source fingerprint without writing.')
     args = parser.parse_args()
+    from publication_facts import catalog, check_consumers, configuration
+    config = configuration(ROOT)
+    check_consumers(ROOT, catalog((ROOT / config['facts']).read_bytes()), config)
     data = read_source()
     output = args.output.resolve()
     if args.check:
