@@ -1,18 +1,18 @@
 {
   "title": "Research Architect for Coordinated AI Research",
-  "date": "2026-11-11",
+  "date": "2026-11-15",
   "pages": 33,
   "figures": 7,
-  "external_references": 15,
+  "external_references": 16,
   "primary_evidence_records": 20,
-  "scope": "Research Architect methodology knowledge base, governed project Library, local data and claim checks, and the completed NWSW case study.",
-  "pdf_sha256": "b04acfcf8877787bbe10a4342c8e7e11617221ab6e63a8a990bfdbf6cc9c53ed",
-  "source_sha256": "add3c37f5e4160febb8121897a2ab207b66a8773a21f8be1a01dc059f7ff15d2",
-  "references_sha256": "ed63c57511cb2d9e2f55f6f5e6c0554e3f7755a9debdd870d049ff40cb2f4458",
-  "predecessor_pdf_sha256": "e34a4d3424aef0cd3b4a1e7a141cd552000193d1a520a0b46ce758c54466ea9f",
+  "scope": "Research Architect methodology knowledge base, governed project Library, local data and claim checks, and the completed NWSW case study. Explicit CIA Devil's Advocacy attribution and RA adaptation.",
+  "pdf_sha256": "caf7357a7afe651878655c3a1e272ee9d88b24fa19f1ebb12554d47dcfcee551",
+  "source_sha256": "6618a0e1dde535483657a3ced849de9507a716acbdc40c73a7ef4be299e25993",
+  "references_sha256": "e34e425fc516705680577716cc0e5dca6a41628fd93fb9223fad27ab4f9542fd",
+  "predecessor_pdf_sha256": "b04acfcf8877787bbe10a4342c8e7e11617221ab6e63a8a990bfdbf6cc9c53ed",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
   "pdf_source": "Agent Builder public handoff, imported unchanged.",
   "source_status": "The retained Markdown and references match the current reviewed public handoff. The editable Word document remains with the delivery project.",
-  "verification": "The current PDF, Markdown and references match the reviewed delivery hashes; the PDF contains 33 pages."
+  "verification": "The current PDF, Markdown and references match the reviewed delivery hashes. All 33 PDF pages were visually checked; the CIA source link and 16-reference bibliography were verified."
 }

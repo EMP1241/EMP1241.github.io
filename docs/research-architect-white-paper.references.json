@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-15",
   "external_references": [
     {
       "id": "1",
@@ -345,6 +345,21 @@
       "doi": "10.18653/v1/2025.findings-acl.1141",
       "scope": "Multi-agent reinforcement/sycophancy motivation; no transfer of benchmark performance to RA",
       "accessed": "October 31 2026",
+      "supports_RA_performance": false
+    },
+    {
+      "id": "16",
+      "authors": [
+        "Central Intelligence Agency"
+      ],
+      "citation_authors": "Central Intelligence Agency",
+      "year": "2009",
+      "title": "A Tradecraft Primer: Structured Analytic Techniques for Improving Intelligence Analysis",
+      "venue": "Central Intelligence Agency, April",
+      "kind": "Methodological guide",
+      "url": "https://www.cia.gov/resources/csi/static/Tradecraft-Primer-apr09.pdf",
+      "scope": "Devil's Advocacy, printed pp. 17-18 (PDF pages 21-22), inspected in full. Methodological basis for RA adaptation; no claim about the nickname's origin or measured RA effectiveness.",
+      "accessed": "November 15 2026",
       "supports_RA_performance": false
     }
   ],
