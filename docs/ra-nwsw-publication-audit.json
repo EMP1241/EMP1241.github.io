@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-15",
+  "scope": "RA and NWSW facts in the white paper, main portfolio summaries, resume, case-study pages and related studio/product references. Historical evidence keeps its observation date. This is a documentation audit, not new scientific validation.",
+  "ra": {
+    "factory": "2.6.1 development preview",
+    "runtime": "2.4.0",
+    "scientific_library": "1.9",
+    "method_routes": 41,
+    "foundations": 8,
+    "specialist_guides": 39,
+    "source_records": 148,
+    "local_reference_texts": 38,
+    "source_appraisals": 21,
+    "active_team_expansion": "Generator creates a new project. Coordinated active-team expansion requires deliberate integration and updates to existing kits."
+  },
+  "nwsw": {
+    "title": "New World Screwworm: Bias, Uncertainty, and the Geography of Reported Spread",
+    "report_date": "2026-11-12",
+    "finalized": "2026-11-13",
+    "report_pdf_pages": 169,
+    "executive_summary_pages": 2,
+    "source_companion_pages": 134,
+    "numbered_source_records": 127,
+    "dated_claim_review": {
+      "completed": "2026-10-29",
+      "propositions": 130,
+      "Establishes": 64,
+      "Suggests": 7,
+      "Consistent with": 13,
+      "Does not show": 46
+    },
+    "comparison_scope": "Retrospective October 4-November 3 comparison; the record does not establish that the area allowance was chosen before later outcomes were known."
+  },
+  "workbench": {
+    "gallery": "0.2.2 historical interface",
+    "local_source_and_september_22_candidates": "0.3.0-dev.0",
+    "release_scope": "Local candidate identity does not establish a published release.",
+    "test_receipts": "Separate September 23, 2026 review and mapping passes; their totals are not summed."
+  },
+  "references": {
+    "external_records_checked": 16,
+    "primary_evidence_records": 21,
+    "primer_author": "U.S. Government",
+    "primer_date": "March 2009",
+    "primer_host": "Central Intelligence Agency",
+    "primer_url": "https://www.cia.gov/resources/csi/static/Tradecraft-Primer-apr09.pdf",
+    "scope": "The title page supplies the date. The source supports Devil's Advocacy; the 10th-man nickname origin is not asserted."
+  },
+  "preserved": "Historical RA versions, dated software tests, measured context results, the earlier 126-proposition comparison and archived NWSW component findings retain their original scope. No runtime code, research model settings, geographic assets or live team state changed."
+}

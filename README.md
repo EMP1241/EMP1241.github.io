@@ -1,5 +1,7 @@
 # Brandon Santor · Geospatial Research & Software
 
+Current RA/NWSW publication check, November 15, 2026: RA factory 2.6.1 development preview, runtime 2.4.0, library 1.9. The current NWSW assessment is dated November 12, finalized November 13, and has 169 PDF pages with two-page and 134-page companions. Current RA inventory is 41 routes, 148 source records, 39 specialist guides and 21 source appraisals. Dated release notes below preserve earlier states; their historical counts are not current inventory. The white paper, resume and public summaries were checked together; see docs/ra-nwsw-publication-audit.json.
+
 Static personal portfolio with ten case studies: New World Screwworm research, the independent Spatial Evidence Workbench, Mars Explorer, COLE, Tree-Ring Atlas Explorer, Thermal Vent Atlas Explorer, Research Architect, smartphone GNSS research, High Command, and the NASA SUITS student proposal. An unlisted PhalAInx studio page is linked from Research Architect and High Command. PhalAInx is Brandon's independent software studio. Research Architect is a human-team research framework; High Command is a personal multi-model application in alpha testing.
 
 Open `index.html` in a modern browser or serve the repository root with a static HTTP server. No build or package installation is required.

@@ -14,7 +14,9 @@
       "scope": "Agent components, orchestration and guardrails; no RA performance claim",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "OpenAI"
+      "citation_authors": "OpenAI",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "2",
@@ -42,7 +44,9 @@
       "scope": "Abstract and configurable agent/conversation architecture",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Wu Q, et al."
+      "citation_authors": "Wu Q, et al.",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "3",
@@ -57,7 +61,9 @@
       "scope": "Coordination, evaluation and production reliability; provider-reported results are not RA results",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Anthropic"
+      "citation_authors": "Anthropic",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "4",
@@ -87,7 +93,9 @@
       "inspected_edition": "Original NeurIPS2025 final proceedings PDF",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Cemri M, et al."
+      "citation_authors": "Cemri M, et al.",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "5",
@@ -110,7 +118,9 @@
       "published_url": "https://openreview.net/pdf?id=Zy4uFzMviZ",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Kapoor S, Stroebl B, Siegel ZS, Nadgir N, Narayanan A"
+      "citation_authors": "Kapoor S, Stroebl B, Siegel ZS, Nadgir N, Narayanan A",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "6",
@@ -133,7 +143,9 @@
       "published_url": "https://openreview.net/pdf?id=BsMMc4MEGS",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Siegel ZS, Kapoor S, Nadgir N, Stroebl B, Narayanan A"
+      "citation_authors": "Siegel ZS, Kapoor S, Nadgir N, Stroebl B, Narayanan A",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "7",
@@ -154,7 +166,9 @@
       "inspected_edition": "Published PNAS article HTML",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Nosek BA, Ebersole CR, DeHaven AC, Mellor DT"
+      "citation_authors": "Nosek BA, Ebersole CR, DeHaven AC, Mellor DT",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "8",
@@ -173,7 +187,9 @@
       "inspected_edition": "Published2015 author-hosted PDF",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Cameron AC, Miller DL"
+      "citation_authors": "Cameron AC, Miller DL",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "9",
@@ -192,7 +208,9 @@
       "inspected_edition": "Existing licensed original-article text extract",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Kapoor S, Narayanan A"
+      "citation_authors": "Kapoor S, Narayanan A",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "10",
@@ -262,7 +280,9 @@
       "inspected_edition": "Retained original article text",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Wilkinson MD, et al."
+      "citation_authors": "Wilkinson MD, et al.",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "11",
@@ -285,7 +305,9 @@
       "inspected_edition": "Retained original article text",
       "accessed": "October 23 2026",
       "supports_RA_performance": false,
-      "citation_authors": "Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK"
+      "citation_authors": "Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, Teal TK",
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "12",
@@ -299,7 +321,9 @@
       "url": "https://www.cia.gov/resources/csi/static/Pyschology-of-Intelligence-Analysis.pdf",
       "scope": "Chapter 8, printed pages 72-73 (PDF pages 100-101): devil's advocacy and conflicting interpretations; no RA efficacy evidence",
       "accessed": "October 31 2026",
-      "supports_RA_performance": false
+      "supports_RA_performance": false,
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "13",
@@ -314,7 +338,9 @@
       "url": "https://www.cia.gov/resources/csi/static/National-Institute-Analytic-Methods.pdf",
       "scope": "PDF pages 3-4 and endnotes: need to test analytic methods and limits of assigned devil's advocacy; no new RA trial",
       "accessed": "October 31 2026",
-      "supports_RA_performance": false
+      "supports_RA_performance": false,
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "14",
@@ -328,7 +354,9 @@
       "url": "https://navalinstitute.com.au/the-role-of-critical-thinking/",
       "scope": "Public excerpt identifies the tenth man formulation and its World War Z use. Member-only remainder was not inspected. Used for terminology, not efficacy or proof of official intelligence doctrine",
       "accessed": "October 31 2026",
-      "supports_RA_performance": false
+      "supports_RA_performance": false,
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "15",
@@ -345,22 +373,27 @@
       "doi": "10.18653/v1/2025.findings-acl.1141",
       "scope": "Multi-agent reinforcement/sycophancy motivation; no transfer of benchmark performance to RA",
       "accessed": "October 31 2026",
-      "supports_RA_performance": false
+      "supports_RA_performance": false,
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained."
     },
     {
       "id": "16",
       "authors": [
-        "Central Intelligence Agency"
+        "U.S. Government"
       ],
-      "citation_authors": "Central Intelligence Agency",
+      "citation_authors": "U.S. Government",
       "year": "2009",
       "title": "A Tradecraft Primer: Structured Analytic Techniques for Improving Intelligence Analysis",
-      "venue": "Central Intelligence Agency, April",
+      "venue": "Prepared by the U.S. Government, March; hosted by the Central Intelligence Agency",
       "kind": "Methodological guide",
       "url": "https://www.cia.gov/resources/csi/static/Tradecraft-Primer-apr09.pdf",
       "scope": "Devil's Advocacy, printed pp. 17-18 (PDF pages 21-22), inspected in full. Methodological basis for RA adaptation; no claim about the nickname's origin or measured RA effectiveness.",
       "accessed": "November 15 2026",
-      "supports_RA_performance": false
+      "supports_RA_performance": false,
+      "metadata_checked": "November 15 2026",
+      "metadata_check_scope": "Bibliographic identity and cited version; original text-inspection scope retained.",
+      "publication_note": "Title page reads March 2009. The apr09 URL filename is not the publication date."
     }
   ],
   "primary_RA_evidence": [
@@ -417,7 +450,7 @@
     {
       "id": "E11",
       "title": "RA operating instructions and source review for research workflow explanations",
-      "text": "Santor B. Research Architect 2.6.1 operating instructions and implementation source review, October 31 2026. Inspected project-design and workload guidance, governance and review templates, independent-evidence guidance, command routing, persistence and context procedures, model plans, and reviewed migration contracts. Exact local sources and SHA-256 pins are retained in the editorial evidence manifest. This establishes documented instructions, record structures and inspected implementation behavior, not universal compliance, a new runtime release or completed comparative trials. Outside-research intake and specialist packets are described as a composed use of existing mechanisms with stated implementation and testing limits."
+      "text": "Santor B. Research Architect 2.6.1 instructions and source review, October 31 2026; generation and update boundaries rechecked November 15. Inspected design, workload, governance, review, evidence, routing, context, model-plan and migration guidance. Exact sources and hashes remain in the editorial manifest. Evidence establishes instructions and inspected behavior; compliance and comparative trials retain their stated limits. Specialist packets compose existing tools. Generation requires a new destination; kit updates do not automate active-team expansion."
     },
     {
       "id": "E12",
@@ -462,7 +495,7 @@
     {
       "id": "E20",
       "title": "Local declared semantic-data and claim concordance verification",
-      "text": "Santor B. Local semantic-data and claim-to-evidence implementation and delivery verification, November 11 2026. Retained phase reports cover 17 semantic tests, 15 claim tests and nine affected hot-spot tests, one supported four-role project build and execution of the delivered Hub tool. The implementation binds exact CSV/source/final-text bytes, validates declared relationships and reconstructs supported quantities and quotations. Existing operational tools, scientific source records, approvals and version labels were preserved. Current package SHA-256 before this paper refresh: 8eee86def877d5cb603aeddf8cc255db2cb0e669b967512d1a27dea330fa83cf. No model, network or embedding calls are introduced. Scope is deterministic declared checks and delivery, with scientific interpretation and actual human acceptance retained."
+      "text": "Santor B. Local semantic-data and claim-to-evidence implementation and delivery verification, November 11 2026. Retained phase reports cover 17 semantic tests, 15 claim tests and nine affected hot-spot tests, one supported four-role project build and execution of the delivered Hub tool. The implementation binds exact CSV/source/final-text bytes, validates declared relationships and reconstructs supported quantities and quotations. Existing operational tools, scientific source records, approvals and version labels were preserved. November 11 archive SHA-256: 8eee86def877d5cb603aeddf8cc255db2cb0e669b967512d1a27dea330fa83cf. No model, network or embedding calls are introduced. Scope is deterministic declared checks and delivery, with scientific interpretation and actual human acceptance retained."
     },
     {
       "id": "E21",
@@ -481,5 +514,10 @@
     "printed_text": "excerpts",
     "scope": "task lookup after required startup",
     "interactive_source_sha256": "5ea3c5bbd97a0ba0cc078b79d600d4bd4dca8542f8628d95c493b5dff5446d08"
+  },
+  "freshness_review": {
+    "date": "2026-11-15",
+    "scope": "Current version and inventory checked against source; historical measurements retain their dates and evidence bindings. NWSW current edition remains E21; historical findings remain E16.",
+    "external_references_checked": 16
   }
 }

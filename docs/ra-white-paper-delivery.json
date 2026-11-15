@@ -5,14 +5,14 @@
   "figures": 7,
   "external_references": 16,
   "primary_evidence_records": 21,
-  "scope": "Research Architect methodology, coordination and validation tools, with the current 169-page NWSW assessment and separately retained historical case evidence. CIA Devil's Advocacy attribution retained.",
-  "pdf_sha256": "469d0ae5f21d54316d6cc3dd8b2750cfd6681fb229844874efd3252e2b976220",
-  "source_sha256": "62997d5a77f5a321dfd2e5e0cc954846609d230a94309da8f22a0f6d6ff11daa",
-  "references_sha256": "dacf4b4d0fdf5390d0e8702795c6d33adad5e448e51e0bd7ea3a641e3a0020f9",
-  "predecessor_pdf_sha256": "caf7357a7afe651878655c3a1e272ee9d88b24fa19f1ebb12554d47dcfcee551",
+  "scope": "RA methodology, current inventory and implementation boundaries; current NWSW edition and separately dated historical evidence. Devil's Advocacy attribution follows the U.S. Government March 2009 primer hosted by CIA.",
+  "pdf_sha256": "5a470dd89ad593473ded8b5edfdbacbc7e5635ef3600c32f01327fd4e8e25ce7",
+  "source_sha256": "f47a45345b7600815cf9a883a46c8eb7951260d0ed2bb80afa2e92002b4451ef",
+  "references_sha256": "0bfd3f32fdbf13d311fe14060f04430e193501a04b89c8fb9dc23ccf4c411c3c",
+  "predecessor_pdf_sha256": "469d0ae5f21d54316d6cc3dd8b2750cfd6681fb229844874efd3252e2b976220",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
   "pdf_source": "Agent Builder public handoff, imported unchanged.",
   "source_status": "The retained Markdown and references match the current reviewed public handoff. The editable Word document remains with the delivery project.",
-  "verification": "The reviewed 33-page PDF, Markdown, references and Figure 7 identify the verified current NWSW edition and match delivery hashes. Current and historical source identities are separate."
+  "verification": "All 16 external bibliographic identities checked. Current files, source pins, generated-kit citation delivery, paper and resume layout checked; historical measurements retain their scope. See ra-nwsw-publication-audit.json."
 }
