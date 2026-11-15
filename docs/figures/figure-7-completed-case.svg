@@ -16,9 +16,9 @@
 <rect x="22" y="194" width="460" height="82" fill="#F5F7F8"/>
 <text x="34" y="220" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#087F78">2</text>
 <text x="34" y="241" font-family="Arial, Helvetica, sans-serif" font-size="10.7" font-weight="700" fill="#142C3C">Contributor work</text>
-<text x="156" y="215" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">The briefing credits seven people for data collection. Project</text>
-<text x="156" y="228" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">submissions retain original material, attribution and supporting</text>
-<text x="156" y="241" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">records.</text>
+<text x="156" y="215" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">The report credits Ethan for data validation and reproducibility and</text>
+<text x="156" y="228" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">six teammates for data collection. Submissions retain attribution and</text>
+<text x="156" y="241" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">evidence.</text>
 <path d="M252,277 L252,288" fill="none" stroke="#087F78" stroke-width="1.1"/>
 <path d="M248,284 L252,288" fill="none" stroke="#087F78" stroke-width="1.1"/>
 <path d="M256,284 L252,288" fill="none" stroke="#087F78" stroke-width="1.1"/>
@@ -47,7 +47,7 @@
 <text x="156" y="500" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">Brandon integrates the evidence with methods, uncertainty and the</text>
 <text x="156" y="513" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">results of each research component. Retained inputs and code</text>
 <text x="156" y="526" font-family="Arial, Helvetica, sans-serif" font-size="10.2" font-weight="400" fill="#203747">support checking and reproduction.</text>
-<text x="22" y="590" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#142C3C">136-page briefing  |  2-page summary  |  101-page source companion</text>
-<text x="22" y="612" font-family="Arial, Helvetica, sans-serif" font-size="9.2" font-weight="400" fill="#485C66">The diagram follows selected project records. Each finding retains its own sources, review scope and limits on</text>
-<text x="22" y="625" font-family="Arial, Helvetica, sans-serif" font-size="9.2" font-weight="400" fill="#485C66">use.</text>
+<text x="22" y="590" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#142C3C">169-page report PDF  |  2-page summary  |  134-page source companion</text>
+<text x="22" y="612" font-family="Arial, Helvetica, sans-serif" font-size="9.2" font-weight="400" fill="#485C66">Current edition dated November 12 and checked November 13, 2026. Selected historical findings retain their</text>
+<text x="22" y="625" font-family="Arial, Helvetica, sans-serif" font-size="9.2" font-weight="400" fill="#485C66">original sources and review scope.</text>
 </svg>

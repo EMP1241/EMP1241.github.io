@@ -4,15 +4,15 @@
   "pages": 33,
   "figures": 7,
   "external_references": 16,
-  "primary_evidence_records": 20,
-  "scope": "Research Architect methodology knowledge base, governed project Library, local data and claim checks, and the completed NWSW case study. Explicit CIA Devil's Advocacy attribution and RA adaptation.",
-  "pdf_sha256": "caf7357a7afe651878655c3a1e272ee9d88b24fa19f1ebb12554d47dcfcee551",
-  "source_sha256": "6618a0e1dde535483657a3ced849de9507a716acbdc40c73a7ef4be299e25993",
-  "references_sha256": "e34e425fc516705680577716cc0e5dca6a41628fd93fb9223fad27ab4f9542fd",
-  "predecessor_pdf_sha256": "b04acfcf8877787bbe10a4342c8e7e11617221ab6e63a8a990bfdbf6cc9c53ed",
+  "primary_evidence_records": 21,
+  "scope": "Research Architect methodology, coordination and validation tools, with the current 169-page NWSW assessment and separately retained historical case evidence. CIA Devil's Advocacy attribution retained.",
+  "pdf_sha256": "469d0ae5f21d54316d6cc3dd8b2750cfd6681fb229844874efd3252e2b976220",
+  "source_sha256": "62997d5a77f5a321dfd2e5e0cc954846609d230a94309da8f22a0f6d6ff11daa",
+  "references_sha256": "dacf4b4d0fdf5390d0e8702795c6d33adad5e448e51e0bd7ea3a641e3a0020f9",
+  "predecessor_pdf_sha256": "caf7357a7afe651878655c3a1e272ee9d88b24fa19f1ebb12554d47dcfcee551",
   "authoring_owner": "Agent Builder project",
   "imported_without_modification": true,
   "pdf_source": "Agent Builder public handoff, imported unchanged.",
   "source_status": "The retained Markdown and references match the current reviewed public handoff. The editable Word document remains with the delivery project.",
-  "verification": "The current PDF, Markdown and references match the reviewed delivery hashes. All 33 PDF pages were visually checked; the CIA source link and 16-reference bibliography were verified."
+  "verification": "The reviewed 33-page PDF, Markdown, references and Figure 7 identify the verified current NWSW edition and match delivery hashes. Current and historical source identities are separate."
 }
