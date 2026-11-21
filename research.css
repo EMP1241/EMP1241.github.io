@@ -287,3 +287,6 @@ body[data-project="phalainx"] .project-hero .page-app-icon { width: clamp(180px,
 /* One continuous tree-ring motif: no repeated tile edges behind the hero. */
 body[data-project="trae"] .project-hero::before,
 body[data-project="trae"] .project-content::before { background-repeat: no-repeat; background-size: cover; }
+
+/* Keep project recognition visible beside the introduction. */
+.project-hero .project-award { margin-top: 1.25rem; }

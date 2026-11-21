@@ -118,7 +118,7 @@ def read_source():
     honor_rows = []
     for row in sections['Honors & scholarships'].find(lambda n: n.tag == 'li'):
         parts = row.direct('strong') + row.direct('span')
-        honor_rows.append(' | '.join(part.text() for part in parts) if parts else row.text())
+        honor_rows.append([part.text() for part in parts] if parts else [row.text()])
     skill_groups = [
         {'title': group.direct('h3')[0].text(),
          'skills': [n.text() for n in group.find(lambda n: n.tag == 'li')]}
@@ -199,7 +199,14 @@ def build(output, data):
         left.append(p(item['title'], 'role'))
         left.append(p(' | '.join(x for x in [item['meta'], *item['bullets']] if x), 'small'))
     left.append(p('HONORS & SCHOLARSHIPS', 'support-title'))
-    left += [p(text, 'small') for text in data['honors']]
+    for parts in data['honors']:
+        # A repeated event keeps each dated award on its own line.
+        if len(parts) > 2:
+            text = '<b>' + escape(plain(parts[0])) + '</b><br/>'
+            text += '<br/>'.join(escape(plain(part)) for part in parts[1:])
+            left.append(Paragraph(text, styles['small']))
+        else:
+            left.append(p(' | '.join(parts), 'small'))
     for group in data['skill_groups']:
         label = escape(plain(group['title']))
         skills = escape(plain('; '.join(group['skills'])))
