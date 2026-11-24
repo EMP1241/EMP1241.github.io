@@ -8,6 +8,10 @@
 assets/examples/handoff-integrity/** text eol=lf
 # Preserve the exact owner-supplied paper source against its delivery hash.
 docs/research-architect-white-paper.md -text whitespace=cr-at-eol
+# Preserve the upstream reader bundle, including its generated whitespace.
+assets/assessment-reader/** linguist-vendored
+assets/assessment-reader/build/** -text whitespace=-blank-at-eol
+assets/assessment-reader/web/** -text whitespace=-blank-at-eol
 
 # Publication facts and generated artifacts have exact byte bindings.
 index.html -text

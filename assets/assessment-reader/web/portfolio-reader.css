@@ -1,0 +1,8 @@
+@media (forced-colors: none) {
+  :root {
+    --body-bg-color: light-dark(#e6e1dc, #111719);
+    --toolbar-bg-color: light-dark(#f9f6f3, #1b2428);
+    --toolbar-border-color: light-dark(#b8aba1, #586268);
+    --loadingBar-color: light-dark(#862939, #efadb6);
+  }
+}

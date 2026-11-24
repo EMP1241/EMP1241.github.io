@@ -1,0 +1,7 @@
+Mozilla PDF.js 6.5.438 legacy browser distribution
+https://github.com/mozilla/pdf.js/releases/tag/v6.5.438
+Archive: pdfjs-6.5.438-legacy-dist.zip
+SHA-256: 55138aa33b5f1f6f68809895338b947f395f344eb6381d424b2420d6daa6a844
+
+Upstream license and bundled resource licenses are included. Source maps and the
+sample PDF are omitted. web/viewer.html adds the portfolio reader stylesheet.
