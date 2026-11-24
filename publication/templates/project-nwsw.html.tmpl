@@ -18,13 +18,14 @@
   <script>try { const t = localStorage.getItem('portfolio-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; if (localStorage.getItem('portfolio-motion') === 'paused') document.documentElement.dataset.motion = 'paused'; } catch {}</script>
 
   <link rel="stylesheet" href="style.css?v=20261023-clarity">
-<link rel="stylesheet" href="research.css?v=20261024-sections">
+<link rel="stylesheet" href="research.css?v=20261123-briefing">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <link rel="canonical" href="https://emp1241.github.io/project-nwsw.html">
 
   <script src="site.js" defer></script>
+  <script src="briefing.js" defer></script>
 
 <script src="gallery.js?v=20261102-captions" defer></script>
 
@@ -69,8 +70,8 @@
 <h1>New World Screwworm</h1>
 <p class="lead">I lead a Texas A&amp;M student research team studying New World Screwworm (NWSW), a parasitic fly that affects livestock, for the U.S. Department of Agriculture. I repair incomplete public records, turn them into geographic data, build maps and models, and test those models against later reports. In the retrospective comparison for {{nwsw.comparison.start|month_day}}–{{nwsw.comparison.end|long}}, a map built from earlier U.S. confirmations selected one-fifth of a four-state region that contained 51 of 56 later confirmations. I reported that broad-area success alongside the model’s weaker county estimates and a separate count formula that missed the later increase.</p>
 <div class="actions" id="briefing">
-  <a class="button" href="https://drive.google.com/file/d/1ErBQ1vOL1IXCIwcVcwLzvW-x8tUrOrwe/view?usp=sharing" target="_blank" rel="noopener noreferrer">Watch the Zoom briefing &#8599;</a>
-  <a class="button button--secondary" href="https://drive.google.com/file/d/1d3tx37IXzQODPfGYrC7tKLB7dKR032TO/view?usp=sharing" target="_blank" rel="noopener noreferrer">Read the assessment (PDF) &#8599;</a>
+  <a class="button" href="#briefing-video">Watch the Zoom briefing</a>
+  <a class="button button--secondary" href="#briefing-assessment">Read the assessment (PDF)</a>
 </div>
 <ul class="tags" aria-label="Tools and methods used for New World Screwworm research" data-project-tags><li class="tag">ArcGIS Pro / ArcPy</li><li class="tag">Python</li><li class="tag">R</li><li class="tag">GeoPandas / Shapely</li><li class="tag">pyproj</li><li class="tag">SHA-256 manifests</li><li class="tag">Reproducible GIS builds</li><li class="tag">HTML evidence interface</li><li class="tag">NumPy / SciPy</li><li class="tag">Monte Carlo analysis</li></ul><a class="text-link" href="#case-study">Follow the research, step by step ↓</a>
 <aside class="hero-highlights" data-highlights aria-label="Project highlights"><div class="highlight-stage">
@@ -88,6 +89,34 @@
 <div><dt>What the work showed</dt><dd>Monthly U.S. confirmations fell from July through September while the number of counties in the record continued to grow. A map built from confirmations through October 3 selected one-fifth of the four-state study area that contained 51 of 56 confirmations recorded during the next month. The broad screen worked much better than the county estimates or the separate count formula.</dd></div>
 <div><dt>Current status</dt><dd>The source repairs, geographic workflows, simulation experiments, reporting checks, and model comparisons described here are complete. We presented the research live over Zoom to Rear Admiral Michael Schmoyer, representatives from the National Geospatial-Intelligence Agency (NGA), and Texas A&amp;M faculty and staff. It is unofficial academic research, and the larger project continues.</dd></div></dl>
 <a class="text-link glance-more" href="#case-study">See the work behind these contributions ↓</a></details></section>
+
+<section class="wrap project-brief briefing-media" id="briefing-media" aria-labelledby="briefing-title">
+  <h2 id="briefing-title">Briefing and assessment</h2>
+
+  <details class="project-glance" name="briefing-viewer" data-briefing-viewer>
+    <summary id="briefing-video">Watch the Zoom briefing</summary>
+    <div class="briefing-preview">
+      <p class="small"><a class="text-link" href="https://drive.google.com/file/d/1ErBQ1vOL1IXCIwcVcwLzvW-x8tUrOrwe/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open recording in Google Drive &#8599;</a></p>
+      <div data-briefing-frame></div>
+    </div>
+    <template>
+      <video class="briefing-video-frame" aria-label="New World Screwworm Zoom briefing recording" controls playsinline preload="metadata">
+        <source src="https://github.com/EMP1241/EMP1241.github.io/releases/download/nwsw-briefing-20261123/nwsw-zoom-briefing.mp4" type="video/mp4">
+      </video>
+    </template>
+  </details>
+
+  <details class="project-glance" name="briefing-viewer" data-briefing-viewer>
+    <summary id="briefing-assessment">Read the assessment (PDF)</summary>
+    <div class="briefing-preview">
+      <p class="small"><a class="text-link" href="https://drive.google.com/file/d/1d3tx37IXzQODPfGYrC7tKLB7dKR032TO/view?usp=sharing" target="_blank" rel="noopener noreferrer">Open assessment in Google Drive &#8599;</a></p>
+      <div data-briefing-frame></div>
+    </div>
+    <template>
+      <iframe class="briefing-pdf-frame" src="https://drive.google.com/file/d/1d3tx37IXzQODPfGYrC7tKLB7dKR032TO/preview" title="New World Screwworm intelligence assessment PDF"></iframe>
+    </template>
+  </details>
+</section>
 
 <section class="section wrap" id="case-study" aria-label="Research walkthrough"><div class="project-content case-layout"><div class="prose">
 <span class="eyebrow">The research and my contribution</span><h2>Build a geographic picture the evidence can support.</h2>
