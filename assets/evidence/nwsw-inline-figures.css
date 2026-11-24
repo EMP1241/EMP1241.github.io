@@ -13,7 +13,14 @@
   width: 100%;
   height: auto;
 }
-.research-figure .figure-enlarge {
+.research-figure .figure-title {
+  margin: 0;
+  padding: .9rem 1rem .45rem;
+  color: #222;
+  background: #fff;
+  font: 700 clamp(1rem, 2.5vw, 1.25rem)/1.3 var(--sans);
+}
+.research-figure .figure-source {
   display: block;
   padding: .45rem .8rem;
   border-top: 1px solid var(--line);
@@ -21,6 +28,8 @@
   background: var(--surface);
   font-size: .75rem;
   text-align: right;
+  text-decoration: underline;
+  text-underline-offset: .15em;
 }
 .research-figure > a:focus-visible {
   outline: 3px solid var(--accent);
@@ -34,6 +43,12 @@
   font-size: .84rem;
   line-height: 1.7;
 }
-@media print {
-  .research-figure .figure-enlarge { display: none; }
+.assessment-reference {
+  font-weight: 650;
+}
+.gallery-slide .assessment-reference,
+.lightbox-caption .assessment-reference {
+  display: block;
+  width: fit-content;
+  margin-top: .35rem;
 }
